@@ -1,0 +1,3635 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Der Kernel stellt den Kern des Linux Betriebssystems dar.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, darunter möglicherweise Speicherbeschädigungen, die Offenlegung oder Manipulation von Daten sowie Denial-of-Service-Zustände.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3075 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3075.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3075 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3075"
+      },
+      {
+        "category": "external",
+        "summary": "Kernel CVE Announce Mailingliste",
+        "url": "https://lore.kernel.org/linux-cve-announce/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80590",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082816-CVE-2026-80590-241e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80591",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082827-CVE-2026-80591-9af6@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80592",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082829-CVE-2026-80592-bc8c@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80593",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082830-CVE-2026-80593-5662@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80594",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082830-CVE-2026-80594-4f5d@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80595",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082830-CVE-2026-80595-462b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80596",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082830-CVE-2026-80596-a0f9@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80597",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082830-CVE-2026-80597-179d@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80598",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082831-CVE-2026-80598-1575@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80599",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082831-CVE-2026-80599-40f8@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80600",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082831-CVE-2026-80600-8e8b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80601",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082831-CVE-2026-80601-3b8f@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80602",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082832-CVE-2026-80602-61e4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80603",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082832-CVE-2026-80603-872e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80604",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082832-CVE-2026-80604-5909@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80605",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082832-CVE-2026-80605-81fd@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80606",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082833-CVE-2026-80606-9912@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80607",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082833-CVE-2026-80607-28a9@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80608",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082833-CVE-2026-80608-1115@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80609",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082833-CVE-2026-80609-3507@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80610",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082834-CVE-2026-80610-9039@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80611",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082834-CVE-2026-80611-a5cd@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80612",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082834-CVE-2026-80612-cedf@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80613",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082834-CVE-2026-80613-fc8e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80614",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082834-CVE-2026-80614-7614@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80615",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082835-CVE-2026-80615-66de@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80616",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082835-CVE-2026-80616-39d3@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80617",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082835-CVE-2026-80617-b322@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80618",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082835-CVE-2026-80618-5d17@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80619",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082836-CVE-2026-80619-935d@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80620",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082836-CVE-2026-80620-c4a2@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80621",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082836-CVE-2026-80621-fc18@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80622",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082836-CVE-2026-80622-c3f0@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80623",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082837-CVE-2026-80623-4b72@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80624",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082837-CVE-2026-80624-0e64@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80625",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082837-CVE-2026-80625-cd6e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80626",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082837-CVE-2026-80626-26f8@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80627",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082838-CVE-2026-80627-1634@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80628",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082838-CVE-2026-80628-4952@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80629",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082838-CVE-2026-80629-fde7@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80630",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082838-CVE-2026-80630-9d99@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80631",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082838-CVE-2026-80631-96c3@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80632",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082839-CVE-2026-80632-466c@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80633",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082839-CVE-2026-80633-da07@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80634",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082839-CVE-2026-80634-0f62@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80635",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082839-CVE-2026-80635-6b91@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80636",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082840-CVE-2026-80636-32e4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80637",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082840-CVE-2026-80637-4cf0@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80638",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082840-CVE-2026-80638-fbf1@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80639",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082840-CVE-2026-80639-9559@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80640",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082841-CVE-2026-80640-36d9@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80641",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082841-CVE-2026-80641-6ff8@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80642",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082841-CVE-2026-80642-1968@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80643",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082841-CVE-2026-80643-84ef@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80644",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082842-CVE-2026-80644-0834@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80645",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082842-CVE-2026-80645-65e4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80646",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082842-CVE-2026-80646-2d23@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80647",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082842-CVE-2026-80647-3d7f@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80648",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082843-CVE-2026-80648-8431@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80649",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082843-CVE-2026-80649-ace2@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80650",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082843-CVE-2026-80650-abdd@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80651",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082843-CVE-2026-80651-d51b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80652",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082843-CVE-2026-80652-a6d5@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80653",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082844-CVE-2026-80653-105e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80654",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082844-CVE-2026-80654-6c44@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80655",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082844-CVE-2026-80655-c437@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80656",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082844-CVE-2026-80656-09e1@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80657",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082845-CVE-2026-80657-650b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80658",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082845-CVE-2026-80658-6760@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80659",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082845-CVE-2026-80659-2ef1@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80660",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082845-CVE-2026-80660-d193@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80661",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082846-CVE-2026-80661-52f4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80662",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082846-CVE-2026-80662-9cad@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80663",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082846-CVE-2026-80663-bdef@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80664",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082846-CVE-2026-80664-664b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80665",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082847-CVE-2026-80665-615f@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80666",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082847-CVE-2026-80666-9e93@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80667",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082847-CVE-2026-80667-0552@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80668",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082847-CVE-2026-80668-a443@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80669",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082847-CVE-2026-80669-c4cd@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80670",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082848-CVE-2026-80670-bbb7@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80671",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082848-CVE-2026-80671-e54e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80672",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082848-CVE-2026-80672-7be5@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80673",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082848-CVE-2026-80673-fe8f@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80674",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082849-CVE-2026-80674-6c4d@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80675",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082849-CVE-2026-80675-bef6@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80678",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082800-CVE-2026-80678-ddd4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80679",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082801-CVE-2026-80679-b60a@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80680",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082801-CVE-2026-80680-4539@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80681",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082801-CVE-2026-80681-6c7c@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80682",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082801-CVE-2026-80682-0372@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80683",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082802-CVE-2026-80683-7cbe@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80684",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082802-CVE-2026-80684-a2a8@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80685",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082802-CVE-2026-80685-a81f@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80686",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082802-CVE-2026-80686-a4ef@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80687",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082802-CVE-2026-80687-5886@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80688",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082803-CVE-2026-80688-1eb3@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80689",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082803-CVE-2026-80689-f3d3@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80690",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082803-CVE-2026-80690-6e22@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80691",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082803-CVE-2026-80691-7a1c@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80692",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082804-CVE-2026-80692-062d@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80693",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082804-CVE-2026-80693-6886@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80694",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082804-CVE-2026-80694-a162@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80695",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082804-CVE-2026-80695-5b92@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80696",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082805-CVE-2026-80696-bb01@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80697",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082805-CVE-2026-80697-4e8a@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80698",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082805-CVE-2026-80698-673b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80699",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082805-CVE-2026-80699-70d6@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80700",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082806-CVE-2026-80700-b765@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80701",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082806-CVE-2026-80701-7997@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80702",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082806-CVE-2026-80702-5ccb@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80703",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082806-CVE-2026-80703-8906@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80704",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082807-CVE-2026-80704-04d4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80705",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082807-CVE-2026-80705-8eb2@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80706",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082807-CVE-2026-80706-9c56@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80707",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082807-CVE-2026-80707-cf56@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80708",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082807-CVE-2026-80708-37c9@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80709",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082808-CVE-2026-80709-2ca4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80710",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082808-CVE-2026-80710-7d94@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80711",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082808-CVE-2026-80711-67c8@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80712",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082808-CVE-2026-80712-e74e@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80713",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082809-CVE-2026-80713-f9c2@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80714",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082809-CVE-2026-80714-799a@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80715",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082809-CVE-2026-80715-1a74@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80716",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082809-CVE-2026-80716-33fd@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80717",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082810-CVE-2026-80717-e0b5@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80718",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082810-CVE-2026-80718-aa90@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80719",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082810-CVE-2026-80719-1e50@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80720",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082810-CVE-2026-80720-fb94@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80721",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082811-CVE-2026-80721-72a6@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80722",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082811-CVE-2026-80722-9ad4@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80723",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082811-CVE-2026-80723-2526@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-80724",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026082811-CVE-2026-80724-bc86@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-92C9A5D8BC vom 2026-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-92c9a5d8bc"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-F04E0D4D9D vom 2026-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-f04e0d4d9d"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-58B1E1716C vom 2026-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-58b1e1716c"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6477 vom 2026-08-30",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6477-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11648-1 vom 2026-09-02",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/P3NH4SQKBSZGVLGDZHSZZAR2SZEVPIQT/"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-500248 vom 2026-09-05",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021872.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-500248 vom 2026-09-05",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021882.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-500247 vom 2026-09-04",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-500247.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-500247 vom 2026-09-05",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021864.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-500249 vom 2026-09-05",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-500249.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8726-1 vom 2026-09-07",
+        "url": "https://ubuntu.com/security/notices/USN-8726-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8728-1 vom 2026-09-07",
+        "url": "https://ubuntu.com/security/notices/USN-8728-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8727-1 vom 2026-09-07",
+        "url": "https://ubuntu.com/security/notices/USN-8727-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4777 vom 2026-09-08",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/09/msg00012.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11703-1 vom 2026-09-09",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/Z4MG7AZLHL4M4EDUL3ZJT3E4JSMGV5YR/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23490-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028954.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23491-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028953.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23481-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028963.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23477-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028967.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4120-1 vom 2026-09-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029004.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23529-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029024.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8760-1 vom 2026-09-15",
+        "url": "https://ubuntu.com/security/notices/USN-8760-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23528-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029025.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23510-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029039.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4254-1 vom 2026-09-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029216.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8726-2 vom 2026-09-18",
+        "url": "https://ubuntu.com/security/notices/USN-8726-2"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4788 vom 2026-09-19",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/09/msg00023.html"
+      },
+      {
+        "category": "external",
+        "summary": "Google Container-Optimized OS release notes vom 2026-09-18",
+        "url": "https://docs.cloud.google.com/container-optimized-os/docs/release-notes#September_17_2026"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8726-3 vom 2026-09-21",
+        "url": "https://ubuntu.com/security/notices/USN-8726-3"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8800-1 vom 2026-09-22",
+        "url": "https://ubuntu.com/security/notices/USN-8800-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4284-1 vom 2026-09-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029357.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8728-2 vom 2026-09-22",
+        "url": "https://ubuntu.com/security/notices/USN-8728-2"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4282-1 vom 2026-09-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029346.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4279-1 vom 2026-09-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029350.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8760-2 vom 2026-09-22",
+        "url": "https://ubuntu.com/security/notices/USN-8760-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8726-4 vom 2026-09-22",
+        "url": "https://ubuntu.com/security/notices/USN-8726-4"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71329 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71329"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Linux Kernel: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:26:07.893+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3075",
+      "initial_release_date": "2026-08-27T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-08-27T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-08-30T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Fedora, European Union Vulnerability Database und Debian aufgenommen"
+        },
+        {
+          "date": "2026-09-02T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-06T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-09-08T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-09-09T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-13T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-14T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-15T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-17T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-20T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "14"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74178",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Google Container-Optimized OS",
+            "product": {
+              "name": "Google Container-Optimized OS",
+              "product_id": "1607324",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:google:container-optimized_os:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source Linux Kernel",
+            "product": {
+              "name": "Open Source Linux Kernel",
+              "product_id": "T058818",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:linux:linux_kernel:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T056236",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T054646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T055946",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T055947",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2022-30789",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2022-30789"
+    },
+    {
+      "cve": "CVE-2024-53071",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2024-53071"
+    },
+    {
+      "cve": "CVE-2026-68445",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-68445"
+    },
+    {
+      "cve": "CVE-2026-80590",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80590"
+    },
+    {
+      "cve": "CVE-2026-80591",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80591"
+    },
+    {
+      "cve": "CVE-2026-80592",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80592"
+    },
+    {
+      "cve": "CVE-2026-80593",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80593"
+    },
+    {
+      "cve": "CVE-2026-80594",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80594"
+    },
+    {
+      "cve": "CVE-2026-80595",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80595"
+    },
+    {
+      "cve": "CVE-2026-80596",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80596"
+    },
+    {
+      "cve": "CVE-2026-80597",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80597"
+    },
+    {
+      "cve": "CVE-2026-80598",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80598"
+    },
+    {
+      "cve": "CVE-2026-80599",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80599"
+    },
+    {
+      "cve": "CVE-2026-80600",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80600"
+    },
+    {
+      "cve": "CVE-2026-80601",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80601"
+    },
+    {
+      "cve": "CVE-2026-80602",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80602"
+    },
+    {
+      "cve": "CVE-2026-80603",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80603"
+    },
+    {
+      "cve": "CVE-2026-80604",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80604"
+    },
+    {
+      "cve": "CVE-2026-80605",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80605"
+    },
+    {
+      "cve": "CVE-2026-80606",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80606"
+    },
+    {
+      "cve": "CVE-2026-80607",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80607"
+    },
+    {
+      "cve": "CVE-2026-80608",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80608"
+    },
+    {
+      "cve": "CVE-2026-80609",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80609"
+    },
+    {
+      "cve": "CVE-2026-80610",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80610"
+    },
+    {
+      "cve": "CVE-2026-80611",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80611"
+    },
+    {
+      "cve": "CVE-2026-80612",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80612"
+    },
+    {
+      "cve": "CVE-2026-80613",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80613"
+    },
+    {
+      "cve": "CVE-2026-80614",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80614"
+    },
+    {
+      "cve": "CVE-2026-80615",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80615"
+    },
+    {
+      "cve": "CVE-2026-80616",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80616"
+    },
+    {
+      "cve": "CVE-2026-80617",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80617"
+    },
+    {
+      "cve": "CVE-2026-80618",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80618"
+    },
+    {
+      "cve": "CVE-2026-80619",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80619"
+    },
+    {
+      "cve": "CVE-2026-80620",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80620"
+    },
+    {
+      "cve": "CVE-2026-80621",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80621"
+    },
+    {
+      "cve": "CVE-2026-80622",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80622"
+    },
+    {
+      "cve": "CVE-2026-80623",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80623"
+    },
+    {
+      "cve": "CVE-2026-80624",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80624"
+    },
+    {
+      "cve": "CVE-2026-80625",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80625"
+    },
+    {
+      "cve": "CVE-2026-80626",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80626"
+    },
+    {
+      "cve": "CVE-2026-80627",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80627"
+    },
+    {
+      "cve": "CVE-2026-80628",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80628"
+    },
+    {
+      "cve": "CVE-2026-80629",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80629"
+    },
+    {
+      "cve": "CVE-2026-80630",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80630"
+    },
+    {
+      "cve": "CVE-2026-80631",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80631"
+    },
+    {
+      "cve": "CVE-2026-80632",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80632"
+    },
+    {
+      "cve": "CVE-2026-80633",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80633"
+    },
+    {
+      "cve": "CVE-2026-80634",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80634"
+    },
+    {
+      "cve": "CVE-2026-80635",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80635"
+    },
+    {
+      "cve": "CVE-2026-80636",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80636"
+    },
+    {
+      "cve": "CVE-2026-80637",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80637"
+    },
+    {
+      "cve": "CVE-2026-80638",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80638"
+    },
+    {
+      "cve": "CVE-2026-80639",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80639"
+    },
+    {
+      "cve": "CVE-2026-80640",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80640"
+    },
+    {
+      "cve": "CVE-2026-80641",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80641"
+    },
+    {
+      "cve": "CVE-2026-80642",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80642"
+    },
+    {
+      "cve": "CVE-2026-80643",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80643"
+    },
+    {
+      "cve": "CVE-2026-80644",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80644"
+    },
+    {
+      "cve": "CVE-2026-80645",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80645"
+    },
+    {
+      "cve": "CVE-2026-80646",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80646"
+    },
+    {
+      "cve": "CVE-2026-80647",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80647"
+    },
+    {
+      "cve": "CVE-2026-80648",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80648"
+    },
+    {
+      "cve": "CVE-2026-80649",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80649"
+    },
+    {
+      "cve": "CVE-2026-80650",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80650"
+    },
+    {
+      "cve": "CVE-2026-80651",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80651"
+    },
+    {
+      "cve": "CVE-2026-80652",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80652"
+    },
+    {
+      "cve": "CVE-2026-80653",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80653"
+    },
+    {
+      "cve": "CVE-2026-80654",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80654"
+    },
+    {
+      "cve": "CVE-2026-80655",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80655"
+    },
+    {
+      "cve": "CVE-2026-80656",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80656"
+    },
+    {
+      "cve": "CVE-2026-80657",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80657"
+    },
+    {
+      "cve": "CVE-2026-80658",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80658"
+    },
+    {
+      "cve": "CVE-2026-80659",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80659"
+    },
+    {
+      "cve": "CVE-2026-80660",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80660"
+    },
+    {
+      "cve": "CVE-2026-80661",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80661"
+    },
+    {
+      "cve": "CVE-2026-80662",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80662"
+    },
+    {
+      "cve": "CVE-2026-80663",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80663"
+    },
+    {
+      "cve": "CVE-2026-80664",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80664"
+    },
+    {
+      "cve": "CVE-2026-80665",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80665"
+    },
+    {
+      "cve": "CVE-2026-80666",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80666"
+    },
+    {
+      "cve": "CVE-2026-80667",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80667"
+    },
+    {
+      "cve": "CVE-2026-80668",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80668"
+    },
+    {
+      "cve": "CVE-2026-80669",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80669"
+    },
+    {
+      "cve": "CVE-2026-80670",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80670"
+    },
+    {
+      "cve": "CVE-2026-80671",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80671"
+    },
+    {
+      "cve": "CVE-2026-80672",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80672"
+    },
+    {
+      "cve": "CVE-2026-80673",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80673"
+    },
+    {
+      "cve": "CVE-2026-80674",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80674"
+    },
+    {
+      "cve": "CVE-2026-80675",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80675"
+    },
+    {
+      "cve": "CVE-2026-80676",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80676"
+    },
+    {
+      "cve": "CVE-2026-80677",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80677"
+    },
+    {
+      "cve": "CVE-2026-80678",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80678"
+    },
+    {
+      "cve": "CVE-2026-80679",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80679"
+    },
+    {
+      "cve": "CVE-2026-80680",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80680"
+    },
+    {
+      "cve": "CVE-2026-80681",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80681"
+    },
+    {
+      "cve": "CVE-2026-80682",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80682"
+    },
+    {
+      "cve": "CVE-2026-80683",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80683"
+    },
+    {
+      "cve": "CVE-2026-80684",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80684"
+    },
+    {
+      "cve": "CVE-2026-80685",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80685"
+    },
+    {
+      "cve": "CVE-2026-80686",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80686"
+    },
+    {
+      "cve": "CVE-2026-80687",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80687"
+    },
+    {
+      "cve": "CVE-2026-80688",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80688"
+    },
+    {
+      "cve": "CVE-2026-80689",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80689"
+    },
+    {
+      "cve": "CVE-2026-80690",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80690"
+    },
+    {
+      "cve": "CVE-2026-80691",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80691"
+    },
+    {
+      "cve": "CVE-2026-80692",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80692"
+    },
+    {
+      "cve": "CVE-2026-80693",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80693"
+    },
+    {
+      "cve": "CVE-2026-80694",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80694"
+    },
+    {
+      "cve": "CVE-2026-80695",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80695"
+    },
+    {
+      "cve": "CVE-2026-80696",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80696"
+    },
+    {
+      "cve": "CVE-2026-80697",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80697"
+    },
+    {
+      "cve": "CVE-2026-80698",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80698"
+    },
+    {
+      "cve": "CVE-2026-80699",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80699"
+    },
+    {
+      "cve": "CVE-2026-80700",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80700"
+    },
+    {
+      "cve": "CVE-2026-80701",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80701"
+    },
+    {
+      "cve": "CVE-2026-80702",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80702"
+    },
+    {
+      "cve": "CVE-2026-80703",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80703"
+    },
+    {
+      "cve": "CVE-2026-80704",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80704"
+    },
+    {
+      "cve": "CVE-2026-80705",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80705"
+    },
+    {
+      "cve": "CVE-2026-80706",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80706"
+    },
+    {
+      "cve": "CVE-2026-80707",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80707"
+    },
+    {
+      "cve": "CVE-2026-80708",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80708"
+    },
+    {
+      "cve": "CVE-2026-80709",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80709"
+    },
+    {
+      "cve": "CVE-2026-80710",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80710"
+    },
+    {
+      "cve": "CVE-2026-80711",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80711"
+    },
+    {
+      "cve": "CVE-2026-80712",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80712"
+    },
+    {
+      "cve": "CVE-2026-80713",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80713"
+    },
+    {
+      "cve": "CVE-2026-80714",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80714"
+    },
+    {
+      "cve": "CVE-2026-80715",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80715"
+    },
+    {
+      "cve": "CVE-2026-80716",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80716"
+    },
+    {
+      "cve": "CVE-2026-80717",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80717"
+    },
+    {
+      "cve": "CVE-2026-80718",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80718"
+    },
+    {
+      "cve": "CVE-2026-80719",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80719"
+    },
+    {
+      "cve": "CVE-2026-80720",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80720"
+    },
+    {
+      "cve": "CVE-2026-80721",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80721"
+    },
+    {
+      "cve": "CVE-2026-80722",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80722"
+    },
+    {
+      "cve": "CVE-2026-80723",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80723"
+    },
+    {
+      "cve": "CVE-2026-80724",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "2951",
+          "67646",
+          "T055947",
+          "T055946",
+          "T058818",
+          "74178",
+          "T054646",
+          "1607324"
+        ]
+      },
+      "release_date": "2026-08-27T22:00:00.000+00:00",
+      "title": "CVE-2026-80724"
+    }
+  ]
+}

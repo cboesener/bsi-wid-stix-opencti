@@ -1,0 +1,249 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Das \"Gnu Image Manipulation Program\" ist eine Open Source Software zum Bearbeiten von Bildern. Es ist auch Bestandteil vieler Linux Distributionen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2986 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2986.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2986 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2986"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2522057 vom 2026-08-24",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2522057"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-944m-78f8-q7cr vom 2026-08-24",
+        "url": "https://github.com/advisories/GHSA-944m-78f8-q7cr"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2522072 vom 2026-08-24",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2522072"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11771-1 vom 2026-09-15",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/AXAWJZC67JFATQTC4ZYX23XZMXR7SZXO/"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6509 vom 2026-09-20",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6509-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4309-1 vom 2026-09-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029368.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "GIMP: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:26:06.504+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2986",
+      "initial_release_date": "2026-08-24T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-08-24T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-09-15T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-20T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "4"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=3.3.1",
+                "product": {
+                  "name": "Open Source GIMP <=3.3.1",
+                  "product_id": "T058532"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=3.3.1",
+                "product": {
+                  "name": "Open Source GIMP <=3.3.1",
+                  "product_id": "T058532-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=3.2.4",
+                "product": {
+                  "name": "Open Source GIMP <=3.2.4",
+                  "product_id": "T058533"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=3.2.4",
+                "product": {
+                  "name": "Open Source GIMP <=3.2.4",
+                  "product_id": "T058533-fixed"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "GIMP"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T054646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T055946",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-78465",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T055946",
+          "T054646"
+        ],
+        "last_affected": [
+          "T058533"
+        ]
+      },
+      "release_date": "2026-08-24T22:00:00.000+00:00",
+      "title": "CVE-2026-78465"
+    },
+    {
+      "cve": "CVE-2026-78475",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T055946",
+          "T054646",
+          "T058533"
+        ],
+        "last_affected": [
+          "T058532"
+        ]
+      },
+      "release_date": "2026-08-24T22:00:00.000+00:00",
+      "title": "CVE-2026-78475"
+    }
+  ]
+}

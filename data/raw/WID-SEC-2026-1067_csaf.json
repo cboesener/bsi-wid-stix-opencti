@@ -1,0 +1,806 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Apache log4j ist ein Framework zum Loggen von Anwendungsmeldungen in Java.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Apache log4j ausnutzen, um Dateien zu manipulieren.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1067 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1067.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1067 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1067"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-6HG6-V5C8-FPHQ vom 2026-04-12",
+        "url": "https://github.com/advisories/GHSA-6HG6-V5C8-FPHQ"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-445C-VH5M-36RJ vom 2026-04-12",
+        "url": "https://github.com/advisories/GHSA-445C-VH5M-36RJ"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-H383-GMXW-35V2 vom 2026-04-12",
+        "url": "https://github.com/advisories/GHSA-H383-GMXW-35V2"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-3pxv-7cmr-fjr4 vom 2026-04-12",
+        "url": "https://github.com/advisories/GHSA-3pxv-7cmr-fjr4"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-w35j-pv5h-q9q9 vom 2026-04-12",
+        "url": "https://github.com/advisories/GHSA-w35j-pv5h-q9q9"
+      },
+      {
+        "category": "external",
+        "summary": "Microsoft Security Update Guide vom 2026-04-14",
+        "url": "https://msrc.microsoft.com/update-guide/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10544-1 vom 2026-04-15",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/4PYSIASLDV4ARR35HGWQNBVP5EMAIURV/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1843-1 vom 2026-05-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026025.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7273809 vom 2026-05-22",
+        "url": "https://www.ibm.com/support/pages/node/7273809"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7274080 vom 2026-05-26",
+        "url": "https://www.ibm.com/support/pages/node/7274080"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7274227 vom 2026-05-27",
+        "url": "https://www.ibm.com/support/pages/node/7274227"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21773 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21773"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22619 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22619"
+      },
+      {
+        "category": "external",
+        "summary": "Splunk Security Advisory SVD-2026-0610 vom 2026-06-10",
+        "url": "https://advisory.splunk.com//advisories/SVD-2026-0610"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7275937 vom 2026-06-11",
+        "url": "https://www.ibm.com/support/pages/node/7275937"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7276777 vom 2026-06-23",
+        "url": "https://www.ibm.com/support/pages/node/7276777"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7277420 vom 2026-06-23",
+        "url": "https://www.ibm.com/support/pages/node/7277420"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2026-041 vom 2026-06-24",
+        "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-041"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7275287 vom 2026-06-24",
+        "url": "https://www.ibm.com/support/pages/node/7275287"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278011 vom 2026-06-25",
+        "url": "https://www.ibm.com/support/pages/node/7278011"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278671 vom 2026-07-01",
+        "url": "https://www.ibm.com/support/pages/node/7278671"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34608 vom 2026-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34608"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:37390 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37390"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Apache log4j: Mehrere Schwachstellen ermöglichen Manipulation von Dateien",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:26:42.692+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1067",
+      "initial_release_date": "2026-04-12T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-04-12T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-04-14T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2026-04-15T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-14T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-25T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-05-26T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von IBM und IBM-APAR aufgenommen"
+        },
+        {
+          "date": "2026-05-27T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-05-28T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-02T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-10T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Splunk-SVD aufgenommen"
+        },
+        {
+          "date": "2026-06-22T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-23T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-25T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "17"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<2.25.4",
+                "product": {
+                  "name": "Apache log4j <2.25.4",
+                  "product_id": "T052700"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.25.4",
+                "product": {
+                  "name": "Apache log4j 2.25.4",
+                  "product_id": "T052700-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:apache:log4j:2.25.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "log4j"
+          }
+        ],
+        "category": "vendor",
+        "name": "Apache"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Google Cloud Platform",
+            "product": {
+              "name": "Google Cloud Platform",
+              "product_id": "393401",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:google:cloud_platform:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM App Connect Enterprise",
+            "product": {
+              "name": "IBM App Connect Enterprise",
+              "product_id": "T054632",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:app_connect_enterprise:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM DB2",
+            "product": {
+              "name": "IBM DB2",
+              "product_id": "T048379",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:db2:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM InfoSphere Information Server",
+            "product": {
+              "name": "IBM InfoSphere Information Server",
+              "product_id": "T035705",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:infosphere_information_server:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<9.2.44",
+                "product": {
+                  "name": "IBM License Metric Tool <9.2.44",
+                  "product_id": "T055689"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.2.44",
+                "product": {
+                  "name": "IBM License Metric Tool 9.2.44",
+                  "product_id": "T055689-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:license_metric_tool:9.2.44"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "License Metric Tool"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Collaboration and Deployment Services",
+                "product": {
+                  "name": "IBM SPSS Collaboration and Deployment Services",
+                  "product_id": "T037766",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:collaboration_and_deployment_services"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          },
+          {
+            "category": "product_name",
+            "name": "IBM Spectrum Protect Plus",
+            "product": {
+              "name": "IBM Spectrum Protect Plus",
+              "product_id": "T044769",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:spectrum_protect_plus:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "8.1.0-8.1.0.36",
+                "product": {
+                  "name": "IBM Tivoli Netcool/OMNIbus 8.1.0-8.1.0.36",
+                  "product_id": "T054713",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_netcool%2fomnibus:8.1.0_-_8.1.0.36"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Netcool/OMNIbus"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "IP Edition 4.2.0",
+                "product": {
+                  "name": "IBM Tivoli Network Manager IP Edition 4.2.0",
+                  "product_id": "T048330",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_network_manager:ip_edition_4.2.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Network Manager"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "azl3",
+                "product": {
+                  "name": "Microsoft Azure Linux azl3",
+                  "product_id": "T049210",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:azure_linux:azl3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Azure Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Microsoft"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Offline Knowledge Portal",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Offline Knowledge Portal",
+                  "product_id": "T054837",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:offline_knowledge_portal"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<10.4.0",
+                "product": {
+                  "name": "Splunk Splunk Enterprise <10.4.0",
+                  "product_id": "T055207"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.4.0",
+                "product": {
+                  "name": "Splunk Splunk Enterprise 10.4.0",
+                  "product_id": "T055207-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:splunk:splunk:10.4.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<10.2.4",
+                "product": {
+                  "name": "Splunk Splunk Enterprise <10.2.4",
+                  "product_id": "T055208"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.2.4",
+                "product": {
+                  "name": "Splunk Splunk Enterprise 10.2.4",
+                  "product_id": "T055208-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:splunk:splunk:10.2.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<10.0.7",
+                "product": {
+                  "name": "Splunk Splunk Enterprise <10.0.7",
+                  "product_id": "T055209"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.0.7",
+                "product": {
+                  "name": "Splunk Splunk Enterprise 10.0.7",
+                  "product_id": "T055209-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:splunk:splunk:10.0.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<9.4.12",
+                "product": {
+                  "name": "Splunk Splunk Enterprise <9.4.12",
+                  "product_id": "T055210"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.4.12",
+                "product": {
+                  "name": "Splunk Splunk Enterprise 9.4.12",
+                  "product_id": "T055210-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:splunk:splunk:9.4.12"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<9.3.13",
+                "product": {
+                  "name": "Splunk Splunk Enterprise <9.3.13",
+                  "product_id": "T055211"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.3.13",
+                "product": {
+                  "name": "Splunk Splunk Enterprise 9.3.13",
+                  "product_id": "T055211-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:splunk:splunk:9.3.13"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Splunk Enterprise"
+          }
+        ],
+        "category": "vendor",
+        "name": "Splunk"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-34477",
+      "product_status": {
+        "known_affected": [
+          "T055211",
+          "T055210",
+          "67646",
+          "T035705",
+          "T052700",
+          "T055209",
+          "T054713",
+          "T055208",
+          "393401",
+          "T055207",
+          "T037766",
+          "T055689",
+          "T054632",
+          "T018587",
+          "T002207",
+          "T054837",
+          "T044769",
+          "T027843",
+          "T048330",
+          "T049210",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34477"
+    },
+    {
+      "cve": "CVE-2026-34478",
+      "product_status": {
+        "known_affected": [
+          "T055211",
+          "T055210",
+          "67646",
+          "T035705",
+          "T052700",
+          "T055209",
+          "T054713",
+          "T055208",
+          "393401",
+          "T055207",
+          "T037766",
+          "T055689",
+          "T054632",
+          "T018587",
+          "T002207",
+          "T054837",
+          "T044769",
+          "T027843",
+          "T048330",
+          "T049210",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34478"
+    },
+    {
+      "cve": "CVE-2026-34479",
+      "product_status": {
+        "known_affected": [
+          "T055211",
+          "T055210",
+          "67646",
+          "T035705",
+          "T052700",
+          "T055209",
+          "T054713",
+          "T055208",
+          "393401",
+          "T055207",
+          "T037766",
+          "T055689",
+          "T054632",
+          "T018587",
+          "T002207",
+          "T054837",
+          "T044769",
+          "T027843",
+          "T048330",
+          "T049210",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34479"
+    },
+    {
+      "cve": "CVE-2026-34480",
+      "product_status": {
+        "known_affected": [
+          "T055211",
+          "T055210",
+          "67646",
+          "T035705",
+          "T052700",
+          "T055209",
+          "T054713",
+          "T055208",
+          "393401",
+          "T055207",
+          "T037766",
+          "T055689",
+          "T054632",
+          "T018587",
+          "T002207",
+          "T054837",
+          "T044769",
+          "T027843",
+          "T048330",
+          "T049210",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34480"
+    },
+    {
+      "cve": "CVE-2026-34481",
+      "product_status": {
+        "known_affected": [
+          "T055211",
+          "T055210",
+          "67646",
+          "T035705",
+          "T052700",
+          "T055209",
+          "T054713",
+          "T055208",
+          "393401",
+          "T055207",
+          "T037766",
+          "T055689",
+          "T054632",
+          "T018587",
+          "T002207",
+          "T054837",
+          "T044769",
+          "T027843",
+          "T048330",
+          "T049210",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34481"
+    }
+  ]
+}

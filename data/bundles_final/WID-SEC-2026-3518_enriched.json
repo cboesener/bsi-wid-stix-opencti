@@ -1,0 +1,90 @@
+{
+  "type": "bundle",
+  "id": "bundle--7a2c1523-b02e-45d9-a102-14023cfc6b05",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--203e8b2d-4dde-571d-96b1-1405828c7451",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "wget: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in wget ausnutzen, um beliebigen Programmcode auszuführen, was möglicherweise zu einer Rechteausweitung führen kann.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--6f765667-3d67-5670-87ea-4cf111ec505f",
+        "vulnerability--42b88fb0-2421-5697-9adc-600670895524",
+        "relationship--38f08c03-9208-5f69-a8fc-557de6c320fe"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3518",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3518"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3518",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3518.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-CFFJ-RWGW-J9Q9"
+        },
+        {
+          "source_name": "EU Vulnerability Database vom 2026-09-22",
+          "url": "https://euvd.enisa.europa.eu/enisa/EUVD-2026-84682"
+        }
+      ],
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Windows",
+      "x_product_description": "Wget ist ein Kommandozeilenprogramm zum Herunterladen von Dateien aus dem Internet."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--6f765667-3d67-5670-87ea-4cf111ec505f",
+      "name": "Open Source wget <=1.21.4",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--42b88fb0-2421-5697-9adc-600670895524",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-94574",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-94574"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--38f08c03-9208-5f69-a8fc-557de6c320fe",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--6f765667-3d67-5670-87ea-4cf111ec505f",
+      "target_ref": "vulnerability--42b88fb0-2421-5697-9adc-600670895524"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "type": "bundle",
+  "id": "bundle--8bbd10b2-0825-4114-9a2f-ead1defd47b1",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--bd726e61-f6dc-593a-8e88-af75c95af500",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "Adobe Experience Manager Forms: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Adobe Experience Manager Forms ausnutzen, um seine Privilegien zu erhöhen, beliebigen Code auszuführen, Sicherheitsmaßnahmen zu umgehen und Cross-Site-Scripting-Angriffe (XSS) durchzuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--3678a414-0ab3-54da-926c-d09a262b0860",
+        "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+        "vulnerability--5dfc77b1-acf1-58aa-9b8a-b9ce3c60605a",
+        "relationship--d4b20457-22bc-532b-99a9-c6cf9be3edbe",
+        "relationship--7371b0e4-4edb-5742-97b3-1a63f8f23002",
+        "vulnerability--e5dedade-0b3e-5185-8783-5295e89664da",
+        "relationship--1e1392d6-b202-5131-943d-d3547e4dd178",
+        "relationship--5bdfd4d7-79d0-557e-99c8-db84681fb1e6",
+        "vulnerability--25a0d042-a846-553d-bc7d-177267d7c990",
+        "relationship--295ac0dd-ed05-547d-868a-fbef5199a3bd",
+        "relationship--ac022932-efe3-5721-9690-0a313fb5bb9f",
+        "vulnerability--b8b8887a-f273-5f97-a13e-a68a986a4fc4",
+        "relationship--b8851f81-119c-5714-8aac-31b94b574586",
+        "relationship--bd1a1d8a-2d8e-581d-8962-560752a7e8af",
+        "vulnerability--c63332cc-7414-5c19-9d4e-7e4d66d5d827",
+        "relationship--81c42126-54f9-5c56-95a5-88a338bb662a",
+        "relationship--c6c39e67-ee52-5580-94a1-2b5abbd80de3",
+        "vulnerability--50728e45-6317-501a-9f0c-2aaafa739152",
+        "relationship--3ca42b6d-31ca-5e0b-9cf0-3d109c48f176",
+        "relationship--b520037e-c266-5906-bfd7-6cab8b495ba2"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3510",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3510"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3510",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3510.json"
+        },
+        {
+          "source_name": "Adobe Security Bulletin apsb26-151 vom 2026-09-22",
+          "url": "https://helpx.adobe.com/security/products/aem-forms/apsb26-151.html"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "Adobe Experience Manager Forms ist eine Lösung zur Verwaltung von Formularen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "name": "Adobe Experience Manager Forms <6.5.25 (AEMForms-6.5.0-0134 Hotfix)",
+      "vendor": "Adobe"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "name": "Adobe Experience Manager Forms <Service Pack 3",
+      "vendor": "Adobe"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--5dfc77b1-acf1-58aa-9b8a-b9ce3c60605a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75744",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75744"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d4b20457-22bc-532b-99a9-c6cf9be3edbe",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--5dfc77b1-acf1-58aa-9b8a-b9ce3c60605a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7371b0e4-4edb-5742-97b3-1a63f8f23002",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--5dfc77b1-acf1-58aa-9b8a-b9ce3c60605a"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e5dedade-0b3e-5185-8783-5295e89664da",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-81995",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-81995"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1e1392d6-b202-5131-943d-d3547e4dd178",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--e5dedade-0b3e-5185-8783-5295e89664da"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5bdfd4d7-79d0-557e-99c8-db84681fb1e6",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--e5dedade-0b3e-5185-8783-5295e89664da"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--25a0d042-a846-553d-bc7d-177267d7c990",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-81999",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-81999"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--295ac0dd-ed05-547d-868a-fbef5199a3bd",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--25a0d042-a846-553d-bc7d-177267d7c990"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ac022932-efe3-5721-9690-0a313fb5bb9f",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--25a0d042-a846-553d-bc7d-177267d7c990"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--b8b8887a-f273-5f97-a13e-a68a986a4fc4",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-82000",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-82000"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b8851f81-119c-5714-8aac-31b94b574586",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--b8b8887a-f273-5f97-a13e-a68a986a4fc4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bd1a1d8a-2d8e-581d-8962-560752a7e8af",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--b8b8887a-f273-5f97-a13e-a68a986a4fc4"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--c63332cc-7414-5c19-9d4e-7e4d66d5d827",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75743",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75743"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--81c42126-54f9-5c56-95a5-88a338bb662a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--c63332cc-7414-5c19-9d4e-7e4d66d5d827"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c6c39e67-ee52-5580-94a1-2b5abbd80de3",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--c63332cc-7414-5c19-9d4e-7e4d66d5d827"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--50728e45-6317-501a-9f0c-2aaafa739152",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75745",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75745"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3ca42b6d-31ca-5e0b-9cf0-3d109c48f176",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3678a414-0ab3-54da-926c-d09a262b0860",
+      "target_ref": "vulnerability--50728e45-6317-501a-9f0c-2aaafa739152"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b520037e-c266-5906-bfd7-6cab8b495ba2",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5adea77b-4a91-5041-9052-5f7e31046d96",
+      "target_ref": "vulnerability--50728e45-6317-501a-9f0c-2aaafa739152"
+    }
+  ]
+}

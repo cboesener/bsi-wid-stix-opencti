@@ -1,0 +1,164 @@
+{
+  "type": "bundle",
+  "id": "bundle--2cc37364-e0af-4f6a-86ce-76806784b0b5",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--0500902f-8697-5ef3-a6e5-5dac29335a2f",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Red Hat Enterprise Linux (coreutils): Schwachstelle ermöglicht Denial of Service und Offenlegung von Informationen",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Red Hat Enterprise Linux (coreutils) ausnutzen, um einen Denial of Service Angriff durchzuführen, und um Informationen offenzulegen.",
+      "published": "2026-09-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+        "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+        "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f",
+        "relationship--bd60308c-3437-524c-95c0-9a546c9d3a31",
+        "relationship--e9f2cb31-9b92-57d4-a2d0-d78c37b06af4",
+        "relationship--31ce2764-ebe6-5187-b38a-bd4db436c365",
+        "relationship--049d2639-42dc-5812-bc4b-ab1672bc7bcf"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3500",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3500"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3500",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3500.json"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69964 vom 2026-09-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69964"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:28911 vom 2026-06-24",
+          "url": "https://access.redhat.com/errata/RHSA-2026:28911"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:33124 vom 2026-06-29",
+          "url": "https://access.redhat.com/errata/RHSA-2026:33124"
+        },
+        {
+          "source_name": "Red Hat Customer Portal CVE-2025-5278 vom 2025-05-27",
+          "url": "https://access.redhat.com/security/cve/cve-2025-5278"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69964 vom 2026-09-24",
+          "url": "http://linux.oracle.com/errata/ELSA-2026-69964.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "niedrig",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux",
+      "x_product_description": "Red Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+      "name": "Red Hat Enterprise Linux 10",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:10:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+      "name": "Red Hat Enterprise Linux 9",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:9:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+      "name": "Red Hat Enterprise Linux 8",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:8:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2025-5278",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2025-5278"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bd60308c-3437-524c-95c0-9a546c9d3a31",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e9f2cb31-9b92-57d4-a2d0-d78c37b06af4",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+      "target_ref": "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--31ce2764-ebe6-5187-b38a-bd4db436c365",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+      "target_ref": "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--049d2639-42dc-5812-bc4b-ab1672bc7bcf",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+      "target_ref": "vulnerability--e9bc9ab4-6ae9-574a-a697-566931f6bf4f"
+    }
+  ]
+}

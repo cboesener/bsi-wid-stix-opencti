@@ -1,0 +1,89 @@
+{
+  "type": "bundle",
+  "id": "bundle--1282f7d3-e96c-481c-bf10-2a9099d376b0",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--a3bc367e-0a7f-5998-97dc-11db7d53d9af",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Nutanix AOS: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Nutanix AOS und Nutanix Prism Central ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--79830935-43b4-542d-b613-569671ca8fda",
+        "software--5ba57728-8eef-563e-a1f2-024d88c9d91e",
+        "software--ac6e007c-30e4-5594-8ae6-68cbb5ec1a0e",
+        "software--841dacae-c08f-53b9-9970-ea20d7b05006"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3545",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3545"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3545",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3545.json"
+        },
+        {
+          "source_name": "Nutanix Security Advisory vom 2026-09-23",
+          "url": "https://download.nutanix.com/alerts/Security_Advisory_0057.pdf"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX",
+      "x_product_description": "Nutanix AOS (Acropolis Operating System) ist eine Infrastruktursoftware, die Storage, Virtualisierung und Netzwerke integriert, um die Verwaltung des Rechenzentrums zu vereinfachen und die Skalierbarkeit zu erhöhen.\r\nNutanix Prism Central ist eine zentralisierte Verwaltungs- und Überwachungsplattform, die eine einheitliche Ansicht und Kontrolle über mehrere Nutanix-Cluster bietet, das Infrastrukturmanagement vereinfacht und einen effizienten Betrieb ermöglicht."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--79830935-43b4-542d-b613-569671ca8fda",
+      "name": "Nutanix Prism Central 7.5.x",
+      "vendor": "Nutanix",
+      "cpe": "cpe:2.3:a:nutanix:prism_central:7.5.x:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5ba57728-8eef-563e-a1f2-024d88c9d91e",
+      "name": "Nutanix AOS 7.3.x",
+      "vendor": "Nutanix",
+      "cpe": "cpe:2.3:o:nutanix:aos:7.3.x:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--ac6e007c-30e4-5594-8ae6-68cbb5ec1a0e",
+      "name": "Nutanix AOS 7.5.x",
+      "vendor": "Nutanix",
+      "cpe": "cpe:2.3:o:nutanix:aos:7.5.x:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--841dacae-c08f-53b9-9970-ea20d7b05006",
+      "name": "Nutanix Prism Central 7.3.x",
+      "vendor": "Nutanix",
+      "cpe": "cpe:2.3:a:nutanix:prism_central:7.3.x:*:*:*:*:*:*:*"
+    }
+  ]
+}

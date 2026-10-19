@@ -1,0 +1,139 @@
+{
+  "type": "bundle",
+  "id": "bundle--b75abb43-5acb-413a-b026-68dbb387dcc7",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b4a77265-f549-500c-87cb-ecb1d57bcbc9",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "PgBouncer: Mehrere Schwachstellen ermöglichen Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in PgBouncer ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c84205d7-9c99-5f8a-a43f-d41a6130d26c",
+        "vulnerability--39f673ab-448c-5a52-89c3-114c201af1a7",
+        "relationship--7ca70695-70a8-5eb5-932c-346744697d0d",
+        "vulnerability--5e0a464e-dd53-52c1-8de6-58ac21406704",
+        "relationship--3cdcd383-4052-5f00-af2b-cec8b8c80b78",
+        "vulnerability--d283fd10-fbc2-506e-bc2a-32258ea1941e",
+        "relationship--75d473d9-4e1b-5765-a7f3-be00e7c1e16e"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3529",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3529"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3529",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3529.json"
+        },
+        {
+          "source_name": "PgBouncer Release Notes vom 2026-09-22",
+          "url": "https://www.pgbouncer.org/2026/09/pgbouncer-1-26-0"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "PgBouncer ist ein leichtgewichtiger Connection-Pooler für PostgreSQL"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c84205d7-9c99-5f8a-a43f-d41a6130d26c",
+      "name": "Open Source PgBouncer <1.26.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--39f673ab-448c-5a52-89c3-114c201af1a7",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-19888",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-19888"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7ca70695-70a8-5eb5-932c-346744697d0d",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c84205d7-9c99-5f8a-a43f-d41a6130d26c",
+      "target_ref": "vulnerability--39f673ab-448c-5a52-89c3-114c201af1a7"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--5e0a464e-dd53-52c1-8de6-58ac21406704",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-6668",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-6668"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3cdcd383-4052-5f00-af2b-cec8b8c80b78",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c84205d7-9c99-5f8a-a43f-d41a6130d26c",
+      "target_ref": "vulnerability--5e0a464e-dd53-52c1-8de6-58ac21406704"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--d283fd10-fbc2-506e-bc2a-32258ea1941e",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-6669",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-6669"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--75d473d9-4e1b-5765-a7f3-be00e7c1e16e",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c84205d7-9c99-5f8a-a43f-d41a6130d26c",
+      "target_ref": "vulnerability--d283fd10-fbc2-506e-bc2a-32258ea1941e"
+    }
+  ]
+}

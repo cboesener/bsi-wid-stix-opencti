@@ -1,0 +1,138 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Open Source vLLM ist eine Open-Source-Bibliothek für schnelle und effiziente Inferenz von Large Language Models (LLMs).",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in vllm ausnutzen, um Dateien zu manipulieren Informationen offenzulegen oder einen Denial of Service zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3564 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3564.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3564 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3564"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-2phq-3phc-84px vom 2026-09-23",
+        "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-2phq-3phc-84px"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-85xf-c7hm-whqw vom 2026-09-23",
+        "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-85xf-c7hm-whqw"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-ph72-cqr5-qpp7 vom 2026-09-23",
+        "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-ph72-cqr5-qpp7"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "vllm: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T11:49:24.388+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3564",
+      "initial_release_date": "2026-09-23T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<0.30.0",
+                "product": {
+                  "name": "Open Source vllm <0.30.0",
+                  "product_id": "T059948"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "0.30.0",
+                "product": {
+                  "name": "Open Source vllm 0.30.0",
+                  "product_id": "T059948-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:vllm:vllm:0.30.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "vllm"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "product_status": {
+        "known_affected": [
+          "T059948"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00"
+    }
+  ]
+}

@@ -1,0 +1,759 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "GStreamer ist ein Multimedia-Framework mit einer Plugin-basierten Architektur für eine Vielzahl von Plattformen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in GStreamer ausnutzen, um einen Denial of Service Angriff durchzuführen, Daten zu manipulieren oder vertrauliche Informationen offenzulegen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1919 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1919.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1919 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1919"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0030.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0031.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0032.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0033.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0034.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0035.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0036.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0037.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0038.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0039.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0040.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0041.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-06-14",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0042.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6353 vom 2026-06-19",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6353-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6362 vom 2026-06-23",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6362-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11088-1 vom 2026-06-24",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/D5YVJTVHWZ7AFU6PLNKA7NWHQV2Z2MJO/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2727-1 vom 2026-07-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027166.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21204-1 vom 2026-07-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/5I5M4HYO7IYSXBZ55NBI5MQCKW3PDVUE/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2744-1 vom 2026-07-03",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027269.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2743-1 vom 2026-07-03",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027270.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3791 vom 2026-07-08",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3791.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3787 vom 2026-07-08",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3787.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3790 vom 2026-07-08",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3790.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3788 vom 2026-07-08",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3788.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36673 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36673"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36674 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36674"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36834 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36834"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36774 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36774"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21240-1 vom 2026-07-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2CRGH6PNOKJ5KXV7GQOKDEUJ4F7SP5BA/"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-36774 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-36774.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36675 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36675"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:37130 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37130"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36749 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36749"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-36674 vom 2026-07-08",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-36674.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:36774 vom 2026-07-09",
+        "url": "https://errata.build.resf.org/RLSA-2026:36774"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-36834 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-36834.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-37130 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-37130.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-37129 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-37129.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:37130 vom 2026-07-10",
+        "url": "https://errata.build.resf.org/RLSA-2026:37130"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "GStreamer: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:22:21.015+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1919",
+      "initial_release_date": "2026-06-14T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-06-14T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-06-15T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "CVE's ergänzt"
+        },
+        {
+          "date": "2026-06-16T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Referenz(en) aufgenommen: GSTREAMER-SA-2026-0045, GSTREAMER-SA-2026-0046, GSTREAMER-SA-2026-0043"
+        },
+        {
+          "date": "2026-06-21T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-06-23T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-02T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-05T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-07T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat, openSUSE, Oracle Linux und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Oracle Linux und Rocky Enterprise Software Foundation aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "11"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-bad <1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-bad <1.28.4",
+                  "product_id": "T055382"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-bad 1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-bad 1.28.4",
+                  "product_id": "T055382-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-bad__1.28.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-base <1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-base <1.28.4",
+                  "product_id": "T055383"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-base 1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-base 1.28.4",
+                  "product_id": "T055383-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-base__1.28.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-good <1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-good <1.28.4",
+                  "product_id": "T055384"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-good 1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-good 1.28.4",
+                  "product_id": "T055384-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-good__1.28.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-libav <1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-libav <1.28.4",
+                  "product_id": "T055385"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-libav 1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-libav 1.28.4",
+                  "product_id": "T055385-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-libav__1.28.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-ugly <1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-ugly <1.28.4",
+                  "product_id": "T055386"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-ugly 1.28.4",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-ugly 1.28.4",
+                  "product_id": "T055386-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-ugly__1.28.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "GStreamer"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-52717",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52717"
+    },
+    {
+      "cve": "CVE-2026-52718",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52718"
+    },
+    {
+      "cve": "CVE-2026-52719",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52719"
+    },
+    {
+      "cve": "CVE-2026-52720",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52720"
+    },
+    {
+      "cve": "CVE-2026-52721",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52721"
+    },
+    {
+      "cve": "CVE-2026-52722",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-52722"
+    },
+    {
+      "cve": "CVE-2026-53702",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-53702"
+    },
+    {
+      "cve": "CVE-2026-53703",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-53703"
+    },
+    {
+      "cve": "CVE-2026-53704",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-53704"
+    },
+    {
+      "cve": "CVE-2026-53705",
+      "product_status": {
+        "known_affected": [
+          "T055386",
+          "T055385",
+          "2951",
+          "T002207",
+          "T055384",
+          "67646",
+          "T055383",
+          "T055382",
+          "T027843",
+          "398363",
+          "T004914",
+          "T032255"
+        ]
+      },
+      "release_date": "2026-06-14T22:00:00.000+00:00",
+      "title": "CVE-2026-53705"
+    }
+  ]
+}

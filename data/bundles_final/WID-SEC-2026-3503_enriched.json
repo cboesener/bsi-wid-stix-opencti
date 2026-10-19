@@ -1,0 +1,115 @@
+{
+  "type": "bundle",
+  "id": "bundle--37054b68-cbe0-47a7-aed4-fd954e2152d2",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--fecaa81f-e79e-5890-bb03-a1e07705d73b",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "X.Org X11: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in X.Org X11 ausnutzen, um potentiell Code zur Ausführung zu bringen.",
+      "published": "2026-09-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--ed3a75e8-d772-554b-acd1-863feaea6e93",
+        "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+        "vulnerability--7de7ee31-0fa5-5d67-920b-c7b7b606da35",
+        "relationship--1f1f716d-2a43-5d77-ba55-c0bc64ee16eb",
+        "relationship--ee1fdd8e-fe76-5b89-912a-b9531a686536"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3503",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3503"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3503",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3503.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-xrgw-w7v2-3qp8 vom 2026-09-21",
+          "url": "https://github.com/advisories/GHSA-xrgw-w7v2-3qp8"
+        },
+        {
+          "source_name": "GitLab freedesktop vom 2026-09-21",
+          "url": "https://gitlab.freedesktop.org/xorg/lib/libx11/-/merge_requests/309"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:11833-1 vom 2026-09-23",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/VMGJMDHH5N75WKPK3RKCE2FKPV4MXMHR/"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Das X Window System dient der Erzeugung grafischer Oberflächen auf Unix Systemen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--ed3a75e8-d772-554b-acd1-863feaea6e93",
+      "name": "Open Source X.Org X11 <1.8.14",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "name": "SUSE openSUSE",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:opensuse:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--7de7ee31-0fa5-5d67-920b-c7b7b606da35",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-88806",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-88806"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1f1f716d-2a43-5d77-ba55-c0bc64ee16eb",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--7de7ee31-0fa5-5d67-920b-c7b7b606da35"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ee1fdd8e-fe76-5b89-912a-b9531a686536",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ed3a75e8-d772-554b-acd1-863feaea6e93",
+      "target_ref": "vulnerability--7de7ee31-0fa5-5d67-920b-c7b7b606da35"
+    }
+  ]
+}

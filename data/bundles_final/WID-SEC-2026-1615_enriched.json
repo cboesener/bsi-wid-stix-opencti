@@ -1,0 +1,398 @@
+{
+  "type": "bundle",
+  "id": "bundle--7fa566aa-ca07-4c93-b3b6-96aaedca6d84",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--037999f4-6b62-5968-8abe-40b5361a8ced",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "memcached: Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
+      "description": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in memcached ausnutzen, um vertrauliche Informationen offenzulegen und die Authentifizierung zu umgehen, was möglicherweise weitere Angriffe ermöglicht.",
+      "published": "2026-05-20T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--81e7c61a-efe2-55fd-9242-2cfc47fbadeb",
+        "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+        "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+        "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2",
+        "relationship--393f77d6-9cc8-51b0-9513-39a772e1a9e2",
+        "relationship--7612deda-2711-55bd-b16d-52dd4e50daa4",
+        "relationship--30dfee01-7382-5822-81d4-e34fe0795093",
+        "relationship--7a8b7181-846b-5f66-9e02-36a4ec294c7f",
+        "relationship--fabefb2d-452d-5941-9ecc-6772da5600c5",
+        "relationship--a8891e3c-b217-5f66-bd98-b0ccd65fc468",
+        "relationship--c32b5f30-e9e5-55e8-9548-830804dbcca1",
+        "relationship--ef2253a2-9358-5608-bad0-769383ee9120",
+        "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226",
+        "relationship--2a5e44a4-7b2f-54a6-a01a-c2b2287e5f9d",
+        "relationship--9e0953c5-4656-594b-ae5d-3c1a575d6611",
+        "relationship--810fe10d-b36f-5d5c-a180-4df245118b98",
+        "relationship--09bbd402-22aa-5457-8b75-5eca7449700c",
+        "relationship--0a5f11c1-fe93-577b-8e84-3e17dc7b8797",
+        "relationship--f3cb486e-2ad2-5d7a-9eee-1139057ba7f5",
+        "relationship--88613724-1be4-5a1c-a3d8-c8ae53bf09c8",
+        "relationship--4596daa0-150b-5b23-918f-3b7a9333c5b5"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-1615",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1615"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-1615",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1615.json"
+        },
+        {
+          "source_name": "Memcached 1.6.42 Release Notes vom 2026-05-20",
+          "url": "https://github.com/memcached/memcached/wiki/ReleaseNotes1642"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-QJPX-J6J4-8XPR vom 2026-05-20",
+          "url": "https://github.com/advisories/GHSA-QJPX-J6J4-8XPR"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-R4H3-4Q3V-2776 vom 2026-05-20",
+          "url": "https://github.com/advisories/GHSA-R4H3-4Q3V-2776"
+        },
+        {
+          "source_name": "Debian Security Advisory DLA-4601 vom 2026-05-26",
+          "url": "https://lists.debian.org/debian-lts-announce/2026/05/msg00046.html"
+        },
+        {
+          "source_name": "Ubuntu Security Notice USN-8320-1 vom 2026-05-27",
+          "url": "https://ubuntu.com/security/notices/USN-8320-1"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:10882-1 vom 2026-05-30",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/RXM5BUOMVFQ7IZZCE3O2LQAZLMTW7AMD/"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:23261 vom 2026-06-04",
+          "url": "https://access.redhat.com/errata/RHSA-2026:23261"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:20884-1 vom 2026-06-03",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/VJMCLBFUTYG4P23K5QFQLKTBZS6IT5BF/"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:2293-1 vom 2026-06-08",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026609.html"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:22022-1 vom 2026-06-08",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026628.html"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:2292-1 vom 2026-06-08",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026610.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:27842 vom 2026-06-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:27842"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:27862 vom 2026-06-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:27862"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:27862 vom 2026-06-24",
+          "url": "https://errata.build.resf.org/RLSA-2026:27862"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:27842 vom 2026-06-24",
+          "url": "https://errata.build.resf.org/RLSA-2026:27842"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-27862 vom 2026-06-25",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-27862.html"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-27842 vom 2026-07-17",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-27842.html"
+        },
+        {
+          "source_name": "Debian Security Advisory DLA-4791 vom 2026-09-23",
+          "url": "https://lists.debian.org/debian-lts-announce/2026/09/msg00026.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "11",
+      "x_operating_systems": "- Sonstiges\n- UNIX",
+      "x_product_description": "Memcached ist ein Cache Server für Datenbanken."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "name": "SUSE openSUSE",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:opensuse:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--81e7c61a-efe2-55fd-9242-2cfc47fbadeb",
+      "name": "Open Source memcached <1.6.42",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "name": "Debian Linux",
+      "vendor": "Debian",
+      "cpe": "cpe:2.3:o:debian:debian_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "name": "Ubuntu Linux",
+      "vendor": "Ubuntu",
+      "cpe": "cpe:2.3:o:canonical:ubuntu_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "name": "SUSE Linux",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:suse_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-47783",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-47783"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--393f77d6-9cc8-51b0-9513-39a772e1a9e2",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7612deda-2711-55bd-b16d-52dd4e50daa4",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--30dfee01-7382-5822-81d4-e34fe0795093",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7a8b7181-846b-5f66-9e02-36a4ec294c7f",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fabefb2d-452d-5941-9ecc-6772da5600c5",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a8891e3c-b217-5f66-bd98-b0ccd65fc468",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--81e7c61a-efe2-55fd-9242-2cfc47fbadeb",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c32b5f30-e9e5-55e8-9548-830804dbcca1",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ef2253a2-9358-5608-bad0-769383ee9120",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--d08e9bcf-2a0d-5d29-8afa-edcc17a5b9a2"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-47784",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-47784"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2a5e44a4-7b2f-54a6-a01a-c2b2287e5f9d",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9e0953c5-4656-594b-ae5d-3c1a575d6611",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--810fe10d-b36f-5d5c-a180-4df245118b98",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--09bbd402-22aa-5457-8b75-5eca7449700c",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0a5f11c1-fe93-577b-8e84-3e17dc7b8797",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f3cb486e-2ad2-5d7a-9eee-1139057ba7f5",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--81e7c61a-efe2-55fd-9242-2cfc47fbadeb",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--88613724-1be4-5a1c-a3d8-c8ae53bf09c8",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4596daa0-150b-5b23-918f-3b7a9333c5b5",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--2c874a4e-49b6-5439-90cf-de311a022226"
+    }
+  ]
+}

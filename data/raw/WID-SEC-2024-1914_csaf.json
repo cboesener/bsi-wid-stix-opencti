@@ -1,0 +1,933 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Python ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- MacOS X\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2024-1914 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2024/wid-sec-w-2024-1914.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2024-1914 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2024-1914"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker #2307370 vom 2024-08-22",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2307370"
+      },
+      {
+        "category": "external",
+        "summary": "SecList Advisory",
+        "url": "https://seclists.org/oss-sec/2024/q3/226"
+      },
+      {
+        "category": "external",
+        "summary": "SecList Advisory",
+        "url": "https://seclists.org/oss-sec/2024/q3/229"
+      },
+      {
+        "category": "external",
+        "summary": "cPython Pull Request 122906",
+        "url": "https://github.com/python/cpython/pull/122906"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-5759 vom 2024-08-27",
+        "url": "https://lists.debian.org/debian-security-announce/2024/msg00172.html"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-0CF8BAAC55 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-0cf8baac55"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-9A940FFE4C vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-9a940ffe4c"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-DC7F1D57E4 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-dc7f1d57e4"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-3D656DAFE1 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-3d656dafe1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-6140989AAF vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-6140989aaf"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-7008B2FEDF vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-7008b2fedf"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-F28BEC9F9C vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-f28bec9f9c"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-EA70424921 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-ea70424921"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-8142ADB4A8 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-8142adb4a8"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-5361EFB19A vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-5361efb19a"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-E537311F91 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-e537311f91"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5962 vom 2024-08-29",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5962"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-DAB2A69BE9 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-dab2a69be9"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-B673D8C70F vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-b673d8c70f"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-AFBA3B5902 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-afba3b5902"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-992047A33F vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-992047a33f"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-985017D277 vom 2024-08-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-985017d277"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-5962 vom 2024-08-30",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-5962.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-6163 vom 2024-09-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-6163.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-6146 vom 2024-09-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-6146.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-6179 vom 2024-09-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-6179.html"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-48FD84DA22 vom 2024-09-05",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-48fd84da22"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-EBF3FE7BC9 vom 2024-09-08",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-ebf3fe7bc9"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-E887A10DEE vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-e887a10dee"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-F2FC325C40 vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-f2fc325c40"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-1D0CB3B43F vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-1d0cb3b43f"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-F750328C3B vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-f750328c3b"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-6DEF755315 vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-6def755315"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-39D459DD00 vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-39d459dd00"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-2B163F9201 vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-2b163f9201"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-E453A209E9 vom 2024-09-10",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-e453a209e9"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-7A069F48E4 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-7a069f48e4"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-F7F36C20A2 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-f7f36c20a2"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-F652468298 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-f652468298"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-AE2925C3AE vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-ae2925c3ae"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-7DB9258D37 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-7db9258d37"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-6DEDBC5CF9 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-6dedbc5cf9"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-37D9C902DD vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-37d9c902dd"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-308628EBB8 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-308628ebb8"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2024-1E6D6F8452 vom 2024-09-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2024-1e6d6f8452"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-1 vom 2024-09-16",
+        "url": "https://ubuntu.com/security/notices/USN-7015-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3303-1 vom 2024-09-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019454.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3357-1 vom 2024-09-22",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/LIDNXNV744GNUVXIRCBTY2Q4CIZ3PIEN/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6962 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6962"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6961 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6961"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3411-1 vom 2024-09-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019505.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3411-1 vom 2024-09-24",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/QNXFOIXBCGZTXD6BKYGBL3VDWS6RK6AB/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3427-1 vom 2024-09-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019516.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3418-1 vom 2024-09-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019511.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-6962 vom 2024-09-25",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-6962.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-6961 vom 2024-09-25",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-6961.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2024:6962 vom 2024-09-30",
+        "url": "https://errata.build.resf.org/RLSA-2024:6962"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-3 vom 2024-10-01",
+        "url": "https://ubuntu.com/security/notices/USN-7015-3"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20241011-0010 vom 2024-10-11",
+        "url": "https://security.netapp.com/advisory/ntap-20241011-0010/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-4 vom 2024-10-14",
+        "url": "https://ubuntu.com/security/notices/USN-7015-4"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7174912 vom 2024-11-06",
+        "url": "https://www.ibm.com/support/pages/node/7174912"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9192 vom 2024-11-12",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9192"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9371 vom 2024-11-12",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9371"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9190 vom 2024-11-12",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9190"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASPYTHON3.8-2024-016 vom 2024-11-13",
+        "url": "https://alas.aws.amazon.com/AL2/ALASPYTHON3.8-2024-016.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4029-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019825.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-9190 vom 2024-11-19",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-9190.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-202410:15283-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019828.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4020-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019831.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4026-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019826.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-202410:15282-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019829.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4021-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019830.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4025-1 vom 2024-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019827.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-5 vom 2024-11-19",
+        "url": "https://ubuntu.com/security/notices/USN-7015-5"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-6 vom 2024-11-22",
+        "url": "https://ubuntu.com/security/notices/USN-7015-6"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3980 vom 2024-12-02",
+        "url": "https://lists.debian.org/debian-lts-announce/2024/12/msg00000.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20294-1 vom 2025-06-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021036.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20154-1 vom 2025-06-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021184.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20374-1 vom 2025-06-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021414.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20065-1 vom 2025-06-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021256.html"
+      },
+      {
+        "category": "external",
+        "summary": "Gentoo Linux Security Advisory GLSA-202506-07 vom 2025-06-12",
+        "url": "https://security.gentoo.org/glsa/202506-07"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7015-7 vom 2025-09-29",
+        "url": "https://ubuntu.com/security/notices/USN-7015-7"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15713-1 vom 2025-11-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/V7NUQ3GPXSJ6QCFNNBJQ5D3UZXUYCUBE/"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279712 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279712"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Python: Schwachstelle ermöglicht Denial of Service",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:22:21.876+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2024-1914",
+      "initial_release_date": "2024-08-22T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2024-08-22T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2024-08-27T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2024-08-28T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Fedora und Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-08-29T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-09-03T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-09-05T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-09-08T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-09-09T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-09-10T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-09-11T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-09-16T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-09-18T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-22T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-23T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-24T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-25T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-09-30T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2024-10-13T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2024-10-14T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-11-05T23:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2024-11-11T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-13T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2024-11-18T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von SUSE und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-11-19T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-11-21T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-12-01T23:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-06-03T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-06-04T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-06-12T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Gentoo aufgenommen"
+        },
+        {
+          "date": "2025-09-29T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-11-09T23:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "32"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Gentoo Linux",
+            "product": {
+              "name": "Gentoo Linux",
+              "product_id": "T012167",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:gentoo:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Gentoo"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.3",
+                "product": {
+                  "name": "IBM AIX 7.3",
+                  "product_id": "1139691",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:ibm:aix:7.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "AIX"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp Data ONTAP",
+            "product": {
+              "name": "NetApp Data ONTAP",
+              "product_id": "7654",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:data_ontap:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=3.13.0",
+                "product": {
+                  "name": "Open Source Python <=3.13.0",
+                  "product_id": "T037036"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=3.13.0",
+                "product": {
+                  "name": "Open Source Python <=3.13.0",
+                  "product_id": "T037036-fixed"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Python"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2024-8088",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "7654",
+          "T012167",
+          "T004914",
+          "T032255",
+          "74185",
+          "1139691",
+          "T018587",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ],
+        "last_affected": [
+          "T037036"
+        ]
+      },
+      "release_date": "2024-08-22T22:00:00.000+00:00",
+      "title": "CVE-2024-8088"
+    }
+  ]
+}

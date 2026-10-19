@@ -1,0 +1,192 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Fetchmail ist ein Programm zur Abfrage von Mails über diverse Protokolle wie IMAP4, SMTP, POP2 oder POP3 und deren anschließender Weiterleitung an Message Delivery Agents.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in fetchmail ausnutzen, um beliebigen Programmcode auszuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3495 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3495.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3495 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3495"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2537395 vom 2026-09-21",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537395"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database",
+        "url": "https://github.com/advisories/GHSA-5PFW-5PV2-2PC6"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-FDB231AB53 vom 2026-09-23",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-fdb231ab53"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-8FFC03A2CE vom 2026-09-23",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-8ffc03a2ce"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-FFDC059B16 vom 2026-09-23",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-ffdc059b16"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "fetchmail: Schwachstelle ermöglicht Codeausführung",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:26:19.899+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3495",
+      "initial_release_date": "2026-09-21T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "2"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74178",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": ">5.0.8",
+                "product": {
+                  "name": "Open Source fetchmail >5.0.8",
+                  "product_id": "141757"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.0.8",
+                "product": {
+                  "name": "Open Source fetchmail 5.0.8",
+                  "product_id": "141757-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:fetchmail:fetchmail:5.0.8"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<6.6.7",
+                "product": {
+                  "name": "Open Source fetchmail <6.6.7",
+                  "product_id": "T059918"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "6.6.7",
+                "product": {
+                  "name": "Open Source fetchmail 6.6.7",
+                  "product_id": "T059918-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:fetchmail:fetchmail:6.6.7"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "fetchmail"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-94184",
+      "product_status": {
+        "known_affected": [
+          "T059918",
+          "74178"
+        ]
+      },
+      "release_date": "2026-09-21T22:00:00.000+00:00",
+      "title": "CVE-2026-94184"
+    }
+  ]
+}

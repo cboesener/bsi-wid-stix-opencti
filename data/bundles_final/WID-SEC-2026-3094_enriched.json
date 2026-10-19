@@ -1,0 +1,219 @@
+{
+  "type": "bundle",
+  "id": "bundle--2fa100c2-40e7-45c0-9847-096820ad1625",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--dd1c8939-920c-5f20-ac4f-25316fd1a84b",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "rsyslog: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in rsyslog ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-08-30T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--fede50f7-c95c-5062-b416-504b0b14bc46",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+        "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05",
+        "relationship--b2329c7a-9896-5baa-90c3-311f71d6a9a7",
+        "relationship--db77212b-8d9d-5c5a-bbd3-8dd90e0c839b",
+        "relationship--881a6ed6-c526-5865-bdef-1db4bc5a3703",
+        "relationship--393411d0-f9a9-52de-881c-36596a191f3f",
+        "relationship--d04d71b9-c23f-5112-ae19-adc0b13c9b46",
+        "relationship--788adfee-e5ea-5594-bb68-e9b0e3be7e35"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3094",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3094"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3094",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3094.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-g72f-gc6v-f2w3 vom 2026-08-30",
+          "url": "https://github.com/rsyslog/rsyslog/security/advisories/GHSA-g72f-gc6v-f2w3"
+        },
+        {
+          "source_name": "OSS Security Mailing List vom 2026-08-30",
+          "url": "https://seclists.org/oss-sec/2026/q3/609"
+        },
+        {
+          "source_name": "Amazon Linux Security Advisory ALAS2-2026-3904 vom 2026-09-14",
+          "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3904.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69540 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69540"
+        },
+        {
+          "source_name": "Ubuntu Security Notice USN-8786-1 vom 2026-09-21",
+          "url": "https://ubuntu.com/security/notices/USN-8786-1"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69541 vom 2026-09-22",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-69541.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69541 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69541"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69540 vom 2026-09-22",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-69540.html"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:69541 vom 2026-09-23",
+          "url": "https://errata.build.resf.org/RLSA-2026:69541"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "5",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "rsyslog ist ein erweiterter, multithread syslog Dämon der MySQL, syslog/TCP, RFC 3195, \"permitted sender\" Listen, Filterfunktionen für einzelne Nachrichtenteile und eine fein granulierte Steuerung des Ausgabeformates bietet."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--fede50f7-c95c-5062-b416-504b0b14bc46",
+      "name": "Open Source rsyslog <2026-08-24 daily stable build",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+      "name": "Amazon Linux 2",
+      "vendor": "Amazon",
+      "cpe": "cpe:2.3:o:amazon:linux_2:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "name": "Ubuntu Linux",
+      "vendor": "Ubuntu",
+      "cpe": "cpe:2.3:o:canonical:ubuntu_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-78002",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-78002"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b2329c7a-9896-5baa-90c3-311f71d6a9a7",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--db77212b-8d9d-5c5a-bbd3-8dd90e0c839b",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--fede50f7-c95c-5062-b416-504b0b14bc46",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--881a6ed6-c526-5865-bdef-1db4bc5a3703",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--393411d0-f9a9-52de-881c-36596a191f3f",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d04d71b9-c23f-5112-ae19-adc0b13c9b46",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--788adfee-e5ea-5594-bb68-e9b0e3be7e35",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+      "target_ref": "vulnerability--3aa66f59-d745-51b4-8327-055efbc03a05"
+    }
+  ]
+}

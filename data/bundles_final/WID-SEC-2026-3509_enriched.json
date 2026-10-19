@@ -1,0 +1,88 @@
+{
+  "type": "bundle",
+  "id": "bundle--9c6ba6ae-2a0f-41d8-82a6-e98c2665ed62",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ae70dfaf-141d-53f4-b5b4-8297dbc09968",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "Vaultwarden: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "description": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Vaultwarden ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--b10a7cac-26a1-5f77-9381-7d47c991f9b2",
+        "vulnerability--a4acf11b-9cdc-5cae-be59-422239400832",
+        "relationship--48f935b2-7913-536d-811a-6a6b9f4e434b"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3509",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3509"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3509",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3509.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-hm7r-36jx-j25q vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-hm7r-36jx-j25q"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "Vaultwarden ist eine alternative Implementierung der Server API des Bitwarden Passwort-Managers."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b10a7cac-26a1-5f77-9381-7d47c991f9b2",
+      "name": "Open Source Vaultwarden",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:vaultwarden:vaultwarden:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--a4acf11b-9cdc-5cae-be59-422239400832",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-95814",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-95814"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--48f935b2-7913-536d-811a-6a6b9f4e434b",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b10a7cac-26a1-5f77-9381-7d47c991f9b2",
+      "target_ref": "vulnerability--a4acf11b-9cdc-5cae-be59-422239400832"
+    }
+  ]
+}

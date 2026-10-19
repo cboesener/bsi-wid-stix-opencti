@@ -1,0 +1,245 @@
+{
+  "type": "bundle",
+  "id": "bundle--075bdbfe-4911-4ae3-863c-a1f367a0bffc",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--866a0db1-f90f-5d38-a2e5-51e0be3cc39f",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "GIMP: Mehrere Schwachstellen",
+      "description": "Ein lokaler Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+      "published": "2026-08-24T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+        "software--87e988ad-38f7-546d-bb28-066b4e2299ec",
+        "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+        "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+        "software--d324f74d-f22d-5e72-bb82-eb7967928492",
+        "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502",
+        "relationship--9015ab46-9486-5c70-94f3-7f107d207bda",
+        "relationship--889fec45-0ecb-5940-b68f-9840b8c1eb2d",
+        "relationship--f3bfb9af-0ad1-5d1b-95e2-b3843e855384",
+        "relationship--420be81f-7012-5297-977e-ae29bf2e2d43",
+        "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd",
+        "relationship--c654d3d4-0fe5-5737-b9fd-56459982ca42",
+        "relationship--0075dc9e-a846-5317-8fbf-c3c0636ab205",
+        "relationship--27512fae-3c6c-5dc7-9b21-5616268e5bdc",
+        "relationship--4ab2320f-2b53-5c12-9d69-29ccb7fe457e",
+        "relationship--6184eee3-a1d7-564d-bea1-2f147f0cd3a4"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2986",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2986"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2986",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2986.json"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2522057 vom 2026-08-24",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2522057"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-944m-78f8-q7cr vom 2026-08-24",
+          "url": "https://github.com/advisories/GHSA-944m-78f8-q7cr"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2522072 vom 2026-08-24",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2522072"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:11771-1 vom 2026-09-15",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/AXAWJZC67JFATQTC4ZYX23XZMXR7SZXO/"
+        },
+        {
+          "source_name": "Debian Security Advisory DSA-6509 vom 2026-09-20",
+          "url": "https://security-tracker.debian.org/tracker/DSA-6509-1"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:4309-1 vom 2026-09-23",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029368.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "4",
+      "x_operating_systems": "- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "Das \"Gnu Image Manipulation Program\" ist eine Open Source Software zum Bearbeiten von Bildern. Es ist auch Bestandteil vieler Linux Distributionen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "name": "SUSE Linux",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:suse_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--87e988ad-38f7-546d-bb28-066b4e2299ec",
+      "name": "Open Source GIMP <=3.3.1",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "name": "Debian Linux",
+      "vendor": "Debian",
+      "cpe": "cpe:2.3:o:debian:debian_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "name": "SUSE openSUSE",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:opensuse:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--d324f74d-f22d-5e72-bb82-eb7967928492",
+      "name": "Open Source GIMP <=3.2.4",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-78465",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-78465"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9015ab46-9486-5c70-94f3-7f107d207bda",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "target_ref": "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--889fec45-0ecb-5940-b68f-9840b8c1eb2d",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f3bfb9af-0ad1-5d1b-95e2-b3843e855384",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--420be81f-7012-5297-977e-ae29bf2e2d43",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d324f74d-f22d-5e72-bb82-eb7967928492",
+      "target_ref": "vulnerability--84b8fe1d-1662-547f-9367-04a7d4f46502"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-78475",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-78475"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c654d3d4-0fe5-5737-b9fd-56459982ca42",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "target_ref": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0075dc9e-a846-5317-8fbf-c3c0636ab205",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--27512fae-3c6c-5dc7-9b21-5616268e5bdc",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4ab2320f-2b53-5c12-9d69-29ccb7fe457e",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d324f74d-f22d-5e72-bb82-eb7967928492",
+      "target_ref": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6184eee3-a1d7-564d-bea1-2f147f0cd3a4",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--87e988ad-38f7-546d-bb28-066b4e2299ec",
+      "target_ref": "vulnerability--8142729d-31ac-586a-a4c0-b17b1964ccfd"
+    }
+  ]
+}

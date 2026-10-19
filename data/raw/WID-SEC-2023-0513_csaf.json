@@ -1,0 +1,1336 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Python ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2023-0513 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2023/wid-sec-w-2023-0513.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2023-0513 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2023-0513"
+      },
+      {
+        "category": "external",
+        "summary": "RedHat Bugzilla vom 2023-02-28",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2173917"
+      },
+      {
+        "category": "external",
+        "summary": "PoC von PointerNull",
+        "url": "https://pointernull.com/security/python-url-parse-problem.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2023-1980 vom 2023-03-07",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS-2023-1980.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0662-1 vom 2023-03-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/013989.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0663-1 vom 2023-03-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/013988.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0707-1 vom 2023-03-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014021.html"
+      },
+      {
+        "category": "external",
+        "summary": "Siemens Security Bulletin by Siemens ProductCERT",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssb-439005.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0724-1 vom 2023-03-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014033.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0736-1 vom 2023-03-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014036.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0748-1 vom 2023-03-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014044.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 6957718 vom 2023-03-16",
+        "url": "https://www.ibm.com/support/pages/node/6957718"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-5960-1 vom 2023-03-20",
+        "url": "https://ubuntu.com/security/notices/USN-5960-1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-B3A3DF39DD vom 2023-03-21",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-b3a3df39dd"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-406C1C6ED7 vom 2023-03-21",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-406c1c6ed7"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2023-1990 vom 2023-03-22",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS-2023-1990.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0868-1 vom 2023-03-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014133.html"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20230324-0004 vom 2023-03-24",
+        "url": "https://security.netapp.com/advisory/ntap-20230324-0004/"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2023-1714 vom 2023-04-06",
+        "url": "https://alas.aws.amazon.com/ALAS-2023-1714.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2023-1713 vom 2023-04-06",
+        "url": "https://alas.aws.amazon.com/ALAS-2023-1713.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0868-2 vom 2023-04-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-April/014623.html"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-63C69AA712 vom 2023-05-25",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-63c69aa712"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-1092538441 vom 2023-05-24",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-1092538441"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-96AA33F0D3 vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-96aa33f0d3"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-7CDB3B48F1 vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-7cdb3b48f1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-2B25DD2A11 vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-2b25dd2a11"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-953C2607D8 vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-953c2607d8"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-2415CA21A4 vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-2415ca21a4"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-56CEFA23DF vom 2023-05-26",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-56cefa23df"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-D8B0003ECD vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-d8b0003ecd"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-309CADEDC6 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-309cadedc6"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-31888C4781 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-31888c4781"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-31B242ABFA vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-31b242abfa"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-401947EB94 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-401947eb94"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-4F1864B5CB vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-4f1864b5cb"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-6382C223A5 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-6382c223a5"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-690E150A39 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-690e150a39"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-71DC071847 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-71dc071847"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-81BB8E3B99 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-81bb8e3b99"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-994ECD7DBC vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-994ecd7dbc"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-ACDFD145F2 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-acdfd145f2"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-B854908745 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-b854908745"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-D294EF140E vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-d294ef140e"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-D1CDB80702 vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-d1cdb80702"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-03599274DB vom 2023-05-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-03599274db"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 6999619 vom 2023-05-31",
+        "url": "https://www.ibm.com/support/pages/node/6999619"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6139-1 vom 2023-06-05",
+        "url": "https://ubuntu.com/security/notices/USN-6139-1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-F52390B9D2 vom 2023-06-07",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-f52390b9d2"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3550 vom 2023-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3550"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-DD526ED2E4 vom 2023-06-07",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-dd526ed2e4"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3555 vom 2023-06-09",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3555"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3556 vom 2023-06-09",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3556"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3556 vom 2023-06-12",
+        "url": "http://linux.oracle.com/errata/ELSA-2023-3556.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3595 vom 2023-06-14",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3595"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3595 vom 2023-06-15",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3595.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3594 vom 2023-06-15",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3594.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3591 vom 2023-06-14",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3591"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3585 vom 2023-06-14",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3585"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3594 vom 2023-06-14",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3594"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3591 vom 2023-06-15",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3591.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3555 vom 2023-06-22",
+        "url": "http://linux.oracle.com/errata/ELSA-2023-3555.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3585 vom 2023-06-22",
+        "url": "http://linux.oracle.com/errata/ELSA-2023-3585.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3781 vom 2023-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3781"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3780 vom 2023-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3780"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3777 vom 2023-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3777"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3776 vom 2023-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3776"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3550 vom 2023-06-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3550.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3796 vom 2023-06-26",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3810 vom 2023-06-27",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3810"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3811 vom 2023-06-27",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3811"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3931 vom 2023-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3931"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3932 vom 2023-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3932"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3934 vom 2023-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3934"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3935 vom 2023-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3935"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:3936 vom 2023-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2023:3936"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7010099 vom 2023-07-06",
+        "url": "https://www.ibm.com/support/pages/node/7010099"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3781 vom 2023-07-08",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3781.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3780 vom 2023-07-08",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-3780.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4004 vom 2023-07-10",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4004"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4008 vom 2023-07-10",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4008"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4038 vom 2023-07-12",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4038"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4032 vom 2023-07-12",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4032"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2639-1 vom 2023-07-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015489.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4203 vom 2023-07-18",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4203"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2884-1 vom 2023-07-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015532.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2957-1 vom 2023-07-25",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015621.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4282 vom 2023-07-26",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4282"
+      },
+      {
+        "category": "external",
+        "summary": "CentOS Security Advisory CESA-2023:3556 vom 2023-07-28",
+        "url": "https://lists.centos.org/pipermail/centos-announce/2023-July/086399.html"
+      },
+      {
+        "category": "external",
+        "summary": "CentOS Security Advisory CESA-2023:3555 vom 2023-07-28",
+        "url": "https://lists.centos.org/pipermail/centos-announce/2023-July/086400.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7011697 vom 2023-08-03",
+        "url": "https://www.cybersecurity-help.cz/vdb/SB2023080304"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-3811 vom 2023-08-10",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2023-August/014349.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7028095 vom 2023-08-18",
+        "url": "https://www.ibm.com/support/pages/node/7028095"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-C729DABEB1 vom 2023-08-22",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-c729dabeb1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-DDDE191E04 vom 2023-08-22",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-ddde191e04"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3575 vom 2023-09-20",
+        "url": "https://lists.debian.org/debian-lts-announce/2023/09/msg00022.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASPYTHON3.8-2023-001 vom 2023-09-28",
+        "url": "https://alas.aws.amazon.com/AL2/ALASPYTHON3.8-2023-001.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin vom 2023-10-27",
+        "url": "https://www.ibm.com/support/pages/node/7060803"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7068195 vom 2023-11-07",
+        "url": "https://www.ibm.com/support/pages/node/7068195"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:6793 vom 2023-11-08",
+        "url": "https://access.redhat.com/errata/RHSA-2023:6793"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-7050 vom 2023-11-21",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-7050.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-7042 vom 2023-11-21",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-7042.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-7034 vom 2023-11-21",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-7034.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2937-1 vom 2024-02-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-February/018040.html"
+      },
+      {
+        "category": "external",
+        "summary": "Gentoo Linux Security Advisory GLSA-202405-01 vom 2024-05-04",
+        "url": "https://security.gentoo.org/glsa/202405-01"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2024-198 vom 2024-05-08",
+        "url": "https://www.dell.com/support/kbdoc/000224827/dsa-2024-="
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6891-1 vom 2024-07-11",
+        "url": "https://ubuntu.com/security/notices/USN-6891-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3980 vom 2024-12-02",
+        "url": "https://lists.debian.org/debian-lts-announce/2024/12/msg00000.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7180-1 vom 2025-01-06",
+        "url": "https://ubuntu.com/security/notices/USN-7180-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15713-1 vom 2025-11-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/V7NUQ3GPXSJ6QCFNNBJQ5D3UZXUYCUBE/"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279712 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279712"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Python: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:21:47.510+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2023-0513",
+      "initial_release_date": "2023-02-28T23:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2023-02-28T23:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2023-03-06T23:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2023-03-08T23:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-12T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-13T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Siemens aufgenommen"
+        },
+        {
+          "date": "2023-03-14T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-15T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-19T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2023-03-21T23:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Fedora und Amazon aufgenommen"
+        },
+        {
+          "date": "2023-03-22T23:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-26T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2023-04-05T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2023-04-27T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-05-24T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2023-05-25T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2023-05-29T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2023-05-30T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2023-05-31T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-06-05T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2023-06-08T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Fedora und Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-06-11T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-06-12T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-06-14T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-06-15T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-06-21T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-06-22T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-06-26T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-06-27T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-06-29T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-07-06T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-07-09T22:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-07-10T22:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-07-12T22:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-07-13T22:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-07-18T22:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-07-19T22:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-07-25T22:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-07-26T22:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-07-30T22:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von CentOS aufgenommen"
+        },
+        {
+          "date": "2023-08-02T22:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-08-10T22:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-08-20T22:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-08-21T22:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2023-09-20T22:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2023-09-27T22:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2023-10-29T23:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-11-07T23:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-11-08T23:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-11-21T23:00:00.000+00:00",
+          "number": "49",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-02-27T23:00:00.000+00:00",
+          "number": "50",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-05-05T22:00:00.000+00:00",
+          "number": "51",
+          "summary": "Neue Updates von Gentoo aufgenommen"
+        },
+        {
+          "date": "2024-05-07T22:00:00.000+00:00",
+          "number": "52",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2024-07-11T22:00:00.000+00:00",
+          "number": "53",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-12-01T23:00:00.000+00:00",
+          "number": "54",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-01-06T23:00:00.000+00:00",
+          "number": "55",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-11-09T23:00:00.000+00:00",
+          "number": "56",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "57",
+          "summary": "Neue Updates von IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "57"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "virtual",
+                "product": {
+                  "name": "Dell NetWorker virtual",
+                  "product_id": "T034583",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:virtual"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "EMC Avamar",
+            "product": {
+              "name": "EMC Avamar",
+              "product_id": "T014381",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:emc:avamar:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "EMC"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Gentoo Linux",
+            "product": {
+              "name": "Gentoo Linux",
+              "product_id": "T012167",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:gentoo:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Gentoo"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.3",
+                "product": {
+                  "name": "IBM AIX 7.3",
+                  "product_id": "T021486",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:ibm:aix:7.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "AIX"
+          },
+          {
+            "category": "product_name",
+            "name": "IBM InfoSphere Guardium",
+            "product": {
+              "name": "IBM InfoSphere Guardium",
+              "product_id": "T002366",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:infosphere_guardium:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.5",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5",
+                  "product_id": "T022954",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0",
+                  "product_id": "T023574",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Plus 10.1",
+                "product": {
+                  "name": "IBM Spectrum Protect Plus 10.1",
+                  "product_id": "T015895",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_protect:plus_10.1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.1.14",
+                "product": {
+                  "name": "IBM Spectrum Protect 10.1.14",
+                  "product_id": "T026783",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_protect:10.1.14"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "plus <10.1.12.6",
+                "product": {
+                  "name": "IBM Spectrum Protect plus <10.1.12.6",
+                  "product_id": "T029070"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "plus 10.1.12.6",
+                "product": {
+                  "name": "IBM Spectrum Protect plus 10.1.12.6",
+                  "product_id": "T029070-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_protect:plus__10.1.12.6"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Spectrum Protect"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp ActiveIQ Unified Manager",
+            "product": {
+              "name": "NetApp ActiveIQ Unified Manager",
+              "product_id": "T016960",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:active_iq_unified_manager:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source CentOS",
+            "product": {
+              "name": "Open Source CentOS",
+              "product_id": "1727",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:centos:centos:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<3.11",
+                "product": {
+                  "name": "Open Source Python <3.11",
+                  "product_id": "T026567"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.11",
+                "product": {
+                  "name": "Open Source Python 3.11",
+                  "product_id": "T026567-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.11"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Python"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "1500",
+                "product": {
+                  "name": "Siemens SIMATIC S7 1500",
+                  "product_id": "T019436",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:siemens:simatic_s7:1500"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC S7"
+          }
+        ],
+        "category": "vendor",
+        "name": "Siemens"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-24329",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034583",
+          "T029070",
+          "T012167",
+          "T015895",
+          "T004914",
+          "T016960",
+          "74185",
+          "T022954",
+          "T018587",
+          "T019436",
+          "T014381",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "T026567",
+          "T023574",
+          "T002366",
+          "398363",
+          "1727",
+          "T021486",
+          "T026783"
+        ]
+      },
+      "release_date": "2023-02-28T23:00:00.000+00:00",
+      "title": "CVE-2023-24329"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "type": "bundle",
+  "id": "bundle--df76eecc-e468-43c7-9d11-f9268066ea41",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--a148f751-1613-5efd-b61c-19e54f8c4e5c",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "KeePassXC: Mehrere Schwachstellen ermöglichen Denial of Service und Offenlegung",
+      "description": "Ein lokaler Angreifer kann mehrere Schwachstellen in KeePassXC ausnutzen, um einen Denial of Service Angriff durchzuführen oder Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--a4bd0920-30e5-5a92-bbad-f3932487ce00",
+        "vulnerability--de9807c6-5a8d-570b-b0d5-9edb056bb82c",
+        "relationship--e0274428-bfd9-540d-864f-05adec4cefb7"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3560",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3560"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3560",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3560.json"
+        },
+        {
+          "source_name": "KeePassXC Release Notes vom 2026-09-23",
+          "url": "https://keepassxc.org/blog/2026-09-23-2.8.0-beta1-released/"
+        },
+        {
+          "source_name": "KeePass Security Advisory vom 2026-09-23",
+          "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-4642-49vv-4p43"
+        },
+        {
+          "source_name": "KeePass Security Advisory vom 2026-09-23",
+          "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-2vm2-vmc3-vccr"
+        },
+        {
+          "source_name": "KeePass Security Advisory vom 2026-09-23",
+          "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-3448-gh8j-3227"
+        },
+        {
+          "source_name": "KeePass Security Advisory vom 2026-09-23",
+          "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-mffq-j98j-wfr2"
+        },
+        {
+          "source_name": "KeePass Security Advisory vom 2026-09-23",
+          "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-rq29-wgrv-xgh4"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "KeePass XC ist ein Open Source Passwortmanager für verschiedene Betriebssysteme."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--a4bd0920-30e5-5a92-bbad-f3932487ce00",
+      "name": "Open Source KeePassXC <2.8.0 (Beta 1)",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--de9807c6-5a8d-570b-b0d5-9edb056bb82c",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-69150",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-69150"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e0274428-bfd9-540d-864f-05adec4cefb7",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--a4bd0920-30e5-5a92-bbad-f3932487ce00",
+      "target_ref": "vulnerability--de9807c6-5a8d-570b-b0d5-9edb056bb82c"
+    }
+  ]
+}

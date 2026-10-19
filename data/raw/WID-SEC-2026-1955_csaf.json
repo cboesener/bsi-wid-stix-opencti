@@ -1,0 +1,2008 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Bamboo ist ein Werkzeug zur kontinuierlichen Integration und Bereitstellung, das automatisierte Builds, Tests und Freigaben in einem einzigen Arbeitsablauf verbindet.\r\nBitbucket ist ein Git-Server zur Sourcecode-Versionskontrolle.\r\nConfluence ist eine kommerzielle Wiki-Software.\r\nFisheye ist ein Quellcode-Repository-Browser für Unternehmensteams. \r\nCrucible ist eine Code-Review-Lösung für Unternehmensteams.\r\nJira ist eine Webanwendung zur Softwareentwicklung.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Atlassian Bamboo, Bitbucket, Confluence, Fisheye, Crucible, Jira und Jira Service Management ausnutzen, um beliebigen Code auszuführen, erweiterte Berechtigungen zu erlangen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand auszulösen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1955 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1955.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1955 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1955"
+      },
+      {
+        "category": "external",
+        "summary": "Atlassian Security Bulletin Juni vom 2026-06-16",
+        "url": "https://confluence.atlassian.com/security/security-bulletin-june-16-2026-1796309326.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22380 vom 2026-06-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22380"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27171 vom 2026-06-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27171"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:7634 vom 2026-06-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:7634"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:29197 vom 2026-06-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:29197"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:30076 vom 2026-06-25",
+        "url": "https://access.redhat.com/errata/RHSA-2026:30076"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:30651 vom 2026-06-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:30651"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:30650 vom 2026-06-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:30650"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33155 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33155"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33160 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33160"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33183 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33183"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33173 vom 2026-06-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33173"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33163 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33163"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33005 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33005"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34374 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34374"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:28964 vom 2026-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:28964"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36820 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36820"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36883 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36883"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40138 vom 2026-07-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40138"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40119 vom 2026-07-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40119"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40262 vom 2026-07-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40262"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:41928 vom 2026-07-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:41928"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42146 vom 2026-07-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42146"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42142 vom 2026-07-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42142"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42085 vom 2026-07-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42085"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42078 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42078"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40768 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40768"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42796 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40792 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40792"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40795 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40795"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:43052 vom 2026-07-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:43052"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:46885 vom 2026-07-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:46885"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:46903 vom 2026-07-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:46903"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:44263 vom 2026-07-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:44263"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:44267 vom 2026-07-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:44267"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47388 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47388"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47451 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47451"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48124 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48124"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48151 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48151"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-47058 vom 2026-08-01",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-47058.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:50300 vom 2026-08-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:50300"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48693 vom 2026-08-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48693"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47728 vom 2026-08-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47728"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:51349 vom 2026-08-07",
+        "url": "https://access.redhat.com/errata/RHSA-2026:51349"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2026-385 vom 2026-08-31",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000503592/dsa-2026-385-security-update-for-dell-secure-connect-gateway-policy-manager-multiple-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:62260 vom 2026-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:62260"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70829 vom 2026-09-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70829"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Atlassian Bamboo, Bitbucket, Confluence, Fisheye, Crucible, Jira und Jira Service Management: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:45:50.239+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1955",
+      "initial_release_date": "2026-06-16T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-06-16T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-06-17T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-18T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-25T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-28T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-15T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-19T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-20T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-21T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-27T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-28T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-29T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-02T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-08-04T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-05T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-06T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-31T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-09-01T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "23"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Data Center <12.1.8",
+                "product": {
+                  "name": "Atlassian Bamboo Data Center <12.1.8",
+                  "product_id": "T055489"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 12.1.8",
+                "product": {
+                  "name": "Atlassian Bamboo Data Center 12.1.8",
+                  "product_id": "T055489-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:bamboo:data_center__12.1.8"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Center <10.2.20",
+                "product": {
+                  "name": "Atlassian Bamboo Data Center <10.2.20",
+                  "product_id": "T055490"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 10.2.20",
+                "product": {
+                  "name": "Atlassian Bamboo Data Center 10.2.20",
+                  "product_id": "T055490-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:bamboo:data_center__10.2.20"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Bamboo"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Data Center <10.2.4",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center <10.2.4",
+                  "product_id": "T055492"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 10.2.4",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center 10.2.4",
+                  "product_id": "T055492-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:bitbucket:data_center__10.2.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Center <9.4.21",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center <9.4.21",
+                  "product_id": "T055493"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 9.4.21",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center 9.4.21",
+                  "product_id": "T055493-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:bitbucket:data_center__9.4.21"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Center <10.3.1",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center <10.3.1",
+                  "product_id": "T055494"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 10.3.1",
+                "product": {
+                  "name": "Atlassian Bitbucket Data Center 10.3.1",
+                  "product_id": "T055494-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:bitbucket:data_center__10.3.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Bitbucket"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Data Center <10.2.13",
+                "product": {
+                  "name": "Atlassian Confluence Data Center <10.2.13",
+                  "product_id": "T055495"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 10.2.13",
+                "product": {
+                  "name": "Atlassian Confluence Data Center 10.2.13",
+                  "product_id": "T055495-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:confluence:data_center__10.2.13"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Center <9.2.21",
+                "product": {
+                  "name": "Atlassian Confluence Data Center <9.2.21",
+                  "product_id": "T055496"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 9.2.21",
+                "product": {
+                  "name": "Atlassian Confluence Data Center 9.2.21",
+                  "product_id": "T055496-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:confluence:data_center__9.2.21"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Confluence"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.9.11",
+                "product": {
+                  "name": "Atlassian Crucible <4.9.11",
+                  "product_id": "T055498"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.9.11",
+                "product": {
+                  "name": "Atlassian Crucible 4.9.11",
+                  "product_id": "T055498-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:crucible:4.9.11"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Crucible"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.9.11",
+                "product": {
+                  "name": "Atlassian Fisheye <4.9.11",
+                  "product_id": "T055497"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.9.11",
+                "product": {
+                  "name": "Atlassian Fisheye 4.9.11",
+                  "product_id": "T055497-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:fisheye:4.9.11"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Fisheye"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Data Center <11.3.7",
+                "product": {
+                  "name": "Atlassian Jira Data Center <11.3.7",
+                  "product_id": "T055499"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 11.3.7",
+                "product": {
+                  "name": "Atlassian Jira Data Center 11.3.7",
+                  "product_id": "T055499-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:jira:data_center__11.3.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Center <10.3.22",
+                "product": {
+                  "name": "Atlassian Jira Data Center <10.3.22",
+                  "product_id": "T055500"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Center 10.3.22",
+                "product": {
+                  "name": "Atlassian Jira Data Center 10.3.22",
+                  "product_id": "T055500-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:jira:data_center__10.3.22"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Service Management Data Center and Server <11.3.7",
+                "product": {
+                  "name": "Atlassian Jira Service Management Data Center and Server <11.3.7",
+                  "product_id": "T055501"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Management Data Center and Server 11.3.7",
+                "product": {
+                  "name": "Atlassian Jira Service Management Data Center and Server 11.3.7",
+                  "product_id": "T055501-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:jira:service_management_data_center_and_server__11.3.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Service Management Data Center and Server <10.3.22",
+                "product": {
+                  "name": "Atlassian Jira Service Management Data Center and Server <10.3.22",
+                  "product_id": "T055502"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Management Data Center and Server 10.3.22",
+                "product": {
+                  "name": "Atlassian Jira Service Management Data Center and Server 10.3.22",
+                  "product_id": "T055502-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:atlassian:jira:service_management_data_center_and_server__10.3.22"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Jira"
+          }
+        ],
+        "category": "vendor",
+        "name": "Atlassian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<5.36.00.16",
+                "product": {
+                  "name": "Dell Secure Connect Gateway <5.36.00.16",
+                  "product_id": "T058878"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.36.00.16",
+                "product": {
+                  "name": "Dell Secure Connect Gateway 5.36.00.16",
+                  "product_id": "T058878-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:secure_connect_gateway:5.36.00.16"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Secure Connect Gateway"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T056236",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2019-11272",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2019-11272"
+    },
+    {
+      "cve": "CVE-2021-3803",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2021-3803"
+    },
+    {
+      "cve": "CVE-2022-1471",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2022-1471"
+    },
+    {
+      "cve": "CVE-2022-22965",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2022-22965"
+    },
+    {
+      "cve": "CVE-2022-22978",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2022-22978"
+    },
+    {
+      "cve": "CVE-2022-31692",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2022-31692"
+    },
+    {
+      "cve": "CVE-2024-22257",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2024-22257"
+    },
+    {
+      "cve": "CVE-2025-22228",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2025-22228"
+    },
+    {
+      "cve": "CVE-2026-22732",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-22732"
+    },
+    {
+      "cve": "CVE-2026-24734",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-24734"
+    },
+    {
+      "cve": "CVE-2026-26996",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-26996"
+    },
+    {
+      "cve": "CVE-2026-27903",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-27903"
+    },
+    {
+      "cve": "CVE-2026-27904",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-27904"
+    },
+    {
+      "cve": "CVE-2026-29129",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-29129"
+    },
+    {
+      "cve": "CVE-2026-33870",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-33870"
+    },
+    {
+      "cve": "CVE-2026-33871",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-33871"
+    },
+    {
+      "cve": "CVE-2026-34077",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-34077"
+    },
+    {
+      "cve": "CVE-2026-34486",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-34486"
+    },
+    {
+      "cve": "CVE-2026-34487",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-34487"
+    },
+    {
+      "cve": "CVE-2026-40175",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-40175"
+    },
+    {
+      "cve": "CVE-2026-41044",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-41044"
+    },
+    {
+      "cve": "CVE-2026-41284",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-41284"
+    },
+    {
+      "cve": "CVE-2026-41293",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-41293"
+    },
+    {
+      "cve": "CVE-2026-42033",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42033"
+    },
+    {
+      "cve": "CVE-2026-42035",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42035"
+    },
+    {
+      "cve": "CVE-2026-42038",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42038"
+    },
+    {
+      "cve": "CVE-2026-42043",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42043"
+    },
+    {
+      "cve": "CVE-2026-42198",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42198"
+    },
+    {
+      "cve": "CVE-2026-42211",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42211"
+    },
+    {
+      "cve": "CVE-2026-42264",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42264"
+    },
+    {
+      "cve": "CVE-2026-42342",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42342"
+    },
+    {
+      "cve": "CVE-2026-42498",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42498"
+    },
+    {
+      "cve": "CVE-2026-42579",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42579"
+    },
+    {
+      "cve": "CVE-2026-42581",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42581"
+    },
+    {
+      "cve": "CVE-2026-42583",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42583"
+    },
+    {
+      "cve": "CVE-2026-42584",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42584"
+    },
+    {
+      "cve": "CVE-2026-42585",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42585"
+    },
+    {
+      "cve": "CVE-2026-42587",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-42587"
+    },
+    {
+      "cve": "CVE-2026-43512",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-43512"
+    },
+    {
+      "cve": "CVE-2026-43513",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-43513"
+    },
+    {
+      "cve": "CVE-2026-43515",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-43515"
+    },
+    {
+      "cve": "CVE-2026-44486",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44486"
+    },
+    {
+      "cve": "CVE-2026-44487",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44487"
+    },
+    {
+      "cve": "CVE-2026-44488",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44488"
+    },
+    {
+      "cve": "CVE-2026-44492",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44492"
+    },
+    {
+      "cve": "CVE-2026-44495",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44495"
+    },
+    {
+      "cve": "CVE-2026-44496",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-44496"
+    },
+    {
+      "cve": "CVE-2026-45149",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-45149"
+    },
+    {
+      "cve": "CVE-2026-45736",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T055498",
+          "T055497",
+          "T055496",
+          "T055495",
+          "T058878",
+          "T055494",
+          "67646",
+          "T055493",
+          "T055492",
+          "T055502",
+          "T055501",
+          "T055489",
+          "T055500",
+          "T055499",
+          "T055490"
+        ]
+      },
+      "release_date": "2026-06-16T22:00:00.000+00:00",
+      "title": "CVE-2026-45736"
+    }
+  ]
+}

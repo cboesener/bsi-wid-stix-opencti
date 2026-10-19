@@ -1,0 +1,227 @@
+{
+  "type": "bundle",
+  "id": "bundle--4cb9431a-dd6b-4fae-ac1f-0d97d1fc79cb",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b0cc07cd-b4ec-5fc5-8066-18e5fa810845",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CUPS: Schwachstelle ermöglicht Privilegieneskalation",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in CUPS, wie es z.B. in Red Hat Enterprise Linux und Fedora Linux verwendet wird, ausnutzen, um seine Privilegien zu erhöhen.",
+      "published": "2026-09-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--2afa0d58-d933-5455-869e-29b65c76acff",
+        "software--365ba6bd-f5fa-5968-b9b3-17b65d1ab327",
+        "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+        "software--b5ed5c57-2293-5fd3-a8cb-16933ac26369",
+        "software--b843f722-8e67-5ec8-b121-52ee227ceea6",
+        "software--c4a6e0ec-f625-5db9-a59e-3e1b747172d5",
+        "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+        "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+        "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2",
+        "relationship--c34084ed-24c0-5429-9e03-abe14c3df725",
+        "relationship--becc2c02-2c6c-5745-81c3-0270d583d7b9",
+        "relationship--410a5c25-6c48-595b-b263-797f1bf8b897",
+        "relationship--5f0b463e-f26f-5625-b5ea-293ea7dd21ee",
+        "relationship--70c9d56e-1ad1-57d1-9de5-4c34ccffe3ec",
+        "relationship--fb562914-9855-5b59-847e-d140be9755e8",
+        "relationship--ed33814b-c463-5b35-9a05-7301aee53de0",
+        "relationship--065ef84c-9249-57fe-9324-691c2672084a"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3497",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3497"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3497",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3497.json"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2537749 vom 2026-09-21",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537749"
+        }
+      ],
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux",
+      "x_product_description": "CUPS (Common Unix Printing System) ist ein Printspooler, der es lokalen und entfernten Benutzern ermöglicht, Druckfunktionen über das Internet Printing Protocol (IPP) zu nutzen.\r\nRed Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\r\nFedora ist eine von Red Hat abstammende Linux-Distribution."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--2afa0d58-d933-5455-869e-29b65c76acff",
+      "name": "Red Hat Enterprise Linux 7",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:7:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--365ba6bd-f5fa-5968-b9b3-17b65d1ab327",
+      "name": "Fedora Linux 44",
+      "vendor": "Fedora",
+      "cpe": "cpe:2.3:o:fedoraproject:fedora:44:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+      "name": "Red Hat Enterprise Linux 9",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:9:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b5ed5c57-2293-5fd3-a8cb-16933ac26369",
+      "name": "Fedora Linux 45",
+      "vendor": "Fedora",
+      "cpe": "cpe:2.3:o:fedoraproject:fedora:45:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b843f722-8e67-5ec8-b121-52ee227ceea6",
+      "name": "Open Source CUPS",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:cups:cups:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4a6e0ec-f625-5db9-a59e-3e1b747172d5",
+      "name": "Fedora Linux 43",
+      "vendor": "Fedora",
+      "cpe": "cpe:2.3:o:fedoraproject:fedora:43:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+      "name": "Red Hat Enterprise Linux 8",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:8:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+      "name": "Red Hat Enterprise Linux 10",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:10:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-95511",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-95511"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c34084ed-24c0-5429-9e03-abe14c3df725",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--2afa0d58-d933-5455-869e-29b65c76acff",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--becc2c02-2c6c-5745-81c3-0270d583d7b9",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--188c5e5c-9f96-59b5-9f7d-ab464419f60b",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--410a5c25-6c48-595b-b263-797f1bf8b897",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b5ed5c57-2293-5fd3-a8cb-16933ac26369",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5f0b463e-f26f-5625-b5ea-293ea7dd21ee",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--244df25a-4a30-59a5-9efb-f2df7daedf8d",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--70c9d56e-1ad1-57d1-9de5-4c34ccffe3ec",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--746d950b-5677-5211-a1c5-3aa6d771b740",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fb562914-9855-5b59-847e-d140be9755e8",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b843f722-8e67-5ec8-b121-52ee227ceea6",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ed33814b-c463-5b35-9a05-7301aee53de0",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--365ba6bd-f5fa-5968-b9b3-17b65d1ab327",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--065ef84c-9249-57fe-9324-691c2672084a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4a6e0ec-f625-5db9-a59e-3e1b747172d5",
+      "target_ref": "vulnerability--d1c4c24b-fed1-5f2b-90c7-e8e3069cf0d2"
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "type": "bundle",
+  "id": "bundle--5278885b-1d76-4d7d-aa00-65b6dd7a1657",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--57e088fc-d01b-53c9-ae16-cc2bf07b48d0",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "LibreOffice: Mehrere Schwachstellen",
+      "description": "Ein lokaler Angreifer kann mehrere Schwachstellen in LibreOffice ausnutzen, um einen Denial of Service Angriff durchzuführen, Daten zu manipulieren oder Informationen offenzulegen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+        "vulnerability--2a52d74c-9781-554b-ac94-fa7e0e07b181",
+        "relationship--cc101363-1f3d-518a-b683-325895893a2c",
+        "vulnerability--6394e236-60b9-5af2-8240-f797557aae66",
+        "relationship--0d0f06f9-cf6c-5164-becc-e89b9a0bd676",
+        "vulnerability--5c66bdea-7f36-5226-b7be-228dc60b81d8",
+        "relationship--92b64be1-ec33-5ba9-97c1-692621495517",
+        "vulnerability--9484b8d8-52ec-55c1-abfc-305a1239d35a",
+        "relationship--f1a2e79b-b699-5cfc-a57f-f3f0592c9bd7",
+        "vulnerability--e004c7a9-1c89-54d8-9b27-40ef86e1d477",
+        "relationship--f3966a6a-e424-58e4-9611-92724e51d687",
+        "vulnerability--c631d776-4bf5-52f5-8159-178eb47c12cf",
+        "relationship--66d5138f-adb6-5ab8-a23d-e120eea5edf1",
+        "vulnerability--960b6a4c-18e5-5a0f-9c3a-82a4dc5e6030",
+        "relationship--0d997e74-4ca5-503f-bf6a-3d9bfef93447"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3521",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3521"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3521",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3521.json"
+        },
+        {
+          "source_name": "LibreOffice Security Advisories vom 2026-09-22",
+          "url": "https://www.libreoffice.org/security/"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "LibreOffice ist eine leistungsfähige Office-Suite, voll kompatibel mit den Programmen anderer großer Office-Anbieter, für verbreitete Betriebssysteme wie Windows, GNU/Linux und Apple Mac OS X geeignet. LibreOffice bietet sechs Anwendungen für die Erstellung von Dokumenten und zur Datenverarbeitung: Writer, Calc, Impress, Draw, Base und Math."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "name": "Open Source LibreOffice <26.2.5",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--2a52d74c-9781-554b-ac94-fa7e0e07b181",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63272",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63272"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cc101363-1f3d-518a-b683-325895893a2c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--2a52d74c-9781-554b-ac94-fa7e0e07b181"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--6394e236-60b9-5af2-8240-f797557aae66",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63273",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63273"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0d0f06f9-cf6c-5164-becc-e89b9a0bd676",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--6394e236-60b9-5af2-8240-f797557aae66"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--5c66bdea-7f36-5226-b7be-228dc60b81d8",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63274",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63274"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--92b64be1-ec33-5ba9-97c1-692621495517",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--5c66bdea-7f36-5226-b7be-228dc60b81d8"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--9484b8d8-52ec-55c1-abfc-305a1239d35a",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63275",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63275"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f1a2e79b-b699-5cfc-a57f-f3f0592c9bd7",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--9484b8d8-52ec-55c1-abfc-305a1239d35a"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e004c7a9-1c89-54d8-9b27-40ef86e1d477",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63276",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63276"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f3966a6a-e424-58e4-9611-92724e51d687",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--e004c7a9-1c89-54d8-9b27-40ef86e1d477"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--c631d776-4bf5-52f5-8159-178eb47c12cf",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63279",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63279"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--66d5138f-adb6-5ab8-a23d-e120eea5edf1",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--c631d776-4bf5-52f5-8159-178eb47c12cf"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--960b6a4c-18e5-5a0f-9c3a-82a4dc5e6030",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-63278",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-63278"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0d997e74-4ca5-503f-bf6a-3d9bfef93447",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--158b81ea-4a5b-55f2-b53b-957fa0bdbc85",
+      "target_ref": "vulnerability--960b6a4c-18e5-5a0f-9c3a-82a4dc5e6030"
+    }
+  ]
+}

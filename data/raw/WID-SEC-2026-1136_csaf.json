@@ -1,0 +1,1913 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Red Hat OpenShift ist eine \"Platform as a Service\" (PaaS) Lösung zur Bereitstellung von Applikationen in der Cloud.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Red Hat OpenShift Container Platform ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1136 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1136.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1136 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1136"
+      },
+      {
+        "category": "external",
+        "summary": "RedHat Security Advisory vom 2026-04-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:7245"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8493 vom 2026-04-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8493"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8483 vom 2026-04-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8483"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8484 vom 2026-04-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8484"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8490 vom 2026-04-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8490"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8491 vom 2026-04-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8491"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:9448 vom 2026-04-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:9448"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:9388 vom 2026-04-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:9388"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:9453 vom 2026-04-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:9453"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8449 vom 2026-04-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8449"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:9872 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:9872"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10125 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10125"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10131 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10131"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10172 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10172"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10158 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10158"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10107 vom 2026-04-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10107"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10175 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10175"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10130 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10130"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10155 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10155"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10153 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10153"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10126 vom 2026-04-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10126"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10698 vom 2026-04-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10698"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10612-1 vom 2026-04-26",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/TFJOCW3C5F5ZHBO5AXT6MQV2JZAI5U6B/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10706 vom 2026-04-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10706"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10705 vom 2026-04-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10705"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21272-1 vom 2026-04-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025634.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11070 vom 2026-04-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11070"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11217 vom 2026-04-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11217"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11331 vom 2026-04-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11331"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11408 vom 2026-04-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11408"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10094 vom 2026-04-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10094"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10093 vom 2026-04-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10093"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11916 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11916"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11996 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11996"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11856 vom 2026-04-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11856"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11803 vom 2026-04-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11803"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12116 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12116"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12277 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12277"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12337 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12337"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12279 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12279"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10105 vom 2026-04-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10105"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:13548 vom 2026-05-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:13548"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:0163-1 vom 2026-05-04",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/IFW45RUOZS7A7TR64FJFNY73BSZ7AEOP/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:13829 vom 2026-05-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:13829"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:13791 vom 2026-05-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:13791"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12118 vom 2026-05-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12119"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:12283 vom 2026-05-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12283"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21490-1 vom 2026-05-06",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/025859.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7272298 vom 2026-05-07",
+        "url": "https://www.ibm.com/support/pages/node/7272298"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10690-1 vom 2026-05-07",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/PNW3BXWC6YMYZDKZCPQBFZ2AF5UJXBN3/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21560-1 vom 2026-05-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/025959.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10731-1 vom 2026-05-11",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/XLU6JB74QDGTFLJ7ORVGHKLUYYBNJBNL/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:15092 vom 2026-05-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:15092"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:16535 vom 2026-05-13",
+        "url": "https://access.redhat.com/errata/RHSA-2026:16535"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17123 vom 2026-05-13",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17123"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17459 vom 2026-05-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17459"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7273312 vom 2026-05-18",
+        "url": "https://www.ibm.com/support/pages/node/7273312"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1951-1 vom 2026-05-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026104.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:18585 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:18585"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20761-1 vom 2026-05-19",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/3RDMFOVXSMQYGTIVBBZVEXAVTPHWXQ6Y/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17474 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17474"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19375 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19375"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19207 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19207"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17475 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17475"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19109 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19109"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19099 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19099"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19108 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19108"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17468 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17468"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19721 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19721"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19712 vom 2026-05-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19712"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17599 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17599"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17448 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17448"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19720 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19720"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17598 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17598"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19719 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19719"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:18068 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:18068"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20035 vom 2026-05-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20035"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20034 vom 2026-05-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20034"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21732-1 vom 2026-05-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026267.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20943 vom 2026-05-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20943"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20946 vom 2026-05-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20946"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20322 vom 2026-05-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20322"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20042 vom 2026-05-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20042"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20436 vom 2026-05-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20436"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20041 vom 2026-05-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20041"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21769 vom 2026-05-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21769"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20089 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20089"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21931 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21931"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20088 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20088"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21932 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21932"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22347 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22347"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22423 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22423"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21710 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21710"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21709 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21709"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22450 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22450"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21870-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026521.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22465 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22465"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22689 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22689"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22485 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22485"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22645 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22645"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20856-1 vom 2026-06-02",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/ZVK7FVCX3Y76ZRP5UI6VCOZV6C5E2LPL/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22714 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22714"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21692 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21692"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21658 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21658"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21657 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21657"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23228 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23228"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22937 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22937"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21696 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21696"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21704 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21704"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21691 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21691"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21703 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21703"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21697 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21697"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:22450 vom 2026-06-05",
+        "url": "https://errata.build.resf.org/RLSA-2026:22450"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7275270 vom 2026-06-05",
+        "url": "https://www.ibm.com/support/pages/node/7275270"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:23228 vom 2026-06-05",
+        "url": "https://errata.build.resf.org/RLSA-2026:23228"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10921-1 vom 2026-06-05",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/EFQITHNC7L7OCGIHU3ZTM3PZFHVW3KHV/"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:22937 vom 2026-06-05",
+        "url": "https://errata.build.resf.org/RLSA-2026:22937"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21989-1 vom 2026-06-05",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026592.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24536 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24536"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24506 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24506"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24535 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24535"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24484 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24484"
+      },
+      {
+        "category": "external",
+        "summary": "SolarWinds Platform 2026.2 release notes vom 2026-06-09",
+        "url": "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2026-2_release_notes.htm"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22053-1 vom 2026-06-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026657.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24759 vom 2026-06-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24759"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22051-1 vom 2026-06-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026658.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22050-1 vom 2026-06-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026659.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24977 vom 2026-06-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24977"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23246 vom 2026-06-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23246"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23247 vom 2026-06-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23247"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23234 vom 2026-06-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23234"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25127 vom 2026-06-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25127"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23235 vom 2026-06-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23235"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23241 vom 2026-06-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23241"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2401-1 vom 2026-06-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026757.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2400-1 vom 2026-06-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026758.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26416 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26416"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25187 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25187"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25183 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25183"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26420 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26420"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26413 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26413"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26412 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26412"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25009 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25009"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25195 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25195"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25194 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25194"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26519 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26519"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25201 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25201"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25182 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25182"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26568 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26568"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:25045 vom 2026-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:25045"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27076 vom 2026-06-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27076"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7277096 vom 2026-06-19",
+        "url": "https://www.ibm.com/support/pages/node/7277096"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27712 vom 2026-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27712"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27856 vom 2026-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27856"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27063 vom 2026-06-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27063"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27004 vom 2026-06-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27004"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26997 vom 2026-06-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26997"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27001 vom 2026-06-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27001"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26999 vom 2026-06-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26999"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:29854 vom 2026-06-25",
+        "url": "https://access.redhat.com/errata/RHSA-2026:29854"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2640-1 vom 2026-06-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027009.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2639-1 vom 2026-06-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027010.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2665-1 vom 2026-06-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027019.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21069-1 vom 2026-06-30",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/D5MDP37ERV3TY4IQ2HNB4OK75YZBCPU2/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:29082 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:29082"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:28893 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:28893"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:29079 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:29079"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22328-1 vom 2026-07-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027143.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:28964 vom 2026-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:28964"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34364 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34364"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:0224-1 vom 2026-07-01",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/F2BNTAHCZGFPJJFBB54QLZQCWKT6ALQD/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21205-1 vom 2026-07-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/WWEHFGLIU4ZU4AD5LYCJYP5TY5XDLUDK/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21210-1 vom 2026-07-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/MPOC3LAW5YASRDHILXFSDFHURE4PM7PP/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36796 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34100 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34100"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34049 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34049"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34099 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34099"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Red Hat OpenShift Container Platform (gRPC-Go): Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:26:50.785+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1136",
+      "initial_release_date": "2026-04-15T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-04-15T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-04-16T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-21T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-22T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-23T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-26T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat, openSUSE und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-04-27T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-28T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-29T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-03T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-04T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-05T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-06T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-07T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von IBM und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-10T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-11T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-12T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-14T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-18T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von IBM und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-19T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-20T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-25T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-26T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-27T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-28T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-01T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-02T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von SUSE, Red Hat und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-04T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-07T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation, IBM, openSUSE und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-08T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-09T22:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von SUSE und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-10T22:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-15T22:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-16T22:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-17T22:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-18T22:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-21T22:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-22T22:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-23T22:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-25T22:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-28T22:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Red Hat, SUSE und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-02T22:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "48"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM App Connect Enterprise",
+            "product": {
+              "name": "IBM App Connect Enterprise",
+              "product_id": "T051349",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:app_connect_enterprise:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM DB2",
+            "product": {
+              "name": "IBM DB2",
+              "product_id": "T048379",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:db2:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "operator",
+                "product": {
+                  "name": "IBM MQ operator",
+                  "product_id": "T036688",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:mq:operator"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "MQ"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<5.2.3.8",
+                "product": {
+                  "name": "IBM Storage Scale <5.2.3.8",
+                  "product_id": "T055027"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.2.3.8",
+                "product": {
+                  "name": "IBM Storage Scale 5.2.3.8",
+                  "product_id": "T055027-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_scale:5.2.3.8"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<6.0.1.0",
+                "product": {
+                  "name": "IBM Storage Scale <6.0.1.0",
+                  "product_id": "T055028"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "6.0.1.0",
+                "product": {
+                  "name": "IBM Storage Scale 6.0.1.0",
+                  "product_id": "T055028-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_scale:6.0.1.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Storage Scale"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9 Multicluster Engine for Kubernetes 2.8.6",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 9 Multicluster Engine for Kubernetes 2.8.6",
+                  "product_id": "T054027",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:9_multicluster_engine_for_kubernetes_2.8.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 8",
+                  "product_id": "T054065",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:8"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Multicluster Global Hub <1.5.4",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Multicluster Global Hub <1.5.4",
+                  "product_id": "T054839"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Multicluster Global Hub 1.5.4",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Multicluster Global Hub 1.5.4",
+                  "product_id": "T054839-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:multicluster_global_hub__1.5.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.16",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.16",
+                  "product_id": "T035678",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.16"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform",
+                  "product_id": "T040130",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Mesh 2.6",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh 2.6",
+                  "product_id": "T049215",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:service_mesh_2.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Mesh 3.0",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh 3.0",
+                  "product_id": "T049216",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:service_mesh_3.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Mesh 3.2",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh 3.2",
+                  "product_id": "T049218",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:service_mesh_3.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "API for Data Protection",
+                "product": {
+                  "name": "Red Hat OpenShift API for Data Protection",
+                  "product_id": "T050615",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:api_for_data_protection"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.21.10",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.21.10",
+                  "product_id": "T052882"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.21.10",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.21.10",
+                  "product_id": "T052882-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.21.10"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Mesh 3.3",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh 3.3",
+                  "product_id": "T052930",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:service_mesh_3.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Service Mesh <3.1.7",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh <3.1.7",
+                  "product_id": "T053044"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Service Mesh 3.1.7",
+                "product": {
+                  "name": "Red Hat OpenShift Service Mesh 3.1.7",
+                  "product_id": "T053044-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:service_mesh__3.1.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.20.23",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.20.23",
+                  "product_id": "T054390"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.20.23",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.20.23",
+                  "product_id": "T054390-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.20.23"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.18.42",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.18.42",
+                  "product_id": "T054401"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18.42",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18.42",
+                  "product_id": "T054401-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.18.42"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18",
+                  "product_id": "T054402",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.18"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.17.54",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.17.54",
+                  "product_id": "T054403"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.17.54",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.17.54",
+                  "product_id": "T054403-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.17.54"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.21.17",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.21.17",
+                  "product_id": "T054677",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.21.17"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform release 4.21.17",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform release 4.21.17",
+                  "product_id": "T054688",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_release_4.21.17"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "GitOps <1.18.6",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps <1.18.6",
+                  "product_id": "T054710"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "GitOps 1.18.6",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps 1.18.6",
+                  "product_id": "T054710-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:gitops__1.18.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "GitOps <1.19.4",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps <1.19.4",
+                  "product_id": "T054711"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "GitOps 1.19.4",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps 1.19.4",
+                  "product_id": "T054711-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:gitops__1.19.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.19",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.19",
+                  "product_id": "T054727",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.19"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.19.32",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.19.32",
+                  "product_id": "T054748"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.19.32",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.19.32",
+                  "product_id": "T054748-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.19.32"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.16.63",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.16.63",
+                  "product_id": "T054875"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.16.63",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.16.63",
+                  "product_id": "T054875-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.16.63"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Pipelines <1.20.5",
+                "product": {
+                  "name": "Red Hat OpenShift Pipelines <1.20.5",
+                  "product_id": "T054877"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Pipelines 1.20.5",
+                "product": {
+                  "name": "Red Hat OpenShift Pipelines 1.20.5",
+                  "product_id": "T054877-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:pipelines__1.20.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.18.43",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.18.43",
+                  "product_id": "T054988"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18.43",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18.43",
+                  "product_id": "T054988-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.18.43"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.13.67",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.13.67",
+                  "product_id": "T054989"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.13.67",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.13.67",
+                  "product_id": "T054989-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.13.67"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.12.91",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.12.91",
+                  "product_id": "T054990"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.12.91",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.12.91",
+                  "product_id": "T054990-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.12.91"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.20.24",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.20.24",
+                  "product_id": "T054991"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.20.24",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.20.24",
+                  "product_id": "T054991-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.20.24"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.18.45",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.18.45",
+                  "product_id": "T055754"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18.45",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18.45",
+                  "product_id": "T055754-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.18.45"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.19.35",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.19.35",
+                  "product_id": "T055756"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.19.35",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.19.35",
+                  "product_id": "T055756-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.19.35"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<2026.2",
+                "product": {
+                  "name": "SolarWinds Platform <2026.2",
+                  "product_id": "T055043"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2026.2",
+                "product": {
+                  "name": "SolarWinds Platform 2026.2",
+                  "product_id": "T055043-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:solarwinds:orion_platform:2026.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Platform"
+          }
+        ],
+        "category": "vendor",
+        "name": "SolarWinds"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-33186",
+      "product_status": {
+        "known_affected": [
+          "T053044",
+          "T054991",
+          "T035678",
+          "T054990",
+          "T055043",
+          "67646",
+          "T054877",
+          "T036688",
+          "T052930",
+          "T054711",
+          "T054677",
+          "T054710",
+          "T054875",
+          "T055028",
+          "T055027",
+          "T040130",
+          "T054727",
+          "T054748",
+          "T054390",
+          "T048379",
+          "T054065",
+          "T054989",
+          "T054988",
+          "T054403",
+          "T055756",
+          "T054402",
+          "T054688",
+          "T032255",
+          "T054027",
+          "T054401",
+          "T055754",
+          "T052882",
+          "T049218",
+          "T002207",
+          "T054839",
+          "T051349",
+          "T050615",
+          "T027843",
+          "T049216",
+          "T049215"
+        ]
+      },
+      "release_date": "2026-04-15T22:00:00.000+00:00",
+      "title": "CVE-2026-33186"
+    }
+  ]
+}

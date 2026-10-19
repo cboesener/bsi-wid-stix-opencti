@@ -1,0 +1,3942 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Der Kernel stellt den Kern des Linux Betriebssystems dar.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen im Linux Kernel ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2024-1625 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2024/wid-sec-w-2024-1625.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2024-1625 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2024-1625"
+      },
+      {
+        "category": "external",
+        "summary": "Linux CVE Announce vom 2024-07-16",
+        "url": "https://lore.kernel.org/linux-cve-announce/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6919-1 vom 2024-07-26",
+        "url": "https://ubuntu.com/security/notices/USN-6919-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6917-1 vom 2024-07-26",
+        "url": "https://ubuntu.com/security/notices/USN-6917-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6927-1 vom 2024-07-30",
+        "url": "https://ubuntu.com/security/notices/USN-6927-1"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5101 vom 2024-08-08",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5101"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5102 vom 2024-08-08",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5102"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-5101 vom 2024-08-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-5101.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5266 vom 2024-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5266"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5256 vom 2024-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5256"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5257 vom 2024-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5257"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5282 vom 2024-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5282"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2893-1 vom 2024-08-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019187.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2892-1 vom 2024-08-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019188.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5281 vom 2024-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5281"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2894-1 vom 2024-08-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019182.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2902-1 vom 2024-08-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019193.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2901-1 vom 2024-08-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019194.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2923-1 vom 2024-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019201.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2929-1 vom 2024-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019209.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2939-1 vom 2024-08-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019211.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2948-1 vom 2024-08-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019219.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2947-1 vom 2024-08-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019220.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:2940-1 vom 2024-08-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-August/019212.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:5692 vom 2024-08-21",
+        "url": "https://access.redhat.com/errata/RHSA-2024:5692"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6156 vom 2024-09-03",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6156"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6160 vom 2024-09-03",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6160"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6297 vom 2024-09-04",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6297"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3190-1 vom 2024-09-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019403.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3189-1 vom 2024-09-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019404.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3209-1 vom 2024-09-11",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/YNWVZVIFSX7PLBJX3I3PDZ4MIBERTN2Y/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3225-1 vom 2024-09-12",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019432.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3252-1 vom 2024-09-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019436.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3249-1 vom 2024-09-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019438.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3251-1 vom 2024-09-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019435.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7022-1 vom 2024-09-18",
+        "url": "https://ubuntu.com/security/notices/USN-7022-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3304-1 vom 2024-09-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019453.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7028-1 vom 2024-09-23",
+        "url": "https://ubuntu.com/security/notices/USN-7028-1"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6992 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6992"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:7001 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:7001"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6991 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6991"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:6990 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:6990"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:7000 vom 2024-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2024:7000"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-7000 vom 2024-09-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-7000.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7039-1 vom 2024-09-26",
+        "url": "https://ubuntu.com/security/notices/USN-7039-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3483-1 vom 2024-09-29",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/2HO244EHQ65DPDJ2NOBAXLG7QYWSCUMA/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3483-1 vom 2024-09-29",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/2HO244EHQ65DPDJ2NOBAXLG7QYWSCUMA/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3467-1 vom 2024-09-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019532.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2024:7001 vom 2024-09-30",
+        "url": "https://errata.build.resf.org/RLSA-2024:7001"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3499-1 vom 2024-09-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-September/019536.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7022-2 vom 2024-10-01",
+        "url": "https://ubuntu.com/security/notices/USN-7022-2"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3566-1 vom 2024-10-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-October/019578.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3559-1 vom 2024-10-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-October/019575.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7022-3 vom 2024-10-10",
+        "url": "https://ubuntu.com/security/notices/USN-7022-3"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:3591-1 vom 2024-10-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-October/019587.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7028-2 vom 2024-10-17",
+        "url": "https://ubuntu.com/security/notices/USN-7028-2"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:8318 vom 2024-10-23",
+        "url": "https://access.redhat.com/errata/RHSA-2024:8318"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:8616 vom 2024-10-30",
+        "url": "https://access.redhat.com/errata/RHSA-2024:8616"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin",
+        "url": "https://www.ibm.com/support/pages/node/7174634"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:8870 vom 2024-11-05",
+        "url": "https://access.redhat.com/errata/RHSA-2024:8870"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:8856 vom 2024-11-05",
+        "url": "https://access.redhat.com/errata/RHSA-2024:8856"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-8856 vom 2024-11-06",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-8856.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-12806 vom 2024-11-06",
+        "url": "http://linux.oracle.com/errata/ELSA-2024-12806.html"
+      },
+      {
+        "category": "external",
+        "summary": "ORACLE OVMSA-2024-0015 vom 2024-11-08",
+        "url": "https://oss.oracle.com/pipermail/oraclevm-errata/2024-November/001103.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2024:8870 vom 2024-11-08",
+        "url": "https://errata.build.resf.org/RLSA-2024:8870"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9315 vom 2024-11-12",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9315"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9942 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9942"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9943 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9943"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7119-1 vom 2024-11-20",
+        "url": "https://ubuntu.com/security/notices/USN-7119-1"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10275 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10275"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10262 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10262"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10265 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10265"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10273 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10273"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4100-1 vom 2024-11-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-November/019864.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10771 vom 2024-12-04",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10771"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2024:4367-1 vom 2024-12-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2024-December/020025.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0034-1 vom 2025-01-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-January/020071.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0035-1 vom 2025-01-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-January/020070.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-9315 vom 2025-01-13",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2025-January/017000.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0152-1 vom 2025-01-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-January/020152.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7182335 vom 2025-02-03",
+        "url": "https://www.ibm.com/support/pages/node/7182335"
+      },
+      {
+        "category": "external",
+        "summary": "Brocade Security Advisory BSA-2025-2895 vom 2025-02-13",
+        "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25398"
+      },
+      {
+        "category": "external",
+        "summary": "Brocade Security Advisory BSA-2025-2889 vom 2025-02-13",
+        "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/25416"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0892-1 vom 2025-03-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020526.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0898-1 vom 2025-03-18",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/SUPADNIG6CVSVE3GIECLRHDQFDH5YSSB/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0893-1 vom 2025-03-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020534.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0904-1 vom 2025-03-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020536.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0908-1 vom 2025-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020545.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0942-1 vom 2025-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020546.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0944-1 vom 2025-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020558.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:0943-1 vom 2025-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-March/020548.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:1092-1 vom 2025-04-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-April/020634.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:1088-1 vom 2025-04-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-April/020635.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:1119-1 vom 2025-04-02",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/SBLYTUS3TCCWSW237VUH6AAY5NVYUZ3T/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:1139-1 vom 2025-04-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/MMCQJLNQTFQY3ASC2RY677DDWALMOJCQ/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:1123-1 vom 2025-04-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/message/RBJNUDBE6VPHIDCFIVWE7AFUQ2E2P436/"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.4-2025-104 vom 2025-07-10",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.4-2025-104.html"
+      },
+      {
+        "category": "external",
+        "summary": "Security Update for Dell PowerProtect Data Domain",
+        "url": "https://www.dell.com/support/kbdoc/en-us/000348708/dsa-2025-159-security-update-for-dell-powerprotect-data-domain-multiple-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-20553 vom 2025-09-10",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-20553.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.10-2025-106 vom 2025-09-30",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2025-106.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Update vom 2025-10-02",
+        "url": "https://www.dell.com/support/kbdoc/000376224"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:20518 vom 2025-11-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:20518"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:20518 vom 2025-11-21",
+        "url": "https://errata.build.resf.org/RLSA-2025:20518"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-20518 vom 2025-11-25",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-20518-0.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0263-1 vom 2026-01-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/023899.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0317-1 vom 2026-01-29",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/023979.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0350-1 vom 2026-01-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/024000.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0369-1 vom 2026-02-03",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-February/024037.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0411-1 vom 2026-02-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-February/024085.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0473-1 vom 2026-02-12",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-February/024136.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0617-1 vom 2026-02-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-February/024378.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8493-1 vom 2026-07-01",
+        "url": "https://ubuntu.com/security/notices/USN-8493-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8527-1 vom 2026-07-10",
+        "url": "https://ubuntu.com/security/notices/USN-8527-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8528-1 vom 2026-07-10",
+        "url": "https://ubuntu.com/security/notices/USN-8528-1"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Linux Kernel: Mehrere Schwachstellen ermöglichen nicht spezifizierten Angriff",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T10:42:08.575+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2024-1625",
+      "initial_release_date": "2024-07-16T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2024-07-16T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2024-07-28T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-07-30T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-08-07T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-08-11T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-08-12T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-08-13T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2024-08-14T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-08-15T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-08-18T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-08-21T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-02T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-03T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-04T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-10T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-11T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-12T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-16T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-18T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-22T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-09-23T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-09-25T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-09-26T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-09-29T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-09-30T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und SUSE aufgenommen"
+        },
+        {
+          "date": "2024-10-01T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-10-09T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von SUSE und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-10-10T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-10-17T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-10-23T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-10-29T23:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-10-31T23:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2024-11-04T23:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-05T23:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-11-07T23:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von ORACLE aufgenommen"
+        },
+        {
+          "date": "2024-11-10T23:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2024-11-12T23:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-18T23:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-19T23:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-11-25T23:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-28T23:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2024-12-03T23:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-12-17T23:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-01-08T23:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-01-13T23:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-01-19T23:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-02-03T23:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-02-13T23:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von BROCADE aufgenommen"
+        },
+        {
+          "date": "2025-03-17T23:00:00.000+00:00",
+          "number": "49",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-03-18T23:00:00.000+00:00",
+          "number": "50",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-03-19T23:00:00.000+00:00",
+          "number": "51",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-04-01T22:00:00.000+00:00",
+          "number": "52",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-04-02T22:00:00.000+00:00",
+          "number": "53",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-04-03T22:00:00.000+00:00",
+          "number": "54",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-10T22:00:00.000+00:00",
+          "number": "55",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2025-08-04T22:00:00.000+00:00",
+          "number": "56",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-09-09T22:00:00.000+00:00",
+          "number": "57",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-09-29T22:00:00.000+00:00",
+          "number": "58",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2025-10-01T22:00:00.000+00:00",
+          "number": "59",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-11T23:00:00.000+00:00",
+          "number": "60",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-23T23:00:00.000+00:00",
+          "number": "61",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2025-11-24T23:00:00.000+00:00",
+          "number": "62",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-25T23:00:00.000+00:00",
+          "number": "63",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-01-29T23:00:00.000+00:00",
+          "number": "64",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-01T23:00:00.000+00:00",
+          "number": "65",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-03T23:00:00.000+00:00",
+          "number": "66",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-09T23:00:00.000+00:00",
+          "number": "67",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-12T23:00:00.000+00:00",
+          "number": "68",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-24T23:00:00.000+00:00",
+          "number": "69",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "70",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "71",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "71"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Broadcom Brocade SANnav",
+            "product": {
+              "name": "Broadcom Brocade SANnav",
+              "product_id": "T034392",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:broadcom:brocade_sannav:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Broadcom"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Dell PowerProtect Data Domain",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain",
+                  "product_id": "T045852",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerprotect_data_domain:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<8.4.0.0",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain <8.4.0.0",
+                  "product_id": "T045879"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8.4.0.0",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain 8.4.0.0",
+                  "product_id": "T045879-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerprotect_data_domain:8.4.0.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<7.10.1.70",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain <7.10.1.70",
+                  "product_id": "T045881"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.10.1.70",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain 7.10.1.70",
+                  "product_id": "T045881-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerprotect_data_domain:7.10.1.70"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<7.13.1.40",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain <7.13.1.40",
+                  "product_id": "T047343"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.13.1.40",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain 7.13.1.40",
+                  "product_id": "T047343-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerprotect_data_domain:7.13.1.40"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<8.3.1.10",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain <8.3.1.10",
+                  "product_id": "T047344"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8.3.1.10",
+                "product": {
+                  "name": "Dell PowerProtect Data Domain 8.3.1.10",
+                  "product_id": "T047344-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerprotect_data_domain:8.3.1.10"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "PowerProtect Data Domain"
+          },
+          {
+            "category": "product_name",
+            "name": "Dell PowerProtect Data Domain Management Center",
+            "product": {
+              "name": "Dell PowerProtect Data Domain Management Center",
+              "product_id": "T045853",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:powerprotect_data_domain_management_center:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Dell PowerProtect Data Domain OS",
+            "product": {
+              "name": "Dell PowerProtect Data Domain OS",
+              "product_id": "T045854",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:dell:powerprotect_data_domain_os:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP10 IF01",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP10 IF01",
+                  "product_id": "T038741"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP10 IF01",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP10 IF01",
+                  "product_id": "T038741-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up10_if01"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP11",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP11",
+                  "product_id": "T040749"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP11",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP11",
+                  "product_id": "T040749-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up11"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source Linux Kernel",
+            "product": {
+              "name": "Open Source Linux Kernel",
+              "product_id": "T034386",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:linux:linux_kernel:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "3",
+                "product": {
+                  "name": "Oracle VM 3",
+                  "product_id": "T030927",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:oracle:vm:3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "VM"
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2021-47622",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2021-47622"
+    },
+    {
+      "cve": "CVE-2021-47623",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2021-47623"
+    },
+    {
+      "cve": "CVE-2021-47624",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2021-47624"
+    },
+    {
+      "cve": "CVE-2022-48773",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48773"
+    },
+    {
+      "cve": "CVE-2022-48774",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48774"
+    },
+    {
+      "cve": "CVE-2022-48775",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48775"
+    },
+    {
+      "cve": "CVE-2022-48776",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48776"
+    },
+    {
+      "cve": "CVE-2022-48777",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48777"
+    },
+    {
+      "cve": "CVE-2022-48778",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48778"
+    },
+    {
+      "cve": "CVE-2022-48779",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48779"
+    },
+    {
+      "cve": "CVE-2022-48780",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48780"
+    },
+    {
+      "cve": "CVE-2022-48781",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48781"
+    },
+    {
+      "cve": "CVE-2022-48782",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48782"
+    },
+    {
+      "cve": "CVE-2022-48783",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48783"
+    },
+    {
+      "cve": "CVE-2022-48784",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48784"
+    },
+    {
+      "cve": "CVE-2022-48785",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48785"
+    },
+    {
+      "cve": "CVE-2022-48786",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48786"
+    },
+    {
+      "cve": "CVE-2022-48787",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48787"
+    },
+    {
+      "cve": "CVE-2022-48788",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48788"
+    },
+    {
+      "cve": "CVE-2022-48789",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48789"
+    },
+    {
+      "cve": "CVE-2022-48790",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48790"
+    },
+    {
+      "cve": "CVE-2022-48791",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48791"
+    },
+    {
+      "cve": "CVE-2022-48792",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48792"
+    },
+    {
+      "cve": "CVE-2022-48793",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48793"
+    },
+    {
+      "cve": "CVE-2022-48794",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48794"
+    },
+    {
+      "cve": "CVE-2022-48795",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48795"
+    },
+    {
+      "cve": "CVE-2022-48796",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48796"
+    },
+    {
+      "cve": "CVE-2022-48797",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48797"
+    },
+    {
+      "cve": "CVE-2022-48798",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48798"
+    },
+    {
+      "cve": "CVE-2022-48799",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48799"
+    },
+    {
+      "cve": "CVE-2022-48800",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48800"
+    },
+    {
+      "cve": "CVE-2022-48801",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48801"
+    },
+    {
+      "cve": "CVE-2022-48802",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48802"
+    },
+    {
+      "cve": "CVE-2022-48803",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48803"
+    },
+    {
+      "cve": "CVE-2022-48804",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48804"
+    },
+    {
+      "cve": "CVE-2022-48805",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48805"
+    },
+    {
+      "cve": "CVE-2022-48806",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48806"
+    },
+    {
+      "cve": "CVE-2022-48807",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48807"
+    },
+    {
+      "cve": "CVE-2022-48808",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48808"
+    },
+    {
+      "cve": "CVE-2022-48809",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48809"
+    },
+    {
+      "cve": "CVE-2022-48810",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48810"
+    },
+    {
+      "cve": "CVE-2022-48811",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48811"
+    },
+    {
+      "cve": "CVE-2022-48812",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48812"
+    },
+    {
+      "cve": "CVE-2022-48813",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48813"
+    },
+    {
+      "cve": "CVE-2022-48814",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48814"
+    },
+    {
+      "cve": "CVE-2022-48815",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48815"
+    },
+    {
+      "cve": "CVE-2022-48816",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48816"
+    },
+    {
+      "cve": "CVE-2022-48817",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48817"
+    },
+    {
+      "cve": "CVE-2022-48818",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48818"
+    },
+    {
+      "cve": "CVE-2022-48819",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48819"
+    },
+    {
+      "cve": "CVE-2022-48820",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48820"
+    },
+    {
+      "cve": "CVE-2022-48821",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48821"
+    },
+    {
+      "cve": "CVE-2022-48822",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48822"
+    },
+    {
+      "cve": "CVE-2022-48823",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48823"
+    },
+    {
+      "cve": "CVE-2022-48824",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48824"
+    },
+    {
+      "cve": "CVE-2022-48825",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48825"
+    },
+    {
+      "cve": "CVE-2022-48826",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48826"
+    },
+    {
+      "cve": "CVE-2022-48827",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48827"
+    },
+    {
+      "cve": "CVE-2022-48828",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48828"
+    },
+    {
+      "cve": "CVE-2022-48829",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48829"
+    },
+    {
+      "cve": "CVE-2022-48830",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48830"
+    },
+    {
+      "cve": "CVE-2022-48831",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48831"
+    },
+    {
+      "cve": "CVE-2022-48832",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48832"
+    },
+    {
+      "cve": "CVE-2022-48833",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48833"
+    },
+    {
+      "cve": "CVE-2022-48834",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48834"
+    },
+    {
+      "cve": "CVE-2022-48835",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48835"
+    },
+    {
+      "cve": "CVE-2022-48836",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48836"
+    },
+    {
+      "cve": "CVE-2022-48837",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48837"
+    },
+    {
+      "cve": "CVE-2022-48838",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48838"
+    },
+    {
+      "cve": "CVE-2022-48839",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48839"
+    },
+    {
+      "cve": "CVE-2022-48840",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48840"
+    },
+    {
+      "cve": "CVE-2022-48841",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48841"
+    },
+    {
+      "cve": "CVE-2022-48842",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48842"
+    },
+    {
+      "cve": "CVE-2022-48843",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48843"
+    },
+    {
+      "cve": "CVE-2022-48844",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48844"
+    },
+    {
+      "cve": "CVE-2022-48845",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48845"
+    },
+    {
+      "cve": "CVE-2022-48846",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48846"
+    },
+    {
+      "cve": "CVE-2022-48847",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48847"
+    },
+    {
+      "cve": "CVE-2022-48848",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48848"
+    },
+    {
+      "cve": "CVE-2022-48849",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48849"
+    },
+    {
+      "cve": "CVE-2022-48850",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48850"
+    },
+    {
+      "cve": "CVE-2022-48851",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48851"
+    },
+    {
+      "cve": "CVE-2022-48852",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48852"
+    },
+    {
+      "cve": "CVE-2022-48853",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48853"
+    },
+    {
+      "cve": "CVE-2022-48854",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48854"
+    },
+    {
+      "cve": "CVE-2022-48855",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48855"
+    },
+    {
+      "cve": "CVE-2022-48856",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48856"
+    },
+    {
+      "cve": "CVE-2022-48857",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48857"
+    },
+    {
+      "cve": "CVE-2022-48858",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48858"
+    },
+    {
+      "cve": "CVE-2022-48859",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48859"
+    },
+    {
+      "cve": "CVE-2022-48860",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48860"
+    },
+    {
+      "cve": "CVE-2022-48861",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48861"
+    },
+    {
+      "cve": "CVE-2022-48862",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48862"
+    },
+    {
+      "cve": "CVE-2022-48863",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48863"
+    },
+    {
+      "cve": "CVE-2022-48864",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48864"
+    },
+    {
+      "cve": "CVE-2022-48865",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48865"
+    },
+    {
+      "cve": "CVE-2022-48866",
+      "product_status": {
+        "known_affected": [
+          "T040749",
+          "67646",
+          "T004914",
+          "T032255",
+          "T038741",
+          "T034386",
+          "T045853",
+          "T045852",
+          "T045854",
+          "T002207",
+          "T034392",
+          "T045879",
+          "T000126",
+          "T047343",
+          "398363",
+          "T030927",
+          "T045881",
+          "T047344"
+        ]
+      },
+      "release_date": "2024-07-16T22:00:00.000+00:00",
+      "title": "CVE-2022-48866"
+    }
+  ]
+}

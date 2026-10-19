@@ -1,0 +1,914 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Python ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-1318 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-1318.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-1318 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1318"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker #2372426 vom 2025-06-12",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2372426"
+      },
+      {
+        "category": "external",
+        "summary": "CVE Record CVE-2025-4138 vom 2025-06-05",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2025-4138"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7583-1 vom 2025-06-19",
+        "url": "https://ubuntu.com/security/notices/USN-7583-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02050-1 vom 2025-06-20",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021612.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02049-1 vom 2025-06-20",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021613.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02048-1 vom 2025-06-20",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021614.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02047-1 vom 2025-06-20",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021615.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02057-1 vom 2025-06-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021620.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02074-1 vom 2025-06-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021627.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10026 vom 2025-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10026"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10128 vom 2025-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10128"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10026 vom 2025-07-01",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10026.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10136 vom 2025-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10136"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10148 vom 2025-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10148"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10136 vom 2025-07-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10136.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10140 vom 2025-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10140"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10031 vom 2025-07-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10031.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10148 vom 2025-07-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10148.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10189 vom 2025-07-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10189.html"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2025-A8ABFBB35C vom 2025-07-04",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2025-a8abfbb35c"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2025-266A1353A1 vom 2025-07-04",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2025-266a1353a1"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10484 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10484"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10399 vom 2025-07-07",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10399"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10602 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10602"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02297-1 vom 2025-07-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-July/021800.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:11386 vom 2025-07-17",
+        "url": "https://access.redhat.com/errata/RHSA-2025:11386"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20250718-0006 vom 2025-07-18",
+        "url": "https://security.netapp.com/advisory/NTAP-20250718-0006"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02427-1 vom 2025-07-21",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-July/021896.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20492-1 vom 2025-07-25",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-July/021968.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20539-1 vom 2025-08-05",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022105.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7241589 vom 2025-08-06",
+        "url": "https://www.ibm.com/support/pages/node/7241589"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7242015 vom 2025-08-12",
+        "url": "https://www.ibm.com/support/pages/node/7242015"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02778-1 vom 2025-08-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022149.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7242672 vom 2025-08-20",
+        "url": "https://www.ibm.com/support/pages/node/7242672"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-14984 vom 2025-09-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-14984.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:18219 vom 2025-10-16",
+        "url": "https://access.redhat.com/errata/RHSA-2025:18219"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-404 vom 2025-10-31",
+        "url": "https://www.dell.com/support/kbdoc/000385435"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-390 vom 2025-11-05",
+        "url": "https://www.dell.com/support/kbdoc/000385230"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23530 vom 2025-12-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23530"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:23530 vom 2025-12-18",
+        "url": "https://errata.build.resf.org/RLSA-2025:23530"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-23530 vom 2025-12-25",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-23530.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0934 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0934"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0210-1 vom 2026-01-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/023842.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279712 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279712"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Python: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:23:17.887+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-1318",
+      "initial_release_date": "2025-06-12T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-06-12T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-06-19T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-06-22T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-06-23T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-06-30T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-01T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-07-02T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-07-06T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2025-07-07T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-13T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-17T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-20T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2025-07-21T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-27T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-08-05T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-08-06T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-08-11T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-08-12T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-08-20T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-09-02T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-10-16T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-10-30T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-04T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-12-17T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-28T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-21T23:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-22T23:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "28"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Dell Avamar",
+            "product": {
+              "name": "Dell Avamar",
+              "product_id": "T039664",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:avamar:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Virtual Edition",
+                "product": {
+                  "name": "Dell NetWorker Virtual Edition",
+                  "product_id": "T048226",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:virtual_edition"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Appliance <5.32.00.18",
+                "product": {
+                  "name": "Dell Secure Connect Gateway Appliance <5.32.00.18",
+                  "product_id": "T048301"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Appliance 5.32.00.18",
+                "product": {
+                  "name": "Dell Secure Connect Gateway Appliance 5.32.00.18",
+                  "product_id": "T048301-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:secure_connect_gateway:appliance__5.32.00.18"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Secure Connect Gateway"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.3",
+                "product": {
+                  "name": "IBM AIX 7.3",
+                  "product_id": "1139691",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:ibm:aix:7.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "AIX"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP13",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP13",
+                  "product_id": "T045828"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP13",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP13",
+                  "product_id": "T045828-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up13"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "for Multiplatforms 11.1",
+                "product": {
+                  "name": "IBM TXSeries for Multiplatforms 11.1",
+                  "product_id": "T043237",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:txseries:for_multiplatforms_11.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "TXSeries"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "4.1",
+                "product": {
+                  "name": "IBM VIOS 4.1",
+                  "product_id": "1522854",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:vios:4.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "VIOS"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp ActiveIQ Unified Manager",
+            "product": {
+              "name": "NetApp ActiveIQ Unified Manager",
+              "product_id": "T037607",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:active_iq_unified_manager:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<3.14.0",
+                "product": {
+                  "name": "Open Source Python <3.14.0",
+                  "product_id": "T041241"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.14.0",
+                "product": {
+                  "name": "Open Source Python 3.14.0",
+                  "product_id": "T041241-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.14.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.13.4",
+                "product": {
+                  "name": "Open Source Python <3.13.4",
+                  "product_id": "T044328"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.13.4",
+                "product": {
+                  "name": "Open Source Python 3.13.4",
+                  "product_id": "T044328-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.13.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.12.11",
+                "product": {
+                  "name": "Open Source Python <3.12.11",
+                  "product_id": "T044329"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.12.11",
+                "product": {
+                  "name": "Open Source Python 3.12.11",
+                  "product_id": "T044329-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.12.11"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.11.13",
+                "product": {
+                  "name": "Open Source Python <3.11.13",
+                  "product_id": "T044330"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.11.13",
+                "product": {
+                  "name": "Open Source Python 3.11.13",
+                  "product_id": "T044330-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.11.13"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.10.18",
+                "product": {
+                  "name": "Open Source Python <3.10.18",
+                  "product_id": "T044331"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.10.18",
+                "product": {
+                  "name": "Open Source Python 3.10.18",
+                  "product_id": "T044331-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.10.18"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.9.23",
+                "product": {
+                  "name": "Open Source Python <3.9.23",
+                  "product_id": "T044332"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.9.23",
+                "product": {
+                  "name": "Open Source Python 3.9.23",
+                  "product_id": "T044332-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:python:python:3.9.23"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Python"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.10",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.10",
+                  "product_id": "T025742",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.10"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.11",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.11",
+                  "product_id": "T025990",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.11"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.12",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.12",
+                  "product_id": "T026435",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4.12"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-4138",
+      "product_status": {
+        "known_affected": [
+          "T037607",
+          "67646",
+          "T045828",
+          "1522854",
+          "T004914",
+          "T032255",
+          "74185",
+          "T039664",
+          "1139691",
+          "T018587",
+          "T041241",
+          "T043237",
+          "T002207",
+          "T044328",
+          "T000126",
+          "T044329",
+          "T025742",
+          "T026435",
+          "T025990",
+          "T044331",
+          "T048226",
+          "T044330",
+          "T044332",
+          "T048301"
+        ]
+      },
+      "release_date": "2025-06-12T22:00:00.000+00:00",
+      "title": "CVE-2025-4138"
+    }
+  ]
+}

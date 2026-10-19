@@ -1,0 +1,2612 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "kritisch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Windows ist ein Betriebssystem von Microsoft.\r\nMicrosoft Windows Admin Center ist ein webbasiertes Tool zur Verwaltung von Windows Servern, Clustern und PCs.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Microsoft Windows Produkten ausnutzen, um beliebigen Programmcode auszuführen, um seine Privilegien zu erhöhen, um einen Denial of Service Angriff durchzuführen, um Informationen offenzulegen, und um Sicherheitsvorkehrungen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1489 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1489.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1489 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1489"
+      },
+      {
+        "category": "external",
+        "summary": "Microsoft Leitfaden für Sicherheitsupdates",
+        "url": "https://msrc.microsoft.com/update-guide/"
+      },
+      {
+        "category": "external",
+        "summary": "Hitachi Vulnerability Information HITACHI-SEC-2026-313 vom 2026-07-09",
+        "url": "https://www.hitachi.com/products/it/storage-solutions/sec_info/2026/05.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Microsoft Windows Produkte: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T08:57:19.181+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1489",
+      "initial_release_date": "2026-05-12T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-05-12T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-05-14T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "CVE-2026-42897 wird ausgenutzt"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von HITACHI aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "5100",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5100",
+                  "product_id": "T017180",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5100"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5500",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5500",
+                  "product_id": "T017181",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5500"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5100H",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5100H",
+                  "product_id": "T017182",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5100h"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5500H",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5500H",
+                  "product_id": "T017183",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5500h"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5200",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5200",
+                  "product_id": "T047075",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5200"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5200H",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5200H",
+                  "product_id": "T047076",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5200h"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5600",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5600",
+                  "product_id": "T047077",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5600"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5600H",
+                "product": {
+                  "name": "Hitachi Virtual Storage Platform 5600H",
+                  "product_id": "T047078",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:hitachi:virtual_storage_platform:5600h"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Virtual Storage Platform"
+          }
+        ],
+        "category": "vendor",
+        "name": "Hitachi"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Version 1607",
+                "product": {
+                  "name": "Microsoft Windows 10 Version 1607",
+                  "product_id": "T050728",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_10:version_1607"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Version 1809",
+                "product": {
+                  "name": "Microsoft Windows 10 Version 1809",
+                  "product_id": "T050729",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_10:version_1809"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Version 21H2",
+                "product": {
+                  "name": "Microsoft Windows 10 Version 21H2",
+                  "product_id": "T050732",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_10:version_21h2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Version 22H2",
+                "product": {
+                  "name": "Microsoft Windows 10 Version 22H2",
+                  "product_id": "T050734",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_10:version_22h2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Windows 10"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Version 23H2",
+                "product": {
+                  "name": "Microsoft Windows 11 Version 23H2",
+                  "product_id": "T050735",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_11:version_23h2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Version 24H2",
+                "product": {
+                  "name": "Microsoft Windows 11 Version 24H2",
+                  "product_id": "T050738",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_11:version_24h2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Version 25H2",
+                "product": {
+                  "name": "Microsoft Windows 11 Version 25H2",
+                  "product_id": "T050741",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_11:version_25h2"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "version 26H1",
+                "product": {
+                  "name": "Microsoft Windows 11 version 26H1",
+                  "product_id": "T050744"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Windows 11"
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Admin Center",
+            "product": {
+              "name": "Microsoft Windows Admin Center",
+              "product_id": "T053873",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:microsoft:windows_admin_center:in_azure_portal"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Server 2012",
+            "product": {
+              "name": "Microsoft Windows Server 2012",
+              "product_id": "T050725",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:microsoft:windows_server_2012:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Server 2012 R2",
+            "product": {
+              "name": "Microsoft Windows Server 2012 R2",
+              "product_id": "T050726",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:microsoft:windows_server_2012_r2:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Server 2016",
+            "product": {
+              "name": "Microsoft Windows Server 2016",
+              "product_id": "T050727",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:microsoft:windows_server_2016:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Server 2019",
+            "product": {
+              "name": "Microsoft Windows Server 2019",
+              "product_id": "T050730",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:microsoft:windows_server_2019:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Microsoft Windows Server 2022",
+                "product": {
+                  "name": "Microsoft Windows Server 2022",
+                  "product_id": "T050731",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_server_2022:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "23H2 Edition",
+                "product": {
+                  "name": "Microsoft Windows Server 2022 23H2 Edition",
+                  "product_id": "T050736",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:microsoft:windows_server_2022:23h2_edition"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Windows Server 2022"
+          },
+          {
+            "category": "product_name",
+            "name": "Microsoft Windows Server 2025",
+            "product": {
+              "name": "Microsoft Windows Server 2025",
+              "product_id": "T050739",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:microsoft:windows_server_2025:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Microsoft"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-54518",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2025-54518"
+    },
+    {
+      "cve": "CVE-2026-21530",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-21530"
+    },
+    {
+      "cve": "CVE-2026-32161",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-32161"
+    },
+    {
+      "cve": "CVE-2026-32170",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-32170"
+    },
+    {
+      "cve": "CVE-2026-32209",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-32209"
+    },
+    {
+      "cve": "CVE-2026-33834",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33834"
+    },
+    {
+      "cve": "CVE-2026-33835",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33835"
+    },
+    {
+      "cve": "CVE-2026-33837",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33837"
+    },
+    {
+      "cve": "CVE-2026-33838",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33838"
+    },
+    {
+      "cve": "CVE-2026-33839",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33839"
+    },
+    {
+      "cve": "CVE-2026-33840",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33840"
+    },
+    {
+      "cve": "CVE-2026-33841",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-33841"
+    },
+    {
+      "cve": "CVE-2026-34329",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34329"
+    },
+    {
+      "cve": "CVE-2026-34330",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34330"
+    },
+    {
+      "cve": "CVE-2026-34331",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34331"
+    },
+    {
+      "cve": "CVE-2026-34332",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34332"
+    },
+    {
+      "cve": "CVE-2026-34333",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34333"
+    },
+    {
+      "cve": "CVE-2026-34334",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34334"
+    },
+    {
+      "cve": "CVE-2026-34336",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34336"
+    },
+    {
+      "cve": "CVE-2026-34337",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34337"
+    },
+    {
+      "cve": "CVE-2026-34338",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34338"
+    },
+    {
+      "cve": "CVE-2026-34339",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34339"
+    },
+    {
+      "cve": "CVE-2026-34340",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34340"
+    },
+    {
+      "cve": "CVE-2026-34341",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34341"
+    },
+    {
+      "cve": "CVE-2026-34342",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34342"
+    },
+    {
+      "cve": "CVE-2026-34343",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34343"
+    },
+    {
+      "cve": "CVE-2026-34344",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34344"
+    },
+    {
+      "cve": "CVE-2026-34345",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34345"
+    },
+    {
+      "cve": "CVE-2026-34347",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34347"
+    },
+    {
+      "cve": "CVE-2026-34350",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34350"
+    },
+    {
+      "cve": "CVE-2026-34351",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-34351"
+    },
+    {
+      "cve": "CVE-2026-35415",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35415"
+    },
+    {
+      "cve": "CVE-2026-35416",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35416"
+    },
+    {
+      "cve": "CVE-2026-35417",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35417"
+    },
+    {
+      "cve": "CVE-2026-35418",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35418"
+    },
+    {
+      "cve": "CVE-2026-35419",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35419"
+    },
+    {
+      "cve": "CVE-2026-35420",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35420"
+    },
+    {
+      "cve": "CVE-2026-35421",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35421"
+    },
+    {
+      "cve": "CVE-2026-35422",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35422"
+    },
+    {
+      "cve": "CVE-2026-35423",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35423"
+    },
+    {
+      "cve": "CVE-2026-35424",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35424"
+    },
+    {
+      "cve": "CVE-2026-35438",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-35438"
+    },
+    {
+      "cve": "CVE-2026-40369",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40369"
+    },
+    {
+      "cve": "CVE-2026-40377",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40377"
+    },
+    {
+      "cve": "CVE-2026-40380",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40380"
+    },
+    {
+      "cve": "CVE-2026-40382",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40382"
+    },
+    {
+      "cve": "CVE-2026-40397",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40397"
+    },
+    {
+      "cve": "CVE-2026-40398",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40398"
+    },
+    {
+      "cve": "CVE-2026-40399",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40399"
+    },
+    {
+      "cve": "CVE-2026-40401",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40401"
+    },
+    {
+      "cve": "CVE-2026-40402",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40402"
+    },
+    {
+      "cve": "CVE-2026-40403",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40403"
+    },
+    {
+      "cve": "CVE-2026-40405",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40405"
+    },
+    {
+      "cve": "CVE-2026-40406",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40406"
+    },
+    {
+      "cve": "CVE-2026-40407",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40407"
+    },
+    {
+      "cve": "CVE-2026-40408",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40408"
+    },
+    {
+      "cve": "CVE-2026-40410",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40410"
+    },
+    {
+      "cve": "CVE-2026-40413",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40413"
+    },
+    {
+      "cve": "CVE-2026-40414",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40414"
+    },
+    {
+      "cve": "CVE-2026-40415",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-40415"
+    },
+    {
+      "cve": "CVE-2026-41088",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-41088"
+    },
+    {
+      "cve": "CVE-2026-41089",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-41089"
+    },
+    {
+      "cve": "CVE-2026-41095",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-41095"
+    },
+    {
+      "cve": "CVE-2026-41096",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-41096"
+    },
+    {
+      "cve": "CVE-2026-41097",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-41097"
+    },
+    {
+      "cve": "CVE-2026-42825",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-42825"
+    },
+    {
+      "cve": "CVE-2026-42896",
+      "product_status": {
+        "known_affected": [
+          "T047075",
+          "T017180",
+          "T017181",
+          "T050730",
+          "T050741",
+          "T017182",
+          "T017183",
+          "T050732",
+          "T050731",
+          "T053873",
+          "T050727",
+          "T050738",
+          "T050726",
+          "T050729",
+          "T050728",
+          "T050739",
+          "T050734",
+          "T050744",
+          "T050725",
+          "T050736",
+          "T050735",
+          "T047078",
+          "T047076",
+          "T047077"
+        ]
+      },
+      "release_date": "2026-05-12T22:00:00.000+00:00",
+      "title": "CVE-2026-42896"
+    }
+  ]
+}

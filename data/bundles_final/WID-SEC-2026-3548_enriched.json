@@ -1,0 +1,91 @@
+{
+  "type": "bundle",
+  "id": "bundle--cdbf9e60-167f-4c6a-8c0f-aa8cc8d010e7",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--6bebbf68-138d-5d71-b2d7-265930451455",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "ffmpeg: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "description": "Ein Angreifer kann eine Schwachstelle in ffmpeg ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c49df106-8836-5b0a-b706-58d3c0f5ef79",
+        "vulnerability--669f8295-714a-5c14-9da4-95c449fdc306",
+        "relationship--60696482-6e61-5f30-ac75-f5d0c6d6a568"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3548",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3548"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3548",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3548.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-G222-RPM9-83X6"
+        },
+        {
+          "source_name": "EU Vulnerability Database vom 2026-09-23",
+          "url": "https://euvd.enisa.europa.eu/enisa/EUVD-2026-85311"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- MacOS X\n- UNIX\n- Windows",
+      "x_product_description": "Das FFmpeg-Projekt besteht aus freien Programmen und Bibliotheken, die es ermöglichen, digitales Video- und Audiomaterial aufzunehmen, zu konvertieren, zu streamen und abzuspielen. Zudem enthält es mit libavcodec eine Audio- und Video-Codec-Sammlung, die verschiedene Codecs zur Verfügung stellt."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c49df106-8836-5b0a-b706-58d3c0f5ef79",
+      "name": "Open Source ffmpeg <9.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--669f8295-714a-5c14-9da4-95c449fdc306",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96611",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96611"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--60696482-6e61-5f30-ac75-f5d0c6d6a568",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c49df106-8836-5b0a-b706-58d3c0f5ef79",
+      "target_ref": "vulnerability--669f8295-714a-5c14-9da4-95c449fdc306"
+    }
+  ]
+}

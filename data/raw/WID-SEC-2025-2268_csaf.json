@@ -1,0 +1,1265 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Der Kernel stellt den Kern des Linux Betriebssystems dar.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um Daten zu manipulieren oder einen Denial of Service herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-2268 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-2268.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-2268 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2268"
+      },
+      {
+        "category": "external",
+        "summary": "Kernel CVE Announce Mailingliste",
+        "url": "https://lore.kernel.org/linux-cve-announce/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2025-39964",
+        "url": "https://lore.kernel.org/linux-cve-announce/2025101334-CVE-2025-39964-7964@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2025-39965",
+        "url": "https://lore.kernel.org/linux-cve-announce/2025101336-CVE-2025-39965-9772@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-20719 vom 2025-10-24",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-20719.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.10-2025-109 vom 2025-10-27",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2025-109.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-20721 vom 2025-10-28",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-20721.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6053 vom 2025-11-12",
+        "url": "https://lists.debian.org/debian-security-announce/2025/msg00219.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4057-1 vom 2025-11-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023254.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-25757 vom 2025-11-12",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-25757.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4111-1 vom 2025-11-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023294.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4128-1 vom 2025-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023299.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4132-1 vom 2025-11-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023302.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4139-1 vom 2025-11-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023306.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4141-1 vom 2025-11-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023304.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4140-1 vom 2025-11-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023305.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4149-1 vom 2025-11-20",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023309.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4379 vom 2025-11-25",
+        "url": "https://lists.debian.org/debian-lts-announce/2025/11/msg00022.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025-20091-1 vom 2025-11-27",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/QVNKE6YBHUN7AVUHO7UZCJJGK4HYS62H/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21064-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023415.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21052-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023389.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21056-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023419.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21040-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023394.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21080-1 vom 2025-11-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023429.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4301-1 vom 2025-11-28",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/LLIMXFMWOGTFRJZEC4XPGIMNBCRKQ7IF/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7907-1 vom 2025-12-03",
+        "url": "https://ubuntu.com/security/notices/USN-7907-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7907-2 vom 2025-12-03",
+        "url": "https://ubuntu.com/security/notices/USN-7907-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7907-4 vom 2025-12-04",
+        "url": "https://ubuntu.com/security/notices/USN-7907-4"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7907-3 vom 2025-12-04",
+        "url": "https://ubuntu.com/security/notices/USN-7907-3"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4320-1 vom 2025-12-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-December/023445.html"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2025-074 vom 2025-12-05",
+        "url": "https://docs.cloud.google.com/support/bulletins#gcp-2025-074"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7921-1 vom 2025-12-10",
+        "url": "https://ubuntu.com/security/notices/USN-7921-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7922-1 vom 2025-12-10",
+        "url": "https://ubuntu.com/security/notices/USN-7922-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21147-1 vom 2025-12-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-December/023511.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21180-1 vom 2025-12-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-December/023498.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7928-1 vom 2025-12-11",
+        "url": "https://ubuntu.com/security/notices/USN-7928-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7922-2 vom 2025-12-11",
+        "url": "https://ubuntu.com/security/notices/USN-7922-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7928-3 vom 2025-12-11",
+        "url": "https://ubuntu.com/security/notices/USN-7928-3"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7928-2 vom 2025-12-11",
+        "url": "https://ubuntu.com/security/notices/USN-7928-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7907-5 vom 2025-12-12",
+        "url": "https://ubuntu.com/security/notices/USN-7907-5"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-28048 vom 2025-12-12",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-28048.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4404 vom 2025-12-12",
+        "url": "https://lists.debian.org/debian-lts-announce/2025/12/msg00015.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7936-1 vom 2025-12-16",
+        "url": "https://ubuntu.com/security/notices/USN-7936-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7934-1 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7934-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7935-1 vom 2025-12-16",
+        "url": "https://ubuntu.com/security/notices/USN-7935-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7931-1 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7931-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7930-1 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7930-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7931-2 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7931-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7931-3 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7931-3"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7930-2 vom 2025-12-15",
+        "url": "https://ubuntu.com/security/notices/USN-7930-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7937-1 vom 2025-12-16",
+        "url": "https://ubuntu.com/security/notices/USN-7937-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7939-2 vom 2025-12-17",
+        "url": "https://ubuntu.com/security/notices/USN-7939-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7938-1 vom 2025-12-16",
+        "url": "https://ubuntu.com/security/notices/USN-7938-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7939-1 vom 2025-12-17",
+        "url": "https://ubuntu.com/security/notices/USN-7939-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7940-1 vom 2025-12-17",
+        "url": "https://ubuntu.com/security/notices/USN-7940-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7922-3 vom 2025-12-19",
+        "url": "https://ubuntu.com/security/notices/USN-7922-3"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7928-4 vom 2025-12-19",
+        "url": "https://ubuntu.com/security/notices/USN-7928-4"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7922-4 vom 2026-01-06",
+        "url": "https://ubuntu.com/security/notices/USN-7922-4"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2026-003 vom 2026-01-09",
+        "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-003"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7931-5 vom 2026-01-09",
+        "url": "https://ubuntu.com/security/notices/USN-7931-5"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7928-5 vom 2026-01-09",
+        "url": "https://ubuntu.com/security/notices/USN-7928-5"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7940-2 vom 2026-01-09",
+        "url": "https://ubuntu.com/security/notices/USN-7940-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7922-5 vom 2026-01-12",
+        "url": "https://ubuntu.com/security/notices/USN-7922-5"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50061 vom 2026-01-20",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-50061.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50071 vom 2026-01-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-50071.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2026-030 vom 2026-01-30",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000421570/dsa-2026-030-security-update-for-dell-networker-vproxy-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50100 vom 2026-02-10",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-50100.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20333-1 vom 2026-02-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-February/024162.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50134 vom 2026-03-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-50134.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20561-1 vom 2026-03-05",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024578.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8095-2 vom 2026-03-17",
+        "url": "https://ubuntu.com/security/notices/USN-8095-2"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8095-1 vom 2026-03-17",
+        "url": "https://ubuntu.com/security/notices/USN-8095-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8100-1 vom 2026-03-17",
+        "url": "https://ubuntu.com/security/notices/USN-8100-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8095-3 vom 2026-03-17",
+        "url": "https://ubuntu.com/security/notices/USN-8095-3"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20667-1 vom 2026-03-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024746.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20711-1 vom 2026-03-18",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024715.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20720-1 vom 2026-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024766.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20713-1 vom 2026-03-19",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024771.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8095-4 vom 2026-03-23",
+        "url": "https://ubuntu.com/security/notices/USN-8095-4"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:0962-1 vom 2026-03-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024803.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20794-1 vom 2026-03-25",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024895.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20819-1 vom 2026-03-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024871.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20772-1 vom 2026-03-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024862.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1041-1 vom 2026-03-25",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024928.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8126-1 vom 2026-03-25",
+        "url": "https://ubuntu.com/security/notices/USN-8126-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8125-1 vom 2026-03-25",
+        "url": "https://ubuntu.com/security/notices/USN-8125-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1078-1 vom 2026-03-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024954.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1081-1 vom 2026-03-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024953.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20845-1 vom 2026-03-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024994.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20838-1 vom 2026-03-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024999.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20872-1 vom 2026-03-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024969.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20873-1 vom 2026-03-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024968.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20876-1 vom 2026-03-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/025054.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8095-5 vom 2026-04-01",
+        "url": "https://ubuntu.com/security/notices/USN-8095-5"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20931-1 vom 2026-04-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025086.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8165-1 vom 2026-04-10",
+        "url": "https://ubuntu.com/security/notices/USN-8165-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21284-1 vom 2026-04-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025706.html"
+      },
+      {
+        "category": "external",
+        "summary": "Siemens Security Advisory SSA-019113 vom 2026-07-14",
+        "url": "https://cert-portal.siemens.com/productcert/html/ssa-019113.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23066-1 vom 2026-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028374.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23237-1 vom 2026-08-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028569.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23221-1 vom 2026-08-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028545.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23231-1 vom 2026-08-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028524.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2026-313 vom 2026-09-04",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000505510/dsa-2026-313-security-update-for-dell-avamar-dell-networker-virtual-edition-nve-and-dell-powerprotect-dp-series-appliance-dell-integrated-data-protection-appliance-idpa-multiple-third-party-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23491-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028953.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23490-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028954.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23477-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028967.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23481-1 vom 2026-09-13",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028963.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4120-1 vom 2026-09-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029004.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23529-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029024.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23528-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029025.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23510-1 vom 2026-09-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029039.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4254-1 vom 2026-09-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029216.html"
+      },
+      {
+        "category": "external",
+        "summary": "CISA KEV CVE-2025-39964 vom 2026-09-20",
+        "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2025-39964"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70403 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70403"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70402 vom 2026-09-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70402"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70498 vom 2026-09-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70498"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4282-1 vom 2026-09-22",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029346.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70459 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70459"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:70402 vom 2026-09-24",
+        "url": "https://errata.build.resf.org/RLSA-2026:70402"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71326 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71326"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71327 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71327"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:70403 vom 2026-09-24",
+        "url": "https://errata.build.resf.org/RLSA-2026:70403"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71565 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71565"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71592 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71592"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Linux Kernel: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T11:49:24.998+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-2268",
+      "initial_release_date": "2025-10-13T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-10-13T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-10-14T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "CPE korrigiert"
+        },
+        {
+          "date": "2025-10-26T23:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-10-27T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Amazon und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-11-11T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Debian und SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-16T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-18T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-19T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-20T23:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-25T23:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-11-26T23:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-27T23:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-30T23:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-12-03T23:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-12-04T23:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-12-07T23:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Google aufgenommen"
+        },
+        {
+          "date": "2025-12-10T23:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2025-12-11T23:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-12-14T23:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Ubuntu, Oracle Linux und Debian aufgenommen"
+        },
+        {
+          "date": "2025-12-15T23:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-12-16T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-12-17T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-12-21T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-01-06T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-01-11T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Google und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-01-12T23:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-01-19T23:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-26T23:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-29T23:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-02-09T23:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-02-15T23:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-02T23:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-03-05T23:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-16T23:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-03-17T23:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-03-18T23:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-19T23:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-23T23:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-24T23:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-25T23:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von SUSE und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-03-26T23:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-29T22:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-30T22:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-04-01T22:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-04-09T22:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-04-26T22:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-13T22:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von Siemens aufgenommen"
+        },
+        {
+          "date": "2026-08-16T22:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-26T22:00:00.000+00:00",
+          "number": "49",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-03T22:00:00.000+00:00",
+          "number": "50",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-09-13T22:00:00.000+00:00",
+          "number": "51",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-14T22:00:00.000+00:00",
+          "number": "52",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-15T22:00:00.000+00:00",
+          "number": "53",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-17T22:00:00.000+00:00",
+          "number": "54",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-20T22:00:00.000+00:00",
+          "number": "55",
+          "summary": "CVE-2025-39964 wird ausgenutzt"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "56",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "57",
+          "summary": "Neue Updates von Red Hat und Rocky Enterprise Software Foundation aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "57"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Dell Avamar",
+            "product": {
+              "name": "Dell Avamar",
+              "product_id": "T039664",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:avamar:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Dell NetWorker",
+                "product": {
+                  "name": "Dell NetWorker",
+                  "product_id": "1714466",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "vProxy <19.14",
+                "product": {
+                  "name": "Dell NetWorker vProxy <19.14",
+                  "product_id": "T050451"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "vProxy 19.14",
+                "product": {
+                  "name": "Dell NetWorker vProxy 19.14",
+                  "product_id": "T050451-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:vproxy__19.14"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Google Cloud Platform",
+            "product": {
+              "name": "Google Cloud Platform",
+              "product_id": "393401",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:google:cloud_platform:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source Linux Kernel",
+            "product": {
+              "name": "Open Source Linux Kernel",
+              "product_id": "T033107",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:linux:linux_kernel:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T054581",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "1500 CPU",
+                "product": {
+                  "name": "Siemens SIMATIC S7 1500 CPU",
+                  "product_id": "T053842",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:siemens:simatic_s7:1500_cpu"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SIMATIC S7"
+          }
+        ],
+        "category": "vendor",
+        "name": "Siemens"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-39964",
+      "product_status": {
+        "known_affected": [
+          "T054581",
+          "67646",
+          "T033107",
+          "393401",
+          "T053842",
+          "T004914",
+          "T050451",
+          "T039664",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363",
+          "1714466"
+        ]
+      },
+      "release_date": "2025-10-13T22:00:00.000+00:00",
+      "title": "CVE-2025-39964"
+    },
+    {
+      "cve": "CVE-2025-39965",
+      "product_status": {
+        "known_affected": [
+          "T054581",
+          "67646",
+          "T033107",
+          "393401",
+          "T053842",
+          "T004914",
+          "T050451",
+          "T039664",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363",
+          "1714466"
+        ]
+      },
+      "release_date": "2025-10-13T22:00:00.000+00:00",
+      "title": "CVE-2025-39965"
+    }
+  ]
+}

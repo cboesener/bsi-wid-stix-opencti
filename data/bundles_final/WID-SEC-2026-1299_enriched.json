@@ -1,0 +1,131 @@
+{
+  "type": "bundle",
+  "id": "bundle--e0a03166-2005-4970-b484-9ad1e7c903e4",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--482afa7f-7391-55cc-8952-3b971a6ddb62",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "vllm: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in vllm ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-04-28T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--128c6ccd-b27b-5a20-bbb7-e241d220926a",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--f0ee883f-e6eb-533d-8aa6-b9dece9d4fdd",
+        "relationship--baf3eb09-278b-5a9e-b0d0-c8afd6444412",
+        "relationship--959ad1ef-ab0c-5f15-851b-ba3f4c682bb0"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-1299",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1299"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-1299",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1299.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-83vm-p52w-f9pw vom 2026-04-28",
+          "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-83vm-p52w-f9pw"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:57389 vom 2026-08-20",
+          "url": "https://access.redhat.com/errata/RHSA-2026:57389"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:57390 vom 2026-08-20",
+          "url": "https://access.redhat.com/errata/RHSA-2026:57390"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70965 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70965"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70995 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70995"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70979 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70979"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70969 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70969"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "4",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Open Source vLLM ist eine Open-Source-Bibliothek für schnelle und effiziente Inferenz von Large Language Models (LLMs)."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--128c6ccd-b27b-5a20-bbb7-e241d220926a",
+      "name": "Open Source vllm <0.20.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--f0ee883f-e6eb-533d-8aa6-b9dece9d4fdd",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-44223",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-44223"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--baf3eb09-278b-5a9e-b0d0-c8afd6444412",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--128c6ccd-b27b-5a20-bbb7-e241d220926a",
+      "target_ref": "vulnerability--f0ee883f-e6eb-533d-8aa6-b9dece9d4fdd"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--959ad1ef-ab0c-5f15-851b-ba3f4c682bb0",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--f0ee883f-e6eb-533d-8aa6-b9dece9d4fdd"
+    }
+  ]
+}

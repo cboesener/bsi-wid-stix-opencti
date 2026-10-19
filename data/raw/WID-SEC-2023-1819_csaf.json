@@ -1,0 +1,1084 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "OpenSSH ist eine Open Source Implementierung des Secure Shell Protokolls.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in OpenSSH ausnutzen, um beliebigen Programmcode auszuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2023-1819 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2023/wid-sec-w-2023-1819.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2023-1819 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2023-1819"
+      },
+      {
+        "category": "external",
+        "summary": "OpenSSH Security Notification vom 2023-07-19",
+        "url": "https://seclists.org/oss-sec/2023/q3/48"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-79A18E1725 vom 2023-07-21",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-79a18e1725"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-878E04F4AE vom 2023-07-21",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-878e04f4ae"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6242-1 vom 2023-07-24",
+        "url": "https://ubuntu.com/security/notices/USN-6242-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2945-1 vom 2023-07-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015607.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2940-1 vom 2023-07-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015606.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2946-1 vom 2023-07-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015605.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2947-1 vom 2023-07-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015604.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:2950-1 vom 2023-07-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-July/015603.html"
+      },
+      {
+        "category": "external",
+        "summary": "IGEL Security Notice ISN-2023-14 vom 2023-07-26",
+        "url": "https://kb.igel.com/securitysafety/en/isn-2023-14-igel-os-openssh-vulnerability-90232651.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4329 vom 2023-07-31",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4329"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6242-2 vom 2023-07-31",
+        "url": "https://ubuntu.com/security/notices/USN-6242-2"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4413 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4413"
+      },
+      {
+        "category": "external",
+        "summary": "FreeBSD Security Advisory FREEBSD-SA-23:08.SSH vom 2023-08-01",
+        "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:08.ssh.asc"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4384 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4384"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4381 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4381"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4382 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4382"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4383 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4383"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4419 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4419"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4412 vom 2023-08-01",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4412"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4428 vom 2023-08-02",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4428"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-4382 vom 2023-08-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-4382.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-4412 vom 2023-08-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-4412.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-4419 vom 2023-08-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-4419.html"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20230803-0010 vom 2023-08-03",
+        "url": "https://security.netapp.com/advisory/ntap-20230803-0010/"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2023-2176 vom 2023-08-09",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS-2023-2176.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-12711 vom 2023-08-10",
+        "url": "https://linux.oracle.com/errata/ELSA-2023-12711.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3532 vom 2023-08-17",
+        "url": "https://lists.debian.org/debian-lts-announce/2023/08/msg00021.html"
+      },
+      {
+        "category": "external",
+        "summary": "ORACLE OVMSA-2023-0019 vom 2023-08-17",
+        "url": "https://oss.oracle.com/pipermail/oraclevm-errata/2023-August/001083.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2023-1802 vom 2023-08-23",
+        "url": "https://alas.aws.amazon.com/ALAS-2023-1802.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7028420 vom 2023-08-23",
+        "url": "https://aix.software.ibm.com/aix/efixes/security/openssh_advisory15.asc"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2023-4428 vom 2023-08-24",
+        "url": "http://linux.oracle.com/errata/ELSA-2023-4428.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2023:4982 vom 2023-09-05",
+        "url": "https://access.redhat.com/errata/RHSA-2023:4982"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7038020 vom 2023-09-22",
+        "url": "https://www.ibm.com/support/pages/node/7038020"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7069319 vom 2023-11-08",
+        "url": "https://www.ibm.com/support/pages/node/7069319"
+      },
+      {
+        "category": "external",
+        "summary": "CentOS Security Advisory CESA-2023:4382 vom 2024-01-12",
+        "url": "https://lists.centos.org/pipermail/centos-announce/2024-January/099207.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2024-091 vom 2024-03-12",
+        "url": "https://www.dell.com/support/kbdoc/000222965/dsa-2024-="
+      },
+      {
+        "category": "external",
+        "summary": "Alcatel-Lucent Security Advisory SA-N0132 vom 2024-04-06",
+        "url": "https://www.al-enterprise.com/-/media/assets/internet/documents/n-to-s/sa-n0132-ed1-omniswitch-openssh-vulnerability.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2024-198 vom 2024-05-08",
+        "url": "https://www.dell.com/support/kbdoc/000224827/dsa-2024-="
+      },
+      {
+        "category": "external",
+        "summary": "QNAP Security Advisory QSA-24-37 vom 2024-11-22",
+        "url": "https://www.qnap.com/de-de/security-advisory/QSA-24-37"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-071 vom 2025-02-05",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000281275/dsa-2025-071-security-update-for-dell-avamar-for-multiple-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Moxa Security Advisory MPSA-256261 vom 2026-01-09",
+        "url": "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-256261-cve-2023-38408-openssh-vulnerability-in-ethernet-switches"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7256856 vom 2026-01-13",
+        "url": "https://www.ibm.com/support/pages/node/7256856"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69266 vom 2026-09-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69266"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:69266 vom 2026-09-22",
+        "url": "https://errata.build.resf.org/RLSA-2026:69266"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-69266 vom 2026-09-23",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-69266.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "OpenSSH: Schwachstelle ermöglicht Codeausführung",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:44:31.335+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2023-1819",
+      "initial_release_date": "2023-07-19T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2023-07-19T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2023-07-23T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "CVSS angepasst."
+        },
+        {
+          "date": "2023-07-24T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2023-07-25T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von IGEL aufgenommen"
+        },
+        {
+          "date": "2023-07-31T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2023-08-01T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat und FreeBSD aufgenommen"
+        },
+        {
+          "date": "2023-08-02T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-08-03T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2023-08-08T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2023-08-10T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2023-08-16T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2023-08-17T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von ORACLE aufgenommen"
+        },
+        {
+          "date": "2023-08-23T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Amazon und IBM aufgenommen"
+        },
+        {
+          "date": "2023-09-05T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-09-24T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-11-08T23:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2024-01-14T23:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von CentOS aufgenommen"
+        },
+        {
+          "date": "2024-03-11T23:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2024-04-07T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Alcatel-Lucent aufgenommen"
+        },
+        {
+          "date": "2024-05-07T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2024-11-24T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von QNAP aufgenommen"
+        },
+        {
+          "date": "2025-02-04T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-01-08T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von moxa aufgenommen"
+        },
+        {
+          "date": "2026-01-12T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "26"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<AOS 8.9.R04",
+                "product": {
+                  "name": "Alcatel Lucent Enterprise OmniSwitch <AOS 8.9.R04",
+                  "product_id": "T033945"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "AOS 8.9.R04",
+                "product": {
+                  "name": "Alcatel Lucent Enterprise OmniSwitch AOS 8.9.R04",
+                  "product_id": "T033945-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:alcatel-lucent:omniswitch:aos_8.9.r04"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OmniSwitch"
+          }
+        ],
+        "category": "vendor",
+        "name": "Alcatel Lucent Enterprise"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<19.12",
+                "product": {
+                  "name": "Dell Avamar <19.12",
+                  "product_id": "T040818"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "19.12",
+                "product": {
+                  "name": "Dell Avamar 19.12",
+                  "product_id": "T040818-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:avamar:19.12"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Avamar"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vProxy OVA <19.9.0.5",
+                "product": {
+                  "name": "Dell NetWorker vProxy OVA <19.9.0.5",
+                  "product_id": "T033357"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "vProxy OVA 19.9.0.5",
+                "product": {
+                  "name": "Dell NetWorker vProxy OVA 19.9.0.5",
+                  "product_id": "T033357-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:vproxy_ova__19.9.0.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "virtual",
+                "product": {
+                  "name": "Dell NetWorker virtual",
+                  "product_id": "T034583",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:virtual"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "EMC Avamar",
+            "product": {
+              "name": "EMC Avamar",
+              "product_id": "T014381",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:emc:avamar:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "EMC"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "FreeBSD Project FreeBSD OS",
+            "product": {
+              "name": "FreeBSD Project FreeBSD OS",
+              "product_id": "4035",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:freebsd:freebsd:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "FreeBSD Project"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.2",
+                "product": {
+                  "name": "IBM AIX 7.2",
+                  "product_id": "434967",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:ibm:aix:7.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.3",
+                "product": {
+                  "name": "IBM AIX 7.3",
+                  "product_id": "T021486",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:ibm:aix:7.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "AIX"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "11.3",
+                "product": {
+                  "name": "IBM Security Guardium 11.3",
+                  "product_id": "1048943",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:security_guardium:11.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "11.4",
+                "product": {
+                  "name": "IBM Security Guardium 11.4",
+                  "product_id": "1076561",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:security_guardium:11.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "11.5",
+                "product": {
+                  "name": "IBM Security Guardium 11.5",
+                  "product_id": "T026399",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:security_guardium:11.5"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Security Guardium"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<10.0.9.1",
+                "product": {
+                  "name": "IBM Security Verify Access <10.0.9.1",
+                  "product_id": "T049459"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.0.9.1",
+                "product": {
+                  "name": "IBM Security Verify Access 10.0.9.1",
+                  "product_id": "T049459-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:security_verify_access:v10.0.9.1"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<11.0.2",
+                "product": {
+                  "name": "IBM Security Verify Access <11.0.2",
+                  "product_id": "T049460"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "11.0.2",
+                "product": {
+                  "name": "IBM Security Verify Access 11.0.2",
+                  "product_id": "T049460-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:security_verify_access:11.0.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Security Verify Access"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<plus 10.1.15.3",
+                "product": {
+                  "name": "IBM Spectrum Protect <plus 10.1.15.3",
+                  "product_id": "T031010"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "plus 10.1.15.3",
+                "product": {
+                  "name": "IBM Spectrum Protect plus 10.1.15.3",
+                  "product_id": "T031010-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spectrum_protect:plus_10.1.15.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Spectrum Protect"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "3.1",
+                "product": {
+                  "name": "IBM VIOS 3.1",
+                  "product_id": "1039165",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:vios:3.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "VIOS"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "12",
+                "product": {
+                  "name": "IGEL OS 12",
+                  "product_id": "T028875",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:igel:os:12.02.100"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "11",
+                "product": {
+                  "name": "IGEL OS 11",
+                  "product_id": "T028876",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:igel:os:11.09.100"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OS"
+          }
+        ],
+        "category": "vendor",
+        "name": "IGEL"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.1.58",
+                "product": {
+                  "name": "Moxa Switch <4.1.58",
+                  "product_id": "T049803"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.1.58",
+                "product": {
+                  "name": "Moxa Switch 4.1.58",
+                  "product_id": "T049803-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:moxa:switch:4.1.58"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<5.0.4",
+                "product": {
+                  "name": "Moxa Switch <5.0.4",
+                  "product_id": "T049804"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.0.4",
+                "product": {
+                  "name": "Moxa Switch 5.0.4",
+                  "product_id": "T049804-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:moxa:switch:5.0.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Switch"
+          }
+        ],
+        "category": "vendor",
+        "name": "Moxa"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp ActiveIQ Unified Manager",
+            "product": {
+              "name": "NetApp ActiveIQ Unified Manager",
+              "product_id": "T026333",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:active_iq_unified_manager:vmware_vsphere"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source CentOS",
+            "product": {
+              "name": "Open Source CentOS",
+              "product_id": "1727",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:centos:centos:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<9.3p2",
+                "product": {
+                  "name": "Open Source OpenSSH <9.3p2",
+                  "product_id": "T028810"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.3p2",
+                "product": {
+                  "name": "Open Source OpenSSH 9.3p2",
+                  "product_id": "T028810-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:openbsd:openssh:9.3p2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenSSH"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "3",
+                "product": {
+                  "name": "Oracle VM 3",
+                  "product_id": "T019617",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:oracle:vm:3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "VM"
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "QNAP NAS",
+            "product": {
+              "name": "QNAP NAS",
+              "product_id": "T017100",
+              "product_identification_helper": {
+                "cpe": "cpe:/h:qnap:nas:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "QNAP"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T054581",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-38408",
+      "product_status": {
+        "known_affected": [
+          "T033357",
+          "1048943",
+          "67646",
+          "4035",
+          "T049460",
+          "T034583",
+          "T004914",
+          "T031010",
+          "T049804",
+          "T049803",
+          "T019617",
+          "398363",
+          "T040818",
+          "T033945",
+          "T054581",
+          "434967",
+          "1039165",
+          "1076561",
+          "74185",
+          "T017100",
+          "T014381",
+          "2951",
+          "T002207",
+          "T000126",
+          "T028875",
+          "T028876",
+          "T028810",
+          "1727",
+          "T021486",
+          "T049459",
+          "T026333",
+          "T026399"
+        ]
+      },
+      "release_date": "2023-07-19T22:00:00.000+00:00",
+      "title": "CVE-2023-38408"
+    }
+  ]
+}

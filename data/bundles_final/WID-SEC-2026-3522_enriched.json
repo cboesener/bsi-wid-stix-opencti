@@ -1,0 +1,121 @@
+{
+  "type": "bundle",
+  "id": "bundle--f792c33d-7127-4e04-98c7-9e43a73d29c5",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--6b2928d5-596e-545a-8b1a-ba273dd9403c",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "GNU libc: Mehrere Schwachstellen",
+      "description": "Ein lokaler Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen, vertrauliche Informationen offenzulegen, den Speicher zu beschädigen oder einen Denial-of-Service-Zustand herbeizuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--d04874b7-ace3-5ecf-9d95-c01799e5d140",
+        "vulnerability--39f46a14-6e64-5345-bfde-376f3dca779c",
+        "relationship--59165f43-9dfd-56cb-b0f3-a3c5b15ee2b2",
+        "vulnerability--cf9acdaf-ee4f-5e26-af81-c771c57cf431",
+        "relationship--0b825535-4ad4-5ce9-bc5c-ec544d2e65e3"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3522",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3522"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3522",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3522.json"
+        },
+        {
+          "source_name": "OSS Security Mailing List vom 2026-09-22",
+          "url": "https://seclists.org/oss-sec/2026/q3/875"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-fmf4-pr35-46c2 vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-fmf4-pr35-46c2"
+        },
+        {
+          "source_name": "GitHub Advisory Database GHSA-H8X4-734C-9753 vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-H8X4-734C-9753"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- UNIX",
+      "x_product_description": "Die GNU libc ist die Basis C Bibliothek unter Linux sowie anderen Unix-Betriebssystemen, welche die Systemaufrufe sowie Basisfunktionalität bereitstellt."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--d04874b7-ace3-5ecf-9d95-c01799e5d140",
+      "name": "Open Source GNU libc <2.45",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--39f46a14-6e64-5345-bfde-376f3dca779c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-86805",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-86805"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--59165f43-9dfd-56cb-b0f3-a3c5b15ee2b2",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d04874b7-ace3-5ecf-9d95-c01799e5d140",
+      "target_ref": "vulnerability--39f46a14-6e64-5345-bfde-376f3dca779c"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--cf9acdaf-ee4f-5e26-af81-c771c57cf431",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-95818",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-95818"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0b825535-4ad4-5ce9-bc5c-ec544d2e65e3",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d04874b7-ace3-5ecf-9d95-c01799e5d140",
+      "target_ref": "vulnerability--cf9acdaf-ee4f-5e26-af81-c771c57cf431"
+    }
+  ]
+}

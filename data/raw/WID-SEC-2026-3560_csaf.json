@@ -1,0 +1,187 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "KeePass XC ist ein Open Source Passwortmanager für verschiedene Betriebssysteme.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in KeePassXC ausnutzen, um einen Denial of Service Angriff durchzuführen oder Informationen offenzulegen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3560 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3560.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3560 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3560"
+      },
+      {
+        "category": "external",
+        "summary": "KeePassXC Release Notes vom 2026-09-23",
+        "url": "https://keepassxc.org/blog/2026-09-23-2.8.0-beta1-released/"
+      },
+      {
+        "category": "external",
+        "summary": "KeePass Security Advisory vom 2026-09-23",
+        "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-4642-49vv-4p43"
+      },
+      {
+        "category": "external",
+        "summary": "KeePass Security Advisory vom 2026-09-23",
+        "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-2vm2-vmc3-vccr"
+      },
+      {
+        "category": "external",
+        "summary": "KeePass Security Advisory vom 2026-09-23",
+        "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-3448-gh8j-3227"
+      },
+      {
+        "category": "external",
+        "summary": "KeePass Security Advisory vom 2026-09-23",
+        "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-mffq-j98j-wfr2"
+      },
+      {
+        "category": "external",
+        "summary": "KeePass Security Advisory vom 2026-09-23",
+        "url": "https://github.com/keepassxreboot/keepassxc/security/advisories/GHSA-rq29-wgrv-xgh4"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "KeePassXC: Mehrere Schwachstellen ermöglichen Denial of Service und Offenlegung",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T11:29:26.205+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3560",
+      "initial_release_date": "2026-09-23T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<2.8.0 (Beta 1)",
+                "product": {
+                  "name": "Open Source KeePassXC <2.8.0 (Beta 1)",
+                  "product_id": "T060168"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.8.0 (Beta 1)",
+                "product": {
+                  "name": "Open Source KeePassXC 2.8.0 (Beta 1)",
+                  "product_id": "T060168-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:keepassxc:2.8.0_%2528beta_1%2529"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "KeePassXC"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-69150",
+      "product_status": {
+        "known_affected": [
+          "T060168"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00",
+      "title": "CVE-2026-69150"
+    },
+    {
+      "product_status": {
+        "known_affected": [
+          "T060168"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00"
+    },
+    {
+      "product_status": {
+        "known_affected": [
+          "T060168"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00"
+    },
+    {
+      "product_status": {
+        "known_affected": [
+          "T060168"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00"
+    },
+    {
+      "product_status": {
+        "known_affected": [
+          "T060168"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00"
+    }
+  ]
+}

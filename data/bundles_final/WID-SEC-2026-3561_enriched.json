@@ -1,0 +1,118 @@
+{
+  "type": "bundle",
+  "id": "bundle--94263ff6-d837-4604-8be0-25f35ed7f747",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ff6f8b5c-291b-5899-b3ca-79f12631e6bc",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CyberPanel: Mehrere Schwachstellen ermöglichen Offenlegung von Informationen",
+      "description": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in CyberPanel ausnutzen, um Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--ce921c97-cf95-581e-8b23-7360ca2aaf13",
+        "vulnerability--8132aca6-f71e-560a-98e6-48bd845a2ee7",
+        "relationship--3a163f80-a122-5659-b9c4-a7f956db575b",
+        "vulnerability--a578458a-cdd0-50f3-a7d2-a29c253111ab",
+        "relationship--1f89f704-0a20-5096-a478-77abdff3e9ad"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3561",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3561"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3561",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3561.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-gcf9-pfph-mqpw vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-gcf9-pfph-mqpw"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-PX35-HW6V-GPF7 vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-PX35-HW6V-GPF7"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- UNIX",
+      "x_product_description": "CyberPanel ist ein Steuerungspanel für das Webhosting mit OpenLiteSpeed und LiteSpeed Enterprise."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--ce921c97-cf95-581e-8b23-7360ca2aaf13",
+      "name": "Open Source CyberPanel 1.9.1",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:cyberpanel:cyberpanel:1.9.1:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--8132aca6-f71e-560a-98e6-48bd845a2ee7",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-79304",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-79304"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3a163f80-a122-5659-b9c4-a7f956db575b",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ce921c97-cf95-581e-8b23-7360ca2aaf13",
+      "target_ref": "vulnerability--8132aca6-f71e-560a-98e6-48bd845a2ee7"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--a578458a-cdd0-50f3-a7d2-a29c253111ab",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-79306",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-79306"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1f89f704-0a20-5096-a478-77abdff3e9ad",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ce921c97-cf95-581e-8b23-7360ca2aaf13",
+      "target_ref": "vulnerability--a578458a-cdd0-50f3-a7d2-a29c253111ab"
+    }
+  ]
+}

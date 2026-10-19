@@ -1,0 +1,512 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Google Cloud Platform (GCP) ist eine Sammlung von Cloud-Computing-Diensten von Google, die Infrastruktur, Datenanalyse, maschinelles Lernen und Entwicklungstools bietet. Unternehmen können dadurch Anwendungen in der Cloud zu aufbauen und skalierbar bereitzustellen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Google Cloud Platform ausnutzen, um beliebigen Programmcode auszuführen, Sicherheitsmaßnahmen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2009 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2009.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2009 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2009"
+      },
+      {
+        "category": "external",
+        "summary": "Google Security Bulletin vom 2026-06-18",
+        "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-037"
+      },
+      {
+        "category": "external",
+        "summary": "Google Security Bulletin vom 2026-06-18",
+        "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-037"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2DOCKER-2026-133 vom 2026-06-22",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2DOCKER-2026-133.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11102-1 vom 2026-06-26",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/OQYWR4L5S3AEAXXQFID77U3ZZG2X3OQX/"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-DC2CBC1BC8 vom 2026-06-27",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-dc2cbc1bc8"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2ECS-2026-128 vom 2026-06-29",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2ECS-2026-128.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2NITRO-ENCLAVES-2026-113 vom 2026-06-29",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2NITRO-ENCLAVES-2026-113.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21072-1 vom 2026-06-30",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/OZY67P7KV2Z5FGKCTJKTMZAQXWDXPUPT/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36319 vom 2026-07-07",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36319"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36873 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36873"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:37252 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37252"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42852 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42852"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:46903 vom 2026-07-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:46903"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47149 vom 2026-07-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47149"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47451 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47451"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:47737 vom 2026-07-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47737"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-C37317FDDE vom 2026-07-30",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-c37317fdde"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48913 vom 2026-07-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48913"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48872 vom 2026-07-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48872"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-26C0A0EE30 vom 2026-08-03",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-26c0a0ee30"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:51033 vom 2026-08-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:51033"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:51084 vom 2026-08-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:51084"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:52946 vom 2026-08-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:52946"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:53530 vom 2026-08-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:53530"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36207 vom 2026-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36207"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36625 vom 2026-08-13",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36625"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3903 vom 2026-09-14",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3903.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71179 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71179"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Google Cloud Platform (GKE containerd): Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:24:28.941+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2009",
+      "initial_release_date": "2026-06-18T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-06-18T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-06-22T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-06-28T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von openSUSE und Fedora aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Referenz(en) aufgenommen: EUVD-2026-40860"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Referenz(en) aufgenommen: EUVD-2026-41110, EUVD-2026-41108, EUVD-2026-41109, EUVD-2026-41106"
+        },
+        {
+          "date": "2026-07-07T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-21T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-27T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-28T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-29T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2026-07-30T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-03T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2026-08-05T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-06T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-10T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-11T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-13T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-14T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "22"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "GKE container runtime",
+                "product": {
+                  "name": "Google Cloud Platform GKE container runtime",
+                  "product_id": "T055632",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:google:cloud_platform:gke_container_runtime"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Cloud Platform"
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Advanced Cluster Security",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Advanced Cluster Security",
+                  "product_id": "T056231",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:advanced_cluster_security"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-47262",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T027843",
+          "398363",
+          "T056231",
+          "74185",
+          "T055632"
+        ]
+      },
+      "release_date": "2026-06-18T22:00:00.000+00:00",
+      "title": "CVE-2026-47262"
+    },
+    {
+      "cve": "CVE-2026-50195",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T027843",
+          "398363",
+          "T056231",
+          "74185",
+          "T055632"
+        ]
+      },
+      "release_date": "2026-06-18T22:00:00.000+00:00",
+      "title": "CVE-2026-50195"
+    },
+    {
+      "cve": "CVE-2026-53488",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T027843",
+          "398363",
+          "T056231",
+          "74185",
+          "T055632"
+        ]
+      },
+      "release_date": "2026-06-18T22:00:00.000+00:00",
+      "title": "CVE-2026-53488"
+    },
+    {
+      "cve": "CVE-2026-53489",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T027843",
+          "398363",
+          "T056231",
+          "74185",
+          "T055632"
+        ]
+      },
+      "release_date": "2026-06-18T22:00:00.000+00:00",
+      "title": "CVE-2026-53489"
+    },
+    {
+      "cve": "CVE-2026-53492",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T027843",
+          "398363",
+          "T056231",
+          "74185",
+          "T055632"
+        ]
+      },
+      "release_date": "2026-06-18T22:00:00.000+00:00",
+      "title": "CVE-2026-53492"
+    }
+  ]
+}

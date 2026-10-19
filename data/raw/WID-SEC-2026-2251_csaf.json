@@ -1,0 +1,598 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Drupal ist ein freies Content-Management-System, basierend auf der Scriptsprache PHP und einer SQL-Datenbank. Über zahlreiche Extensions kann der Funktionsumfang der Core-Installation individuell erweitert werden.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Drupal ausnutzen, umSQL-Injection-Angriffe durchzuführen, Sicherheitsmaßnahmen zu umgehen, vertrauliche Informationen offenzulegen und Cross-Site-Scripting-Angriffe durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2251 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2251.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2251 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2251"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-070 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-070"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-071 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-071"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-072 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-072"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-073 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-073"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-074 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-074"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-075 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-075"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-076 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-076"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-077 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-077"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-078 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-078"
+      },
+      {
+        "category": "external",
+        "summary": "Drupal Security Advisory sa-contrib-2026-079 vom 2026-07-08",
+        "url": "https://www.drupal.org/sa-contrib-2026-079"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Drupal Module: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T10:01:45.460+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2251",
+      "initial_release_date": "2026-07-08T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Ray Enterprise Translation <11.0.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation <11.0.4",
+                  "product_id": "T056297"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Ray Enterprise Translation 11.0.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation 11.0.4",
+                  "product_id": "T056297-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:ray_enterprise_translation__11.0.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Ray Enterprise Translation <4.1.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation <4.1.4",
+                  "product_id": "T056298"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Ray Enterprise Translation 4.1.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation 4.1.4",
+                  "product_id": "T056298-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:ray_enterprise_translation__4.1.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Ray Enterprise Translation <4.0.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation <4.0.4",
+                  "product_id": "T056299"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Ray Enterprise Translation 4.0.4",
+                "product": {
+                  "name": "Open Source Drupal Ray Enterprise Translation 4.0.4",
+                  "product_id": "T056299-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:ray_enterprise_translation__4.0.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Login Disable <2.1.4",
+                "product": {
+                  "name": "Open Source Drupal Login Disable <2.1.4",
+                  "product_id": "T056300"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Login Disable 2.1.4",
+                "product": {
+                  "name": "Open Source Drupal Login Disable 2.1.4",
+                  "product_id": "T056300-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:login_disable__2.1.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Location Selector <8.x-1.3",
+                "product": {
+                  "name": "Open Source Drupal Location Selector <8.x-1.3",
+                  "product_id": "T056301"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Location Selector 8.x-1.3",
+                "product": {
+                  "name": "Open Source Drupal Location Selector 8.x-1.3",
+                  "product_id": "T056301-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:location_selector__8.x-1.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "ECA <3.1.4",
+                "product": {
+                  "name": "Open Source Drupal ECA <3.1.4",
+                  "product_id": "T056302"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "ECA 3.1.4",
+                "product": {
+                  "name": "Open Source Drupal ECA 3.1.4",
+                  "product_id": "T056302-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:eca__3.1.4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "ECA <3.0.12",
+                "product": {
+                  "name": "Open Source Drupal ECA <3.0.12",
+                  "product_id": "T056303"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "ECA 3.0.12",
+                "product": {
+                  "name": "Open Source Drupal ECA 3.0.12",
+                  "product_id": "T056303-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:eca__3.0.12"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "ECA <2.1.20",
+                "product": {
+                  "name": "Open Source Drupal ECA <2.1.20",
+                  "product_id": "T056304"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "ECA 2.1.20",
+                "product": {
+                  "name": "Open Source Drupal ECA 2.1.20",
+                  "product_id": "T056304-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:eca__2.1.20"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "UI Patterns <2.0.17",
+                "product": {
+                  "name": "Open Source Drupal UI Patterns <2.0.17",
+                  "product_id": "T056305"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "UI Patterns 2.0.17",
+                "product": {
+                  "name": "Open Source Drupal UI Patterns 2.0.17",
+                  "product_id": "T056305-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:ui_patterns__2.0.17"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Siteimprove Analytics <2.0.1",
+                "product": {
+                  "name": "Open Source Drupal Siteimprove Analytics <2.0.1",
+                  "product_id": "T056306"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Siteimprove Analytics 2.0.1",
+                "product": {
+                  "name": "Open Source Drupal Siteimprove Analytics 2.0.1",
+                  "product_id": "T056306-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:siteimprove_analytics__2.0.1"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "AI SEO/GEO Analyzer <1.1.3",
+                "product": {
+                  "name": "Open Source Drupal AI SEO/GEO Analyzer <1.1.3",
+                  "product_id": "T056307"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "AI SEO/GEO Analyzer 1.1.3",
+                "product": {
+                  "name": "Open Source Drupal AI SEO/GEO Analyzer 1.1.3",
+                  "product_id": "T056307-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:ai_seogeo_analyzer__1.1.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Raw Formatter [Meta Tag Formatter]",
+                "product": {
+                  "name": "Open Source Drupal Raw Formatter [Meta Tag Formatter]",
+                  "product_id": "T056308",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:raw_formatter_meta_tag_formatter"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Commerce guest registration",
+                "product": {
+                  "name": "Open Source Drupal Commerce guest registration",
+                  "product_id": "T056310",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:commerce_guest_registration"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Clean RESTful",
+                "product": {
+                  "name": "Open Source Drupal Clean RESTful",
+                  "product_id": "T056311",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:drupal:drupal:clean_restful"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Drupal"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-15079",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15079"
+    },
+    {
+      "cve": "CVE-2026-15080",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15080"
+    },
+    {
+      "cve": "CVE-2026-15081",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15081"
+    },
+    {
+      "cve": "CVE-2026-15082",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15082"
+    },
+    {
+      "cve": "CVE-2026-15083",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15083"
+    },
+    {
+      "cve": "CVE-2026-15084",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15084"
+    },
+    {
+      "cve": "CVE-2026-15085",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15085"
+    },
+    {
+      "cve": "CVE-2026-15086",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15086"
+    },
+    {
+      "cve": "CVE-2026-15087",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15087"
+    },
+    {
+      "cve": "CVE-2026-15089",
+      "product_status": {
+        "known_affected": [
+          "T056302",
+          "T056303",
+          "T056304",
+          "T056305",
+          "T056306",
+          "T056307",
+          "T056297",
+          "T056298",
+          "T056299",
+          "T056300",
+          "T056301"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15089"
+    },
+    {
+      "product_status": {
+        "known_affected": [
+          "T056308",
+          "T056310",
+          "T056311"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00"
+    }
+  ]
+}

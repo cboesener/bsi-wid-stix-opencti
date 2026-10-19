@@ -1,0 +1,163 @@
+{
+  "type": "bundle",
+  "id": "bundle--c7a67a75-e38d-4841-9aac-675b88520520",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ccd1f101-dd16-56bf-9ee9-0894e64d076b",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Rancher: Schwachstelle ermöglicht Cross-Site Scripting",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Rancher ausnutzen, um einen Cross-Site Scripting Angriff durchzuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--0e6ecee0-08eb-5497-9214-1ef1dc5084db",
+        "software--bde012fc-1833-58fb-ab8c-1dab4f6c5eb0",
+        "software--3ac0e32f-2ab6-5f72-9cca-245de0f31bd7",
+        "software--f8bf2614-e298-5d4d-af2a-78309594adc3",
+        "software--0353b4c7-8b52-541f-9d90-3b4a80754862",
+        "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4",
+        "relationship--0dfa8a53-5511-53ca-a947-ba8b2a1c6718",
+        "relationship--5c33a62a-b6f8-5bc0-9b1a-e19d83b6de89",
+        "relationship--5a346c30-d9db-5b69-8105-af2c2084a722",
+        "relationship--8d5ce701-e41e-5520-83ff-0b50aa3836ca",
+        "relationship--5d19c5ec-0371-55dc-be7e-8f3d2486cb2b"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3541",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3541"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3541",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3541.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-992f-xh8r-jg2f vom 2026-09-23",
+          "url": "https://github.com/rancher/rancher/security/advisories/GHSA-992f-xh8r-jg2f"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Rancher ist ein Werkzeug für die Verwaltung von Kubernetes-Container basierten Umgebungen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--0e6ecee0-08eb-5497-9214-1ef1dc5084db",
+      "name": "Rancher Rancher <2.12.14",
+      "vendor": "Rancher"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--bde012fc-1833-58fb-ab8c-1dab4f6c5eb0",
+      "name": "Rancher Rancher <2.14.6",
+      "vendor": "Rancher"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3ac0e32f-2ab6-5f72-9cca-245de0f31bd7",
+      "name": "Rancher Rancher <2.15.2",
+      "vendor": "Rancher"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--f8bf2614-e298-5d4d-af2a-78309594adc3",
+      "name": "Rancher Rancher <2.13.10",
+      "vendor": "Rancher"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--0353b4c7-8b52-541f-9d90-3b4a80754862",
+      "name": "Rancher Rancher <2.11.18",
+      "vendor": "Rancher"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-88804",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-88804"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0dfa8a53-5511-53ca-a947-ba8b2a1c6718",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--bde012fc-1833-58fb-ab8c-1dab4f6c5eb0",
+      "target_ref": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5c33a62a-b6f8-5bc0-9b1a-e19d83b6de89",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3ac0e32f-2ab6-5f72-9cca-245de0f31bd7",
+      "target_ref": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5a346c30-d9db-5b69-8105-af2c2084a722",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--0353b4c7-8b52-541f-9d90-3b4a80754862",
+      "target_ref": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8d5ce701-e41e-5520-83ff-0b50aa3836ca",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--0e6ecee0-08eb-5497-9214-1ef1dc5084db",
+      "target_ref": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5d19c5ec-0371-55dc-be7e-8f3d2486cb2b",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--f8bf2614-e298-5d4d-af2a-78309594adc3",
+      "target_ref": "vulnerability--57094922-6afe-5891-b5c2-ea4a190ec8b4"
+    }
+  ]
+}

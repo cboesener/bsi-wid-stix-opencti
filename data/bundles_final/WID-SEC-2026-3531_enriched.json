@@ -1,0 +1,106 @@
+{
+  "type": "bundle",
+  "id": "bundle--9b1456f1-62a9-4f22-90f1-7c3d790f32a7",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--8ce6fc03-9272-5d47-9445-17eb455cd20a",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "QT: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--4c63510a-fb36-5cdd-aef7-63d4bd58379c",
+        "software--025d4ee8-6434-5600-a352-282bfc3be223",
+        "vulnerability--158349b8-fb08-5748-8892-4673c85543b9",
+        "relationship--57462c05-139e-55ee-8525-bd950c07aad0",
+        "relationship--f0d4e407-c65d-5b21-a17a-7b6062a347eb"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3531",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3531"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3531",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3531.json"
+        },
+        {
+          "source_name": "QT Security Advisory vom 2026-09-22",
+          "url": "https://www.qt.io/blog/security-advisory-cve-2026-79616"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "Qt ist eine C++ Klassenbibliothek für die plattformübergreifende Programmierung grafischer Benutzeroberflächen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--4c63510a-fb36-5cdd-aef7-63d4bd58379c",
+      "name": "Open Source QT <6.11.2",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--025d4ee8-6434-5600-a352-282bfc3be223",
+      "name": "Open Source QT <6.8.9",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--158349b8-fb08-5748-8892-4673c85543b9",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-79616",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-79616"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--57462c05-139e-55ee-8525-bd950c07aad0",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--4c63510a-fb36-5cdd-aef7-63d4bd58379c",
+      "target_ref": "vulnerability--158349b8-fb08-5748-8892-4673c85543b9"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f0d4e407-c65d-5b21-a17a-7b6062a347eb",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--025d4ee8-6434-5600-a352-282bfc3be223",
+      "target_ref": "vulnerability--158349b8-fb08-5748-8892-4673c85543b9"
+    }
+  ]
+}

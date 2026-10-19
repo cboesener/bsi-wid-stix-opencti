@@ -1,0 +1,87 @@
+{
+  "type": "bundle",
+  "id": "bundle--90c06f0f-15a9-4284-a3c6-08fb56a86ae1",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--871e860b-f570-5f8b-9826-8494a47480f0",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "MikroTik RouterOS: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in MikroTik RouterOS ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--280b8746-c823-5436-81cf-ea0a58219588",
+        "vulnerability--e6917f0d-c766-5603-9d22-6d5d989b857c",
+        "relationship--70944d29-19be-588d-8da9-f592387c808c"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3523",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3523"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3523",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3523.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-r8vv-pch2-7g9j vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-r8vv-pch2-7g9j"
+        }
+      ],
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges",
+      "x_product_description": "MikroTik RouterOS ist ein auf Linux basierendes Betriebssystem, das für MikroTik RouterBOARD Hardware und PC-Installationen entwickelt wurde und umfangreiche Routing-, Firewall- und Netzwerkverwaltungsfunktionen bietet."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--280b8746-c823-5436-81cf-ea0a58219588",
+      "name": "MikroTik RouterOS",
+      "vendor": "MikroTik",
+      "cpe": "cpe:2.3:o:mikrotik:routeros:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e6917f0d-c766-5603-9d22-6d5d989b857c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-93345",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-93345"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--70944d29-19be-588d-8da9-f592387c808c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--280b8746-c823-5436-81cf-ea0a58219588",
+      "target_ref": "vulnerability--e6917f0d-c766-5603-9d22-6d5d989b857c"
+    }
+  ]
+}

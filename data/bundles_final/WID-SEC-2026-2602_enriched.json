@@ -1,0 +1,179 @@
+{
+  "type": "bundle",
+  "id": "bundle--12fbc552-bd96-4563-b9e0-53f9f20ce6cc",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--124aa1dd-5733-56e1-a97f-33bcbbfa0dcc",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "docker: Schwachstelle ermöglicht Manipulation von Dateien",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in docker ausnutzen, um Dateien zu manipulieren.",
+      "published": "2026-07-30T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--de9a6480-5d0e-5846-b0ca-f046e4f0c56e",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--100e943b-7348-59a0-b277-8401f62bc950",
+        "relationship--38fda002-05c8-587f-af89-4a593608c4fb",
+        "relationship--157cf708-a7ec-544a-8ef4-dd380dfb2ac0",
+        "relationship--a999f2d6-6e6f-56da-8399-baf44a989741",
+        "relationship--ead8f3aa-4911-5050-b937-929d87279e07"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2602",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2602"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2602",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2602.json"
+        },
+        {
+          "source_name": "Docker Release Notes vom 2026-07-30",
+          "url": "https://docs.docker.com/engine/release-notes/29/#2970"
+        },
+        {
+          "source_name": "Moby GitHub vom 2026-07-30",
+          "url": "https://github.com/moby/moby/releases/tag/docker-v29.7.0"
+        },
+        {
+          "source_name": "Docker GitHub",
+          "url": "https://github.com/docker/cli/pull/7139"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:3863-1 vom 2026-09-03",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028649.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:66521 vom 2026-09-11",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66521"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:68254 vom 2026-09-16",
+          "url": "https://access.redhat.com/errata/RHSA-2026:68254"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:68006 vom 2026-09-16",
+          "url": "https://access.redhat.com/errata/RHSA-2026:68006"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69961 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69961"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-70201 vom 2026-09-23",
+          "url": "http://linux.oracle.com/errata/ELSA-2026-70201.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "7",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "Docker ist eine Open-Source-Software, die dazu verwendet werden kann, Anwendungen mithilfe von Betriebssystemvirtualisierung in Containern zu isolieren."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "name": "SUSE Linux",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:suse_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--de9a6480-5d0e-5846-b0ca-f046e4f0c56e",
+      "name": "Open Source docker <29.7.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--100e943b-7348-59a0-b277-8401f62bc950",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-17106",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-17106"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--38fda002-05c8-587f-af89-4a593608c4fb",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--100e943b-7348-59a0-b277-8401f62bc950"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--157cf708-a7ec-544a-8ef4-dd380dfb2ac0",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--de9a6480-5d0e-5846-b0ca-f046e4f0c56e",
+      "target_ref": "vulnerability--100e943b-7348-59a0-b277-8401f62bc950"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a999f2d6-6e6f-56da-8399-baf44a989741",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--100e943b-7348-59a0-b277-8401f62bc950"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ead8f3aa-4911-5050-b937-929d87279e07",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--100e943b-7348-59a0-b277-8401f62bc950"
+    }
+  ]
+}

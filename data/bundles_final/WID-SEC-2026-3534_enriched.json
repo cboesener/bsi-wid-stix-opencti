@@ -1,0 +1,91 @@
+{
+  "type": "bundle",
+  "id": "bundle--714c1683-9c54-4366-9f58-b093560164e1",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--ae383ed9-637d-5a17-ba14-59d8eab2be38",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "GNU Emacs: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in GNU Emacs ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--d2d929f9-3b8c-5585-9aff-1c86e72bce5a",
+        "vulnerability--6926ba74-48c7-565f-b4ae-a8771e63cf9e",
+        "relationship--38a20f7f-45b9-50fa-b90b-8981b6ff5ab4"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3534",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3534"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3534",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3534.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-29X7-3Q83-3X3V"
+        },
+        {
+          "source_name": "EU Vulnerability Database vom 2026-09-22",
+          "url": "https://euvd.enisa.europa.eu/enisa/EUVD-2026-84868"
+        }
+      ],
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "GNU Emacs ist Texteditor, welcher durch eine Programmierschnittstelle in der Programmiersprache Emacs Lisp mit beliebigen Erweiterungen ausgestattet werden kann."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--d2d929f9-3b8c-5585-9aff-1c86e72bce5a",
+      "name": "Open Source GNU Emacs 28.1-31.1",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:gnu:emacs:28.1_-_31.1:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--6926ba74-48c7-565f-b4ae-a8771e63cf9e",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-96269",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96269"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--38a20f7f-45b9-50fa-b90b-8981b6ff5ab4",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d2d929f9-3b8c-5585-9aff-1c86e72bce5a",
+      "target_ref": "vulnerability--6926ba74-48c7-565f-b4ae-a8771e63cf9e"
+    }
+  ]
+}

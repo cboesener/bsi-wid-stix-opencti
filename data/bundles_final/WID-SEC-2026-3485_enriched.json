@@ -1,0 +1,207 @@
+{
+  "type": "bundle",
+  "id": "bundle--8712bedc-7986-441d-895c-04db10eabb1f",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--690b83f3-6c22-5ce9-8047-1f2286f3812a",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "Checkmk: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Checkmk ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und um Daten zu manipulieren.",
+      "published": "2026-09-20T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--100e8a9d-8e67-578d-80a3-19428f7f384a",
+        "software--3c0fe366-75b5-56da-89bd-c298454abe67",
+        "software--fa2049f6-edeb-5cd0-b175-6d104cb832b0",
+        "software--e3506aad-d406-5635-a600-9ab461b22a1b",
+        "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15",
+        "relationship--b1cf4d56-7ea2-5194-940c-d3d3d969a8f1",
+        "relationship--2483a395-f098-5e8a-945c-f2dcaef01e28",
+        "relationship--ec4dd773-dac2-5696-88cb-fa298a37d715",
+        "relationship--0e096815-3789-5087-8b4a-31be8ae9acd3",
+        "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d",
+        "relationship--d6bde547-d557-51dc-a579-227eac424694",
+        "relationship--da03a55a-fbdc-50f1-a580-3407a1b1fd40",
+        "relationship--1d6c6efd-2e2e-5dc5-88ce-26c81f1d523e",
+        "relationship--3f4d97ac-5763-56a5-8050-d84717cea306"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3485",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3485"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3485",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3485.json"
+        },
+        {
+          "source_name": "CheckMK Werk 19604 vom 2026-09-20",
+          "url": "https://checkmk.com/werk/19604"
+        },
+        {
+          "source_name": "CheckMK Werk 22135 vom 2026-09-20",
+          "url": "https://checkmk.com/werk/22135"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Checkmk ist eine IT-Monitoring-Software."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--100e8a9d-8e67-578d-80a3-19428f7f384a",
+      "name": "Checkmk Checkmk <3.0.0b1",
+      "vendor": "Checkmk"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3c0fe366-75b5-56da-89bd-c298454abe67",
+      "name": "Checkmk Checkmk <2.4.0p37",
+      "vendor": "Checkmk"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--fa2049f6-edeb-5cd0-b175-6d104cb832b0",
+      "name": "Checkmk Checkmk <2.3.0p51",
+      "vendor": "Checkmk"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e3506aad-d406-5635-a600-9ab461b22a1b",
+      "name": "Checkmk Checkmk <2.5.0p14",
+      "vendor": "Checkmk"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-90990",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-90990"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b1cf4d56-7ea2-5194-940c-d3d3d969a8f1",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--100e8a9d-8e67-578d-80a3-19428f7f384a",
+      "target_ref": "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2483a395-f098-5e8a-945c-f2dcaef01e28",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3c0fe366-75b5-56da-89bd-c298454abe67",
+      "target_ref": "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ec4dd773-dac2-5696-88cb-fa298a37d715",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e3506aad-d406-5635-a600-9ab461b22a1b",
+      "target_ref": "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0e096815-3789-5087-8b4a-31be8ae9acd3",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--fa2049f6-edeb-5cd0-b175-6d104cb832b0",
+      "target_ref": "vulnerability--6442403e-93ca-5b7a-b17e-aea487487c15"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-92004",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-92004"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d6bde547-d557-51dc-a579-227eac424694",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--100e8a9d-8e67-578d-80a3-19428f7f384a",
+      "target_ref": "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--da03a55a-fbdc-50f1-a580-3407a1b1fd40",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3c0fe366-75b5-56da-89bd-c298454abe67",
+      "target_ref": "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1d6c6efd-2e2e-5dc5-88ce-26c81f1d523e",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e3506aad-d406-5635-a600-9ab461b22a1b",
+      "target_ref": "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3f4d97ac-5763-56a5-8050-d84717cea306",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--fa2049f6-edeb-5cd0-b175-6d104cb832b0",
+      "target_ref": "vulnerability--4c11a180-8e50-5e82-bc78-0239262c397d"
+    }
+  ]
+}

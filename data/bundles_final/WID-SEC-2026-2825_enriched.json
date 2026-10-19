@@ -1,0 +1,220 @@
+{
+  "type": "bundle",
+  "id": "bundle--e76ab9aa-84d8-4b58-997d-88a74d0380bc",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--0c2092d1-93e2-58f3-bebf-5cf769510067",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "etcd: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in etcd ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-08-12T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--098893a0-2693-5e6b-b870-982436e4d8fb",
+        "software--a46cd878-bc52-5e29-9fb6-2d5874e89f84",
+        "software--63d021ba-0fb9-5733-a2aa-a19a1de07739",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3",
+        "relationship--6d8d4c4f-795e-5c1a-8600-58c0783b3b52",
+        "relationship--dc12a879-b048-52e9-bd75-2dd2f0824d5c",
+        "relationship--0e3d269d-40f8-5648-98be-ce0530ec5241",
+        "relationship--608f7e9d-0868-5b9c-a2c2-6699a7bff8d7",
+        "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711",
+        "relationship--3b50e85b-8ab4-5f31-b0a7-73782de285f5",
+        "relationship--bd25dc3a-5b7d-5d78-8756-a38303e2c09b",
+        "relationship--067705ad-e528-55e9-9be3-6f34892444bb",
+        "relationship--da5ce21f-4528-5469-adf0-e66314f25cf5"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2825",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2825"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2825",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2825.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-08-12",
+          "url": "https://github.com/etcd-io/etcd/security/advisories/GHSA-xg4h-6gfc-h4m8"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-08-12",
+          "url": "https://github.com/etcd-io/etcd/security/advisories/GHSA-6vch-q96h-7gc3"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70828 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70828"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70829 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70829"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70826 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70826"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "etcd ist ein verteilter Schlüsselwertspeicher für die wichtigsten Daten eines verteilten Systems."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--098893a0-2693-5e6b-b870-982436e4d8fb",
+      "name": "Open Source etcd <3.6.14",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--a46cd878-bc52-5e29-9fb6-2d5874e89f84",
+      "name": "Open Source etcd <3.7.1",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--63d021ba-0fb9-5733-a2aa-a19a1de07739",
+      "name": "Open Source etcd <3.5.33",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-73499",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-73499"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6d8d4c4f-795e-5c1a-8600-58c0783b3b52",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--098893a0-2693-5e6b-b870-982436e4d8fb",
+      "target_ref": "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--dc12a879-b048-52e9-bd75-2dd2f0824d5c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--a46cd878-bc52-5e29-9fb6-2d5874e89f84",
+      "target_ref": "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0e3d269d-40f8-5648-98be-ce0530ec5241",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--608f7e9d-0868-5b9c-a2c2-6699a7bff8d7",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--63d021ba-0fb9-5733-a2aa-a19a1de07739",
+      "target_ref": "vulnerability--1735beb6-d29e-5de0-88f6-10968ee61dd3"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-73500",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-73500"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3b50e85b-8ab4-5f31-b0a7-73782de285f5",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--098893a0-2693-5e6b-b870-982436e4d8fb",
+      "target_ref": "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bd25dc3a-5b7d-5d78-8756-a38303e2c09b",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--a46cd878-bc52-5e29-9fb6-2d5874e89f84",
+      "target_ref": "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--067705ad-e528-55e9-9be3-6f34892444bb",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--da5ce21f-4528-5469-adf0-e66314f25cf5",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--63d021ba-0fb9-5733-a2aa-a19a1de07739",
+      "target_ref": "vulnerability--41189e1c-ee6d-559b-b2fb-eb9f6dcea711"
+    }
+  ]
+}

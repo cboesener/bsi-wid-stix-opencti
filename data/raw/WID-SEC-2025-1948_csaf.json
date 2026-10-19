@@ -1,0 +1,815 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "libxml ist ein C Parser und Toolkit, welches für das Gnome Projekt entwickelt wurde.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann eine Schwachstelle in libxml2 ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-1948 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-1948.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-1948 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1948"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker vom 2025-09-02",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2392605"
+      },
+      {
+        "category": "external",
+        "summary": "RedHat Customer Portal vom 2025-09-02",
+        "url": "https://access.redhat.com/security/cve/CVE-2025-9714"
+      },
+      {
+        "category": "external",
+        "summary": "Commit auf Gnome GitLab",
+        "url": "https://gitlab.gnome.org/GNOME/libxml2/-/commit/677a42645ef22b5a50741bad5facf9d8a8bc6d21"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7743-1 vom 2025-09-10",
+        "url": "https://ubuntu.com/security/notices/USN-7743-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4319 vom 2025-10-01",
+        "url": "https://lists.debian.org/debian-lts-announce/2025/09/msg00035.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4104-1 vom 2025-11-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023280.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4116-1 vom 2025-11-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023291.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4115-1 vom 2025-11-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023292.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22163 vom 2025-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22163"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22162 vom 2025-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22162"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22177 vom 2025-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22177"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Product Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22376"
+      },
+      {
+        "category": "external",
+        "summary": "RedHat Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22377"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-22376 vom 2025-12-01",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-22376.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:22376 vom 2025-12-02",
+        "url": "https://errata.build.resf.org/RLSA-2025:22376"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22868 vom 2025-12-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22868"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23205 vom 2025-12-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23205"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23209 vom 2025-12-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23209"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23234 vom 2025-12-16",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23234"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23227 vom 2025-12-16",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23227"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23202 vom 2025-12-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23202"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23204 vom 2025-12-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23204"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23278 vom 2025-12-16",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23278"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23449 vom 2025-12-17",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23449"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7255930 vom 2025-12-29",
+        "url": "https://www.ibm.com/support/pages/node/7255930"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0414 vom 2026-01-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0414"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0950 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0950"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0677 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0677"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0702 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0702"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0978 vom 2026-01-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0978"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0996 vom 2026-01-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0996"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0985 vom 2026-01-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0985"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1652 vom 2026-02-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1652"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0980 vom 2026-02-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0980"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1539 vom 2026-02-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1539"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1541 vom 2026-02-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1541"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7260087 vom 2026-02-09",
+        "url": "https://www.ibm.com/support/pages/node/7260087"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3462 vom 2026-02-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3462"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3461 vom 2026-02-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3461"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20260320-0006 vom 2026-03-20",
+        "url": "https://security.netapp.com/advisory/NTAP-20260320-0006"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:7519 vom 2026-04-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:7519"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11349 vom 2026-04-28",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11349"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:11349 vom 2026-04-29",
+        "url": "https://errata.build.resf.org/RLSA-2026:11349"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-11349 vom 2026-04-28",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-11349.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:14858 vom 2026-05-07",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14858"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:14832 vom 2026-05-07",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14832"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:15967 vom 2026-05-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:15967"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22420 vom 2026-06-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22420"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21695 vom 2026-06-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21695"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-22420 vom 2026-06-30",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-22420.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278707 vom 2026-07-01",
+        "url": "https://www.ibm.com/support/pages/node/7278707"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7286010 vom 2026-09-02",
+        "url": "https://www.ibm.com/support/pages/node/7286010"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69655 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69655"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:69655 vom 2026-09-23",
+        "url": "https://errata.build.resf.org/RLSA-2026:69655"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "libxml2 (exsltDynMapFunction): Schwachstelle ermöglicht Denial of Service",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T11:25:08.469+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-1948",
+      "initial_release_date": "2025-09-02T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-09-02T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-09-10T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von European Union Vulnerability Database und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-09-30T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-11-16T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-25T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-26T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-30T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-01T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-12-08T23:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-15T23:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-16T23:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-29T23:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-01-08T23:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-21T23:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-22T23:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-27T23:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-01T23:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-03T23:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-04T23:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-05T23:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-08T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-03-01T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-22T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2026-04-21T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-27T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-28T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-05-07T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-10T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-01T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-04T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-01T22:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "35"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM App Connect Enterprise",
+            "product": {
+              "name": "IBM App Connect Enterprise",
+              "product_id": "T032495",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:app_connect_enterprise:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Operator",
+                "product": {
+                  "name": "IBM MQ Operator",
+                  "product_id": "T036688",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:mq:operator"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "MQ"
+          },
+          {
+            "category": "product_name",
+            "name": "IBM Power Hardware Management Console",
+            "product": {
+              "name": "IBM Power Hardware Management Console",
+              "product_id": "5114",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:hardware_management_console:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP16",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP16",
+                  "product_id": "T058943"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP16",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP16",
+                  "product_id": "T058943-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up16"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp Data ONTAP",
+            "product": {
+              "name": "NetApp Data ONTAP",
+              "product_id": "T039981",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:data_ontap:9"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source libxml2",
+            "product": {
+              "name": "Open Source libxml2",
+              "product_id": "T046675",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:xmlsoft:libxml2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "T032039",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.20.12",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.20.12",
+                  "product_id": "T050329"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.20.12",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.20.12",
+                  "product_id": "T050329-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.20.12"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.12.91",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.12.91",
+                  "product_id": "T054990"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.12.91",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.12.91",
+                  "product_id": "T054990-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.12.91"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-9714",
+      "product_status": {
+        "known_affected": [
+          "T058943",
+          "T032039",
+          "T054990",
+          "67646",
+          "5114",
+          "T036688",
+          "T004914",
+          "T032255",
+          "T039981",
+          "T032495",
+          "2951",
+          "T002207",
+          "T000126",
+          "T050329",
+          "T046675"
+        ]
+      },
+      "release_date": "2025-09-02T22:00:00.000+00:00",
+      "title": "CVE-2025-9714"
+    }
+  ]
+}

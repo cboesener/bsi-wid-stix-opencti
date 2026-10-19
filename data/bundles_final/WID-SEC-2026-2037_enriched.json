@@ -1,0 +1,207 @@
+{
+  "type": "bundle",
+  "id": "bundle--fe62038e-4d38-4618-b3fc-6cf6849c3c1c",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--1d57ae4b-6863-5c6a-92df-bb3eaae27dcf",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "libxml2: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in libxml2 ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-06-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--489bdc00-8486-5eb3-b646-d8807b2719a3",
+        "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d",
+        "relationship--02aa8000-0166-57f7-9c2c-276d027dd023",
+        "relationship--3d42780c-ffaf-5fd0-894d-895f4abdf008",
+        "relationship--4b3f63d2-05c5-525b-99f2-7fcbfe2fbf92",
+        "relationship--087f16ae-4818-569d-9697-329078244afa",
+        "relationship--e8eca192-b4e6-5438-b0a9-a49c6a28d5d2"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2037",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2037"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2037",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2037.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-06-22",
+          "url": "https://github.com/advisories/GHSA-V4QW-P44R-QHFG"
+        },
+        {
+          "source_name": "EU Vulnerability Database vom 2026-06-22",
+          "url": "https://euvd.enisa.europa.eu/enisa/EUVD-2026-38232"
+        },
+        {
+          "source_name": "Launchpad Advisory mit PoC",
+          "url": "https://bugs.launchpad.net/ubuntu/+source/libxml2/+bug/2141260"
+        },
+        {
+          "source_name": "Amazon Linux Security Advisory ALAS2-2026-3785 vom 2026-07-08",
+          "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3785.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:61247 vom 2026-08-31",
+          "url": "https://access.redhat.com/errata/RHSA-2026:61247"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:61247 vom 2026-08-31",
+          "url": "https://errata.build.resf.org/RLSA-2026:61247"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:61783 vom 2026-09-01",
+          "url": "https://access.redhat.com/errata/RHSA-2026:61783"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-61247 vom 2026-09-02",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-61247-0.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69655 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69655"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:69655 vom 2026-09-23",
+          "url": "https://errata.build.resf.org/RLSA-2026:69655"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69655 vom 2026-09-23",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-69655.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "8",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "libxml ist ein C Parser und Toolkit, welches für das Gnome Projekt entwickelt wurde."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+      "name": "Amazon Linux 2",
+      "vendor": "Amazon",
+      "cpe": "cpe:2.3:o:amazon:linux_2:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--489bdc00-8486-5eb3-b646-d8807b2719a3",
+      "name": "Open Source libxml2 <2.11.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-6653",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-6653"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--02aa8000-0166-57f7-9c2c-276d027dd023",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3d42780c-ffaf-5fd0-894d-895f4abdf008",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4b3f63d2-05c5-525b-99f2-7fcbfe2fbf92",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--087f16ae-4818-569d-9697-329078244afa",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--cba9378f-d8c9-58fa-9a90-6cb604217ea4",
+      "target_ref": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e8eca192-b4e6-5438-b0a9-a49c6a28d5d2",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--489bdc00-8486-5eb3-b646-d8807b2719a3",
+      "target_ref": "vulnerability--7313e0f7-304b-55f9-95ec-3d765e36a86d"
+    }
+  ]
+}

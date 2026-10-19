@@ -1,0 +1,2061 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Apache ist ein Webserver für verschiedene Plattformen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Apache HTTP Server ausnutzen, um einen Denial of Service Angriff durchzuführen, um Sicherheitsvorkehrungen zu umgehen, um Informationen offenzulegen, und um Dateien zu manipulieren.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-1529 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-1529.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-1529 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1529"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/20"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/21"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/22"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/23"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/24"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/25"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/26"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/27"
+      },
+      {
+        "category": "external",
+        "summary": "Mailing List OSS Security vom 2025-07-10",
+        "url": "https://seclists.org/oss-sec/2025/q3/28"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2025-6D7A183951 vom 2025-07-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2025-6d7a183951"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2025-B486FFD351 vom 2025-07-11",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2025-b486ffd351"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7639-1 vom 2025-07-16",
+        "url": "https://ubuntu.com/security/notices/USN-7639-1"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7239846 vom 2025-07-16",
+        "url": "https://www.ibm.com/support/pages/node/7239846"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15360-1 vom 2025-07-21",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/CB2NNDXYFXVKF6KTKFMA2AHUNHAGDAFJ/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15369-1 vom 2025-07-22",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/UTC3TDRL5IF6YTXDS2ENK5OJDZNHZ2XL/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02565-1 vom 2025-07-31",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-July/021991.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2025-2958 vom 2025-08-05",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2025-2958.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02685-1 vom 2025-08-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022063.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02683-1 vom 2025-08-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022065.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02682-1 vom 2025-08-04",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/KSS462UFYDADIPPKUL3TXXRQPB3QSMVB/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02684-1 vom 2025-08-04",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/HJTVNIIT7LUYXSMCL3VWS2K232WNZNZG/"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7241583 vom 2025-08-06",
+        "url": "https://www.ibm.com/support/pages/node/7241583"
+      },
+      {
+        "category": "external",
+        "summary": "F5 Security Advisory K000152924 vom 2025-08-08",
+        "url": "https://my.f5.com/manage/s/article/K000152924"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7241939 vom 2025-08-11",
+        "url": "https://www.ibm.com/support/pages/node/7241939"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4270 vom 2025-08-12",
+        "url": "https://lists.debian.org/debian-lts-announce/2025/08/msg00009.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:13681 vom 2025-08-14",
+        "url": "https://access.redhat.com/errata/RHSA-2025:13681"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:13680 vom 2025-08-14",
+        "url": "https://access.redhat.com/errata/RHSA-2025:13680"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7242375 vom 2025-08-18",
+        "url": "https://www.ibm.com/support/pages/node/7242375"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7639-2 vom 2025-08-20",
+        "url": "https://ubuntu.com/security/notices/USN-7639-2"
+      },
+      {
+        "category": "external",
+        "summary": "F5 Security Advisory K000153074 vom 2025-08-21",
+        "url": "https://my.f5.com/manage/s/article/K000153074"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-14625 vom 2025-08-27",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-14625.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14625 vom 2025-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14625"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14901 vom 2025-08-28",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14901"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14902 vom 2025-08-28",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14902"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14903 vom 2025-08-28",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14903"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14997"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14983 vom 2025-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14983"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:14998 vom 2025-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:14998"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15036 vom 2025-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15036"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15023 vom 2025-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15023"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15095 vom 2025-09-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15095"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-15023 vom 2025-09-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-15023.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-14983 vom 2025-09-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-14983.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-15095 vom 2025-09-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-15095.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15123 vom 2025-09-03",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15123"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-15123 vom 2025-09-05",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-15123.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15516 vom 2025-09-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15516"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:15123 vom 2025-09-08",
+        "url": "https://errata.build.resf.org/RLSA-2025:15123"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15619 vom 2025-09-10",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15619"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15684 vom 2025-09-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15684"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15698 vom 2025-09-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15698"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15726 vom 2025-09-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15726"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15727 vom 2025-09-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15727"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15725 vom 2025-09-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15725"
+      },
+      {
+        "category": "external",
+        "summary": "EVE-NG Professional Release notes vom 2025-09-18",
+        "url": "https://www.eve-ng.net/index.php/documentation/release-notes/"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7247015 vom 2025-10-03",
+        "url": "https://www.ibm.com/support/pages/node/7247015"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:14983 vom 2025-10-10",
+        "url": "https://errata.build.resf.org/RLSA-2025:14983"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:15023 vom 2025-10-10",
+        "url": "https://errata.build.resf.org/RLSA-2025:15023"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-14997 vom 2025-10-16",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-14997.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-404 vom 2025-10-31",
+        "url": "https://www.dell.com/support/kbdoc/000385435"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-390 vom 2025-11-05",
+        "url": "https://www.dell.com/support/kbdoc/000385230"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-381 vom 2025-11-10",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000390206/dsa-2025-381-security-update-for-dell-powerscale-onefs-multiple-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7250971 vom 2025-11-12",
+        "url": "https://www.ibm.com/support/pages/node/7250971"
+      },
+      {
+        "category": "external",
+        "summary": "XEROX Security Advisory XRX25-018 vom 2025-11-18",
+        "url": "https://security.business.xerox.com/wp-content/uploads/2025/11/Xerox-Security-Bulletin-XRX25-018-Xerox-FreeFlow-Print-Server-v7.pdf"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7252038 vom 2025-11-20",
+        "url": "https://www.ibm.com/support/pages/node/7252038"
+      },
+      {
+        "category": "external",
+        "summary": "HP Security Bulletin HPESBUX04975 vom 2025-11-24",
+        "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbux04975en_us&docLocale=en_US"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-365 vom 2025-12-01",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000397532/dsa-2025-365-security-update-for-dell-networker-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-23932 vom 2025-12-23",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-23932.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-23919 vom 2025-12-23",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-23919.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-23732 vom 2025-12-26",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-23732.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Knowledge Base Article",
+        "url": "https://www.dell.com/support/kbdoc/en-us/000405813/dsa-2025-415-security-update-for-dell-powerprotect-data-domain-multiple-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7259417 vom 2026-02-04",
+        "url": "https://www.ibm.com/support/pages/node/7259417"
+      },
+      {
+        "category": "external",
+        "summary": "QNAP Security Advisory QSA-26-04 vom 2026-02-11",
+        "url": "https://www.qnap.com/go/security-advisory/qsa-26-04"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8338-1 vom 2026-05-28",
+        "url": "https://ubuntu.com/security/notices/USN-8338-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20810-1 vom 2026-05-28",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/XOVJ4T6O6CSTSYOREEQDLPHZCQ5QDWLP/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8338-2 vom 2026-05-29",
+        "url": "https://ubuntu.com/security/notices/USN-8338-2"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:22140 vom 2026-06-01",
+        "url": "https://errata.build.resf.org/RLSA-2026:22140"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22140 vom 2026-06-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22140"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21846-1 vom 2026-06-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026436.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22528 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22528"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-22140 vom 2026-06-02",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-22140.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:22551 vom 2026-06-03",
+        "url": "https://access.redhat.com/errata/RHSA-2026:22551"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:22528 vom 2026-06-05",
+        "url": "https://errata.build.resf.org/RLSA-2026:22528"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:22551 vom 2026-06-05",
+        "url": "https://errata.build.resf.org/RLSA-2026:22551"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:0204-1 vom 2026-06-15",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/XSJGHR4EZX3F35WFJ4XQF6YUHQ7YWYJA/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20962-1 vom 2026-06-15",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/4A5M7MGIVCGIU46ABGOD4XUYG7MGTA6N/"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-25090 vom 2026-06-17",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-25090.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27201 vom 2026-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27201"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:27200 vom 2026-06-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:27200"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-25057 vom 2026-06-25",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-25057.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-22551 vom 2026-06-27",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-22551.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2686-1 vom 2026-06-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027074.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34109 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34109"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:34109 vom 2026-07-07",
+        "url": "https://errata.build.resf.org/RLSA-2026:34109"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36373 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36373"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36846 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36846"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36831 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36831"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Apache HTTP Server: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T09:21:58.361+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-1529",
+      "initial_release_date": "2025-07-10T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-07-10T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-07-13T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2025-07-16T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Ubuntu und IBM aufgenommen"
+        },
+        {
+          "date": "2025-07-21T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-22T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-30T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-08-04T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2025-08-06T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-08-10T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von F5 aufgenommen"
+        },
+        {
+          "date": "2025-08-11T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-08-12T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-08-14T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-08-17T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-08-19T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-08-21T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von F5 aufgenommen"
+        },
+        {
+          "date": "2025-08-26T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-08-28T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-01T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-02T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-09-03T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-04T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-09-08T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2025-09-10T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-11T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-14T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-17T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2025-10-05T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-10-09T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2025-10-16T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-10-30T23:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-04T23:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-10T23:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-12T23:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-11-17T23:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von XEROX aufgenommen"
+        },
+        {
+          "date": "2025-11-19T23:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2025-11-23T23:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von HP aufgenommen"
+        },
+        {
+          "date": "2025-11-30T23:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-12-22T23:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-12-28T23:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-11T23:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-02-03T23:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-02-11T23:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von QNAP aufgenommen"
+        },
+        {
+          "date": "2026-05-28T22:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von Ubuntu und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-31T22:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-06-01T22:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation, Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-02T22:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von Red Hat und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-06-04T22:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-07T22:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-06-15T22:00:00.000+00:00",
+          "number": "49",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-17T22:00:00.000+00:00",
+          "number": "50",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-06-22T22:00:00.000+00:00",
+          "number": "51",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "52",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-06-28T22:00:00.000+00:00",
+          "number": "53",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "54",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-07T22:00:00.000+00:00",
+          "number": "55",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "56",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "56"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<2.4.64",
+                "product": {
+                  "name": "Apache HTTP Server <2.4.64",
+                  "product_id": "T045319"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.4.64",
+                "product": {
+                  "name": "Apache HTTP Server 2.4.64",
+                  "product_id": "T045319-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:apache:http_server:2.4.64"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "HTTP Server"
+          }
+        ],
+        "category": "vendor",
+        "name": "Apache"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Dell Avamar",
+            "product": {
+              "name": "Dell Avamar",
+              "product_id": "T039664",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:avamar:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Virtual Edition",
+                "product": {
+                  "name": "Dell NetWorker Virtual Edition",
+                  "product_id": "T048226",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:virtual_edition"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Management Console <19.13.0.2",
+                "product": {
+                  "name": "Dell NetWorker Management Console <19.13.0.2",
+                  "product_id": "T048961"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Management Console 19.13.0.2",
+                "product": {
+                  "name": "Dell NetWorker Management Console 19.13.0.2",
+                  "product_id": "T048961-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:management_console__19.13.0.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Management Web UI <19.13.0.2",
+                "product": {
+                  "name": "Dell NetWorker Management Web UI <19.13.0.2",
+                  "product_id": "T048962"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Management Web UI 19.13.0.2",
+                "product": {
+                  "name": "Dell NetWorker Management Web UI 19.13.0.2",
+                  "product_id": "T048962-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:management_web_ui__19.13.0.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          },
+          {
+            "category": "product_name",
+            "name": "Dell PowerProtect Data Domain",
+            "product": {
+              "name": "Dell PowerProtect Data Domain",
+              "product_id": "T047351",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:powerprotect_data_domain:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Dell PowerScale OneFS",
+            "product": {
+              "name": "Dell PowerScale OneFS",
+              "product_id": "T048394",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:powerscale_onefs:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Appliance <5.32.00.18",
+                "product": {
+                  "name": "Dell Secure Connect Gateway Appliance <5.32.00.18",
+                  "product_id": "T048301"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Appliance 5.32.00.18",
+                "product": {
+                  "name": "Dell Secure Connect Gateway Appliance 5.32.00.18",
+                  "product_id": "T048301-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:secure_connect_gateway:appliance__5.32.00.18"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Secure Connect Gateway"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<6.4.0-1",
+                "product": {
+                  "name": "EVE-NG EVE-NG <6.4.0-1",
+                  "product_id": "T047054"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "6.4.0-1",
+                "product": {
+                  "name": "EVE-NG EVE-NG 6.4.0-1",
+                  "product_id": "T047054-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:eve-ng:eve-ng:6.4.0-1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "EVE-NG"
+          }
+        ],
+        "category": "vendor",
+        "name": "EVE-NG"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "15.1.0-15.1.10",
+                "product": {
+                  "name": "F5 BIG-IP 15.1.0-15.1.10",
+                  "product_id": "T034902",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:f5:big-ip:15.1.0_-_15.1.10"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "17.1.0-17.1.2",
+                "product": {
+                  "name": "F5 BIG-IP 17.1.0-17.1.2",
+                  "product_id": "T040213",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:f5:big-ip:17.1.0_-_17.1.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "16.1.0-16.1.6",
+                "product": {
+                  "name": "F5 BIG-IP 16.1.0-16.1.6",
+                  "product_id": "T044168",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:f5:big-ip:16.1.0_-_16.1.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "17.5.0-17.5.1",
+                "product": {
+                  "name": "F5 BIG-IP 17.5.0-17.5.1",
+                  "product_id": "T045956",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:f5:big-ip:17.5.0_-_17.5.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "BIG-IP"
+          }
+        ],
+        "category": "vendor",
+        "name": "F5"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Apache-based Web Server <B.2.4.65.00",
+                "product": {
+                  "name": "HPE HP-UX Apache-based Web Server <B.2.4.65.00",
+                  "product_id": "T048835"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Apache-based Web Server B.2.4.65.00",
+                "product": {
+                  "name": "HPE HP-UX Apache-based Web Server B.2.4.65.00",
+                  "product_id": "T048835-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:hp:hp-ux:b.2.4.65.00::apache-based_web_server"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "HP-UX"
+          }
+        ],
+        "category": "vendor",
+        "name": "HPE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM Business Automation Workflow",
+            "product": {
+              "name": "IBM Business Automation Workflow",
+              "product_id": "T019704",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:business_automation_workflow:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "11",
+                "product": {
+                  "name": "IBM DevOps Code ClearCase 11.0",
+                  "product_id": "T046313",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:devops_code_clearcase:11.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "DevOps Code ClearCase"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<9.0.5.25",
+                "product": {
+                  "name": "IBM HTTP Server <9.0.5.25",
+                  "product_id": "T045476"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.0.5.25",
+                "product": {
+                  "name": "IBM HTTP Server 9.0.5.25",
+                  "product_id": "T045476-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:http_server:9.0.5.25"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<8.5.5.29",
+                "product": {
+                  "name": "IBM HTTP Server <8.5.5.29",
+                  "product_id": "T045477"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8.5.5.29",
+                "product": {
+                  "name": "IBM HTTP Server 8.5.5.29",
+                  "product_id": "T045477-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:http_server:8.5.5.29"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "HTTP Server"
+          },
+          {
+            "category": "product_name",
+            "name": "IBM Power Hardware Management Console",
+            "product": {
+              "name": "IBM Power Hardware Management Console",
+              "product_id": "T023373",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:hardware_management_console:v10"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP14 IF01",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP14 IF01",
+                  "product_id": "T048556"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP14 IF01",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP14 IF01",
+                  "product_id": "T048556-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up14_if01"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "IBM Rational ClearCase",
+                "product": {
+                  "name": "IBM Rational ClearCase",
+                  "product_id": "T004180",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:rational_clearcase:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9.1",
+                "product": {
+                  "name": "IBM Rational ClearCase 9.1",
+                  "product_id": "T021423",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:rational_clearcase:9.1"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.0.0",
+                "product": {
+                  "name": "IBM Rational ClearCase 10.0.0",
+                  "product_id": "T026520",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:rational_clearcase:10.0.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Rational ClearCase"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "9.1-9.1.0.8",
+                "product": {
+                  "name": "IBM Rational ClearQuest 9.1-9.1.0.8",
+                  "product_id": "T045976",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:rational_clearquest:9.1_-_9.1.0.8"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10.0-10.0.7",
+                "product": {
+                  "name": "IBM Rational ClearQuest 10.0-10.0.7",
+                  "product_id": "T045977",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:rational_clearquest:10.0_-_10.0.7"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Rational ClearQuest"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<6.3.0.7 SP 5",
+                "product": {
+                  "name": "IBM Tivoli Monitoring <6.3.0.7 SP 5",
+                  "product_id": "T047377"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "6.3.0.7 SP 5",
+                "product": {
+                  "name": "IBM Tivoli Monitoring 6.3.0.7 SP 5",
+                  "product_id": "T047377-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_monitoring:6.3.0.7_sp_5"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Monitoring"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "QTS <5.2.8.3332 build 20251128",
+                "product": {
+                  "name": "QNAP NAS QTS <5.2.8.3332 build 20251128",
+                  "product_id": "T050838"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "QTS 5.2.8.3332 build 20251128",
+                "product": {
+                  "name": "QNAP NAS QTS 5.2.8.3332 build 20251128",
+                  "product_id": "T050838-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:qnap:nas:qts__5.2.8.3332_build_20251128"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "QuTS hero <h5.2.8.3321 build 20251117",
+                "product": {
+                  "name": "QNAP NAS QuTS hero <h5.2.8.3321 build 20251117",
+                  "product_id": "T050839"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "QuTS hero h5.2.8.3321 build 20251117",
+                "product": {
+                  "name": "QNAP NAS QuTS hero h5.2.8.3321 build 20251117",
+                  "product_id": "T050839-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:qnap:nas:quts_hero__h5.2.8.3321_build_20251117"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "QuTS hero <h5.3.2.3354 build 20251225",
+                "product": {
+                  "name": "QNAP NAS QuTS hero <h5.3.2.3354 build 20251225",
+                  "product_id": "T050840"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "QuTS hero h5.3.2.3354 build 20251225",
+                "product": {
+                  "name": "QNAP NAS QuTS hero h5.3.2.3354 build 20251225",
+                  "product_id": "T050840-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:qnap:nas:quts_hero__h5.3.2.3354_build_20251225"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NAS"
+          }
+        ],
+        "category": "vendor",
+        "name": "QNAP"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "T034310",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat JBoss Core Services",
+                "product": {
+                  "name": "Red Hat JBoss Core Services",
+                  "product_id": "T012412",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:jboss_core_services:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1",
+                "product": {
+                  "name": "Red Hat JBoss Core Services 1",
+                  "product_id": "T046258",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:jboss_core_services:1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "JBoss Core Services"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "v7",
+                "product": {
+                  "name": "Xerox FreeFlow Print Server v7",
+                  "product_id": "T035098",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:xerox:freeflow_print_server:v7"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "FreeFlow Print Server"
+          }
+        ],
+        "category": "vendor",
+        "name": "Xerox"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2023-38709",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2023-38709"
+    },
+    {
+      "cve": "CVE-2024-42516",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2024-42516"
+    },
+    {
+      "cve": "CVE-2024-43204",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2024-43204"
+    },
+    {
+      "cve": "CVE-2024-43394",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2024-43394"
+    },
+    {
+      "cve": "CVE-2024-47252",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2024-47252"
+    },
+    {
+      "cve": "CVE-2025-23048",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2025-23048"
+    },
+    {
+      "cve": "CVE-2025-49630",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2025-49630"
+    },
+    {
+      "cve": "CVE-2025-49812",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2025-49812"
+    },
+    {
+      "cve": "CVE-2025-53020",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T034902",
+          "T048394",
+          "T012412",
+          "T035098",
+          "T004914",
+          "T048835",
+          "398363",
+          "T040213",
+          "T046258",
+          "T046313",
+          "T048556",
+          "T023373",
+          "T026520",
+          "T050840",
+          "T032255",
+          "74185",
+          "T034310",
+          "T039664",
+          "T021423",
+          "T045976",
+          "T050839",
+          "T050838",
+          "2951",
+          "T002207",
+          "T045956",
+          "T045977",
+          "T000126",
+          "T019704",
+          "T045319",
+          "T027843",
+          "T004180",
+          "T047351",
+          "T047054",
+          "T048226",
+          "T044168",
+          "T045477",
+          "T047377",
+          "T048962",
+          "T045476",
+          "T048301",
+          "T048961"
+        ]
+      },
+      "release_date": "2025-07-10T22:00:00.000+00:00",
+      "title": "CVE-2025-53020"
+    }
+  ]
+}

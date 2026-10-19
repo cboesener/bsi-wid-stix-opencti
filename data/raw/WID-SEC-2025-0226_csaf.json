@@ -1,0 +1,974 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Red Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux Advanced Cluster Management ausnutzen, um Sicherheitsmaßnahmen zu umgehen und einen Denial-of-Service-Zustand zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-0226 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-0226.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-0226 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-0226"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:0851 vom 2025-01-30",
+        "url": "https://access.redhat.com/errata/RHSA-2025:0851"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASECS-2025-046 vom 2025-02-04",
+        "url": "https://alas.aws.amazon.com/AL2/ALASECS-2025-046.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASDOCKER-2025-049 vom 2025-02-04",
+        "url": "https://alas.aws.amazon.com/AL2/ALASDOCKER-2025-049.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASDOCKER-2025-050 vom 2025-02-04",
+        "url": "https://alas.aws.amazon.com/AL2/ALASDOCKER-2025-050.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALASNITRO-ENCLAVES-2025-049 vom 2025-02-04",
+        "url": "https://alas.aws.amazon.com/AL2/ALASNITRO-ENCLAVES-2025-049.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:0839 vom 2025-02-06",
+        "url": "https://access.redhat.com/errata/RHSA-2025:0839"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:0840 vom 2025-02-06",
+        "url": "https://access.redhat.com/errata/RHSA-2025:0840"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1331 vom 2025-02-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1331"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1333 vom 2025-02-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1333"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1332 vom 2025-02-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1332"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1334 vom 2025-02-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1334"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1468 vom 2025-02-13",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1468"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:1451 vom 2025-02-19",
+        "url": "https://access.redhat.com/errata/RHSA-2025:1451"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:2652 vom 2025-03-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:2652"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:3069 vom 2025-03-20",
+        "url": "https://access.redhat.com/errata/RHSA-2025:3069"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:3820 vom 2025-04-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:3820"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:3973 vom 2025-04-17",
+        "url": "https://access.redhat.com/errata/RHSA-2025:3973"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:7451 vom 2025-05-14",
+        "url": "https://access.redhat.com/errata/RHSA-2025:7451"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:7449 vom 2025-05-14",
+        "url": "https://access.redhat.com/errata/RHSA-2025:7449"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:8059 vom 2025-05-21",
+        "url": "https://access.redhat.com/errata/RHSA-2025:8059"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:8244 vom 2025-05-28",
+        "url": "https://access.redhat.com/errata/RHSA-2025:8244"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20278-1 vom 2025-06-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-June/021044.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:8551 vom 2025-06-05",
+        "url": "https://access.redhat.com/errata/RHSA-2025:8551"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:11037 vom 2025-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2024:11037"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:11038 vom 2025-06-17",
+        "url": "https://access.redhat.com/errata/RHSA-2024:11038"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-EPEL-2025-3AD6D2FE5C vom 2025-07-28",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-EPEL-2025-3ad6d2fe5c"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:16165 vom 2025-09-25",
+        "url": "https://access.redhat.com/errata/RHSA-2025:16165"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:16160 vom 2025-09-25",
+        "url": "https://access.redhat.com/errata/RHSA-2025:16160"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:17232 vom 2025-10-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:17232"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:17690 vom 2025-10-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:17690"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bug-Tracker 9959279 vom 2025-10-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:17657"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:17657 vom 2025-10-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:17657"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:19306 vom 2025-11-06",
+        "url": "https://access.redhat.com/errata/RHSA-2025:19306"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21704 vom 2025-11-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21704"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7257990 vom 2026-01-25",
+        "url": "https://www.ibm.com/support/pages/node/7257990"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2737 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2737"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2762 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2762"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2769 vom 2026-02-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2769"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:26411 vom 2026-06-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:26411"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:33154 vom 2026-06-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:33154"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:34342 vom 2026-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2026:34342"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36820 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36820"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36796 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:40118 vom 2026-07-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40118"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:41019 vom 2026-07-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:41019"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:42796 vom 2026-07-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:48771 vom 2026-07-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48771"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:66521 vom 2026-09-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:66521"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70267 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70267"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Red Hat Enterprise Linux (Advanced Cluster Management): Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T11:24:58.620+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-0226",
+      "initial_release_date": "2025-01-30T23:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-01-30T23:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-02-03T23:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2025-02-05T23:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-02-11T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-02-13T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-02-19T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-03-10T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-03-19T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-04-10T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-04-16T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-05-14T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-05-20T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-05-27T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-06-03T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-06-04T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-06-17T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-28T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2025-09-24T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-09-25T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-10-08T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-10-15T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-06T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-18T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-25T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-02-16T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-16T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-15T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-16T22:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-21T22:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-30T22:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-10T22:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "35"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Big SQL",
+                "product": {
+                  "name": "IBM DB2 Big SQL",
+                  "product_id": "T022379",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:db2:big_sql"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "DB2"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Advanced Cluster Security for Kubernetes 4",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Advanced Cluster Security for Kubernetes 4",
+                  "product_id": "T027916",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:advanced_cluster_security_for_kubernetes_4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Advanced Cluster Management <2.12.2",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Advanced Cluster Management <2.12.2",
+                  "product_id": "T040714"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Advanced Cluster Management 2.12.2",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Advanced Cluster Management 2.12.2",
+                  "product_id": "T040714-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:advanced_cluster_management__2.12.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 8",
+                  "product_id": "T040715",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:8"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 9",
+                  "product_id": "T040716",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:9"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Gatekeeper",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Gatekeeper",
+                  "product_id": "T041015",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:gatekeeper"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Edge Manager",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Edge Manager",
+                  "product_id": "T056726",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:edge_manager"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Container Platform",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform",
+                  "product_id": "T025202",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Foundation 4",
+                "product": {
+                  "name": "Red Hat OpenShift Data Foundation 4",
+                  "product_id": "T028133",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:data_foundation_4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.14.46",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.14.46",
+                  "product_id": "T040823"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.14.46",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.14.46",
+                  "product_id": "T040823-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.14.46"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.14.48",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.14.48",
+                  "product_id": "T041269"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.14.48",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.14.48",
+                  "product_id": "T041269-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.14.48"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "GitOps <1.14.3",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps <1.14.3",
+                  "product_id": "T042066"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "GitOps 1.14.3",
+                "product": {
+                  "name": "Red Hat OpenShift GitOps 1.14.3",
+                  "product_id": "T042066-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:gitops__1.14.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<5.9.14",
+                "product": {
+                  "name": "Red Hat OpenShift <5.9.14",
+                  "product_id": "T043761"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.9.14",
+                "product": {
+                  "name": "Red Hat OpenShift 5.9.14",
+                  "product_id": "T043761-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:5.9.14"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<5.8.20",
+                "product": {
+                  "name": "Red Hat OpenShift <5.8.20",
+                  "product_id": "T043762"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.8.20",
+                "product": {
+                  "name": "Red Hat OpenShift 5.8.20",
+                  "product_id": "T043762-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:5.8.20"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Dev Spaces 3",
+                "product": {
+                  "name": "Red Hat OpenShift Dev Spaces 3",
+                  "product_id": "T043942",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:dev_spaces_3"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Foundation <4.17.7",
+                "product": {
+                  "name": "Red Hat OpenShift Data Foundation <4.17.7",
+                  "product_id": "T044019"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Foundation 4.17.7",
+                "product": {
+                  "name": "Red Hat OpenShift Data Foundation 4.17.7",
+                  "product_id": "T044019-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:data_foundation__4.17.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Data Foundation <4.14.18",
+                "product": {
+                  "name": "Red Hat OpenShift Data Foundation <4.14.18",
+                  "product_id": "T044338"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Data Foundation 4.14.18",
+                "product": {
+                  "name": "Red Hat OpenShift Data Foundation 4.14.18",
+                  "product_id": "T044338-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:data_foundation__4.14.18"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.19.0",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.19.0",
+                  "product_id": "T044671"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.19.0",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.19.0",
+                  "product_id": "T044671-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.19.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.15.58",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.15.58",
+                  "product_id": "T047180"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.15.58",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.15.58",
+                  "product_id": "T047180-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.15.58"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2024-45337",
+      "product_status": {
+        "known_affected": [
+          "T047180",
+          "T028133",
+          "T040715",
+          "67646",
+          "T040714",
+          "T040823",
+          "T056726",
+          "74185",
+          "T043762",
+          "T027916",
+          "T002207",
+          "T043942",
+          "T022379",
+          "T044019",
+          "T044338",
+          "T025202",
+          "398363",
+          "T041269",
+          "T041015",
+          "T044671",
+          "T042066",
+          "T043761"
+        ]
+      },
+      "release_date": "2025-01-30T23:00:00.000+00:00",
+      "title": "CVE-2024-45337"
+    },
+    {
+      "cve": "CVE-2024-45338",
+      "product_status": {
+        "known_affected": [
+          "T047180",
+          "T028133",
+          "T040715",
+          "67646",
+          "T040714",
+          "T040823",
+          "T056726",
+          "74185",
+          "T043762",
+          "T027916",
+          "T002207",
+          "T043942",
+          "T022379",
+          "T044019",
+          "T044338",
+          "T025202",
+          "398363",
+          "T041269",
+          "T041015",
+          "T044671",
+          "T042066",
+          "T043761"
+        ]
+      },
+      "release_date": "2025-01-30T23:00:00.000+00:00",
+      "title": "CVE-2024-45338"
+    },
+    {
+      "cve": "CVE-2024-55565",
+      "product_status": {
+        "known_affected": [
+          "T047180",
+          "T028133",
+          "T040716",
+          "T040715",
+          "67646",
+          "T040714",
+          "T040823",
+          "T056726",
+          "74185",
+          "T043762",
+          "T027916",
+          "T002207",
+          "T043942",
+          "T022379",
+          "T044019",
+          "T044338",
+          "T025202",
+          "398363",
+          "T041269",
+          "T041015",
+          "T044671",
+          "T042066",
+          "T043761"
+        ]
+      },
+      "release_date": "2025-01-30T23:00:00.000+00:00",
+      "title": "CVE-2024-55565"
+    }
+  ]
+}

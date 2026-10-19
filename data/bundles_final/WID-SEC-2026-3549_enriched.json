@@ -1,0 +1,148 @@
+{
+  "type": "bundle",
+  "id": "bundle--79f6e30c-bbd5-4703-b387-28178908888b",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--8f7db46c-ebd2-5ae3-b746-0d060f12a5ad",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Forcepoint Next Generation Firewall: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Forcepoint Next Generation Firewall ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--97445588-0ea2-5043-8ae5-3bb691eb31f6",
+        "software--c565ab92-31bc-5998-acd7-cbbedba78494",
+        "software--c9d38302-0bdd-5268-8020-d98948d2d862",
+        "software--346d84e2-9343-54fb-8cc6-81e6f051f396",
+        "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1",
+        "relationship--c1033559-6473-5140-9203-11120bf392de",
+        "relationship--8d5e2f78-aa83-56d1-a074-dc9fe3912ea4",
+        "relationship--13bc018c-9481-5f39-b0b5-6bef591d63f2",
+        "relationship--a287bcf1-581f-565c-9ba1-18dd34a9fe2a"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3549",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3549"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3549",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3549.json"
+        },
+        {
+          "source_name": "Forcepoint Security Advisory vom 2026-09-23",
+          "url": "https://support.forcepoint.com/s/article/Security-Advisory-Security-Policy-Bypass-in-Forcepoint-Security-Engine-NGFW-CVE-2026-12974"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-6GJ2-8X4X-4XWR"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges",
+      "x_product_description": "Forcepoint Next Generation Firewall ist eine zentral verwaltete Firewall-Lösung der \"nächsten Generation\"."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--97445588-0ea2-5043-8ae5-3bb691eb31f6",
+      "name": "Forcepoint Next Generation Firewall FlexEdge Secure SD-WAN Engine <7.1.14",
+      "vendor": "Forcepoint"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c565ab92-31bc-5998-acd7-cbbedba78494",
+      "name": "Forcepoint Next Generation Firewall Network Security Platform Security Engine <7.4.2",
+      "vendor": "Forcepoint"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c9d38302-0bdd-5268-8020-d98948d2d862",
+      "name": "Forcepoint Next Generation Firewall Network Security Platform Security Engine <7.3.4",
+      "vendor": "Forcepoint"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--346d84e2-9343-54fb-8cc6-81e6f051f396",
+      "name": "Forcepoint Next Generation Firewall Network Security Platform Security Engine <7.5.1",
+      "vendor": "Forcepoint"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-12974",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-12974"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c1033559-6473-5140-9203-11120bf392de",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--346d84e2-9343-54fb-8cc6-81e6f051f396",
+      "target_ref": "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8d5e2f78-aa83-56d1-a074-dc9fe3912ea4",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c565ab92-31bc-5998-acd7-cbbedba78494",
+      "target_ref": "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--13bc018c-9481-5f39-b0b5-6bef591d63f2",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c9d38302-0bdd-5268-8020-d98948d2d862",
+      "target_ref": "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a287bcf1-581f-565c-9ba1-18dd34a9fe2a",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--97445588-0ea2-5043-8ae5-3bb691eb31f6",
+      "target_ref": "vulnerability--0b98f3df-1db3-5f5c-9ffb-69fa8c4e27d1"
+    }
+  ]
+}

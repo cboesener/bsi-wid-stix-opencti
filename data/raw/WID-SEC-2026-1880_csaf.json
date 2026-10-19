@@ -1,0 +1,300 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "cPanel ist eine Software für die Verwaltung von Webhosting Auftritten. Die Software ermöglicht es dem Endanwender, Statistiken einzusehen, neue Benutzeraccounts anzulegen, Maileinstellungen zu verändern und vieles mehr.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in cPanel cPanel/WHM ausnutzen, um potenziell beliebigen Code auszuführen, Sicherheitskontrollen zu umgehen, einen Denial-of-Service-Zustand zu verursachen, Daten zu manipulieren oder offenzulegen oder andere, nicht näher beschriebene Angriffe durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1880 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1880.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1880 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1880"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel Change Log vom 2026-06-10",
+        "url": "https://docs.cpanel.net/changelogs/134-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel Change Log vom 2026-06-10",
+        "url": "https://docs.cpanel.net/changelogs/136-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel Change Log vom 2026-06-11",
+        "url": "https://docs.cpanel.net/changelogs/110-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel Change Log vom 2026-06-11",
+        "url": "https://docs.cpanel.net/changelogs/126-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4649 vom 2026-06-26",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/06/msg00038.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22257-1 vom 2026-06-29",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027058.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279718 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279718"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "cPanel cPanel/WHM: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T08:21:39.639+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1880",
+      "initial_release_date": "2026-06-10T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-06-10T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-06-11T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von cPanel aufgenommen"
+        },
+        {
+          "date": "2026-06-25T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "5"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "IP Edition",
+                "product": {
+                  "name": "IBM Tivoli Network Manager IP Edition",
+                  "product_id": "T012578",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_network_manager:ip_edition"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Network Manager"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<134.0.37",
+                "product": {
+                  "name": "cPanel cPanel/WHM <134.0.37",
+                  "product_id": "T055252"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "134.0.37",
+                "product": {
+                  "name": "cPanel cPanel/WHM 134.0.37",
+                  "product_id": "T055252-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:134.0.37"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<136.0.20",
+                "product": {
+                  "name": "cPanel cPanel/WHM <136.0.20",
+                  "product_id": "T055253"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "136.0.20",
+                "product": {
+                  "name": "cPanel cPanel/WHM 136.0.20",
+                  "product_id": "T055253-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:136.0.20"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<110.0.129",
+                "product": {
+                  "name": "cPanel cPanel/WHM <110.0.129",
+                  "product_id": "T055285"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "110.0.129",
+                "product": {
+                  "name": "cPanel cPanel/WHM 110.0.129",
+                  "product_id": "T055285-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:110.0.129"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<126.0.72",
+                "product": {
+                  "name": "cPanel cPanel/WHM <126.0.72",
+                  "product_id": "T055286"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "126.0.72",
+                "product": {
+                  "name": "cPanel cPanel/WHM 126.0.72",
+                  "product_id": "T055286-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:126.0.72"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "cPanel/WHM"
+          }
+        ],
+        "category": "vendor",
+        "name": "cPanel"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-9698",
+      "product_status": {
+        "known_affected": [
+          "T055253",
+          "T055286",
+          "2951",
+          "T002207",
+          "T055252",
+          "T055285",
+          "T012578"
+        ]
+      },
+      "release_date": "2026-06-10T22:00:00.000+00:00",
+      "title": "CVE-2026-9698"
+    }
+  ]
+}

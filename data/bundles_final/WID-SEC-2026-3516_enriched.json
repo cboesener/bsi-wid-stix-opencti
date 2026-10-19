@@ -1,0 +1,295 @@
+{
+  "type": "bundle",
+  "id": "bundle--1421516c-e54a-49f6-9ad2-064bb566b847",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--4920162d-97e3-5d6e-bdc3-1eeed172309f",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "Adobe Connect: Mehrere Schwachstellen",
+      "description": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Adobe Connect ausnutzen, um einen SQL-Injection Angriff durchzuführen, um einen Cross-Site Scripting Angriff durchzuführen, um beliebigen Programmcode auszuführen, um Informationen offenzulegen und um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+        "vulnerability--c4e91f33-148f-5859-bcc7-6f7bd06a1a87",
+        "relationship--147660f9-d3e4-5bc5-b6b3-a2c0a4c503e1",
+        "vulnerability--393fe6c1-95f6-5729-8aa6-577e54abd1de",
+        "relationship--e0651da2-cee8-51c7-b384-b9abed8f5757",
+        "vulnerability--5bab6096-9406-5ebc-bdc3-aaf4b3440613",
+        "relationship--dc0ac016-c056-5ace-8fb0-0202381def96",
+        "vulnerability--913ba1fe-5499-53ed-8538-aa2ad6b8d44c",
+        "relationship--5a0fdaad-261b-59b3-badc-be3a10c7e41c",
+        "vulnerability--c62df1d0-cc30-5920-b2cf-1af068a79ae3",
+        "relationship--f30842b7-6ea0-5f2d-84bd-2a020e56bf27",
+        "vulnerability--34df4c09-2d4f-5493-aa74-05e0cf6ecf55",
+        "relationship--5f4424e9-1e33-5d96-af7a-02f3d3e1cb0f",
+        "vulnerability--ca2fded1-a719-5ca7-88bc-31021ac215db",
+        "relationship--32e01325-0b95-543c-b986-0fdb5d4a6fc1",
+        "vulnerability--5697025b-478c-596b-bd58-c3f4d518f11b",
+        "relationship--b510b198-d77b-507a-9bc3-aa56e1861aff",
+        "vulnerability--340d68f5-c8f3-5839-ac72-20d6826d7f99",
+        "relationship--aa139347-d4f0-5d31-adc8-79f5b8c9bf99"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3516",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3516"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3516",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3516.json"
+        },
+        {
+          "source_name": "Adobe Security Bulletin apsb26-150 vom 2026-09-22",
+          "url": "https://helpx.adobe.com/security/products/connect/apsb26-150.html"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "Adobe Connect ist eine Software zur Erstellung von Informationen, Präsentationen, Online-Schulungsunterlagen, Webkonferenzen, Lernmodulen und für Benutzer-Desktop-Sharing."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "name": "Adobe Connect <12.12",
+      "vendor": "Adobe"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--c4e91f33-148f-5859-bcc7-6f7bd06a1a87",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-34689",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-34689"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--147660f9-d3e4-5bc5-b6b3-a2c0a4c503e1",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--c4e91f33-148f-5859-bcc7-6f7bd06a1a87"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--393fe6c1-95f6-5729-8aa6-577e54abd1de",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-48361",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-48361"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e0651da2-cee8-51c7-b384-b9abed8f5757",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--393fe6c1-95f6-5729-8aa6-577e54abd1de"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--5bab6096-9406-5ebc-bdc3-aaf4b3440613",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75682",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75682"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--dc0ac016-c056-5ace-8fb0-0202381def96",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--5bab6096-9406-5ebc-bdc3-aaf4b3440613"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--913ba1fe-5499-53ed-8538-aa2ad6b8d44c",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75684",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75684"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5a0fdaad-261b-59b3-badc-be3a10c7e41c",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--913ba1fe-5499-53ed-8538-aa2ad6b8d44c"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--c62df1d0-cc30-5920-b2cf-1af068a79ae3",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75686",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75686"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f30842b7-6ea0-5f2d-84bd-2a020e56bf27",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--c62df1d0-cc30-5920-b2cf-1af068a79ae3"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--34df4c09-2d4f-5493-aa74-05e0cf6ecf55",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75689",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75689"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5f4424e9-1e33-5d96-af7a-02f3d3e1cb0f",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--34df4c09-2d4f-5493-aa74-05e0cf6ecf55"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--ca2fded1-a719-5ca7-88bc-31021ac215db",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75697",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75697"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--32e01325-0b95-543c-b986-0fdb5d4a6fc1",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--ca2fded1-a719-5ca7-88bc-31021ac215db"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--5697025b-478c-596b-bd58-c3f4d518f11b",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-75698",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-75698"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b510b198-d77b-507a-9bc3-aa56e1861aff",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--5697025b-478c-596b-bd58-c3f4d518f11b"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--340d68f5-c8f3-5839-ac72-20d6826d7f99",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-83964",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-83964"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--aa139347-d4f0-5d31-adc8-79f5b8c9bf99",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e34fab19-19dc-53e4-860f-8865f8854abb",
+      "target_ref": "vulnerability--340d68f5-c8f3-5839-ac72-20d6826d7f99"
+    }
+  ]
+}

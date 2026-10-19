@@ -1,0 +1,210 @@
+{
+  "type": "bundle",
+  "id": "bundle--5f43f2cf-ffff-43f6-b69d-0c220e21cbad",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--746b5daa-9624-519c-9196-2a535defe792",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "GIMP: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in GIMP ausnutzen, um beliebigen Programmcode auszuführen, um einen Denial of Service Angriff durchzuführen, und um Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+        "vulnerability--01d412a8-a233-5687-bb62-b44f7363e5f8",
+        "relationship--acc8f1d0-2e9c-5a35-8c2e-10ddb65f7c80",
+        "vulnerability--039b2c44-d6bd-55f4-b764-c41fd2a2a83e",
+        "relationship--fbfe5b67-1585-531b-ac34-a1797634b819",
+        "vulnerability--b8aecce4-d5cb-54ce-bf1f-510c3d55d7b2",
+        "relationship--fdc0f5b0-c0f1-569b-83b4-fdb0ece5c38a",
+        "vulnerability--fbdcd44d-d0a5-50e5-b8a5-bbd965a3adfe",
+        "relationship--5adbd44a-6e9f-5f8f-8f00-d95c11d60d35"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3553",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3553"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3553",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3553.json"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2539392 vom 2026-09-23",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539392"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2539572 vom 2026-09-23",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539572"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2539597 vom 2026-09-23",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539597"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2539601 vom 2026-09-23",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539601"
+        },
+        {
+          "source_name": "RedHat Customer Portal vom 2026-09-23",
+          "url": "https://access.redhat.com/security/cve/cve-2026-96543"
+        },
+        {
+          "source_name": "RedHat Customer Portal vom 2026-09-23",
+          "url": "https://access.redhat.com/security/cve/cve-2026-96544"
+        },
+        {
+          "source_name": "RedHat Customer Portal vom 2026-09-23",
+          "url": "https://access.redhat.com/security/cve/cve-2026-96545"
+        },
+        {
+          "source_name": "RedHat Customer Portal vom 2026-09-23",
+          "url": "https://access.redhat.com/security/cve/cve-2026-96546"
+        },
+        {
+          "source_name": "GitLab Work Item #16802 mit PoC",
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16802"
+        },
+        {
+          "source_name": "GitLab Work Item #16791 mit PoC",
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16791"
+        },
+        {
+          "source_name": "GitLab Work Item #16790 mit PoC",
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16790"
+        },
+        {
+          "source_name": "GitLab Work Item #16789 mit PoC",
+          "url": "https://gitlab.gnome.org/GNOME/gimp/-/work_items/16789"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "Das \"Gnu Image Manipulation Program\" ist eine Open Source Software zum Bearbeiten von Bildern. Es ist auch Bestandteil vieler Linux Distributionen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+      "name": "Open Source GIMP",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:gimp:gimp:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--01d412a8-a233-5687-bb62-b44f7363e5f8",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96543",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96543"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--acc8f1d0-2e9c-5a35-8c2e-10ddb65f7c80",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+      "target_ref": "vulnerability--01d412a8-a233-5687-bb62-b44f7363e5f8"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--039b2c44-d6bd-55f4-b764-c41fd2a2a83e",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96544",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96544"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fbfe5b67-1585-531b-ac34-a1797634b819",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+      "target_ref": "vulnerability--039b2c44-d6bd-55f4-b764-c41fd2a2a83e"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--b8aecce4-d5cb-54ce-bf1f-510c3d55d7b2",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96545",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96545"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fdc0f5b0-c0f1-569b-83b4-fdb0ece5c38a",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+      "target_ref": "vulnerability--b8aecce4-d5cb-54ce-bf1f-510c3d55d7b2"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--fbdcd44d-d0a5-50e5-b8a5-bbd965a3adfe",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96546",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96546"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5adbd44a-6e9f-5f8f-8f00-d95c11d60d35",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9cb269ac-47f4-5d86-bd96-8d8de952acba",
+      "target_ref": "vulnerability--fbdcd44d-d0a5-50e5-b8a5-bbd965a3adfe"
+    }
+  ]
+}

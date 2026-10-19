@@ -1,0 +1,180 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Rclone ist ein Open-Source-Befehlszeilenprogramm zur Synchronisierung von Dateien und Verzeichnissen mit verschiedenen Cloud-Speicherdiensten.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in rclone ausnutzen, um beliebige Dateien zu lesen und zu schreiben, sowie Informationen offenzulegen und Sicherheitsmechanismen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- MacOS X\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2266 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2266.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2266 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2266"
+      },
+      {
+        "category": "external",
+        "summary": "rclone 1.74.4 Release Notes vom 2026-07-08",
+        "url": "https://rclone.org/changelog/#v1-74-4-2026-07-08"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-4vr5-p2gc-h23p vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-4vr5-p2gc-h23p"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-8v25-v8p6-qf7v vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-8v25-v8p6-qf7v"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-945v-v9p3-v5xw vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-945v-v9p3-v5xw"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-cf44-9pgv-m4xc vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-cf44-9pgv-m4xc"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-fqj9-69pf-6pjg vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-fqj9-69pf-6pjg"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-gx4c-2hqx-cw2r vom 2026-07-08",
+        "url": "https://github.com/rclone/rclone/security/advisories/GHSA-gx4c-2hqx-cw2r"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "rclone: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T10:46:41.572+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2266",
+      "initial_release_date": "2026-07-08T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<1.74.4",
+                "product": {
+                  "name": "Open Source rclone <1.74.4",
+                  "product_id": "T056342"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1.74.4",
+                "product": {
+                  "name": "Open Source rclone 1.74.4",
+                  "product_id": "T056342-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rclone:rclone:1.74.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "rclone"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-54572",
+      "product_status": {
+        "known_affected": [
+          "T056342"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-54572"
+    },
+    {
+      "cve": "CVE-2026-59732",
+      "product_status": {
+        "known_affected": [
+          "T056342"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-59732"
+    },
+    {
+      "cve": "CVE-2026-59733",
+      "product_status": {
+        "known_affected": [
+          "T056342"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-59733"
+    }
+  ]
+}

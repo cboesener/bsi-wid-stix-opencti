@@ -1,0 +1,436 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Chrome ist ein Internet-Browser von Google.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Google Chrome ausnutzen, um Code auszuführen und um Sicherheitsmechanismen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- MacOS X\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2244 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2244.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2244 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2244"
+      },
+      {
+        "category": "external",
+        "summary": "Chrome Stable Channel Update vom 2026-07-08",
+        "url": "http://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01162222768.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Google Chrome: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T09:01:42.932+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2244",
+      "initial_release_date": "2026-07-08T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<150.0.7871.114",
+                "product": {
+                  "name": "Google Chrome <150.0.7871.114",
+                  "product_id": "T056274"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "150.0.7871.114",
+                "product": {
+                  "name": "Google Chrome 150.0.7871.114",
+                  "product_id": "T056274-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:google:chrome:150.0.7871.114"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<150.0.7871.115",
+                "product": {
+                  "name": "Google Chrome <150.0.7871.115",
+                  "product_id": "T056275"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "150.0.7871.115",
+                "product": {
+                  "name": "Google Chrome 150.0.7871.115",
+                  "product_id": "T056275-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:google:chrome:150.0.7871.115"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Chrome"
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-15107",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15107"
+    },
+    {
+      "cve": "CVE-2026-15108",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15108"
+    },
+    {
+      "cve": "CVE-2026-15109",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15109"
+    },
+    {
+      "cve": "CVE-2026-15110",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15110"
+    },
+    {
+      "cve": "CVE-2026-15111",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15111"
+    },
+    {
+      "cve": "CVE-2026-15112",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15112"
+    },
+    {
+      "cve": "CVE-2026-15113",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15113"
+    },
+    {
+      "cve": "CVE-2026-15114",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15114"
+    },
+    {
+      "cve": "CVE-2026-15115",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15115"
+    },
+    {
+      "cve": "CVE-2026-15116",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15116"
+    },
+    {
+      "cve": "CVE-2026-15117",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15117"
+    },
+    {
+      "cve": "CVE-2026-15118",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15118"
+    },
+    {
+      "cve": "CVE-2026-15119",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15119"
+    },
+    {
+      "cve": "CVE-2026-15120",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15120"
+    },
+    {
+      "cve": "CVE-2026-15121",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15121"
+    },
+    {
+      "cve": "CVE-2026-15122",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15122"
+    },
+    {
+      "cve": "CVE-2026-15123",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15123"
+    },
+    {
+      "cve": "CVE-2026-15124",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15124"
+    },
+    {
+      "cve": "CVE-2026-15125",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15125"
+    },
+    {
+      "cve": "CVE-2026-15126",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15126"
+    },
+    {
+      "cve": "CVE-2026-15127",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15127"
+    },
+    {
+      "cve": "CVE-2026-15128",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15128"
+    },
+    {
+      "cve": "CVE-2026-15129",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15129"
+    },
+    {
+      "cve": "CVE-2026-15130",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15130"
+    },
+    {
+      "cve": "CVE-2026-15131",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15131"
+    },
+    {
+      "cve": "CVE-2026-15132",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15132"
+    },
+    {
+      "cve": "CVE-2026-15133",
+      "product_status": {
+        "known_affected": [
+          "T056274",
+          "T056275"
+        ]
+      },
+      "release_date": "2026-07-08T22:00:00.000+00:00",
+      "title": "CVE-2026-15133"
+    }
+  ]
+}

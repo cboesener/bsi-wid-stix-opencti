@@ -1,0 +1,514 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Der Kernel stellt den Kern des Linux Betriebssystems dar.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann eine Schwachstelle im Linux Kernel ausnutzen, um seine Privilegien zu erhöhen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1633 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1633.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1633 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1633"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel netdev mailing list vom 2026-05-20",
+        "url": "https://lore.kernel.org/netdev/20260505234336.2132721-1-achender@kernel.org/"
+      },
+      {
+        "category": "external",
+        "summary": "PinTheft Writeup + PoC vom 2026-05-20",
+        "url": "https://github.com/v12-security/pocs/tree/09e835b587bf71249775654061ae4c79e92cf430/pintheft"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement vom 2026-05-21",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026052130-CVE-2026-43494-a65a@gregkh/T/#u"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.10-2026-120 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.10-2026-120.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.15-2026-104 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.15-2026-104.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-302 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-302.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-305 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-305.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-301 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-301.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-304 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-304.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-307 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-307.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2KERNEL-5.4-2026-124 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2KERNEL-5.4-2026-124.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-303 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-303.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2LIVEPATCH-2026-306 vom 2026-05-26",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2LIVEPATCH-2026-306.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6305 vom 2026-05-28",
+        "url": "https://lists.debian.org/debian-security-announce/2026/msg00216.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21841-1 vom 2026-05-29",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026384.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21834-1 vom 2026-05-29",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026381.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2111-1 vom 2026-05-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-May/026397.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20826-1 vom 2026-05-29",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/7D6UU5UPSRF74AUKK2CVVWC3NKU2VIUP/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21845-1 vom 2026-06-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026437.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2195-1 vom 2026-06-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026416.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2202-1 vom 2026-06-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026424.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21860-1 vom 2026-06-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026426.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21866-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026524.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21877-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026514.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8371-1 vom 2026-06-02",
+        "url": "https://ubuntu.com/security/notices/USN-8371-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21916-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026478.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21919-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026475.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21868-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026522.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21947-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026447.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2215-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026445.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8370-1 vom 2026-06-02",
+        "url": "https://ubuntu.com/security/notices/USN-8370-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8374-1 vom 2026-06-02",
+        "url": "https://ubuntu.com/security/notices/USN-8374-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21876-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026515.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8373-1 vom 2026-06-02",
+        "url": "https://ubuntu.com/security/notices/USN-8373-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2217-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026441.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2216-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026444.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2238-1 vom 2026-06-03",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026559.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10954-1 vom 2026-06-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/SCML3YIY7XP4A5LIAG3VJHEVKSFGU6XF/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8426-1 vom 2026-06-12",
+        "url": "https://ubuntu.com/security/notices/USN-8426-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8388-1 vom 2026-06-23",
+        "url": "https://ubuntu.com/security/notices/USN-8388-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8489-1 vom 2026-07-01",
+        "url": "https://ubuntu.com/security/notices/USN-8489-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8497-1 vom 2026-07-02",
+        "url": "https://ubuntu.com/security/notices/USN-8497-1"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8499-1 vom 2026-07-02",
+        "url": "https://ubuntu.com/security/notices/USN-8499-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4664 vom 2026-07-03",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/07/msg00005.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4665 vom 2026-07-03",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/07/msg00006.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4671 vom 2026-07-05",
+        "url": "https://lists.debian.org/debian-lts-announce/2026/07/msg00012.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8528-1 vom 2026-07-10",
+        "url": "https://ubuntu.com/security/notices/USN-8528-1"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Linux Kernel: Schwachstelle ermöglicht Privilegieneskalation",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T10:11:46.738+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1633",
+      "initial_release_date": "2026-05-20T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-05-20T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-05-21T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Referenz(en) aufgenommen: EUVD-2026-31267"
+        },
+        {
+          "date": "2026-05-26T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-05-28T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-05-31T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von SUSE und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-01T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-02T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-06-04T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-08T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-11T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-06-22T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-07-02T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-07-05T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "15"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<7.1-rc4",
+                "product": {
+                  "name": "Open Source Linux Kernel <7.1-rc4",
+                  "product_id": "T054470"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.1-rc4",
+                "product": {
+                  "name": "Open Source Linux Kernel 7.1-rc4",
+                  "product_id": "T054470-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:linux:linux_kernel:7.1-rc4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Linux Kernel"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-43494",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T002207",
+          "T054470",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-20T22:00:00.000+00:00",
+      "title": "CVE-2026-43494"
+    }
+  ]
+}

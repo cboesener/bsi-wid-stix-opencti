@@ -1,0 +1,628 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "TianoCore EDK2 ist die Referenzimplementierung von UEFI von Intel.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer aus einem angrenzenden Netzwerk kann eine Schwachstelle in TianoCore EDK2 ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2024-3047 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2024/wid-sec-w-2024-3047.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2024-3047 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2024-3047"
+      },
+      {
+        "category": "external",
+        "summary": "Tianocore GitHub vom 2024-09-29",
+        "url": "https://github.com/tianocore/edk2/security/advisories/GHSA-xpcr-7hjq-m6qm"
+      },
+      {
+        "category": "external",
+        "summary": "NIST Vulnerability Database vom 2024-09-29",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38796"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9930 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9930"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9921 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9921"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9946 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9946"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:9956 vom 2024-11-19",
+        "url": "https://access.redhat.com/errata/RHSA-2024:9956"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10272 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10272"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:10268 vom 2024-11-26",
+        "url": "https://access.redhat.com/errata/RHSA-2024:10268"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20241206-0006 vom 2024-12-06",
+        "url": "https://security.netapp.com/advisory/ntap-20241206-0006/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:11185 vom 2024-12-17",
+        "url": "https://access.redhat.com/errata/RHSA-2024:11185"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:11194 vom 2024-12-17",
+        "url": "https://access.redhat.com/errata/RHSA-2024:11194"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2024:11219 vom 2024-12-17",
+        "url": "https://access.redhat.com/errata/RHSA-2024:11219"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-11185 vom 2024-12-18",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-11185.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2024-11219 vom 2024-12-19",
+        "url": "https://linux.oracle.com/errata/ELSA-2024-11219.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS-2024-2722 vom 2024-12-20",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS-2024-2722.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-038 vom 2025-02-19",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000287202/dsa-2025-038-security-update-for-dell-poweredge-server-bios-for-tianocore-edk2-vulnerability"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-038 vom 2025-02-20",
+        "url": "https://www.dell.com/support/kbdoc/000287202"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-044 vom 2025-03-19",
+        "url": "https://www.dell.com/support/kbdoc/000270384"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-4207 vom 2025-06-05",
+        "url": "https://lists.debian.org/debian-lts-announce/2025/06/msg00007.html"
+      },
+      {
+        "category": "external",
+        "summary": "Insyde Security Advisory INSYDE-SA-2024019 vom 2025-06-10",
+        "url": "https://www.insyde.com/security-pledge/sa-2024019/"
+      },
+      {
+        "category": "external",
+        "summary": "Lenovo Security Advisory LEN-197020 vom 2025-06-11",
+        "url": "https://support.lenovo.com/us/en/product_security/LEN-197020"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-256 vom 2025-06-24",
+        "url": "https://www.dell.com/support/kbdoc/000335106"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2024:11185 vom 2025-06-24",
+        "url": "https://errata.build.resf.org/RLSA-2024:11185"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-339 vom 2025-09-01",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000362542/dsa-2025-339-security-update-for-dell-avamar-data-store-gen5a-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2025-166 vom 2025-10-14",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000363693/dsa-2025-166-security-update-for-dell-powerscale-onefs-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7894-1 vom 2025-11-26",
+        "url": "https://ubuntu.com/security/notices/USN-7894-1"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2026-127 vom 2026-05-06",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000461405/dsa-2026-127-security-update-for-dell-powerscale-onefs-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-36721 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-36721.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "TianoCore EDK2: Schwachstelle ermöglicht Denial of Service",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:22:44.873+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2024-3047",
+      "initial_release_date": "2024-09-29T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2024-09-29T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2024-11-18T23:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-11-25T23:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-12-05T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2024-12-16T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2024-12-17T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2024-12-19T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Oracle Linux und Amazon aufgenommen"
+        },
+        {
+          "date": "2025-02-19T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-03-18T23:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-06-05T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2025-06-10T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Insyde aufgenommen"
+        },
+        {
+          "date": "2025-06-23T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-06-24T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2025-08-31T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-10-13T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2025-11-26T23:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-05-05T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "18"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Dell Avamar",
+            "product": {
+              "name": "Dell Avamar",
+              "product_id": "T039664",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:dell:avamar:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Dell Computer",
+            "product": {
+              "name": "Dell Computer",
+              "product_id": "T036868",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:dell:dell_computer:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "T40",
+                "product": {
+                  "name": "Dell PowerEdge T40",
+                  "product_id": "T027537",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:dell:poweredge:t40"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Server BIOS",
+                "product": {
+                  "name": "Dell PowerEdge Server BIOS",
+                  "product_id": "T033841",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:dell:poweredge:server_bios"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "PowerEdge"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "OneFS",
+                "product": {
+                  "name": "Dell PowerScale OneFS OneFS",
+                  "product_id": "T034610",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerscale_onefs:onefs"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<13.2.3",
+                "product": {
+                  "name": "Dell PowerScale OneFS <13.2.3",
+                  "product_id": "T053573"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "13.2.3",
+                "product": {
+                  "name": "Dell PowerScale OneFS 13.2.3",
+                  "product_id": "T053573-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:powerscale_onefs:13.2.3"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "PowerScale OneFS"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Kernel",
+                "product": {
+                  "name": "Insyde UEFI Firmware Kernel",
+                  "product_id": "T034716",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/h:insyde:uefi:kernel"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "UEFI Firmware"
+          }
+        ],
+        "category": "vendor",
+        "name": "Insyde"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Lenovo Computer",
+            "product": {
+              "name": "Lenovo Computer",
+              "product_id": "T026557",
+              "product_identification_helper": {
+                "cpe": "cpe:/h:lenovo:computer:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Lenovo"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp AFF",
+            "product": {
+              "name": "NetApp AFF",
+              "product_id": "T020536",
+              "product_identification_helper": {
+                "cpe": "cpe:/h:netapp:aff:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "NetApp FAS",
+            "product": {
+              "name": "NetApp FAS",
+              "product_id": "T011540",
+              "product_identification_helper": {
+                "cpe": "cpe:/h:netapp:fas:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<202408",
+                "product": {
+                  "name": "TianoCore EDK2 <202408",
+                  "product_id": "T037883"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "202408",
+                "product": {
+                  "name": "TianoCore EDK2 202408",
+                  "product_id": "T037883-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:tianocore:edk2:202408"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "EDK2"
+          }
+        ],
+        "category": "vendor",
+        "name": "TianoCore"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2024-38796",
+      "product_status": {
+        "known_affected": [
+          "T053573",
+          "T033841",
+          "T034610",
+          "T034716",
+          "67646",
+          "T036868",
+          "T011540",
+          "T004914",
+          "T032255",
+          "T039664",
+          "T037883",
+          "2951",
+          "T020536",
+          "T000126",
+          "T027537",
+          "398363",
+          "T026557"
+        ]
+      },
+      "release_date": "2024-09-29T22:00:00.000+00:00",
+      "title": "CVE-2024-38796"
+    }
+  ]
+}

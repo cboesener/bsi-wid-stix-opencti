@@ -1,0 +1,294 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Kubernetes ist ein Werkzeug zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von containerisierten Anwendungen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Kubernetes ausnutzen, um Sicherheitsvorkehrungen zu umgehen und vertrauliche Informationen offenzulegen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3544 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3544.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3544 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3544"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Issue vom 2026-09-23",
+        "url": "https://github.com/kubernetes/kubernetes/issues/142097"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Issue vom 2026-09-23",
+        "url": "https://github.com/kubernetes/kubernetes/issues/142098"
+      },
+      {
+        "category": "external",
+        "summary": "Kubernetes Security Advisory vom 2026-09-23",
+        "url": "https://discuss.kubernetes.io/t/security-advisory-cve-2026-2270-statefulset-and-controllerrevision-write-permissions-allow-cross-namespace-pod-creation/35276"
+      },
+      {
+        "category": "external",
+        "summary": "Kubernetes Security Advisory vom 2026-09-23",
+        "url": "https://discuss.kubernetes.io/t/security-advisory-cve-2026-76654-subpath-symlinking-on-windows-nodes-permits-ntlm-coercion/35277"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Kubernetes (kubelet, kube-controller-manager): Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:59:30.110+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3544",
+      "initial_release_date": "2026-09-23T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "kubelet <1.34.12",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet <1.34.12",
+                  "product_id": "T060142"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kubelet 1.34.12",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet 1.34.12",
+                  "product_id": "T060142-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kubelet__1.34.12"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kubelet <1.35.9",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet <1.35.9",
+                  "product_id": "T060143"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kubelet 1.35.9",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet 1.35.9",
+                  "product_id": "T060143-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kubelet__1.35.9"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kubelet <1.36.5",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet <1.36.5",
+                  "product_id": "T060144"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kubelet 1.36.5",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet 1.36.5",
+                  "product_id": "T060144-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kubelet__1.36.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kubelet <1.37.1",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet <1.37.1",
+                  "product_id": "T060145"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kubelet 1.37.1",
+                "product": {
+                  "name": "Open Source Kubernetes kubelet 1.37.1",
+                  "product_id": "T060145-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kubelet__1.37.1"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kube-controller-manager <1.34.12",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager <1.34.12",
+                  "product_id": "T060146"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kube-controller-manager 1.34.12",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager 1.34.12",
+                  "product_id": "T060146-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kube-controller-manager__1.34.12"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kube-controller-manager <1.35.9",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager <1.35.9",
+                  "product_id": "T060147"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kube-controller-manager 1.35.9",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager 1.35.9",
+                  "product_id": "T060147-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kube-controller-manager__1.35.9"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kube-controller-manager <1.36.5",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager <1.36.5",
+                  "product_id": "T060148"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kube-controller-manager 1.36.5",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager 1.36.5",
+                  "product_id": "T060148-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kube-controller-manager__1.36.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "kube-controller-manager <1.37.1",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager <1.37.1",
+                  "product_id": "T060149"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "kube-controller-manager 1.37.1",
+                "product": {
+                  "name": "Open Source Kubernetes kube-controller-manager 1.37.1",
+                  "product_id": "T060149-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:kubernetes:kubernetes:kube-controller-manager__1.37.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Kubernetes"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-2270",
+      "product_status": {
+        "known_affected": [
+          "T060149",
+          "T060148",
+          "T060147",
+          "T060146"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00",
+      "title": "CVE-2026-2270"
+    },
+    {
+      "cve": "CVE-2026-76654",
+      "product_status": {
+        "known_affected": [
+          "T060144",
+          "T060143",
+          "T060142",
+          "T060145"
+        ]
+      },
+      "release_date": "2026-09-23T22:00:00.000+00:00",
+      "title": "CVE-2026-76654"
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "RabbitMQ ist ein Open-Source Message Broker.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in RabbitMQ ausnutzen, um beliebigen Programmcode auszuführen, erweiterte Berechtigungen zu erlangen, Sicherheitsmaßnahmen zu umgehen, Cross-Site-Scripting-Angriffe durchzuführen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2268 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2268.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2268 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2268"
+      },
+      {
+        "category": "external",
+        "summary": "RabbitMQ Releases vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/releases"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-2rf7-f6r6-8rwh vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-2rf7-f6r6-8rwh"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-34jw-rm7g-hph4 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-34jw-rm7g-hph4"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-37wx-r6q9-6fhj vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-37wx-r6q9-6fhj"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-48hm-chgv-398r vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-48hm-chgv-398r"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-59c5-553c-57m2 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-59c5-553c-57m2"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-6v53-r759-jrvx vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-6v53-r759-jrvx"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-73qp-fwh4-2q5g vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-73qp-fwh4-2q5g"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-7jc3-73v6-rjvc vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-7jc3-73v6-rjvc"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-7v63-j4gm-p4rh vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-7v63-j4gm-p4rh"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-85jr-6rr2-j73r vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-85jr-6rr2-j73r"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-9c4f-rxxm-88q3 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-9c4f-rxxm-88q3"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-9wm4-9m6g-w38x vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-9wm4-9m6g-w38x"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-c66h-hf5j-8jf9 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-c66h-hf5j-8jf9"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-cw8c-4m83-9c6w vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-cw8c-4m83-9c6w"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-g5v3-w5xg-62q2 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-g5v3-w5xg-62q2"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-ggrw-qm45-hwpv vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-ggrw-qm45-hwpv"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-h7cq-qrr8-7vgc vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-h7cq-qrr8-7vgc"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-hwqx-2gfg-89qf vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-hwqx-2gfg-89qf"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-j9m2-hw6x-rqr9 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-j9m2-hw6x-rqr9"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-m8pg-4x2h-jvgr vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-m8pg-4x2h-jvgr"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-p3hp-v9wh-ghm7 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-p3hp-v9wh-ghm7"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-q286-p3m9-j69f vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-q286-p3m9-j69f"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-r3qr-4h63-mvj2 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-r3qr-4h63-mvj2"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-rg5q-vcgf-rfh7 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-rg5q-vcgf-rfh7"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-x96j-244m-mrr2 vom 2026-07-09",
+        "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-x96j-244m-mrr2"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "RabbitMQ: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:19:27.317+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2268",
+      "initial_release_date": "2026-07-09T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "CVE's ergänzt"
+        }
+      ],
+      "status": "final",
+      "version": "2"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.2.8",
+                "product": {
+                  "name": "Open Source RabbitMQ <4.2.8",
+                  "product_id": "T056345"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.2.8",
+                "product": {
+                  "name": "Open Source RabbitMQ 4.2.8",
+                  "product_id": "T056345-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rabbitmq-c_project:rabbitmq-c:4.2.8"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<4.1.11",
+                "product": {
+                  "name": "Open Source RabbitMQ <4.1.11",
+                  "product_id": "T056347"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.1.11",
+                "product": {
+                  "name": "Open Source RabbitMQ 4.1.11",
+                  "product_id": "T056347-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rabbitmq-c_project:rabbitmq-c:4.1.11"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<4.0.22",
+                "product": {
+                  "name": "Open Source RabbitMQ <4.0.22",
+                  "product_id": "T056348"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.0.22",
+                "product": {
+                  "name": "Open Source RabbitMQ 4.0.22",
+                  "product_id": "T056348-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rabbitmq-c_project:rabbitmq-c:4.0.22"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<3.13.15",
+                "product": {
+                  "name": "Open Source RabbitMQ <3.13.15",
+                  "product_id": "T056349"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "3.13.15",
+                "product": {
+                  "name": "Open Source RabbitMQ 3.13.15",
+                  "product_id": "T056349-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rabbitmq-c_project:rabbitmq-c:3.13.15"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<4.3.2",
+                "product": {
+                  "name": "Open Source RabbitMQ <4.3.2",
+                  "product_id": "T056350"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.3.2",
+                "product": {
+                  "name": "Open Source RabbitMQ 4.3.2",
+                  "product_id": "T056350-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:rabbitmq-c_project:rabbitmq-c:4.3.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "RabbitMQ"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-66067",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66067"
+    },
+    {
+      "cve": "CVE-2026-66068",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66068"
+    },
+    {
+      "cve": "CVE-2026-66069",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66069"
+    },
+    {
+      "cve": "CVE-2026-66070",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66070"
+    },
+    {
+      "cve": "CVE-2026-66072",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66072"
+    },
+    {
+      "cve": "CVE-2026-66074",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66074"
+    },
+    {
+      "cve": "CVE-2026-66075",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66075"
+    },
+    {
+      "cve": "CVE-2026-66077",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66077"
+    },
+    {
+      "cve": "CVE-2026-66079",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-66079"
+    },
+    {
+      "cve": "CVE-2026-67218",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67218"
+    },
+    {
+      "cve": "CVE-2026-67219",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67219"
+    },
+    {
+      "cve": "CVE-2026-67220",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67220"
+    },
+    {
+      "cve": "CVE-2026-67221",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67221"
+    },
+    {
+      "cve": "CVE-2026-67224",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67224"
+    },
+    {
+      "cve": "CVE-2026-67228",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67228"
+    },
+    {
+      "cve": "CVE-2026-67229",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67229"
+    },
+    {
+      "cve": "CVE-2026-67231",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67231"
+    },
+    {
+      "cve": "CVE-2026-67232",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67232"
+    },
+    {
+      "cve": "CVE-2026-67238",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67238"
+    },
+    {
+      "cve": "CVE-2026-67240",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67240"
+    },
+    {
+      "cve": "CVE-2026-67404",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67404"
+    },
+    {
+      "cve": "CVE-2026-67405",
+      "product_status": {
+        "known_affected": [
+          "T056347",
+          "T056348",
+          "T056349",
+          "T056350",
+          "T056345"
+        ]
+      },
+      "release_date": "2026-07-09T22:00:00.000+00:00",
+      "title": "CVE-2026-67405"
+    }
+  ]
+}

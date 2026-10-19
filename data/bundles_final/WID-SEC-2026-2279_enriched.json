@@ -1,0 +1,220 @@
+{
+  "type": "bundle",
+  "id": "bundle--a7b910a7-b484-4dc5-b962-e42411fc210c",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--8e143487-d2e0-5ac7-92c1-970a646ea449",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "libarchive: Schwachstelle ermöglicht Codeausführung and DoS",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in libarchive ausnutzen, um einen Denial-of-Service-Zustand zu verursachen oder möglicherweise beliebigen Code auszuführen.",
+      "published": "2026-07-12T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--0c5b816c-9949-5f5a-9f14-fe98262e7ec2",
+        "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+        "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267",
+        "relationship--6c59fda0-c812-5914-a2f1-6ce252819d4c",
+        "relationship--c75bf333-167c-56ba-a91c-c84015dd5386",
+        "relationship--218fc669-7ba9-55c2-8108-a382056d3f0c",
+        "relationship--80156614-cd29-5130-88f9-6afaf626a875",
+        "relationship--dcf20c9a-f77e-579d-b15f-db4cf73186c1",
+        "relationship--ab954fd2-1aea-55c9-959a-87b9ba389e17"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2279",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2279"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2279",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2279.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-07-12",
+          "url": "https://github.com/advisories/GHSA-P59G-85VJ-3MVF"
+        },
+        {
+          "source_name": "EU Vulnerability Database vom 2026-07-12",
+          "url": "https://euvd.enisa.europa.eu/enisa/EUVD-2026-42865"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:38279 vom 2026-07-12",
+          "url": "https://access.redhat.com/errata/RHSA-2026:38279"
+        },
+        {
+          "source_name": "Ubuntu Security Notice USN-8581-1 vom 2026-07-21",
+          "url": "https://ubuntu.com/security/notices/USN-8581-1"
+        },
+        {
+          "source_name": "Debian Security Advisory DLA-4762 vom 2026-08-31",
+          "url": "https://lists.debian.org/debian-lts-announce/2026/08/msg00053.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69553 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69553"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69553 vom 2026-09-23",
+          "url": "http://linux.oracle.com/errata/ELSA-2026-69553.html"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:69553 vom 2026-09-23",
+          "url": "https://errata.build.resf.org/RLSA-2026:69553"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69553 vom 2026-09-23",
+          "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/022130.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "niedrig",
+      "x_wid_revision": "5",
+      "x_operating_systems": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "libarchive ist eine C Bibliothek und ein Kommandozeilen-Tool zum Lesen und Bearbeiten von tar, cpio, zip, ISO und anderen Formaten."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "name": "Debian Linux",
+      "vendor": "Debian",
+      "cpe": "cpe:2.3:o:debian:debian_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--0c5b816c-9949-5f5a-9f14-fe98262e7ec2",
+      "name": "Open Source libarchive",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:libarchive:libarchive:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "name": "Ubuntu Linux",
+      "vendor": "Ubuntu",
+      "cpe": "cpe:2.3:o:canonical:ubuntu_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-15028",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-15028"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6c59fda0-c812-5914-a2f1-6ce252819d4c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c75bf333-167c-56ba-a91c-c84015dd5386",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--717417f3-9c2f-5e9d-aab4-e6a263d93d09",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--218fc669-7ba9-55c2-8108-a382056d3f0c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--80156614-cd29-5130-88f9-6afaf626a875",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--dcf20c9a-f77e-579d-b15f-db4cf73186c1",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--0c5b816c-9949-5f5a-9f14-fe98262e7ec2",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ab954fd2-1aea-55c9-959a-87b9ba389e17",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--bef0cb53-77ac-5f03-b8c4-af7c67a3d5a8",
+      "target_ref": "vulnerability--06ac4738-8728-5120-a81b-9a6d48bdc267"
+    }
+  ]
+}

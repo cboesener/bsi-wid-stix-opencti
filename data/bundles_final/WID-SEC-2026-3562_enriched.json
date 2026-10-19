@@ -1,0 +1,117 @@
+{
+  "type": "bundle",
+  "id": "bundle--3af8949e-fa9c-4b9f-86d1-7fa146da36de",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--dbcea0c6-f356-5dbc-b68f-5da9544d88a6",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "MLflow: Mehrere Schwachstellen ermöglichen Codeausführung",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in MLflow ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--deafc138-4fca-5daa-aae2-93705b4f41ec",
+        "vulnerability--8abf4ea3-3ae1-5682-bf57-5853cf05d11c",
+        "relationship--3d0c0755-5228-5524-a457-319802eab2f0",
+        "vulnerability--ae2924c1-cc2f-534f-876e-0b3726344c14",
+        "relationship--873a602b-72c9-53d3-963b-036edd4a8767"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3562",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3562"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3562",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3562.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-Q5F3-5GJ6-HMJ7"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-2QMW-5XHM-QQ5W"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "MLflow ist eine Open-Source-Plattform zur Verwaltung des gesamten Machine-Learning-Lebenszyklus, einschließlich Experimenten, Reproduzierbarkeit und Bereitstellung."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--deafc138-4fca-5daa-aae2-93705b4f41ec",
+      "name": "Open Source MLflow <3.15.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--8abf4ea3-3ae1-5682-bf57-5853cf05d11c",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96775",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96775"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3d0c0755-5228-5524-a457-319802eab2f0",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--deafc138-4fca-5daa-aae2-93705b4f41ec",
+      "target_ref": "vulnerability--8abf4ea3-3ae1-5682-bf57-5853cf05d11c"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--ae2924c1-cc2f-534f-876e-0b3726344c14",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96804",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96804"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--873a602b-72c9-53d3-963b-036edd4a8767",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--deafc138-4fca-5daa-aae2-93705b4f41ec",
+      "target_ref": "vulnerability--ae2924c1-cc2f-534f-876e-0b3726344c14"
+    }
+  ]
+}

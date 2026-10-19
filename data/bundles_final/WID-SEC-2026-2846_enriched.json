@@ -1,0 +1,190 @@
+{
+  "type": "bundle",
+  "id": "bundle--9d87adb9-1715-471b-bd8a-df8b42171ea0",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--3075e9e0-fce6-544d-842c-8561755b033a",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "Podman: Schwachstelle ermöglicht nicht spezifizierten Angriff und Offenlegung von Informationen",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in Podman ausnutzen, um einen nicht näher spezifizierten Angriff durchzuführen, und um Informationen offenzulegen..",
+      "published": "2026-08-13T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--b829849f-ef0e-5610-827c-41d7b50058c8",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--8119e8c1-b510-59f0-9ea3-dcc1970ca031",
+        "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a",
+        "relationship--99ee0013-49a3-579b-abfa-f057f3b692c7",
+        "relationship--f13542fc-8e7c-5e82-b46d-7080bfe633c3",
+        "relationship--39c75150-70f1-570e-b896-b082dcdb00d9",
+        "relationship--9a25a3c5-3f5b-5a5c-9a4d-e768edc5c192",
+        "relationship--c6791ff4-1bf9-554b-9f3e-c47047c24ae6"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2846",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2846"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2846",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2846.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-fx76-2j3w-2mx6 vom 2026-08-13",
+          "url": "https://github.com/podman-container-tools/podman/security/advisories/GHSA-fx76-2j3w-2mx6"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70201 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70201"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69961 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69961"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-69961 vom 2026-09-23",
+          "url": "https://linux.oracle.com/errata/ELSA-2026-69961.html"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:70201 vom 2026-09-23",
+          "url": "https://errata.build.resf.org/RLSA-2026:70201"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-70201 vom 2026-09-23",
+          "url": "http://linux.oracle.com/errata/ELSA-2026-70201.html"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-70201 vom 2026-09-23",
+          "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/022134.html"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "niedrig",
+      "x_wid_revision": "3",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Podman ist ein Container-Laufzeit- und Management-Tool, mit dem Benutzer Container ausführen und verwalten können, ohne einen separaten Daemon-Prozess zu benötigen.\r\nPodman is a container runtime and management tool that allows users to run and manage containers without the need for a separate daemon process."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b829849f-ef0e-5610-827c-41d7b50058c8",
+      "name": "Open Source Podman <6.0.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--8119e8c1-b510-59f0-9ea3-dcc1970ca031",
+      "name": "Open Source Podman <5.8.6",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-19730",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-19730"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--99ee0013-49a3-579b-abfa-f057f3b692c7",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f13542fc-8e7c-5e82-b46d-7080bfe633c3",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--39c75150-70f1-570e-b896-b082dcdb00d9",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9a25a3c5-3f5b-5a5c-9a4d-e768edc5c192",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--8119e8c1-b510-59f0-9ea3-dcc1970ca031",
+      "target_ref": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c6791ff4-1bf9-554b-9f3e-c47047c24ae6",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b829849f-ef0e-5610-827c-41d7b50058c8",
+      "target_ref": "vulnerability--46fea8d8-01d0-591b-84ce-7869b912be3a"
+    }
+  ]
+}

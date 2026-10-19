@@ -1,0 +1,779 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "GStreamer ist ein Multimedia-Framework mit einer Plugin-basierten Architektur für eine Vielzahl von Plattformen.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in GStreamer ausnutzen, um Daten zu beschädigen, einen Denial-of-Service-Zustand herbeizuführen, vertrauliche Informationen offenzulegen oder möglicherweise beliebigen Code auszuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2662 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2662.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2662 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2662"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Release Notes vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/releases/1.28/#1.28.6"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0066.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0067.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0068.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0069.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0070.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0071.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0072.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0073.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0075.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0076.html"
+      },
+      {
+        "category": "external",
+        "summary": "GStreamer Security Advisory vom 2026-08-05",
+        "url": "https://gstreamer.freedesktop.org/security/sa-2026-0077.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:53452 vom 2026-08-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:53452"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:53452 vom 2026-08-12",
+        "url": "https://errata.build.resf.org/RLSA-2026:53452"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-53452 vom 2026-08-12",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-53452.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:53451 vom 2026-08-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:53451"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-53451 vom 2026-08-12",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-53451.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:53451 vom 2026-08-12",
+        "url": "https://errata.build.resf.org/RLSA-2026:53451"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:55435 vom 2026-08-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:55435"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:55436 vom 2026-08-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:55436"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:55434 vom 2026-08-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:55434"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:55433 vom 2026-08-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:55433"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:55865 vom 2026-08-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:55865"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-55434 vom 2026-08-17",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-55434.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-55435 vom 2026-08-17",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-55435.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-55436 vom 2026-08-17",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-55436.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:55436 vom 2026-08-17",
+        "url": "https://errata.build.resf.org/RLSA-2026:55436"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:55435 vom 2026-08-17",
+        "url": "https://errata.build.resf.org/RLSA-2026:55435"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:55434 vom 2026-08-17",
+        "url": "https://errata.build.resf.org/RLSA-2026:55434"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:55433 vom 2026-08-17",
+        "url": "https://errata.build.resf.org/RLSA-2026:55433"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:55865 vom 2026-08-18",
+        "url": "https://errata.build.resf.org/RLSA-2026:55865"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-55433 vom 2026-08-17",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-55433.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-55865 vom 2026-08-18",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-55865.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:56521 vom 2026-08-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:56521"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:56521 vom 2026-08-19",
+        "url": "https://errata.build.resf.org/RLSA-2026:56521"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:56966 vom 2026-08-20",
+        "url": "https://errata.build.resf.org/RLSA-2026:56966"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-56966 vom 2026-08-20",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-56966.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-56521 vom 2026-08-19",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-56521.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6458 vom 2026-08-22",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6458-1"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3895 vom 2026-09-01",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3895.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3899 vom 2026-09-01",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3899.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3896 vom 2026-09-01",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3896.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3898 vom 2026-09-01",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3898.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:65123 vom 2026-09-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:65123"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:65124 vom 2026-09-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:65124"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:65122 vom 2026-09-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:65122"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:65959 vom 2026-09-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:65959"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:65999 vom 2026-09-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:65999"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:66406 vom 2026-09-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:66406"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:66407 vom 2026-09-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:66407"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67151 vom 2026-09-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67151"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67844 vom 2026-09-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67844"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67861 vom 2026-09-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67861"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67882 vom 2026-09-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67882"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67931 vom 2026-09-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67931"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67930 vom 2026-09-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67930"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68645 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68645"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68642 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68642"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68644 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68644"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8778-1 vom 2026-09-17",
+        "url": "https://ubuntu.com/security/notices/USN-8778-1"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69232 vom 2026-09-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69232"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70584 vom 2026-09-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70584"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70264 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70264"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70803 vom 2026-09-23",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70803"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "GStreamer: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:25:44.886+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2662",
+      "initial_release_date": "2026-08-05T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-08-05T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-08-11T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-12T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation, CVE und European Union Vulnerability Database aufgenommen"
+        },
+        {
+          "date": "2026-08-16T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen, CVE Nummern ergänzt"
+        },
+        {
+          "date": "2026-08-17T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat, Oracle Linux und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-08-18T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-08-19T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-08-23T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-08-31T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Amazon aufgenommen"
+        },
+        {
+          "date": "2026-09-07T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-09T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-10T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-13T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-15T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-16T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-17T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-20T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "19"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-ugly <1.28.5",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-ugly <1.28.5",
+                  "product_id": "T057599"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-ugly 1.28.5",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-ugly 1.28.5",
+                  "product_id": "T057599-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-ugly__1.28.5"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-bad <1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-bad <1.28.6",
+                  "product_id": "T057600"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-bad 1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-bad 1.28.6",
+                  "product_id": "T057600-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-bad__1.28.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "gst-plugins-good <1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-good <1.28.6",
+                  "product_id": "T057601"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "gst-plugins-good 1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer gst-plugins-good 1.28.6",
+                  "product_id": "T057601-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:gst-plugins-good__1.28.6"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "st-libav <1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer st-libav <1.28.6",
+                  "product_id": "T057602"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "st-libav 1.28.6",
+                "product": {
+                  "name": "Open Source GStreamer st-libav 1.28.6",
+                  "product_id": "T057602-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:open_source:gstreamer:st-libav__1.28.6"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "GStreamer"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T056236",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T054581",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T055947",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-18649",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T057600",
+          "T057601",
+          "T057602",
+          "2951",
+          "T054581",
+          "67646",
+          "T055947",
+          "398363",
+          "T057599"
+        ]
+      },
+      "release_date": "2026-08-05T22:00:00.000+00:00",
+      "title": "CVE-2026-18649"
+    },
+    {
+      "cve": "CVE-2026-19387",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T057600",
+          "T057601",
+          "T057602",
+          "2951",
+          "T054581",
+          "67646",
+          "T055947",
+          "398363",
+          "T057599"
+        ]
+      },
+      "release_date": "2026-08-05T22:00:00.000+00:00",
+      "title": "CVE-2026-19387"
+    },
+    {
+      "cve": "CVE-2026-19389",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T057600",
+          "T057601",
+          "T057602",
+          "2951",
+          "T054581",
+          "67646",
+          "T055947",
+          "398363",
+          "T057599"
+        ]
+      },
+      "release_date": "2026-08-05T22:00:00.000+00:00",
+      "title": "CVE-2026-19389"
+    },
+    {
+      "cve": "CVE-2026-73433",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T057600",
+          "T057601",
+          "T057602",
+          "2951",
+          "T054581",
+          "67646",
+          "T055947",
+          "398363",
+          "T057599"
+        ]
+      },
+      "release_date": "2026-08-05T22:00:00.000+00:00",
+      "title": "CVE-2026-73433"
+    },
+    {
+      "cve": "CVE-2026-73434",
+      "product_status": {
+        "known_affected": [
+          "T056236",
+          "T057600",
+          "T057601",
+          "T057602",
+          "2951",
+          "T054581",
+          "67646",
+          "T055947",
+          "398363",
+          "T057599"
+        ]
+      },
+      "release_date": "2026-08-05T22:00:00.000+00:00",
+      "title": "CVE-2026-73434"
+    }
+  ]
+}

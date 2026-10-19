@@ -1,0 +1,397 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Der Kernel stellt den Kern des Linux Betriebssystems dar.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in Linux Kernel ausnutzen, um Speicherbeschädigungen zu verursachen, Kernel-Speicher offenzulegen oder Denial-of-Service-Zustände auszulösen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2208 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2208.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2208 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2208"
+      },
+      {
+        "category": "external",
+        "summary": "Kernel CVE Announce Mailingliste",
+        "url": "https://lore.kernel.org/linux-cve-announce/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-53359",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026070403-CVE-2026-53359-4f57@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-53360",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026070413-CVE-2026-53360-3284@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-53361",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026070436-CVE-2026-53361-f969@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Linux Kernel CVE Announcement CVE-2026-53362",
+        "url": "https://lore.kernel.org/linux-cve-announce/2026070450-CVE-2026-53362-fe9b@gregkh/"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6381 vom 2026-07-05",
+        "url": "https://security-tracker.debian.org/tracker/DSA-6381-1"
+      },
+      {
+        "category": "external",
+        "summary": "Januscape PoC CVE-2026-53359 vom 2026-07-06",
+        "url": "https://github.com/HORKimhab/CVE-2026-53359/tree/main/Januscape-V4bel"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2026-046 vom 2026-07-07",
+        "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-046"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50372 vom 2026-07-07",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-50372.html"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-75653CF1C2 vom 2026-07-06",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-75653cf1c2"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-C3E2E91B4D vom 2026-07-06",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-c3e2e91b4d"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-50374 vom 2026-07-07",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-50374.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22521-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027309.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2800-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027327.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22512-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027316.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36956 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36956"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2799-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027328.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22511-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027317.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22522-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027308.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11214-1 vom 2026-07-09",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/GV3EPJXGGI27ZSW6JTILRIF4XQRYPZHF/"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Linux Kernel: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:23:14.723+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2208",
+      "initial_release_date": "2026-07-05T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-05T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-07-06T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "PoC für CVE-2026-53359 \"Januscape\" aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von SUSE und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "4"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Google Cloud Platform",
+            "product": {
+              "name": "Google Cloud Platform",
+              "product_id": "393401",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:google:cloud_platform:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source Linux Kernel",
+            "product": {
+              "name": "Open Source Linux Kernel",
+              "product_id": "T056170",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:linux:linux_kernel:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T055946",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-53359",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T002207",
+          "67646",
+          "T056170",
+          "T055946",
+          "393401",
+          "T004914",
+          "74185"
+        ]
+      },
+      "release_date": "2026-07-05T22:00:00.000+00:00",
+      "title": "CVE-2026-53359"
+    },
+    {
+      "cve": "CVE-2026-53360",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T002207",
+          "67646",
+          "T056170",
+          "T055946",
+          "393401",
+          "T004914",
+          "74185"
+        ]
+      },
+      "release_date": "2026-07-05T22:00:00.000+00:00",
+      "title": "CVE-2026-53360"
+    },
+    {
+      "cve": "CVE-2026-53361",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T002207",
+          "67646",
+          "T056170",
+          "T055946",
+          "393401",
+          "T004914",
+          "74185"
+        ]
+      },
+      "release_date": "2026-07-05T22:00:00.000+00:00",
+      "title": "CVE-2026-53361"
+    },
+    {
+      "cve": "CVE-2026-53362",
+      "product_status": {
+        "known_affected": [
+          "2951",
+          "T002207",
+          "67646",
+          "T056170",
+          "T055946",
+          "393401",
+          "T004914",
+          "74185"
+        ]
+      },
+      "release_date": "2026-07-05T22:00:00.000+00:00",
+      "title": "CVE-2026-53362"
+    }
+  ]
+}

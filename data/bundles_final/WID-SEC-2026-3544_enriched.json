@@ -1,0 +1,247 @@
+{
+  "type": "bundle",
+  "id": "bundle--a8153330-cac5-4183-87e5-37fd20014562",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--a727aa24-9497-5d05-ad8a-27342cbfdcc7",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Kubernetes (kubelet, kube-controller-manager): Mehrere Schwachstellen",
+      "description": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Kubernetes ausnutzen, um Sicherheitsvorkehrungen zu umgehen und vertrauliche Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--b6eb4e6c-8bdb-5e67-aa31-1e3e7f141375",
+        "software--4427de9e-cd60-5e6a-923c-a83429ca892e",
+        "software--fbd9938b-73e5-583f-bad3-0366fe7e49e7",
+        "software--1916acab-9acf-5f30-bb1b-d4699641c3fa",
+        "software--04388980-a8da-558b-bb84-89a9dc4f3db9",
+        "software--4fca1831-834d-544f-bd41-44c8cb361999",
+        "software--2e50ef13-3734-5a78-a438-95c24c695f8f",
+        "software--549d8b4c-9db8-5ba6-ba70-661ac7e511f3",
+        "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1",
+        "relationship--7f5a8a21-49aa-500b-accd-989f5e3f17bc",
+        "relationship--116ec433-02d0-5d9a-8248-12015657ff2b",
+        "relationship--fb1846d3-4320-50a2-9a23-589680671a47",
+        "relationship--897c654e-e871-5e03-8720-e8c14ecc1baa",
+        "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee",
+        "relationship--43686ec7-631a-5aa0-8ea5-1a1dc9adea22",
+        "relationship--b54ead48-30a0-5542-b7ff-17e9e323bb62",
+        "relationship--9f74a7bb-1512-51ad-ab72-a7411f45e6db",
+        "relationship--16eb4929-fd92-5bad-bad0-3e4d83da448d"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3544",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3544"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3544",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3544.json"
+        },
+        {
+          "source_name": "GitHub Issue vom 2026-09-23",
+          "url": "https://github.com/kubernetes/kubernetes/issues/142097"
+        },
+        {
+          "source_name": "GitHub Issue vom 2026-09-23",
+          "url": "https://github.com/kubernetes/kubernetes/issues/142098"
+        },
+        {
+          "source_name": "Kubernetes Security Advisory vom 2026-09-23",
+          "url": "https://discuss.kubernetes.io/t/security-advisory-cve-2026-2270-statefulset-and-controllerrevision-write-permissions-allow-cross-namespace-pod-creation/35276"
+        },
+        {
+          "source_name": "Kubernetes Security Advisory vom 2026-09-23",
+          "url": "https://discuss.kubernetes.io/t/security-advisory-cve-2026-76654-subpath-symlinking-on-windows-nodes-permits-ntlm-coercion/35277"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- UNIX",
+      "x_product_description": "Kubernetes ist ein Werkzeug zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von containerisierten Anwendungen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b6eb4e6c-8bdb-5e67-aa31-1e3e7f141375",
+      "name": "Open Source Kubernetes kubelet <1.36.5",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--4427de9e-cd60-5e6a-923c-a83429ca892e",
+      "name": "Open Source Kubernetes kube-controller-manager <1.37.1",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--fbd9938b-73e5-583f-bad3-0366fe7e49e7",
+      "name": "Open Source Kubernetes kube-controller-manager <1.36.5",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--1916acab-9acf-5f30-bb1b-d4699641c3fa",
+      "name": "Open Source Kubernetes kubelet <1.37.1",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--04388980-a8da-558b-bb84-89a9dc4f3db9",
+      "name": "Open Source Kubernetes kube-controller-manager <1.34.12",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--4fca1831-834d-544f-bd41-44c8cb361999",
+      "name": "Open Source Kubernetes kube-controller-manager <1.35.9",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--2e50ef13-3734-5a78-a438-95c24c695f8f",
+      "name": "Open Source Kubernetes kubelet <1.35.9",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--549d8b4c-9db8-5ba6-ba70-661ac7e511f3",
+      "name": "Open Source Kubernetes kubelet <1.34.12",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-2270",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-2270"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7f5a8a21-49aa-500b-accd-989f5e3f17bc",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--4427de9e-cd60-5e6a-923c-a83429ca892e",
+      "target_ref": "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--116ec433-02d0-5d9a-8248-12015657ff2b",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--fbd9938b-73e5-583f-bad3-0366fe7e49e7",
+      "target_ref": "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fb1846d3-4320-50a2-9a23-589680671a47",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--4fca1831-834d-544f-bd41-44c8cb361999",
+      "target_ref": "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--897c654e-e871-5e03-8720-e8c14ecc1baa",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--04388980-a8da-558b-bb84-89a9dc4f3db9",
+      "target_ref": "vulnerability--173b66ef-532b-50d3-af8a-9e27b0c5a9d1"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-76654",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-76654"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--43686ec7-631a-5aa0-8ea5-1a1dc9adea22",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b6eb4e6c-8bdb-5e67-aa31-1e3e7f141375",
+      "target_ref": "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b54ead48-30a0-5542-b7ff-17e9e323bb62",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--2e50ef13-3734-5a78-a438-95c24c695f8f",
+      "target_ref": "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9f74a7bb-1512-51ad-ab72-a7411f45e6db",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--549d8b4c-9db8-5ba6-ba70-661ac7e511f3",
+      "target_ref": "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--16eb4929-fd92-5bad-bad0-3e4d83da448d",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--1916acab-9acf-5f30-bb1b-d4699641c3fa",
+      "target_ref": "vulnerability--b1c9c119-033d-58c0-ad98-adb1d4f543ee"
+    }
+  ]
+}

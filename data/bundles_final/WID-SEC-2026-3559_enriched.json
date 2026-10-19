@@ -1,0 +1,192 @@
+{
+  "type": "bundle",
+  "id": "bundle--ae4afcdb-cd69-4b03-8450-843f1dafa8f2",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--bd6f18a2-d99b-5be9-abee-3aa460771f07",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Apache Tomcat APR/native Connector: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Apache Tomcat APR/native Connector ausnutzen, um einen Denial of Service Angriff durchzuführen und um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--07874bbe-92d0-5f3b-93e3-ce7da0598c35",
+        "software--88140261-bf46-5196-a491-b7efbf8e26ed",
+        "vulnerability--b12dc924-8be2-5890-ab94-114c280ab96a",
+        "relationship--eef0eeb1-79fd-54e4-8286-9a37d2043c17",
+        "relationship--9cb6c506-f65b-5407-a9b3-c3b92f943c26",
+        "vulnerability--344f9b40-78d5-5232-a7dc-3bff838c08c4",
+        "relationship--ccc4b2d0-3700-53a9-be20-874f347c4c6d",
+        "relationship--e49d7068-5104-531a-be36-e12469b53bc1",
+        "vulnerability--420df4f0-57ce-5e17-83cd-dea6ed68c210",
+        "relationship--97eb04f5-726c-5565-9ccd-fecaff280f3f",
+        "relationship--34360e7c-099d-5daf-ac98-f0be3c7a993a"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3559",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3559"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3559",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3559.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-W68H-FC49-CMRG"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-9P2M-JVMJ-WH8Q"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-JHRW-X5GG-JJQW"
+        },
+        {
+          "source_name": "Fixed in Apache Tomcat Native Connector 2.0.16 / 1.3.9 vom 2026-09-23",
+          "url": "https://tomcat.apache.org/security-native#Fixed_in_Apache_Tomcat_Native_Connector_2.0.16_/_1.3.9"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "Apache Tomcat ist ein Web-Applikationsserver für verschiedene Plattformen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--07874bbe-92d0-5f3b-93e3-ce7da0598c35",
+      "name": "Apache Tomcat APR/native Connector <1.3.9",
+      "vendor": "Apache"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--88140261-bf46-5196-a491-b7efbf8e26ed",
+      "name": "Apache Tomcat APR/native Connector <2.0.16",
+      "vendor": "Apache"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--b12dc924-8be2-5890-ab94-114c280ab96a",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-86243",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-86243"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--eef0eeb1-79fd-54e4-8286-9a37d2043c17",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--88140261-bf46-5196-a491-b7efbf8e26ed",
+      "target_ref": "vulnerability--b12dc924-8be2-5890-ab94-114c280ab96a"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9cb6c506-f65b-5407-a9b3-c3b92f943c26",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--07874bbe-92d0-5f3b-93e3-ce7da0598c35",
+      "target_ref": "vulnerability--b12dc924-8be2-5890-ab94-114c280ab96a"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--344f9b40-78d5-5232-a7dc-3bff838c08c4",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-86246",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-86246"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ccc4b2d0-3700-53a9-be20-874f347c4c6d",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--88140261-bf46-5196-a491-b7efbf8e26ed",
+      "target_ref": "vulnerability--344f9b40-78d5-5232-a7dc-3bff838c08c4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e49d7068-5104-531a-be36-e12469b53bc1",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--07874bbe-92d0-5f3b-93e3-ce7da0598c35",
+      "target_ref": "vulnerability--344f9b40-78d5-5232-a7dc-3bff838c08c4"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--420df4f0-57ce-5e17-83cd-dea6ed68c210",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-86247",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-86247"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--97eb04f5-726c-5565-9ccd-fecaff280f3f",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--88140261-bf46-5196-a491-b7efbf8e26ed",
+      "target_ref": "vulnerability--420df4f0-57ce-5e17-83cd-dea6ed68c210"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--34360e7c-099d-5daf-ac98-f0be3c7a993a",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--07874bbe-92d0-5f3b-93e3-ce7da0598c35",
+      "target_ref": "vulnerability--420df4f0-57ce-5e17-83cd-dea6ed68c210"
+    }
+  ]
+}

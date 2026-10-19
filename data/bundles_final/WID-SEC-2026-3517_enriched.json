@@ -1,0 +1,129 @@
+{
+  "type": "bundle",
+  "id": "bundle--b368fe9d-6d89-4fa8-b568-ed2f477638ba",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--2299cfcf-bd7b-5533-b1d2-c1a154cc69bc",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "F5 BIG-IP APM: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in F5 BIG-IP APM ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--197601b4-4f8e-5f2a-986a-e8e48208f67c",
+        "software--48182183-6a11-51c6-8c8d-35bfe9272348",
+        "software--d4a39acf-27ce-5ab3-8ec7-2fc3fe8c892b",
+        "vulnerability--2687d082-52fb-5b1d-bf4f-681700293f54",
+        "relationship--35476948-7940-5a1e-a839-b5ec11cd0a75",
+        "relationship--27572a42-a960-55ef-bbf2-3d0bd4d8879a",
+        "relationship--4f75adac-9e22-56df-822c-ec2bf21c467e"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3517",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3517"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3517",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3517.json"
+        },
+        {
+          "source_name": "F5 Security Advisory vom 2026-09-22",
+          "url": "https://my.f5.com/manage/s/article/K000162605"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-qppv-6jrg-hxq4 vom 2026-09-22",
+          "url": "https://github.com/advisories/GHSA-qppv-6jrg-hxq4"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "kritisch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges",
+      "x_product_description": "BIG-IP ist eine Netzwerk Appliance auf der die meisten F5 Produkte laufen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--197601b4-4f8e-5f2a-986a-e8e48208f67c",
+      "name": "F5 BIG-IP APM 17.x <Hotfix-BIGIP 17.1.3.5.0.41.14-ENG.iso",
+      "vendor": "F5"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--48182183-6a11-51c6-8c8d-35bfe9272348",
+      "name": "F5 BIG-IP APM 21.1.0 <Hotfix-BIGIP-21.1.0.2.0.30.22-ENG.iso",
+      "vendor": "F5"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--d4a39acf-27ce-5ab3-8ec7-2fc3fe8c892b",
+      "name": "F5 BIG-IP APM 17.x <Hotfix-BIGIP-17.5.1.9.0.160.12-ENG.iso",
+      "vendor": "F5"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--2687d082-52fb-5b1d-bf4f-681700293f54",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-94127",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-94127"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--35476948-7940-5a1e-a839-b5ec11cd0a75",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--197601b4-4f8e-5f2a-986a-e8e48208f67c",
+      "target_ref": "vulnerability--2687d082-52fb-5b1d-bf4f-681700293f54"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--27572a42-a960-55ef-bbf2-3d0bd4d8879a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d4a39acf-27ce-5ab3-8ec7-2fc3fe8c892b",
+      "target_ref": "vulnerability--2687d082-52fb-5b1d-bf4f-681700293f54"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4f75adac-9e22-56df-822c-ec2bf21c467e",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--48182183-6a11-51c6-8c8d-35bfe9272348",
+      "target_ref": "vulnerability--2687d082-52fb-5b1d-bf4f-681700293f54"
+    }
+  ]
+}

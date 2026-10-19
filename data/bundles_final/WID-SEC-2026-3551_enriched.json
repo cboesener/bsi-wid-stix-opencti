@@ -1,0 +1,92 @@
+{
+  "type": "bundle",
+  "id": "bundle--0ae6f49c-a2b2-4ca8-a621-2995e79d2256",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--a5d9af8f-20c7-54d9-b1a1-9ba74c179dc3",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "sudo: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein lokaler Angreifer kann eine Schwachstelle in sudo ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--160a3ada-5068-55ee-95e7-49a34ea47e39",
+        "vulnerability--142e7d20-b2fb-5301-a8c5-cdf65a575d57",
+        "relationship--a86965ba-4f75-55aa-8252-cc0b386407c9"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3551",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3551"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3551",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3551.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-JJ2H-HCRF-9GFX"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2539327 vom 2026-09-23",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2539327"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Sudo ist ein Linux System Werkzeug um Befehle unter anderem Benutzernamen/Gruppennamen (UID/GID) auszuführen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--160a3ada-5068-55ee-95e7-49a34ea47e39",
+      "name": "Open Source sudo",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:todd_miller:sudo:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--142e7d20-b2fb-5301-a8c5-cdf65a575d57",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96512",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96512"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a86965ba-4f75-55aa-8252-cc0b386407c9",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--160a3ada-5068-55ee-95e7-49a34ea47e39",
+      "target_ref": "vulnerability--142e7d20-b2fb-5301-a8c5-cdf65a575d57"
+    }
+  ]
+}

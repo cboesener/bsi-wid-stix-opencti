@@ -1,0 +1,87 @@
+{
+  "type": "bundle",
+  "id": "bundle--bdc84b27-eb7a-4d20-ac6d-6483a5d2a46a",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--e8f1f397-df4b-5f02-b7ef-3d987213663e",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "Vercel Next.js: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Vercel Next.js ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--987a9441-20c7-5137-b647-9f251221cad2",
+        "vulnerability--f547e346-f8fa-51c1-92c9-0dd19211c3ef",
+        "relationship--2d55f4af-8d69-5fc7-80f3-2e0c7f803a04"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3538",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3538"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3538",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3538.json"
+        },
+        {
+          "source_name": "next.js GitHub vom 2026-09-22",
+          "url": "https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- UNIX\n- Windows",
+      "x_product_description": "Next.js ist ein Framework für React-basierte Web-Anwendungen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--987a9441-20c7-5137-b647-9f251221cad2",
+      "name": "Vercel Next.js <16.3.6",
+      "vendor": "Vercel"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--f547e346-f8fa-51c1-92c9-0dd19211c3ef",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-94545",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-94545"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2d55f4af-8d69-5fc7-80f3-2e0c7f803a04",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--987a9441-20c7-5137-b647-9f251221cad2",
+      "target_ref": "vulnerability--f547e346-f8fa-51c1-92c9-0dd19211c3ef"
+    }
+  ]
+}

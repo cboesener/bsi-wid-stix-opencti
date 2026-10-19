@@ -1,0 +1,443 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "ClamAV ist ein Open Source Virenscanner.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in ClamAV ausnutzen, um einen Denial of Service Angriff durchzuführen oder vertrauliche Informationen offenzulegen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2173 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2173.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2173 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2173"
+      },
+      {
+        "category": "external",
+        "summary": "ClamAV 1.5.3 and 1.4.5 security patch vom 2026-07-01",
+        "url": "https://blog.clamav.net/2026/07/clamav-153-and-145-security-patch.html"
+      },
+      {
+        "category": "external",
+        "summary": "Cisco Security Advisory CISCO-SA-CLAMAV-88CFYYXR vom 2026-07-01",
+        "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-clamav-88cFYyxR"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8517-1 vom 2026-07-08",
+        "url": "https://ubuntu.com/security/notices/USN-8517-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21252-1 vom 2026-07-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/USIVXY3F7PXE7LTUA5CYR5NA5QPVWFLL/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2835-1 vom 2026-07-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027339.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2834-1 vom 2026-07-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027340.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2833-1 vom 2026-07-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027341.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "ClamAV: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T09:21:48.913+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2173",
+      "initial_release_date": "2026-07-01T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-07-02T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Cisco aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Ubuntu und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "4"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Connector for Linux <1.29.0",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Linux <1.29.0",
+                  "product_id": "T056122"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Connector for Linux 1.29.0",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Linux 1.29.0",
+                  "product_id": "T056122-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cisco:secure_endpoint:1.29.0::connector_for_linux"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Connector for Mac <1.27.2",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Mac <1.27.2",
+                  "product_id": "T056123"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Connector for Mac 1.27.2",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Mac 1.27.2",
+                  "product_id": "T056123-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cisco:secure_endpoint:1.27.2::connector_for_mac"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Connector for Windows <8.6.2",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Windows <8.6.2",
+                  "product_id": "T056124"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Connector for Windows 8.6.2",
+                "product": {
+                  "name": "Cisco Secure Endpoint Connector for Windows 8.6.2",
+                  "product_id": "T056124-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cisco:secure_endpoint:8.6.2::connector_for_windows"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Private Cloud <4.2.8",
+                "product": {
+                  "name": "Cisco Secure Endpoint Private Cloud <4.2.8",
+                  "product_id": "T056125"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Private Cloud 4.2.8",
+                "product": {
+                  "name": "Cisco Secure Endpoint Private Cloud 4.2.8",
+                  "product_id": "T056125-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cisco:secure_endpoint:4.2.8::private_cloud"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Secure Endpoint"
+          }
+        ],
+        "category": "vendor",
+        "name": "Cisco"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<1.5.3",
+                "product": {
+                  "name": "Open Source ClamAV <1.5.3",
+                  "product_id": "T056064"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1.5.3",
+                "product": {
+                  "name": "Open Source ClamAV 1.5.3",
+                  "product_id": "T056064-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:clamav:clamav:1.5.3"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<1.4.5",
+                "product": {
+                  "name": "Open Source ClamAV <1.4.5",
+                  "product_id": "T056065"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1.4.5",
+                "product": {
+                  "name": "Open Source ClamAV 1.4.5",
+                  "product_id": "T056065-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:clamav:clamav:1.4.5"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "ClamAV"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T054646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-20213",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20213"
+    },
+    {
+      "cve": "CVE-2026-20214",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20214"
+    },
+    {
+      "cve": "CVE-2026-20215",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20215"
+    },
+    {
+      "cve": "CVE-2026-20216",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20216"
+    },
+    {
+      "cve": "CVE-2026-20217",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20217"
+    },
+    {
+      "cve": "CVE-2026-20243",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20243"
+    },
+    {
+      "cve": "CVE-2026-20244",
+      "product_status": {
+        "known_affected": [
+          "T000126",
+          "T027843",
+          "T056064",
+          "T054646",
+          "T056065",
+          "T056122",
+          "T056123",
+          "T056124",
+          "T056125"
+        ]
+      },
+      "release_date": "2026-07-01T22:00:00.000+00:00",
+      "title": "CVE-2026-20244"
+    }
+  ]
+}

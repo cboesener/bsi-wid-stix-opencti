@@ -1,0 +1,212 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Django ist ein in Python geschriebenes serverseitiges Web-Framework, das einem Model-View-Presenter-Schema folgt.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Django ausnutzen, um Informationen offenzulegen, einen Denial of Service zu verursachen und Daten zu manipulieren.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2231 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2231.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2231 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2231"
+      },
+      {
+        "category": "external",
+        "summary": "Django Security Release vom 2026-07-07",
+        "url": "https://www.djangoproject.com/weblog/2026/jul/07/security-releases/"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-crhf-3pfg-w68w vom 2026-07-07",
+        "url": "https://github.com/advisories/GHSA-crhf-3pfg-w68w"
+      },
+      {
+        "category": "external",
+        "summary": "Seclists vom 2026-07-07",
+        "url": "https://seclists.org/oss-sec/2026/q3/84"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2819-1 vom 2026-07-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027355.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Django: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T09:16:40.481+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2231",
+      "initial_release_date": "2026-07-07T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-07T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "2"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<6.0.7",
+                "product": {
+                  "name": "Open Source Django <6.0.7",
+                  "product_id": "T056253"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "6.0.7",
+                "product": {
+                  "name": "Open Source Django 6.0.7",
+                  "product_id": "T056253-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:djangoproject:django:6.0.7"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<5.2.16",
+                "product": {
+                  "name": "Open Source Django <5.2.16",
+                  "product_id": "T056256"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.2.16",
+                "product": {
+                  "name": "Open Source Django 5.2.16",
+                  "product_id": "T056256-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:djangoproject:django:5.2.16"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Django"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T054646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-48588",
+      "product_status": {
+        "known_affected": [
+          "T054646",
+          "T056253",
+          "T056256"
+        ]
+      },
+      "release_date": "2026-07-07T22:00:00.000+00:00",
+      "title": "CVE-2026-48588"
+    },
+    {
+      "cve": "CVE-2026-53877",
+      "product_status": {
+        "known_affected": [
+          "T054646",
+          "T056253",
+          "T056256"
+        ]
+      },
+      "release_date": "2026-07-07T22:00:00.000+00:00",
+      "title": "CVE-2026-53877"
+    },
+    {
+      "cve": "CVE-2026-53878",
+      "product_status": {
+        "known_affected": [
+          "T054646",
+          "T056253",
+          "T056256"
+        ]
+      },
+      "release_date": "2026-07-07T22:00:00.000+00:00",
+      "title": "CVE-2026-53878"
+    }
+  ]
+}

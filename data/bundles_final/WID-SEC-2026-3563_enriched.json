@@ -1,0 +1,99 @@
+{
+  "type": "bundle",
+  "id": "bundle--0a3b1780-e68f-4713-8386-17c5d3a99fe1",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b7aa282f-eb97-558c-bd23-61dbd6982c71",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "OpenCTI: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in OpenCTI ausnutzen, um Sicherheitsvorkehrungen zu umgehen, und um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--cfef017a-9a66-55e0-bacd-a8db1d5053d1",
+        "software--3769e79a-53a7-5fb2-abf4-66e214318d5a",
+        "vulnerability--e47d342a-b6ca-564c-b770-bf5d8c56faad",
+        "relationship--1ac8782e-b27a-52aa-8b31-35fea68deff0"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3563",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3563"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3563",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3563.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-2872-rg44-j9gx vom 2026-09-23",
+          "url": "https://github.com/OpenCTI-Platform/opencti/security/advisories/GHSA-2872-rg44-j9gx"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-w45v-76pj-xggm vom 2026-09-23",
+          "url": "https://github.com/OpenCTI-Platform/opencti/security/advisories/GHSA-w45v-76pj-xggm"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "OpenCTI ist eine Open-Source-Plattform für Organisationen zur Verwaltung ihres Wissens und ihrer Beobachtungen im Bereich Cyber Threat Intelligence."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--cfef017a-9a66-55e0-bacd-a8db1d5053d1",
+      "name": "Open Source OpenCTI <7.260701.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3769e79a-53a7-5fb2-abf4-66e214318d5a",
+      "name": "Open Source OpenCTI <7.260811.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e47d342a-b6ca-564c-b770-bf5d8c56faad",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-76822",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-76822"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1ac8782e-b27a-52aa-8b31-35fea68deff0",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--cfef017a-9a66-55e0-bacd-a8db1d5053d1",
+      "target_ref": "vulnerability--e47d342a-b6ca-564c-b770-bf5d8c56faad"
+    }
+  ]
+}

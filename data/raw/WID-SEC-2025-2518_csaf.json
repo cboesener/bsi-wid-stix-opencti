@@ -1,0 +1,1195 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Red Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\r\nRed Hat OpenShift ist eine \"Platform as a Service\" (PaaS) Lösung zur Bereitstellung von Applikationen in der Cloud.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in Red Hat Enterprise Linux und Red Hat OpenShift ausnutzen, um Sicherheitsvorkehrungen zu umgehen und einen Denial of Service herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- MacOS X\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-2518 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-2518.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-2518 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-2518"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory vom 2025-11-09",
+        "url": "https://access.redhat.com/errata/RHSA-2025:19927"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-19927 vom 2025-11-10",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-19927.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:20957 vom 2025-11-11",
+        "url": "https://access.redhat.com/errata/RHSA-2025:20957"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21220 vom 2025-11-13",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21220"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4081-1 vom 2025-11-12",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023271.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4079-1 vom 2025-11-12",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023273.html"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2025-066 vom 2025-11-12",
+        "url": "https://cloud.google.com/support/bulletins#gcp-2025-066"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21232 vom 2025-11-13",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21232"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21633 vom 2025-11-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21633"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21634 vom 2025-11-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21634"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21702 vom 2025-11-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21702"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-21232 vom 2025-11-19",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-21232.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:21220 vom 2025-11-21",
+        "url": "https://errata.build.resf.org/RLSA-2025:21220"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025-20072-1 vom 2025-11-21",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/4N2IX7IISA25FKW73QLMICMR3RMBJMXC/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:4073-2 vom 2025-11-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023325.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22030 vom 2025-11-25",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22030"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22012 vom 2025-11-25",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22012"
+      },
+      {
+        "category": "external",
+        "summary": "Google Cloud Platform Security Bulletin GCP-2025-069 vom 2025-11-24",
+        "url": "https://cloud.google.com/support/bulletins#gcp-2025-069"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22011 vom 2025-11-25",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22011"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-7851-2 vom 2025-11-24",
+        "url": "https://ubuntu.com/security/notices/USN-7851-2"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-21702 vom 2025-11-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-21702.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-20957 vom 2025-11-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-20957.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-22011 vom 2025-11-26",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-22011.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21795 vom 2025-11-27",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21795"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:21824 vom 2025-11-27",
+        "url": "https://access.redhat.com/errata/RHSA-2025:21824"
+      },
+      {
+        "category": "external",
+        "summary": "Docker Desktop Release Notes 4.53.0 vom 2025-11-27",
+        "url": "https://docs.docker.com/desktop/release-notes/#4530"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21038-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023395.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21054-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023420.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21036-1 vom 2025-11-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023397.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:21232 vom 2025-11-28",
+        "url": "https://errata.build.resf.org/RLSA-2025:21232"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:22012 vom 2025-11-28",
+        "url": "https://errata.build.resf.org/RLSA-2025:22012"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:22011 vom 2025-11-28",
+        "url": "https://errata.build.resf.org/RLSA-2025:22011"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21072-1 vom 2025-11-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-November/023432.html"
+      },
+      {
+        "category": "external",
+        "summary": "Container-Optimized OS release notes vom 2025-12-02",
+        "url": "https://docs.cloud.google.com/container-optimized-os/docs/release-notes#November_07_2025"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-21220 vom 2025-12-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-21220.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-22012 vom 2025-12-03",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-22012.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:22275 vom 2025-12-05",
+        "url": "https://access.redhat.com/errata/RHSA-2025:22275"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23078 vom 2025-12-10",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23078"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23079 vom 2025-12-10",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23079"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23080 vom 2025-12-10",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23080"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:21136-1 vom 2025-12-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-December/023516.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23202 vom 2025-12-15",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23202"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23449 vom 2025-12-17",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23449"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23543 vom 2025-12-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23543"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23347 vom 2025-12-18",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23347"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2025:23543 vom 2025-12-18",
+        "url": "https://errata.build.resf.org/RLSA-2025:23543"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15843-1 vom 2025-12-25",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/QQPKJQ6SZIZSADP4WF47M27JCPCWUOEL/"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-23543 vom 2025-12-25",
+        "url": "http://linux.oracle.com/errata/ELSA-2025-23543.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0050 vom 2026-01-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0050"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:23113 vom 2026-01-07",
+        "url": "https://access.redhat.com/errata/RHSA-2025:23113"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0424 vom 2026-01-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0424"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0426 vom 2026-01-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0426"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0425 vom 2026-01-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0425"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0315 vom 2026-01-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0315"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0316 vom 2026-01-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0316"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0418 vom 2026-01-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0418"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0331 vom 2026-01-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0331"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0676 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0676"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0701 vom 2026-01-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0701"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20103-1 vom 2026-01-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/023881.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20116-1 vom 2026-01-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-January/023875.html"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2026-030 vom 2026-01-30",
+        "url": "https://www.dell.com/support/kbdoc/de-de/000421570/dsa-2026-030-security-update-for-dell-networker-vproxy-multiple-third-party-component-vulnerabilities"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:0995 vom 2026-01-30",
+        "url": "https://access.redhat.com/errata/RHSA-2026:0995"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1730 vom 2026-02-02",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1730"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:20140-1 vom 2026-02-03",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/MAQDE5E54BFLPO3DKRMUKWK3AXGAW3EP/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1942 vom 2026-02-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1942"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2034 vom 2026-02-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2034"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:1540 vom 2026-02-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:1540"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2106 vom 2026-02-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2106"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2343 vom 2026-02-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2343"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2456 vom 2026-02-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2456"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2754 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2754"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2681 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2681"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2762 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2762"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2695 vom 2026-02-16",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2695"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2951 vom 2026-02-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2951"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:2975 vom 2026-02-25",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2975"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3462 vom 2026-02-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3462"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3461 vom 2026-02-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3461"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3416 vom 2026-03-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3416"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3713 vom 2026-03-04",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3713"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:3391 vom 2026-03-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3391"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20641-1 vom 2026-03-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024659.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:4532 vom 2026-03-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4532"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:4533 vom 2026-03-13",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4533"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:4531 vom 2026-03-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4531"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:4693 vom 2026-03-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4693"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-4672 vom 2026-03-18",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-4672.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:6492 vom 2026-04-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:6492"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:8325 vom 2026-04-15",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8325"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:10703 vom 2026-04-27",
+        "url": "https://access.redhat.com/errata/RHSA-2026:10703"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21291-1 vom 2026-04-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025701.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19244 vom 2026-05-19",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19244"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2706-1 vom 2026-06-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/027081.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-35833 vom 2026-07-08",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-35833.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-35833 vom 2026-07-08",
+        "url": "https://oss.oracle.com/pipermail/el-errata/2026-July/020903.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Red Hat Enterprise Linux (runc): Mehrere Schwachstellen ermöglichen Umgehen von Sicherheitsvorkehrungen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T09:11:57.273+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-2518",
+      "initial_release_date": "2025-11-09T23:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-11-09T23:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-11-11T23:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-12T23:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat, SUSE und Google aufgenommen"
+        },
+        {
+          "date": "2025-11-17T23:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-18T23:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-19T23:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-11-23T23:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und openSUSE aufgenommen"
+        },
+        {
+          "date": "2025-11-24T23:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat, Google und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2025-11-25T23:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-11-26T23:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-11-27T23:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Docker Desktop aufgenommen"
+        },
+        {
+          "date": "2025-11-30T23:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-12-01T23:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2025-12-03T23:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2025-12-07T23:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-10T23:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2025-12-15T23:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-16T23:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-17T23:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-12-28T23:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von openSUSE und Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-01-04T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-06T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-11T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-14T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-15T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-22T23:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-01-29T23:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2026-02-01T23:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-02T23:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-03T23:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-02-04T23:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-05T23:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-09T23:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-10T23:00:00.000+00:00",
+          "number": "34",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-16T23:00:00.000+00:00",
+          "number": "35",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-18T23:00:00.000+00:00",
+          "number": "36",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-02-25T23:00:00.000+00:00",
+          "number": "37",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-01T23:00:00.000+00:00",
+          "number": "38",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-03T23:00:00.000+00:00",
+          "number": "39",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-04T23:00:00.000+00:00",
+          "number": "40",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-08T23:00:00.000+00:00",
+          "number": "41",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-12T23:00:00.000+00:00",
+          "number": "42",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-16T23:00:00.000+00:00",
+          "number": "43",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-03-17T23:00:00.000+00:00",
+          "number": "44",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-04-08T22:00:00.000+00:00",
+          "number": "45",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-15T22:00:00.000+00:00",
+          "number": "46",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-04-26T22:00:00.000+00:00",
+          "number": "47",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-19T22:00:00.000+00:00",
+          "number": "48",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "49",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "50",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "50"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "vProxy <19.14",
+                "product": {
+                  "name": "Dell NetWorker vProxy <19.14",
+                  "product_id": "T050451"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "vProxy 19.14",
+                "product": {
+                  "name": "Dell NetWorker vProxy 19.14",
+                  "product_id": "T050451-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:vproxy__19.14"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.53.0",
+                "product": {
+                  "name": "Docker Desktop <4.53.0",
+                  "product_id": "T048947"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.53.0",
+                "product": {
+                  "name": "Docker Desktop 4.53.0",
+                  "product_id": "T048947-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:docker:desktop:4.53.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Desktop"
+          }
+        ],
+        "category": "vendor",
+        "name": "Docker"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Google Cloud Platform",
+            "product": {
+              "name": "Google Cloud Platform",
+              "product_id": "393401",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:google:cloud_platform:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Google Container-Optimized OS",
+            "product": {
+              "name": "Google Container-Optimized OS",
+              "product_id": "1607324",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:google:container-optimized_os:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Google"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 9",
+                  "product_id": "T034465",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:9"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 8",
+                  "product_id": "T035191",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:8"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 10",
+                  "product_id": "T048374",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:10"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Container Platform 4",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4",
+                  "product_id": "T032877",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform_4"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.16.55",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.16.55",
+                  "product_id": "T050026"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.16.55",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.16.55",
+                  "product_id": "T050026-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.16.55"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "API for Data Protection",
+                "product": {
+                  "name": "Red Hat OpenShift API for Data Protection",
+                  "product_id": "T050615",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:api_for_data_protection"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.18.34",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.18.34",
+                  "product_id": "T051178"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18.34",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18.34",
+                  "product_id": "T051178-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.18.34"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.12.87",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.12.87",
+                  "product_id": "T052608"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.12.87",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.12.87",
+                  "product_id": "T052608-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.12.87"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-31133",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T032877",
+          "T050026",
+          "393401",
+          "T004914",
+          "T050451",
+          "T032255",
+          "T051178",
+          "T035191",
+          "T052608",
+          "T002207",
+          "T000126",
+          "T050615",
+          "T048947",
+          "T027843",
+          "1607324"
+        ]
+      },
+      "release_date": "2025-11-09T23:00:00.000+00:00",
+      "title": "CVE-2025-31133"
+    },
+    {
+      "cve": "CVE-2025-52565",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T032877",
+          "T050026",
+          "393401",
+          "T004914",
+          "T050451",
+          "T032255",
+          "T051178",
+          "T035191",
+          "T052608",
+          "T002207",
+          "T000126",
+          "T050615",
+          "T048947",
+          "T027843",
+          "1607324"
+        ]
+      },
+      "release_date": "2025-11-09T23:00:00.000+00:00",
+      "title": "CVE-2025-52565"
+    },
+    {
+      "cve": "CVE-2025-52881",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T032877",
+          "T050026",
+          "393401",
+          "T004914",
+          "T050451",
+          "T032255",
+          "T051178",
+          "T035191",
+          "T052608",
+          "T002207",
+          "T000126",
+          "T050615",
+          "T048947",
+          "T027843",
+          "T048374",
+          "1607324"
+        ]
+      },
+      "release_date": "2025-11-09T23:00:00.000+00:00",
+      "title": "CVE-2025-52881"
+    }
+  ]
+}

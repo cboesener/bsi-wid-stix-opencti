@@ -1,0 +1,809 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Apache CXF ist ein Open Source-Web Service-Framework.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Apache CXF ausnutzen, um Sicherheitsvorkehrungen zu umgehen, XML-External-Entity-Angriffe durchzuführen, Daten zu manipulieren oder vertrauliche Informationen offenzulegen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1895 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1895.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1895 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1895"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Releases Download vom 2026-06-11",
+        "url": "https://cxf.apache.org/download.html"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-49875 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-49875.txt"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-50623 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-50623.txt"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-50627 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-50627.txt"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-50628 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-50628.txt"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-50629 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-50629.txt"
+      },
+      {
+        "category": "external",
+        "summary": "Apache CXF Security Advisory CVE-2026-50630 vom 2026-06-11",
+        "url": "https://cxf.apache.org/security-advisories.data/CVE-2026-50630.txt"
+      },
+      {
+        "category": "external",
+        "summary": "PDFreactor 12 Hotfix Release 12.6.1 vom 2026-06-19",
+        "url": "https://www.pdfreactor.com/pdfreactor-12-hotfix-release-12-6-1-now-available/"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278576 vom 2026-06-30",
+        "url": "https://www.ibm.com/support/pages/node/7278576"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278870 vom 2026-07-02",
+        "url": "https://www.ibm.com/support/pages/node/7278870"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36839 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36839"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:37390 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37390"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7280105 vom 2026-07-15",
+        "url": "https://www.ibm.com/support/pages/node/7280105"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7281066 vom 2026-07-24",
+        "url": "https://www.ibm.com/support/pages/node/7281066"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7281835 vom 2026-07-29",
+        "url": "https://www.ibm.com/support/pages/node/7281835"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7283567 vom 2026-08-13",
+        "url": "https://www.ibm.com/support/pages/node/7283567"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7283750 vom 2026-08-14",
+        "url": "https://www.ibm.com/support/pages/node/7283750"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7283975 vom 2026-08-17",
+        "url": "https://www.ibm.com/support/pages/node/7283975"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7286761 vom 2026-09-09",
+        "url": "https://www.ibm.com/support/pages/node/7286761"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7286664 vom 2026-09-08",
+        "url": "https://www.ibm.com/support/pages/node/7286664"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7288812 vom 2026-09-22",
+        "url": "https://www.ibm.com/support/pages/node/7288812"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70277 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70277"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7289064 vom 2026-09-23",
+        "url": "https://www.ibm.com/support/pages/node/7289064"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70228 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70228"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70229 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70229"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Apache CXF: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T11:27:24.224+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1895",
+      "initial_release_date": "2026-06-11T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-06-11T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-06-14T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Referenz(en) aufgenommen: EUVD-2026-36400, EUVD-2026-36403, EUVD-2026-36402, EUVD-2026-36401, EUVD-2026-36399, EUVD-2026-36398, EUVD-2026-36397, EUVD-2026-36396, EUVD-2026-36395, EUVD-2026-36393, EUVD-2026-36394"
+        },
+        {
+          "date": "2026-06-21T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2026-06-30T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-01T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-15T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-23T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-29T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-08-12T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-08-13T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-08-17T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-08T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von IBM und IBM-APAR aufgenommen"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat und IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "16"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.2.2",
+                "product": {
+                  "name": "Apache CXF <4.2.2",
+                  "product_id": "T055289"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.2.2",
+                "product": {
+                  "name": "Apache CXF 4.2.2",
+                  "product_id": "T055289-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:apache:cxf:4.2.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<4.1.7",
+                "product": {
+                  "name": "Apache CXF <4.1.7",
+                  "product_id": "T055290"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.1.7",
+                "product": {
+                  "name": "Apache CXF 4.1.7",
+                  "product_id": "T055290-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:apache:cxf:4.1.7"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "CXF"
+          }
+        ],
+        "category": "vendor",
+        "name": "Apache"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM Business Automation Workflow",
+            "product": {
+              "name": "IBM Business Automation Workflow",
+              "product_id": "T019704",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:business_automation_workflow:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Operator",
+                "product": {
+                  "name": "IBM MQ Operator",
+                  "product_id": "T036688",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:mq:operator"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "MQ"
+          },
+          {
+            "category": "product_name",
+            "name": "IBM Rational ClearQuest",
+            "product": {
+              "name": "IBM Rational ClearQuest",
+              "product_id": "T038778",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:rational_clearquest:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Analytic Server",
+                "product": {
+                  "name": "IBM SPSS Analytic Server",
+                  "product_id": "T058745",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:analytic_server"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "IP Edition",
+                "product": {
+                  "name": "IBM Tivoli Network Manager IP Edition",
+                  "product_id": "T012578",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_network_manager:ip_edition"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Network Manager"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "liberty",
+                "product": {
+                  "name": "IBM WebSphere Application Server liberty",
+                  "product_id": "T016135",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_application_server:liberty"
+                  }
+                }
+              },
+              {
+                "category": "product_name",
+                "name": "IBM WebSphere Application Server",
+                "product": {
+                  "name": "IBM WebSphere Application Server",
+                  "product_id": "T046932",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_application_server:-"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "WebSphere Application Server"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "IBM WebSphere Application Server Liberty",
+                "product": {
+                  "name": "IBM WebSphere Application Server Liberty",
+                  "product_id": "T058052",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_application_server_liberty:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "17.0.0.3-26.0.0.9",
+                "product": {
+                  "name": "IBM WebSphere Application Server Liberty 17.0.0.3-26.0.0.9",
+                  "product_id": "T059161",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_application_server_liberty:17.0.0.3_-_26.0.0.9"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "WebSphere Application Server Liberty"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "8.5",
+                "product": {
+                  "name": "IBM WebSphere Service Registry and Repository 8.5",
+                  "product_id": "306235",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_service_registry_and_repository:8.5"
+                  }
+                }
+              },
+              {
+                "category": "product_name",
+                "name": "IBM WebSphere Service Registry and Repository",
+                "product": {
+                  "name": "IBM WebSphere Service Registry and Repository",
+                  "product_id": "T048917",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:websphere_service_registry_and_repository:-"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "WebSphere Service Registry and Repository"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<12.6.1",
+                "product": {
+                  "name": "RealObjects PDFreactor <12.6.1",
+                  "product_id": "T055646"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "12.6.1",
+                "product": {
+                  "name": "RealObjects PDFreactor 12.6.1",
+                  "product_id": "T055646-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:realobjects:pdfreactor:12.6.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "PDFreactor"
+          }
+        ],
+        "category": "vendor",
+        "name": "RealObjects"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-49875",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-49875"
+    },
+    {
+      "cve": "CVE-2026-50623",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50623"
+    },
+    {
+      "cve": "CVE-2026-50627",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50627"
+    },
+    {
+      "cve": "CVE-2026-50628",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50628"
+    },
+    {
+      "cve": "CVE-2026-50629",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50629"
+    },
+    {
+      "cve": "CVE-2026-50630",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50630"
+    },
+    {
+      "cve": "CVE-2026-50631",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50631"
+    },
+    {
+      "cve": "CVE-2026-50632",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50632"
+    },
+    {
+      "cve": "CVE-2026-50633",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50633"
+    },
+    {
+      "cve": "CVE-2026-50634",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50634"
+    },
+    {
+      "cve": "CVE-2026-50645",
+      "product_status": {
+        "known_affected": [
+          "T058745",
+          "T055289",
+          "67646",
+          "T012578",
+          "T038778",
+          "T036688",
+          "T055646",
+          "T016135",
+          "T046932",
+          "T048917",
+          "T059161",
+          "T019704",
+          "T058052",
+          "T055290",
+          "306235"
+        ]
+      },
+      "release_date": "2026-06-11T22:00:00.000+00:00",
+      "title": "CVE-2026-50645"
+    }
+  ]
+}

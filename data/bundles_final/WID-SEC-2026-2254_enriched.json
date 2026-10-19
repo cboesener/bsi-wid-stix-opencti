@@ -1,0 +1,144 @@
+{
+  "type": "bundle",
+  "id": "bundle--9c0e2329-8604-4e3c-b614-eab199011b37",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--2bfaba66-8236-5370-9077-257bad142919",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "RabbitMQ: Schwachstelle ermöglicht Offenlegung von Informationen",
+      "description": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in RabbitMQ ausnutzen, um Informationen offenzulegen.",
+      "published": "2026-07-08T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c8b537bf-cf3a-5c2e-8b45-918830b991ab",
+        "software--8081d83e-e9ee-5d21-a029-094bd0d069cb",
+        "software--d4a14b4f-124a-52f9-8e2e-0aa55868daa3",
+        "software--af1e6e9e-73f6-5814-8c53-9783811c767b",
+        "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273",
+        "relationship--31aa9f7a-2745-5f79-9b40-173ff322a9a6",
+        "relationship--44a10a0d-5a38-54f8-9d33-e7bc679b149b",
+        "relationship--bc8d21c3-1f2e-5d6e-ad43-fb640d2356d0",
+        "relationship--c9788348-8cbb-5d8d-95d7-68b4b2ffd5b5"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2254",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2254"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2254",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2254.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-j45q-v7g2-82ph vom 2026-07-09",
+          "url": "https://github.com/rabbitmq/rabbitmq-server/security/advisories/GHSA-j45q-v7g2-82ph"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "niedrig",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "RabbitMQ ist ein Open-Source Message Broker."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c8b537bf-cf3a-5c2e-8b45-918830b991ab",
+      "name": "Open Source RabbitMQ <4.2.6",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--8081d83e-e9ee-5d21-a029-094bd0d069cb",
+      "name": "Open Source RabbitMQ <4.1.11",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--d4a14b4f-124a-52f9-8e2e-0aa55868daa3",
+      "name": "Open Source RabbitMQ <3.13.15",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--af1e6e9e-73f6-5814-8c53-9783811c767b",
+      "name": "Open Source RabbitMQ <4.0.20",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-66076",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-66076"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--31aa9f7a-2745-5f79-9b40-173ff322a9a6",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--d4a14b4f-124a-52f9-8e2e-0aa55868daa3",
+      "target_ref": "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--44a10a0d-5a38-54f8-9d33-e7bc679b149b",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--af1e6e9e-73f6-5814-8c53-9783811c767b",
+      "target_ref": "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bc8d21c3-1f2e-5d6e-ad43-fb640d2356d0",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--8081d83e-e9ee-5d21-a029-094bd0d069cb",
+      "target_ref": "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c9788348-8cbb-5d8d-95d7-68b4b2ffd5b5",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c8b537bf-cf3a-5c2e-8b45-918830b991ab",
+      "target_ref": "vulnerability--4feaedb7-fe5c-52fb-89e5-fe5abf320273"
+    }
+  ]
+}

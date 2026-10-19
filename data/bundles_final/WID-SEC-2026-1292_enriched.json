@@ -1,0 +1,676 @@
+{
+  "type": "bundle",
+  "id": "bundle--7c564be9-c1e0-4647-be5e-99c61e999aab",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--f377726b-f0ea-5f36-80b2-3020aefbe345",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "Prometheus: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Prometheus ausnutzen, um einen Denial of Service Angriff durchzuführen, vertrauliche Informationen offenzulegen oder Cross-Site-Scripting-Angriffe durchzuführen.",
+      "published": "2026-04-27T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+        "software--ceb231fd-a46b-5f77-85b8-794d187900d9",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--39a51e9d-1838-5870-9aa9-de4a39023f5b",
+        "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+        "software--42ee20fb-07ed-532f-8187-4fdbc06cb7cf",
+        "software--2bb7df81-625e-5271-b292-c9022dfa0d15",
+        "software--9de98428-7ee5-55ac-9a07-6ed4575ad309",
+        "software--37552e02-82c8-5c40-b97a-e7a253048bbb",
+        "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+        "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046",
+        "relationship--6cda1673-09b8-5194-92d5-d08bf1b5b96f",
+        "relationship--e9862f99-1d9c-5789-addf-d0b372897863",
+        "relationship--8dbf4d7d-9fc6-5c7d-b4fd-82cf858137d2",
+        "relationship--4ff5cd74-bc77-5e08-9b18-febd3f6e3549",
+        "relationship--ac752f0a-d4a8-513f-bcd3-7168baf62498",
+        "relationship--15c043d1-0384-5c74-8fc6-1bec37be0873",
+        "relationship--abfee045-5805-517e-886e-af054509aac1",
+        "relationship--7b1c5fa5-efd3-5c09-85ff-904ad8c42b88",
+        "relationship--7c326a4e-f028-5118-b4a9-d518ad270c6b",
+        "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949",
+        "relationship--6a3e319b-862d-5bd6-b796-6630b8c116e6",
+        "relationship--b6bf5f65-552e-5393-8730-e6726b167a63",
+        "relationship--2412eba6-7df6-5302-ad41-2232b882d642",
+        "relationship--d1308c1f-d863-559f-9f18-54c0e8830d6a",
+        "relationship--4b87c84d-3428-59bd-a87d-4e3aba7e0614",
+        "relationship--f223d731-b810-5d3e-9e13-2ea0b11be67b",
+        "relationship--0ecfa7b7-9263-549f-adc9-dc03f65e23e2",
+        "relationship--22dcce9b-2440-5f80-803e-d5dc32b7612d",
+        "relationship--5e7531b9-21b6-546f-abe0-98b8cb6c8c64",
+        "relationship--ed37ddee-22ef-5597-8740-d2d8a1db49c8",
+        "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64",
+        "relationship--aec98427-e32d-5ae3-b608-1a4df9240054",
+        "relationship--2613c252-baf4-5a88-bb07-75e5f377b3bf",
+        "relationship--5195f1cb-d598-5838-b806-53d2b688fd53",
+        "relationship--81629de8-128b-5824-b1c5-c40b5760512f",
+        "relationship--a082129b-a9dc-555a-aa5b-24942deb5af2",
+        "relationship--efbfa3e0-32ac-5604-baf4-fd233dd221ec",
+        "relationship--ef1a981b-00b5-5b18-855a-8f63b848669a",
+        "relationship--f5bdb3ec-899a-5e16-9e24-5822ca72665a",
+        "relationship--0e814e0a-65a2-52ee-a722-04ca593f6f47"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-1292",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1292"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-1292",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1292.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-8rm2-7qqf-34qm vom 2026-04-27",
+          "url": "https://github.com/prometheus/prometheus/security/advisories/GHSA-8rm2-7qqf-34qm"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-wg65-39gg-5wfj vom 2026-04-27",
+          "url": "https://github.com/prometheus/prometheus/security/advisories/GHSA-wg65-39gg-5wfj"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-fw8g-cg8f-9j28 vom 2026-04-27",
+          "url": "https://github.com/prometheus/prometheus/security/advisories/GHSA-fw8g-cg8f-9j28"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:10676-1 vom 2026-05-05",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/MULRNEZWDZWOTGUCTGRNS5XADFXA5LGU/"
+        },
+        {
+          "source_name": "Microsoft Security Update Guide vom 2026-05-12",
+          "url": "https://msrc.microsoft.com/update-guide/"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:2267-1 vom 2026-06-04",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026577.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:29770 vom 2026-06-27",
+          "url": "https://access.redhat.com/errata/RHSA-2026:29770"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:25504 vom 2026-06-28",
+          "url": "https://access.redhat.com/errata/RHSA-2026:25504"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:25245 vom 2026-06-27",
+          "url": "https://access.redhat.com/errata/RHSA-2026:25245"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:30651 vom 2026-06-28",
+          "url": "https://access.redhat.com/errata/RHSA-2026:30651"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:34364 vom 2026-07-01",
+          "url": "https://access.redhat.com/errata/RHSA-2026:34364"
+        },
+        {
+          "source_name": "Rocky Linux Security Advisory RLSA-2026:34357 vom 2026-07-07",
+          "url": "https://errata.build.resf.org/RLSA-2026:34357"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:36796 vom 2026-07-08",
+          "url": "https://access.redhat.com/errata/RHSA-2026:36796"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:37272 vom 2026-07-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:37272"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:37271 vom 2026-07-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:37271"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:37267 vom 2026-07-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:37267"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:34794 vom 2026-07-14",
+          "url": "https://access.redhat.com/errata/RHSA-2026:34794"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40118 vom 2026-07-15",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40118"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40262 vom 2026-07-16",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40262"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40945 vom 2026-07-16",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40945"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:42146 vom 2026-07-20",
+          "url": "https://access.redhat.com/errata/RHSA-2026:42146"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40768 vom 2026-07-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40768"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:42852 vom 2026-07-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:42852"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:43052 vom 2026-07-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:43052"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:42796 vom 2026-07-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40792 vom 2026-07-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40792"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:44622 vom 2026-07-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:44622"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:47149 vom 2026-07-28",
+          "url": "https://access.redhat.com/errata/RHSA-2026:47149"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:44263 vom 2026-07-28",
+          "url": "https://access.redhat.com/errata/RHSA-2026:44263"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:47952 vom 2026-07-29",
+          "url": "https://access.redhat.com/errata/RHSA-2026:47952"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:44235 vom 2026-07-29",
+          "url": "https://access.redhat.com/errata/RHSA-2026:44235"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:48771 vom 2026-07-30",
+          "url": "https://access.redhat.com/errata/RHSA-2026:48771"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:49767 vom 2026-08-03",
+          "url": "https://access.redhat.com/errata/RHSA-2026:49767"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:48699 vom 2026-08-05",
+          "url": "https://access.redhat.com/errata/RHSA-2026:48699"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:50888 vom 2026-08-05",
+          "url": "https://access.redhat.com/errata/RHSA-2026:50888"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:50874 vom 2026-08-05",
+          "url": "https://access.redhat.com/errata/RHSA-2026:50874"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:50843 vom 2026-08-05",
+          "url": "https://access.redhat.com/errata/RHSA-2026:50843"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:47728 vom 2026-08-06",
+          "url": "https://access.redhat.com/errata/RHSA-2026:47728"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:53415 vom 2026-08-11",
+          "url": "https://access.redhat.com/errata/RHSA-2026:53415"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:53530 vom 2026-08-11",
+          "url": "https://access.redhat.com/errata/RHSA-2026:53530"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:54288 vom 2026-08-12",
+          "url": "https://access.redhat.com/errata/RHSA-2026:54288"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:54427 vom 2026-08-12",
+          "url": "https://access.redhat.com/errata/RHSA-2026:54427"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:50758 vom 2026-08-12",
+          "url": "https://access.redhat.com/errata/RHSA-2026:50758"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:56912 vom 2026-08-26",
+          "url": "https://access.redhat.com/errata/RHSA-2026:56912"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:59833 vom 2026-09-03",
+          "url": "https://access.redhat.com/errata/RHSA-2026:59833"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70267 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70267"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70870 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70870"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "29",
+      "x_operating_systems": "- Sonstiges\n- UNIX",
+      "x_product_description": "Prometheus ist ein Open-Source Monitoring- und Reporting-Tool."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "name": "SUSE openSUSE",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:opensuse:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--ceb231fd-a46b-5f77-85b8-794d187900d9",
+      "name": "Red Hat OpenShift Container Platform",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:a:redhat:openshift:container_platform:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--39a51e9d-1838-5870-9aa9-de4a39023f5b",
+      "name": "Open Source Prometheus >=2.49.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "name": "RESF Rocky Linux",
+      "vendor": "RESF",
+      "cpe": "cpe:2.3:o:resf:rocky_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--42ee20fb-07ed-532f-8187-4fdbc06cb7cf",
+      "name": "Open Source Prometheus <3.11.3",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--2bb7df81-625e-5271-b292-c9022dfa0d15",
+      "name": "Open Source Prometheus <3.5.3",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--9de98428-7ee5-55ac-9a07-6ed4575ad309",
+      "name": "Red Hat OpenShift Container Platform <4.22.4",
+      "vendor": "Red Hat"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--37552e02-82c8-5c40-b97a-e7a253048bbb",
+      "name": "Microsoft Azure Linux azl3",
+      "vendor": "Microsoft",
+      "cpe": "cpe:2.3:o:microsoft:azure_linux:azl3:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "name": "SUSE Linux",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:suse_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-42151",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-42151"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6cda1673-09b8-5194-92d5-d08bf1b5b96f",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ceb231fd-a46b-5f77-85b8-794d187900d9",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e9862f99-1d9c-5789-addf-d0b372897863",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8dbf4d7d-9fc6-5c7d-b4fd-82cf858137d2",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4ff5cd74-bc77-5e08-9b18-febd3f6e3549",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ac752f0a-d4a8-513f-bcd3-7168baf62498",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--37552e02-82c8-5c40-b97a-e7a253048bbb",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--15c043d1-0384-5c74-8fc6-1bec37be0873",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9de98428-7ee5-55ac-9a07-6ed4575ad309",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--abfee045-5805-517e-886e-af054509aac1",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7b1c5fa5-efd3-5c09-85ff-904ad8c42b88",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--2bb7df81-625e-5271-b292-c9022dfa0d15",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7c326a4e-f028-5118-b4a9-d518ad270c6b",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--42ee20fb-07ed-532f-8187-4fdbc06cb7cf",
+      "target_ref": "vulnerability--74099cf9-4fce-5d05-a4f8-34e6d3d9e046"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-42154",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-42154"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6a3e319b-862d-5bd6-b796-6630b8c116e6",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ceb231fd-a46b-5f77-85b8-794d187900d9",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b6bf5f65-552e-5393-8730-e6726b167a63",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2412eba6-7df6-5302-ad41-2232b882d642",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d1308c1f-d863-559f-9f18-54c0e8830d6a",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4b87c84d-3428-59bd-a87d-4e3aba7e0614",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--37552e02-82c8-5c40-b97a-e7a253048bbb",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f223d731-b810-5d3e-9e13-2ea0b11be67b",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9de98428-7ee5-55ac-9a07-6ed4575ad309",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0ecfa7b7-9263-549f-adc9-dc03f65e23e2",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--39a51e9d-1838-5870-9aa9-de4a39023f5b",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--22dcce9b-2440-5f80-803e-d5dc32b7612d",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5e7531b9-21b6-546f-abe0-98b8cb6c8c64",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--2bb7df81-625e-5271-b292-c9022dfa0d15",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ed37ddee-22ef-5597-8740-d2d8a1db49c8",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--42ee20fb-07ed-532f-8187-4fdbc06cb7cf",
+      "target_ref": "vulnerability--66efc6c7-21c0-5c75-8230-2c047c407949"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-44903",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-44903"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--aec98427-e32d-5ae3-b608-1a4df9240054",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ceb231fd-a46b-5f77-85b8-794d187900d9",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2613c252-baf4-5a88-bb07-75e5f377b3bf",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5195f1cb-d598-5838-b806-53d2b688fd53",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--81629de8-128b-5824-b1c5-c40b5760512f",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a082129b-a9dc-555a-aa5b-24942deb5af2",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--37552e02-82c8-5c40-b97a-e7a253048bbb",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--efbfa3e0-32ac-5604-baf4-fd233dd221ec",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9de98428-7ee5-55ac-9a07-6ed4575ad309",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ef1a981b-00b5-5b18-855a-8f63b848669a",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3410c8c8-2d73-5824-8f54-5cbfe2e6930a",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f5bdb3ec-899a-5e16-9e24-5822ca72665a",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--2bb7df81-625e-5271-b292-c9022dfa0d15",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0e814e0a-65a2-52ee-a722-04ca593f6f47",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--42ee20fb-07ed-532f-8187-4fdbc06cb7cf",
+      "target_ref": "vulnerability--628dfcbd-013d-57dd-9dac-ea15001cdd64"
+    }
+  ]
+}

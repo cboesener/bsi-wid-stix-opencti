@@ -1,0 +1,151 @@
+{
+  "type": "bundle",
+  "id": "bundle--e1cd6a94-73d2-4cbc-8d52-41fd1c3241e9",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--7b4bfdb2-8845-53b7-b6b2-7a9cba924c6f",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "vllm: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in vllm ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-06-14T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--621f0db1-af53-5a9d-bb83-800b534db599",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--a8e54d2b-6fe0-59b2-9af1-50560d81bdff",
+        "relationship--e2fa8b24-e56b-5d4e-b838-700e16c83d89",
+        "relationship--c625a6fb-37cf-5ce9-888a-7f9e68a9b475"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-1911",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1911"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-1911",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1911.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-q8gq-377p-jq3r vom 2026-06-14",
+          "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-q8gq-377p-jq3r"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:36006 vom 2026-07-06",
+          "url": "https://access.redhat.com/errata/RHSA-2026:36006"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:57389 vom 2026-08-20",
+          "url": "https://access.redhat.com/errata/RHSA-2026:57389"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:59139 vom 2026-08-24",
+          "url": "https://access.redhat.com/errata/RHSA-2026:59139"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:59138 vom 2026-08-24",
+          "url": "https://access.redhat.com/errata/RHSA-2026:59138"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:61627 vom 2026-08-31",
+          "url": "https://access.redhat.com/errata/RHSA-2026:61627"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:61629 vom 2026-08-31",
+          "url": "https://access.redhat.com/errata/RHSA-2026:61629"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:62336 vom 2026-09-02",
+          "url": "https://access.redhat.com/errata/RHSA-2026:62336"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70965 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70965"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70995 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70995"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70979 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70979"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70969 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70969"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "8",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Open Source vLLM ist eine Open-Source-Bibliothek für schnelle und effiziente Inferenz von Large Language Models (LLMs)."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--621f0db1-af53-5a9d-bb83-800b534db599",
+      "name": "Open Source vllm <0.22.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--a8e54d2b-6fe0-59b2-9af1-50560d81bdff",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-41523",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-41523"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e2fa8b24-e56b-5d4e-b838-700e16c83d89",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--a8e54d2b-6fe0-59b2-9af1-50560d81bdff"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c625a6fb-37cf-5ce9-888a-7f9e68a9b475",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--621f0db1-af53-5a9d-bb83-800b534db599",
+      "target_ref": "vulnerability--a8e54d2b-6fe0-59b2-9af1-50560d81bdff"
+    }
+  ]
+}

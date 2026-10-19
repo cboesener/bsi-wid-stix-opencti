@@ -1,0 +1,532 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Podman ist ein Container-Laufzeit- und Management-Tool, mit dem Benutzer Container ausführen und verwalten können, ohne einen separaten Daemon-Prozess zu benötigen.\r\nPodman is a container runtime and management tool that allows users to run and manage containers without the need for a separate daemon process.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Podman ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2025-1389 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2025/wid-sec-w-2025-1389.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2025-1389 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2025-1389"
+      },
+      {
+        "category": "external",
+        "summary": "NIST Vulnerability Database vom 2025-06-24",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6032"
+      },
+      {
+        "category": "external",
+        "summary": "RedHat Customer Portal vom 2025-06-24",
+        "url": "https://access.redhat.com/security/cve/cve-2025-6032"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:9751 vom 2025-07-01",
+        "url": "https://access.redhat.com/errata/RHSA-2025:9751"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:9766 vom 2025-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:9766"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:9726 vom 2025-07-02",
+        "url": "https://access.redhat.com/errata/RHSA-2025:9726"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2025:15262-1 vom 2025-07-05",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/ROXH2TVTTGUDL6XZONM5P7MUGFZUYRPN/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10549 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10549"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10551 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10551"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10550 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10550"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10549 vom 2025-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10549.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10550 vom 2025-07-08",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10550.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10295 vom 2025-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10295"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:10668 vom 2025-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2025:10668"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2025-10551 vom 2025-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2025-10551.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:11363 vom 2025-07-22",
+        "url": "https://access.redhat.com/errata/RHSA-2025:11363"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:11359 vom 2025-07-23",
+        "url": "https://access.redhat.com/errata/RHSA-2025:11359"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:11681 vom 2025-07-30",
+        "url": "https://access.redhat.com/errata/RHSA-2025:11681"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:11677 vom 2025-07-31",
+        "url": "https://access.redhat.com/errata/RHSA-2025:11677"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02808-1 vom 2025-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022180.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02807-1 vom 2025-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022181.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:02806-1 vom 2025-08-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-August/022182.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20692-1 vom 2025-09-17",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-September/022576.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20805-1 vom 2025-10-14",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-October/022879.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2025:15397 vom 2025-10-22",
+        "url": "https://access.redhat.com/errata/RHSA-2025:15397"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2025:20869-1 vom 2025-10-27",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2025-October/023061.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20626-1 vom 2026-03-06",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024648.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:20641-1 vom 2026-03-09",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-March/024659.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-4672 vom 2026-03-18",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-4672.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22451-1 vom 2026-07-03",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027257.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21244-1 vom 2026-07-08",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/FVW5PW6BDBEG7HN44KE4XCA7QWXCN3TY/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22516-1 vom 2026-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-July/027312.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Podman: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+    "tracking": {
+      "current_release_date": "2026-07-08T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-09T09:21:57.184+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2025-1389",
+      "initial_release_date": "2025-06-24T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2025-06-24T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2025-07-01T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-06T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2025-07-07T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-08T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-22T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-23T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-07-30T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-08-17T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-09-17T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-10-13T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2025-10-21T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2025-10-27T23:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-08T23:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-03-17T23:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-07-05T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von openSUSE und SUSE aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "17"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<5.5.2",
+                "product": {
+                  "name": "Open Source Podman <5.5.2",
+                  "product_id": "T044817"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "5.5.2",
+                "product": {
+                  "name": "Open Source Podman 5.5.2",
+                  "product_id": "T044817-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:podman_project:podman:5.5.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Podman"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.19.2",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.19.2",
+                  "product_id": "T044984"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.19.2",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.19.2",
+                  "product_id": "T044984-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.19.2"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.17.35",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.17.35",
+                  "product_id": "T045266"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.17.35",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.17.35",
+                  "product_id": "T045266-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.17.35"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.17.36",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.17.36",
+                  "product_id": "T045628"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.17.36",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.17.36",
+                  "product_id": "T045628-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.17.36"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.18.21",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.18.21",
+                  "product_id": "T045758"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.18.21",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.18.21",
+                  "product_id": "T045758-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.18.21"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "Container Platform <4.16.45",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform <4.16.45",
+                  "product_id": "T045759"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Container Platform 4.16.45",
+                "product": {
+                  "name": "Red Hat OpenShift Container Platform 4.16.45",
+                  "product_id": "T045759-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:container_platform__4.16.45"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-6032",
+      "product_status": {
+        "known_affected": [
+          "T044984",
+          "T002207",
+          "T045758",
+          "67646",
+          "T045628",
+          "T045759",
+          "T027843",
+          "T044817",
+          "T004914",
+          "T045266"
+        ]
+      },
+      "release_date": "2025-06-24T22:00:00.000+00:00",
+      "title": "CVE-2025-6032"
+    }
+  ]
+}

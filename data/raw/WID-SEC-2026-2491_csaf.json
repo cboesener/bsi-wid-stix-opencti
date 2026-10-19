@@ -1,0 +1,713 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Das FFmpeg-Projekt besteht aus freien Programmen und Bibliotheken, die es ermöglichen, digitales Video- und Audiomaterial aufzunehmen, zu konvertieren, zu streamen und abzuspielen. Zudem enthält es mit libavcodec eine Audio- und Video-Codec-Sammlung, die verschiedene Codecs zur Verfügung stellt.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in ffmpeg ausnutzen, um beliebigen Code auszuführen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-2491 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2491.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-2491 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2491"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-JPHX-Q7F7-4X8R"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-MQQ7-J9MQ-9JWQ"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-JC8J-9799-C943"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-34G6-M4CP-W5C9"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-5XCX-3QX2-QV4X"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-07-22",
+        "url": "https://github.com/advisories/GHSA-P2V8-4C4F-RWPQ"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21522-1 vom 2026-08-04",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/X5622HG42EPPR6IDI6FQSQ674MEZ33Z2/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:51180 vom 2026-08-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:51180"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11448-1 vom 2026-08-06",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/OAWUWPZ4D647BS7UPVCZS2ZG7FIQC4OY/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:3529-1 vom 2026-08-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028171.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:3542-1 vom 2026-08-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028187.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:52833 vom 2026-08-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:52833"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:52832 vom 2026-08-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:52832"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:3552-1 vom 2026-08-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028201.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11545-1 vom 2026-08-23",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/WBMWXOSKFUQ3TSNLMGVZHW5WSK2YK5YY/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60336 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60336"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60334 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60334"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60335 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60335"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23222-1 vom 2026-08-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028532.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:23232-1 vom 2026-08-26",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-August/028523.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:61629 vom 2026-08-31",
+        "url": "https://access.redhat.com/errata/RHSA-2026:61629"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:61627 vom 2026-08-31",
+        "url": "https://access.redhat.com/errata/RHSA-2026:61627"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:61628 vom 2026-08-31",
+        "url": "https://access.redhat.com/errata/RHSA-2026:61628"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8716-1 vom 2026-09-03",
+        "url": "https://ubuntu.com/security/notices/USN-8716-1"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11665-1 vom 2026-09-04",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/36MFOOZUWA23VQEN5YTRKBQNH32RPWZB/"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:11682-1 vom 2026-09-05",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/XURSV74OIMA3Q5UKX32JMNQJHYXAI3TG/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8716-2 vom 2026-09-09",
+        "url": "https://ubuntu.com/security/notices/USN-8716-2"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:3934-1 vom 2026-09-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/028799.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67276 vom 2026-09-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67276"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67303 vom 2026-09-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67303"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:67309 vom 2026-09-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:67309"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4150-1 vom 2026-09-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029046.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:4149-1 vom 2026-09-16",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029047.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68697 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68697"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68696 vom 2026-09-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68696"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68699 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68699"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:68698 vom 2026-09-17",
+        "url": "https://access.redhat.com/errata/RHSA-2026:68698"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69934 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69934"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69935 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69935"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69927 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69927"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69933 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69933"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69930 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69930"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69932 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69932"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69931 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69931"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69929 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69929"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71398 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71398"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71397 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71397"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71401 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71401"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71395 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71395"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71396 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71396"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71399 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71399"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:71392 vom 2026-09-24",
+        "url": "https://access.redhat.com/errata/RHSA-2026:71392"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "ffmpeg: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-23T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-24T10:25:16.007+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-2491",
+      "initial_release_date": "2026-07-22T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-07-22T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-08-04T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-06T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat und openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-09T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-10T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von SUSE und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-11T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-23T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-26T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-08-31T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-03T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-09-06T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-09T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Ubuntu und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-13T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-14T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-16T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-09-17T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-23T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "19"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=8.1.2",
+                "product": {
+                  "name": "Open Source ffmpeg <=8.1.2",
+                  "product_id": "T057137"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=8.1.2",
+                "product": {
+                  "name": "Open Source ffmpeg <=8.1.2",
+                  "product_id": "T057137-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=2.1",
+                "product": {
+                  "name": "Open Source ffmpeg >=2.1",
+                  "product_id": "T057138"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=2.1",
+                "product": {
+                  "name": "Open Source ffmpeg >=2.1",
+                  "product_id": "T057138-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=8.0",
+                "product": {
+                  "name": "Open Source ffmpeg >=8.0",
+                  "product_id": "T057139"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=8.0",
+                "product": {
+                  "name": "Open Source ffmpeg >=8.0",
+                  "product_id": "T057139-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=4.4",
+                "product": {
+                  "name": "Open Source ffmpeg >=4.4",
+                  "product_id": "T057140"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=4.4",
+                "product": {
+                  "name": "Open Source ffmpeg >=4.4",
+                  "product_id": "T057140-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=0.7.1",
+                "product": {
+                  "name": "Open Source ffmpeg >=0.7.1",
+                  "product_id": "T057141"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=0.7.1",
+                "product": {
+                  "name": "Open Source ffmpeg >=0.7.1",
+                  "product_id": "T057141-fixed"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=0.6.3",
+                "product": {
+                  "name": "Open Source ffmpeg >=0.6.3",
+                  "product_id": "T057142"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": ">=0.6.3",
+                "product": {
+                  "name": "Open Source ffmpeg >=0.6.3",
+                  "product_id": "T057142-fixed"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "ffmpeg"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T054646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T055946",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T055947",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-64830",
+      "product_status": {
+        "known_affected": [
+          "T057139",
+          "67646",
+          "T055947",
+          "T057140",
+          "T055946",
+          "T057141",
+          "T057142",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64830"
+    },
+    {
+      "cve": "CVE-2026-64831",
+      "product_status": {
+        "known_affected": [
+          "67646",
+          "T055947",
+          "T055946",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64831"
+    },
+    {
+      "cve": "CVE-2026-64832",
+      "product_status": {
+        "known_affected": [
+          "T057139",
+          "67646",
+          "T055947",
+          "T055946",
+          "T057141",
+          "T057142",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64832"
+    },
+    {
+      "cve": "CVE-2026-64833",
+      "product_status": {
+        "known_affected": [
+          "T057139",
+          "67646",
+          "T055947",
+          "T055946",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64833"
+    },
+    {
+      "cve": "CVE-2026-64834",
+      "product_status": {
+        "known_affected": [
+          "T057139",
+          "67646",
+          "T055947",
+          "T055946",
+          "T057141",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64834"
+    },
+    {
+      "cve": "CVE-2026-64835",
+      "product_status": {
+        "known_affected": [
+          "T057139",
+          "67646",
+          "T055947",
+          "T055946",
+          "T057141",
+          "T057142",
+          "T054646"
+        ],
+        "last_affected": [
+          "T057137"
+        ]
+      },
+      "release_date": "2026-07-22T22:00:00.000+00:00",
+      "title": "CVE-2026-64835"
+    }
+  ]
+}

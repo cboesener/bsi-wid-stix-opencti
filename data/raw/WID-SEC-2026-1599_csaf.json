@@ -1,0 +1,886 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Unbound ist ein validierender, rekursiver DNS-Resolver.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Unbound ausnutzen, um einen Denial of Service Zustand herbeizuführen, um möglicherweise Code auszuführen und um nicht näher spezifizierte Auswirkungen zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1599 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1599.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1599 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1599"
+      },
+      {
+        "category": "external",
+        "summary": "Unbound 1.25.1 release vom 2026-05-19",
+        "url": "https://nlnetlabs.nl/news/2026/May/20/unbound-1.25.1-released/"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8282-1 vom 2026-05-20",
+        "url": "https://ubuntu.com/security/notices/USN-8282-1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-3223DED15E vom 2026-05-20",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-3223ded15e"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:19752 vom 2026-05-20",
+        "url": "https://access.redhat.com/errata/RHSA-2026:19752"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2026-49F37E16AA vom 2026-05-20",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-49f37e16aa"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel & WHM Change Log vom 2026-05-21",
+        "url": "https://docs.cpanel.net/changelogs/136-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel & WHM Change Log vom 2026-05-21",
+        "url": "https://docs.cpanel.net/changelogs/126-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "cPanel & WHM Change Log vom 2026-05-21",
+        "url": "https://docs.cpanel.net/changelogs/134-change-log/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:20357 vom 2026-05-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20357"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Customer Portal CVE-2026-33278 vom 2026-05-26",
+        "url": "https://access.redhat.com/security/cve/cve-2026-33278"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DSA-6304 vom 2026-05-28",
+        "url": "https://lists.debian.org/debian-security-announce/2026/msg00215.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10903-1 vom 2026-06-02",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/6MEY5DVEQN2SF6ETNSCIHE53JMREAWK7/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21913-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026481.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21874-1 vom 2026-06-02",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026517.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-8282-2 vom 2026-06-02",
+        "url": "https://ubuntu.com/security/notices/USN-8282-2"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:23231 vom 2026-06-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:23231"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24365 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24365"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2281-1 vom 2026-06-05",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026603.html"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:23231 vom 2026-06-06",
+        "url": "https://errata.build.resf.org/RLSA-2026:23231"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-24365 vom 2026-06-08",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-24365.html"
+      },
+      {
+        "category": "external",
+        "summary": "Amazon Linux Security Advisory ALAS2-2026-3322 vom 2026-06-09",
+        "url": "https://alas.aws.amazon.com/AL2/ALAS2-2026-3322.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24013 vom 2026-06-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24013"
+      },
+      {
+        "category": "external",
+        "summary": "FreeBSD Security Advisory FREEBSD-SA-26:33.UNBOUND vom 2026-06-10",
+        "url": "https://security.FreeBSD.org/advisories/FreeBSD-SA-26:33.unbound.asc"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:24365 vom 2026-06-11",
+        "url": "https://errata.build.resf.org/RLSA-2026:24365"
+      },
+      {
+        "category": "external",
+        "summary": "Rocky Linux Security Advisory RLSA-2026:24369 vom 2026-06-11",
+        "url": "https://errata.build.resf.org/RLSA-2026:24369"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:2369-1 vom 2026-06-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026713.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22160-1 vom 2026-06-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026927.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:22213-1 vom 2026-06-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-June/026886.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-24369 vom 2026-06-25",
+        "url": "http://linux.oracle.com/errata/ELSA-2026-24369.html"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:21083-1 vom 2026-06-30",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/3LLJEBF3DUNKHKN2FURHFUR5NR5VWMZB/"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36320 vom 2026-07-07",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36320"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:36777 vom 2026-07-08",
+        "url": "https://access.redhat.com/errata/RHSA-2026:36777"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-36777 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-36777.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:37282 vom 2026-07-09",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37282"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2026-37282 vom 2026-07-09",
+        "url": "https://linux.oracle.com/errata/ELSA-2026-37282.html"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Unbound: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:21:46.546+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1599",
+      "initial_release_date": "2026-05-19T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-05-19T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-05-20T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Open Source, Ubuntu, European Union Vulnerability Database, Fedora und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-21T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2026-05-25T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-26T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Bewertung und Auswirkungen angepasst aufgrund CVE-2026-33278"
+        },
+        {
+          "date": "2026-05-27T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-06-02T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von openSUSE, SUSE und Ubuntu aufgenommen"
+        },
+        {
+          "date": "2026-06-04T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-07T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat, SUSE und Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-06-08T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von Oracle Linux, Amazon und Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-09T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von FreeBSD aufgenommen"
+        },
+        {
+          "date": "2026-06-10T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation aufgenommen"
+        },
+        {
+          "date": "2026-06-11T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von Rocky Enterprise Software Foundation und SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-23T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von Oracle Linux aufgenommen"
+        },
+        {
+          "date": "2026-06-29T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-07-07T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-08T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "19"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Amazon Linux 2",
+            "product": {
+              "name": "Amazon Linux 2",
+              "product_id": "398363",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:amazon:linux_2:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Amazon"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "FreeBSD Project FreeBSD OS",
+            "product": {
+              "name": "FreeBSD Project FreeBSD OS",
+              "product_id": "4035",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:freebsd:freebsd:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "FreeBSD Project"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<1.25.1",
+                "product": {
+                  "name": "Open Source Unbound <1.25.1",
+                  "product_id": "T054382"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1.25.1",
+                "product": {
+                  "name": "Open Source Unbound 1.25.1",
+                  "product_id": "T054382-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:nlnetlabs:unbound:1.25.1"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Unbound"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "RESF Rocky Linux",
+            "product": {
+              "name": "RESF Rocky Linux",
+              "product_id": "T032255",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:resf:rocky_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "RESF"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 10",
+                  "product_id": "T056232",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:10"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<136.0.14",
+                "product": {
+                  "name": "cPanel cPanel/WHM <136.0.14",
+                  "product_id": "T054471"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "136.0.14",
+                "product": {
+                  "name": "cPanel cPanel/WHM 136.0.14",
+                  "product_id": "T054471-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:136.0.14"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<134.0.30",
+                "product": {
+                  "name": "cPanel cPanel/WHM <134.0.30",
+                  "product_id": "T054472"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "134.0.30",
+                "product": {
+                  "name": "cPanel cPanel/WHM 134.0.30",
+                  "product_id": "T054472-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:134.0.30"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "126.0.63",
+                "product": {
+                  "name": "cPanel cPanel/WHM 126.0.63",
+                  "product_id": "T054473",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:cpanel:cpanel_whm:126.0.63"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "cPanel/WHM"
+          }
+        ],
+        "category": "vendor",
+        "name": "cPanel"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-32792",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-32792"
+    },
+    {
+      "cve": "CVE-2026-33278",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-33278"
+    },
+    {
+      "cve": "CVE-2026-40622",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-40622"
+    },
+    {
+      "cve": "CVE-2026-41292",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-41292"
+    },
+    {
+      "cve": "CVE-2026-42534",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-42534"
+    },
+    {
+      "cve": "CVE-2026-42923",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-42923"
+    },
+    {
+      "cve": "CVE-2026-42944",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-42944"
+    },
+    {
+      "cve": "CVE-2026-42959",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-42959"
+    },
+    {
+      "cve": "CVE-2026-42960",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-42960"
+    },
+    {
+      "cve": "CVE-2026-44390",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-44390"
+    },
+    {
+      "cve": "CVE-2026-44608",
+      "product_status": {
+        "known_affected": [
+          "T054473",
+          "T054472",
+          "T054471",
+          "67646",
+          "T054382",
+          "4035",
+          "T004914",
+          "T056232",
+          "T032255",
+          "74185",
+          "2951",
+          "T002207",
+          "T000126",
+          "T027843",
+          "398363"
+        ]
+      },
+      "release_date": "2026-05-19T22:00:00.000+00:00",
+      "title": "CVE-2026-44608"
+    }
+  ]
+}

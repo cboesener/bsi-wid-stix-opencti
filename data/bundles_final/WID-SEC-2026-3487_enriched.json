@@ -1,0 +1,187 @@
+{
+  "type": "bundle",
+  "id": "bundle--08a5752b-766d-448d-8f66-882ca95ced5f",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--98953a17-5dcb-5d32-8a50-a9e7a2231d35",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "Red Hat OpenShift Builds: Schwachstelle ermöglicht Umgehen von Sicherheitsvorkehrungen",
+      "description": "Ein entfernter, authentisierter Angreifer kann eine Schwachstelle in Red Hat OpenShift Builds ausnutzen, um Sicherheitsvorkehrungen zu umgehen.",
+      "published": "2026-09-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+        "software--5ac17ce3-9845-5aea-99f3-9e1936cb875e",
+        "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942",
+        "relationship--857fd7c3-d2c6-5c46-baf4-12ffa8b240ce",
+        "relationship--4e2de251-1ab4-5a50-bd75-cb6db3458fb4",
+        "relationship--28be9c44-4c05-50d7-bcc2-85eccfad2830",
+        "relationship--8a6b87cd-bf54-572a-ba4a-19f20df0d834"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3487",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3487"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3487",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3487.json"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69925 vom 2026-09-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69925"
+        },
+        {
+          "source_name": "RedHat Customer Portal vom 2026-09-21",
+          "url": "https://access.redhat.com/security/cve/cve-2026-56854"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69945 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69945"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:69942 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:69942"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:4286-1 vom 2026-09-23",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029355.html"
+        },
+        {
+          "source_name": "openSUSE Security Update OPENSUSE-SU-2026:11830-1 vom 2026-09-22",
+          "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/L4BTAXPI45ZSGZG74A6W7VGU2LXQR3VK/"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:23841-1 vom 2026-09-22",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029305.html"
+        },
+        {
+          "source_name": "SUSE Security Update SUSE-SU-2026:23831-1 vom 2026-09-22",
+          "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-September/029315.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70824 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70824"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70828 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70828"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70829 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70829"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "3",
+      "x_operating_systems": "- Linux",
+      "x_product_description": "Red Hat OpenShift ist eine \"Platform as a Service\" (PaaS) Lösung zur Bereitstellung von Applikationen in der Cloud."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "name": "SUSE Linux",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:suse_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "name": "SUSE openSUSE",
+      "vendor": "SUSE",
+      "cpe": "cpe:2.3:o:suse:opensuse:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5ac17ce3-9845-5aea-99f3-9e1936cb875e",
+      "name": "Red Hat OpenShift Builds <1.9.1",
+      "vendor": "Red Hat"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-56854",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-56854"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--857fd7c3-d2c6-5c46-baf4-12ffa8b240ce",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5ac17ce3-9845-5aea-99f3-9e1936cb875e",
+      "target_ref": "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4e2de251-1ab4-5a50-bd75-cb6db3458fb4",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--28be9c44-4c05-50d7-bcc2-85eccfad2830",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--aaefe068-887c-5322-9fe1-e06ddc230f29",
+      "target_ref": "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8a6b87cd-bf54-572a-ba4a-19f20df0d834",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--c4702a9b-98b5-5f85-9044-820a12746bd0",
+      "target_ref": "vulnerability--7ad22a8b-c3fa-554f-9018-f934dc7c7942"
+    }
+  ]
+}

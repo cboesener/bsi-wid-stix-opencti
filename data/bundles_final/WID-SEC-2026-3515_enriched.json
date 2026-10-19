@@ -1,0 +1,121 @@
+{
+  "type": "bundle",
+  "id": "bundle--3f8b6b53-da7b-4760-957c-55bca8784475",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--e0c37f10-7744-5fef-8b66-542942a862c3",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "SolarWinds Platform (Observability Self-Hosted): Mehrere Schwachstellen ermöglichen Codeausführung",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in SolarWinds Platform ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--be8aaba3-3485-579a-9b0e-2cb382cea3c8",
+        "vulnerability--6c640eee-2bbd-5560-baed-61e5188c71b4",
+        "relationship--c8d3e0c9-7785-5d1c-bf44-9a8815bd336b",
+        "vulnerability--91e3e467-c5dc-570f-b1a4-26aab6490a8b",
+        "relationship--26b6493b-18f6-5f24-a52d-95639a723622"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3515",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3515"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3515",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3515.json"
+        },
+        {
+          "source_name": "SolarWinds Platform 2026.2.3 release notes vom 2026-09-22",
+          "url": "https://documentation.solarwinds.com/en/success_center/orionplatform/content/release_notes/solarwinds_platform_2026-2-3_release_notes.htm"
+        },
+        {
+          "source_name": "Solarwinds Security Advisory vom 2026-09-22",
+          "url": "https://www.solarwinds.com/trust-center/security-advisories/cve-2026-28324"
+        },
+        {
+          "source_name": "Solarwinds Security Advisory vom 2026-09-22",
+          "url": "https://www.solarwinds.com/trust-center/security-advisories/cve-2026-28325"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- Windows",
+      "x_product_description": "SolarWinds Platform (ehemals \"Orion\") ist eine IT Performance-Monitoring Plattform."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--be8aaba3-3485-579a-9b0e-2cb382cea3c8",
+      "name": "SolarWinds Platform <2026.2.3",
+      "vendor": "SolarWinds"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--6c640eee-2bbd-5560-baed-61e5188c71b4",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-28324",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-28324"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c8d3e0c9-7785-5d1c-bf44-9a8815bd336b",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--be8aaba3-3485-579a-9b0e-2cb382cea3c8",
+      "target_ref": "vulnerability--6c640eee-2bbd-5560-baed-61e5188c71b4"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--91e3e467-c5dc-570f-b1a4-26aab6490a8b",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-28325",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-28325"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--26b6493b-18f6-5f24-a52d-95639a723622",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--be8aaba3-3485-579a-9b0e-2cb382cea3c8",
+      "target_ref": "vulnerability--91e3e467-c5dc-570f-b1a4-26aab6490a8b"
+    }
+  ]
+}

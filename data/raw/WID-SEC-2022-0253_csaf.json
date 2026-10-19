@@ -1,0 +1,681 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "kritisch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Python ist eine universelle, üblicherweise interpretierte, höhere Programmiersprache.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann eine Schwachstelle in Python ausnutzen, um beliebigen Programmcode auszuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2022-0253 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2022/wid-sec-w-2022-0253.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2022-0253 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2022-0253"
+      },
+      {
+        "category": "external",
+        "summary": "National Vulnerability Database vom 2022-04-13",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-20107"
+      },
+      {
+        "category": "external",
+        "summary": "NetApp Security Advisory NTAP-20220616-0001 vom 2022-06-16",
+        "url": "https://security.netapp.com/advisory/ntap-20220616-0001/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2147-1 vom 2022-06-21",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-June/011323.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2166-1 vom 2022-06-23",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-June/011339.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2174-1 vom 2022-06-24",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-June/011348.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2249-1 vom 2022-07-04",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-July/011384.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2291-1 vom 2022-07-06",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-July/011425.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2344-1 vom 2022-07-08",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-July/011485.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2351-1 vom 2022-07-11",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-July/011496.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2357-1 vom 2022-07-12",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-July/011505.html"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-5519-1 vom 2022-07-14",
+        "url": "https://ubuntu.com/security/notices/USN-5519-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2022:2357-2 vom 2022-09-01",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2022-September/012038.html"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2022-6457 vom 2022-09-14",
+        "url": "https://linux.oracle.com/errata/ELSA-2022-6457.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:6457 vom 2022-09-13",
+        "url": "https://access.redhat.com/errata/RHSA-2022:6457"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:6537 vom 2022-09-20",
+        "url": "https://access.redhat.com/errata/RHSA-2022:6537"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:6766 vom 2022-10-03",
+        "url": "https://access.redhat.com/errata/RHSA-2022:6766"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:7055 vom 2022-10-19",
+        "url": "https://access.redhat.com/errata/RHSA-2022:7055"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:7058 vom 2022-10-20",
+        "url": "https://access.redhat.com/errata/RHSA-2022:7058"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:7581 vom 2022-11-08",
+        "url": "https://access.redhat.com/errata/RHSA-2022:7581"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:7592 vom 2022-11-08",
+        "url": "https://access.redhat.com/errata/RHSA-2022:7592"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:7593 vom 2022-11-08",
+        "url": "https://access.redhat.com/errata/RHSA-2022:7593"
+      },
+      {
+        "category": "external",
+        "summary": "Oracle Linux Security Advisory ELSA-2022-7581 vom 2022-11-15",
+        "url": "https://linux.oracle.com/errata/ELSA-2022-7581.html"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2022:8353 vom 2022-11-15",
+        "url": "https://access.redhat.com/errata/RHSA-2022:8353"
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-5888-1 vom 2023-02-28",
+        "url": "https://ubuntu.com/security/notices/USN-5888-1"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0707-1 vom 2023-03-10",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014021.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2023:0748-1 vom 2023-03-15",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2023-March/014044.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3432 vom 2023-05-24",
+        "url": "https://lists.debian.org/debian-lts-announce/2023/05/msg00024.html"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3477 vom 2023-06-30",
+        "url": "https://lists.debian.org/debian-lts-announce/2023/06/msg00039.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7010099 vom 2023-07-06",
+        "url": "https://www.ibm.com/support/pages/node/7010099"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-C729DABEB1 vom 2023-08-22",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-c729dabeb1"
+      },
+      {
+        "category": "external",
+        "summary": "Fedora Security Advisory FEDORA-2023-DDDE191E04 vom 2023-08-22",
+        "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2023-ddde191e04"
+      },
+      {
+        "category": "external",
+        "summary": "Dell Security Advisory DSA-2024-198 vom 2024-05-08",
+        "url": "https://www.dell.com/support/kbdoc/000224827/dsa-2024-="
+      },
+      {
+        "category": "external",
+        "summary": "Ubuntu Security Notice USN-6891-1 vom 2024-07-11",
+        "url": "https://ubuntu.com/security/notices/USN-6891-1"
+      },
+      {
+        "category": "external",
+        "summary": "Debian Security Advisory DLA-3980 vom 2024-12-02",
+        "url": "https://lists.debian.org/debian-lts-announce/2024/12/msg00000.html"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279712 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279712"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Python: Schwachstelle ermöglicht Codeausführung",
+    "tracking": {
+      "current_release_date": "2026-07-09T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-07-10T07:21:42.294+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2022-0253",
+      "initial_release_date": "2022-04-13T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2022-04-13T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2022-06-09T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Referenz(en) aufgenommen: FEDORA-2022-9DA5703D22"
+        },
+        {
+          "date": "2022-06-12T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Referenz(en) aufgenommen: FEDORA-2022-5EA8AA7518, FEDORA-2022-A8E50DC83E, FEDORA-2022-CECE1D07D9, FEDORA-2022-1358CEDF2D, FEDORA-2022-0BE85556B4, FEDORA-2022-2E1D1205CF, FEDORA-2022-4B0DFDA810, FEDORA-2022-4C788BDC40, FEDORA-2022-5AD25E3D3C"
+        },
+        {
+          "date": "2022-06-16T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von NetApp aufgenommen"
+        },
+        {
+          "date": "2022-06-19T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Referenz(en) aufgenommen: FEDORA-2022-EC74AC4079, FEDORA-2022-4A69D20CF4"
+        },
+        {
+          "date": "2022-06-21T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-06-23T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-06-26T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-06-29T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Referenz(en) aufgenommen: FEDORA-2022-DBE9A8F9AC, FEDORA-2022-D157A91E10, FEDORA-2022-CE55D01569, FEDORA-2022-B499F2A9C6, FEDORA-2022-9DD70781CB, FEDORA-2022-9CD41B6709, FEDORA-2022-17A1BB7E78"
+        },
+        {
+          "date": "2022-07-04T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-07-06T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-07-10T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-07-11T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-07-14T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2022-07-17T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Schreibfehler korrigiert"
+        },
+        {
+          "date": "2022-09-01T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2022-09-13T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2022-09-20T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2022-10-03T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2022-10-19T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2022-11-08T23:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2022-11-15T23:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Oracle Linux und Red Hat aufgenommen"
+        },
+        {
+          "date": "2023-02-27T23:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2023-03-12T23:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-03-15T23:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2023-05-24T22:00:00.000+00:00",
+          "number": "26",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2023-07-02T22:00:00.000+00:00",
+          "number": "27",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2023-07-06T22:00:00.000+00:00",
+          "number": "28",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2023-08-21T22:00:00.000+00:00",
+          "number": "29",
+          "summary": "Neue Updates von Fedora aufgenommen"
+        },
+        {
+          "date": "2024-05-07T22:00:00.000+00:00",
+          "number": "30",
+          "summary": "Neue Updates von Dell aufgenommen"
+        },
+        {
+          "date": "2024-07-11T22:00:00.000+00:00",
+          "number": "31",
+          "summary": "Neue Updates von Ubuntu aufgenommen"
+        },
+        {
+          "date": "2024-12-01T23:00:00.000+00:00",
+          "number": "32",
+          "summary": "Neue Updates von Debian aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "33",
+          "summary": "Neue Updates von IBM aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "33"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Debian Linux",
+            "product": {
+              "name": "Debian Linux",
+              "product_id": "2951",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:debian:debian_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Debian"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "virtual",
+                "product": {
+                  "name": "Dell NetWorker virtual",
+                  "product_id": "T034583",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dell:networker:virtual"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "NetWorker"
+          }
+        ],
+        "category": "vendor",
+        "name": "Dell"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "EMC Avamar",
+            "product": {
+              "name": "EMC Avamar",
+              "product_id": "T014381",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:emc:avamar:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "EMC"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Fedora Linux",
+            "product": {
+              "name": "Fedora Linux",
+              "product_id": "74185",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:fedoraproject:fedora:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7.5",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5",
+                  "product_id": "T022954",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "NetApp ActiveIQ Unified Manager",
+            "product": {
+              "name": "NetApp ActiveIQ Unified Manager",
+              "product_id": "T016960",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:netapp:active_iq_unified_manager:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "NetApp"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<=3.10.4",
+                "product": {
+                  "name": "Open Source Python <=3.10.4",
+                  "product_id": "113051"
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<=3.10.4",
+                "product": {
+                  "name": "Open Source Python <=3.10.4",
+                  "product_id": "113051-fixed"
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Python"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Oracle Linux",
+            "product": {
+              "name": "Oracle Linux",
+              "product_id": "T004914",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:oracle:linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Oracle"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Red Hat Enterprise Linux",
+            "product": {
+              "name": "Red Hat Enterprise Linux",
+              "product_id": "67646",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:redhat:enterprise_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "Red Hat OpenShift",
+            "product": {
+              "name": "Red Hat OpenShift",
+              "product_id": "T008027",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:redhat:openshift:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Ubuntu Linux",
+            "product": {
+              "name": "Ubuntu Linux",
+              "product_id": "T000126",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:canonical:ubuntu_linux:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Ubuntu"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2015-20107",
+      "product_status": {
+        "known_affected": [
+          "T022954",
+          "T018587",
+          "T008027",
+          "T014381",
+          "2951",
+          "T002207",
+          "67646",
+          "T000126",
+          "T034583",
+          "T004914",
+          "T016960",
+          "74185"
+        ],
+        "last_affected": [
+          "113051"
+        ]
+      },
+      "release_date": "2022-04-13T22:00:00.000+00:00",
+      "title": "CVE-2015-20107"
+    }
+  ]
+}

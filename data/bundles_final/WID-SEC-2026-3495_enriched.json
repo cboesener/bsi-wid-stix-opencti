@@ -1,0 +1,123 @@
+{
+  "type": "bundle",
+  "id": "bundle--affa78db-089f-4ad4-8738-d863a49ed7ed",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--7dc6210e-baf8-5d0b-9b2a-3cebeb5d3ac5",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "fetchmail: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in fetchmail ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--3ad8e0ab-67b5-58c3-98d0-fc787ff77090",
+        "software--fb52d0df-bbf0-5cda-a0be-985a169a72d2",
+        "vulnerability--c5f4bd2b-031e-54e6-a2ec-fbd4023c4897",
+        "relationship--679f865f-ee0b-50db-aa02-9861106207d1",
+        "relationship--d4fbac8a-b0de-5747-9516-7e5e9423dd88"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3495",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3495"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3495",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3495.json"
+        },
+        {
+          "source_name": "Red Hat Bugtracker 2537395 vom 2026-09-21",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537395"
+        },
+        {
+          "source_name": "GitHub Advisory Database",
+          "url": "https://github.com/advisories/GHSA-5PFW-5PV2-2PC6"
+        },
+        {
+          "source_name": "Fedora Security Advisory FEDORA-2026-FDB231AB53 vom 2026-09-23",
+          "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-fdb231ab53"
+        },
+        {
+          "source_name": "Fedora Security Advisory FEDORA-2026-8FFC03A2CE vom 2026-09-23",
+          "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-8ffc03a2ce"
+        },
+        {
+          "source_name": "Fedora Security Advisory FEDORA-2026-FFDC059B16 vom 2026-09-23",
+          "url": "https://bodhi.fedoraproject.org/updates/FEDORA-2026-ffdc059b16"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "2",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Fetchmail ist ein Programm zur Abfrage von Mails über diverse Protokolle wie IMAP4, SMTP, POP2 oder POP3 und deren anschließender Weiterleitung an Message Delivery Agents."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--3ad8e0ab-67b5-58c3-98d0-fc787ff77090",
+      "name": "Open Source fetchmail <6.6.7",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--fb52d0df-bbf0-5cda-a0be-985a169a72d2",
+      "name": "Fedora Linux",
+      "vendor": "Fedora",
+      "cpe": "cpe:2.3:o:fedoraproject:fedora:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--c5f4bd2b-031e-54e6-a2ec-fbd4023c4897",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-94184",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-94184"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--679f865f-ee0b-50db-aa02-9861106207d1",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--3ad8e0ab-67b5-58c3-98d0-fc787ff77090",
+      "target_ref": "vulnerability--c5f4bd2b-031e-54e6-a2ec-fbd4023c4897"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d4fbac8a-b0de-5747-9516-7e5e9423dd88",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--fb52d0df-bbf0-5cda-a0be-985a169a72d2",
+      "target_ref": "vulnerability--c5f4bd2b-031e-54e6-a2ec-fbd4023c4897"
+    }
+  ]
+}

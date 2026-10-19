@@ -1,0 +1,178 @@
+{
+  "type": "bundle",
+  "id": "bundle--20a8ef85-68d1-4fe5-9f7f-c24369ca671f",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--168212db-c7ea-536a-b255-a21243cacef3",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "QT: Schwachstelle ermöglicht Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in QT ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-07-21T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--86ae0593-1f70-5d2a-9c3b-5276039e8827",
+        "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+        "software--5f012483-6285-5f1f-a6cf-08cda9463140",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0",
+        "relationship--7dc71317-0199-57ad-a5b4-e37fbf16601c",
+        "relationship--0a3b4ab5-db18-54cf-9c54-0502f2711a83",
+        "relationship--d13fcb88-7da8-532c-8b0c-da72e0f63c78",
+        "relationship--729fb6a9-d4ca-5acd-83c0-d33f3850f29e"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-2459",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-2459"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-2459",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-2459.json"
+        },
+        {
+          "source_name": "QT Security Advisory vom 2026-07-21",
+          "url": "https://www.qt.io/blog/security-advisory-out-of-bounds-read-vulnerability-in-qtextcodeccodecforname"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:65816 vom 2026-09-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65816"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:65897 vom 2026-09-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65897"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-65897 vom 2026-09-10",
+          "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021938.html"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-65993 vom 2026-09-10",
+          "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021941.html"
+        },
+        {
+          "source_name": "Oracle Linux Security Advisory ELSA-2026-65816 vom 2026-09-10",
+          "url": "https://oss.oracle.com/pipermail/el-errata/2026-September/021944.html"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70561 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70561"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70560 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70560"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70562 vom 2026-09-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70562"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "4",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "Qt ist eine C++ Klassenbibliothek für die plattformübergreifende Programmierung grafischer Benutzeroberflächen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--86ae0593-1f70-5d2a-9c3b-5276039e8827",
+      "name": "Open Source QT <6.8.8",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "name": "Oracle Linux",
+      "vendor": "Oracle",
+      "cpe": "cpe:2.3:o:oracle:linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5f012483-6285-5f1f-a6cf-08cda9463140",
+      "name": "Open Source QT <6.11.1",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-9499",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-9499"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7dc71317-0199-57ad-a5b4-e37fbf16601c",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--e9a515b3-38b0-5afa-9ed6-7cf6c0df2543",
+      "target_ref": "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0a3b4ab5-db18-54cf-9c54-0502f2711a83",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--86ae0593-1f70-5d2a-9c3b-5276039e8827",
+      "target_ref": "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d13fcb88-7da8-532c-8b0c-da72e0f63c78",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5f012483-6285-5f1f-a6cf-08cda9463140",
+      "target_ref": "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--729fb6a9-d4ca-5acd-83c0-d33f3850f29e",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--903a62e8-35ce-5e2b-a638-1b0596afe3d0"
+    }
+  ]
+}

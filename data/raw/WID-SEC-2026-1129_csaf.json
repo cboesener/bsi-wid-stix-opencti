@@ -1,0 +1,862 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Bouncy Castle ist eine Kryptographie-API für Java.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein Angreifer kann mehrere Schwachstellen in Bouncy Castle BC-JAVA ausnutzen, um kryptografische Sicherheitsvorkehrungen zu umgehen, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand zu verursachen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux\n- MacOS X\n- Sonstiges\n- UNIX\n- Windows",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-1129 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1129.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-1129 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1129"
+      },
+      {
+        "category": "external",
+        "summary": "BouncyCastle Wiki CVE-2025-14813 vom 2026-04-15",
+        "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902025%E2%80%9014813"
+      },
+      {
+        "category": "external",
+        "summary": "BouncyCastle Wiki CVE-2026-0636 vom 2026-04-15",
+        "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%900636"
+      },
+      {
+        "category": "external",
+        "summary": "BouncyCastle Wiki CVE-2026-3505 vom 2026-04-15",
+        "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%903505"
+      },
+      {
+        "category": "external",
+        "summary": "BouncyCastle Wiki CVE-2026-5588 vom 2026-04-15",
+        "url": "https://github.com/bcgit/bc-java/wiki/CVE%E2%80%902026%E2%80%905588"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database vom 2026-04-15",
+        "url": "https://github.com/bcgit/bc-java/releases/tag/r1rv84"
+      },
+      {
+        "category": "external",
+        "summary": "openSUSE Security Update OPENSUSE-SU-2026:10571-1 vom 2026-04-19",
+        "url": "https://lists.opensuse.org/archives/list/security-announce@lists.opensuse.org/thread/HGBBPEJ3FFTXLISJLILUZ4P6VWU4FBFE/"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:1639-1 vom 2026-04-28",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025753.html"
+      },
+      {
+        "category": "external",
+        "summary": "SUSE Security Update SUSE-SU-2026:21404-1 vom 2026-04-30",
+        "url": "https://lists.suse.com/pipermail/sle-security-updates/2026-April/025782.html"
+      },
+      {
+        "category": "external",
+        "summary": "DBeaver Release 26.0.4 vom 2026-05-03",
+        "url": "https://github.com/dbeaver/dbeaver/releases/tag/26.0.4"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11720 vom 2026-05-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11720"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:11721 vom 2026-05-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:11721"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:13631 vom 2026-05-05",
+        "url": "https://access.redhat.com/errata/RHSA-2026:13631"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:14276 vom 2026-05-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14276"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:14272 vom 2026-05-06",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14272"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:17668 vom 2026-05-14",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17668"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7273145 vom 2026-05-15",
+        "url": "https://www.ibm.com/support/pages/node/7273145"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:18059 vom 2026-05-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:18059"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:18054 vom 2026-05-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:18054"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:18055 vom 2026-05-18",
+        "url": "https://access.redhat.com/errata/RHSA-2026:18055"
+      },
+      {
+        "category": "external",
+        "summary": "Keycloak 26.6.2 release vom 2026-05-19",
+        "url": "https://www.keycloak.org/2026/05/keycloak-2662-released"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:21772 vom 2026-05-29",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21772"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:24977 vom 2026-06-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:24977"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7275937 vom 2026-06-11",
+        "url": "https://www.ibm.com/support/pages/node/7275937"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7277422 vom 2026-06-23",
+        "url": "https://www.ibm.com/support/pages/node/7277422"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7275291 vom 2026-06-24",
+        "url": "https://www.ibm.com/support/pages/node/7275291"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7278326 vom 2026-06-29",
+        "url": "https://www.ibm.com/support/pages/node/7278326"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7279712 vom 2026-07-10",
+        "url": "https://www.ibm.com/support/pages/node/7279712"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7280950 vom 2026-07-23",
+        "url": "https://www.ibm.com/support/pages/node/7280950"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7282596 vom 2026-08-05",
+        "url": "https://www.ibm.com/support/pages/node/7282596"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:53806 vom 2026-08-11",
+        "url": "https://access.redhat.com/errata/RHSA-2026:53806"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:53644 vom 2026-08-12",
+        "url": "https://access.redhat.com/errata/RHSA-2026:53644"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60246 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60246"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60254 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60254"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60251 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60251"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60256 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60256"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60247 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60247"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60248 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60248"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60249 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60249"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60250 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60250"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60252 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60252"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60239 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60239"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:60259 vom 2026-08-26",
+        "url": "https://access.redhat.com/errata/RHSA-2026:60259"
+      },
+      {
+        "category": "external",
+        "summary": "IBM Security Bulletin 7286010 vom 2026-09-02",
+        "url": "https://www.ibm.com/support/pages/node/7286010"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:66488 vom 2026-09-10",
+        "url": "https://access.redhat.com/errata/RHSA-2026:66488"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70277 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70277"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70228 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70228"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70230 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70230"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70229 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70229"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Bouncy Castle BC-JAVA: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T11:25:51.498+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-1129",
+      "initial_release_date": "2026-04-15T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-04-15T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-04-19T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von openSUSE aufgenommen"
+        },
+        {
+          "date": "2026-04-28T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-03T22:00:00.000+00:00",
+          "number": "4",
+          "summary": "Neue Updates von SUSE aufgenommen"
+        },
+        {
+          "date": "2026-05-04T22:00:00.000+00:00",
+          "number": "5",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-06T22:00:00.000+00:00",
+          "number": "6",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-14T22:00:00.000+00:00",
+          "number": "7",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-17T22:00:00.000+00:00",
+          "number": "8",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-05-18T22:00:00.000+00:00",
+          "number": "9",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-05-19T22:00:00.000+00:00",
+          "number": "10",
+          "summary": "Neue Updates aufgenommen"
+        },
+        {
+          "date": "2026-05-28T22:00:00.000+00:00",
+          "number": "11",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-09T22:00:00.000+00:00",
+          "number": "12",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-06-10T22:00:00.000+00:00",
+          "number": "13",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-23T22:00:00.000+00:00",
+          "number": "14",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-24T22:00:00.000+00:00",
+          "number": "15",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-06-28T22:00:00.000+00:00",
+          "number": "16",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-09T22:00:00.000+00:00",
+          "number": "17",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-07-23T22:00:00.000+00:00",
+          "number": "18",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-08-04T22:00:00.000+00:00",
+          "number": "19",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-08-11T22:00:00.000+00:00",
+          "number": "20",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-25T22:00:00.000+00:00",
+          "number": "21",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-08-26T22:00:00.000+00:00",
+          "number": "22",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-01T22:00:00.000+00:00",
+          "number": "23",
+          "summary": "Neue Updates von IBM aufgenommen"
+        },
+        {
+          "date": "2026-09-10T22:00:00.000+00:00",
+          "number": "24",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "25",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "25"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "IBM App Connect Enterprise",
+            "product": {
+              "name": "IBM App Connect Enterprise",
+              "product_id": "T051349",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:app_connect_enterprise:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM Business Automation Workflow",
+            "product": {
+              "name": "IBM Business Automation Workflow",
+              "product_id": "T053688",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:business_automation_workflow:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM DB2",
+            "product": {
+              "name": "IBM DB2",
+              "product_id": "T048379",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:db2:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM InfoSphere Information Server",
+            "product": {
+              "name": "IBM InfoSphere Information Server",
+              "product_id": "T019995",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:infosphere_information_server:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "IBM MQ",
+            "product": {
+              "name": "IBM MQ",
+              "product_id": "T021398",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:ibm:mq:-"
+              }
+            }
+          },
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "IBM QRadar SIEM",
+                "product": {
+                  "name": "IBM QRadar SIEM",
+                  "product_id": "T021415",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<7.5.0 UP16",
+                "product": {
+                  "name": "IBM QRadar SIEM <7.5.0 UP16",
+                  "product_id": "T058943"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "7.5.0 UP16",
+                "product": {
+                  "name": "IBM QRadar SIEM 7.5.0 UP16",
+                  "product_id": "T058943-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:qradar_siem:7.5.0_up16"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "QRadar SIEM"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "Modeler",
+                "product": {
+                  "name": "IBM SPSS Modeler",
+                  "product_id": "T018587",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:spss:modeler"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "SPSS"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "IP Edition 4.2.0",
+                "product": {
+                  "name": "IBM Tivoli Network Manager IP Edition 4.2.0",
+                  "product_id": "T048330",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:ibm:tivoli_network_manager:ip_edition_4.2.0"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Tivoli Network Manager"
+          }
+        ],
+        "category": "vendor",
+        "name": "IBM"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<1.84",
+                "product": {
+                  "name": "Open Source Bouncy Castle <1.84",
+                  "product_id": "T052875"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "1.84",
+                "product": {
+                  "name": "Open Source Bouncy Castle 1.84",
+                  "product_id": "T052875-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:bouncycastle:legion-of-the-bouncy-castle-java-crytography-api:1.84"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Bouncy Castle"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<26.0.4",
+                "product": {
+                  "name": "Open Source DBeaver <26.0.4",
+                  "product_id": "T053463"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "26.0.4",
+                "product": {
+                  "name": "Open Source DBeaver 26.0.4",
+                  "product_id": "T053463-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:dbeaver:dbeaver:26.0.4"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "DBeaver"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<26.6.2",
+                "product": {
+                  "name": "Open Source Keycloak <26.6.2",
+                  "product_id": "T054335"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "26.6.2",
+                "product": {
+                  "name": "Open Source Keycloak 26.6.2",
+                  "product_id": "T054335-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:keycloak:keycloak:26.6.2"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Keycloak"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Apache Camel for Spring Boot",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Apache Camel for Spring Boot",
+                  "product_id": "T040879",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:apache_camel_for_spring_boot"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          },
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "Dev Spaces <3.28.0",
+                "product": {
+                  "name": "Red Hat OpenShift Dev Spaces <3.28.0",
+                  "product_id": "T054838"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Dev Spaces 3.28.0",
+                "product": {
+                  "name": "Red Hat OpenShift Dev Spaces 3.28.0",
+                  "product_id": "T054838-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:dev_spaces__3.28.0"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Developer Tools",
+                "product": {
+                  "name": "Red Hat OpenShift Developer Tools",
+                  "product_id": "T058670",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:redhat:openshift:developer_tools"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "OpenShift"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "SUSE Linux",
+            "product": {
+              "name": "SUSE Linux",
+              "product_id": "T002207",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:suse_linux:-"
+              }
+            }
+          },
+          {
+            "category": "product_name",
+            "name": "SUSE openSUSE",
+            "product": {
+              "name": "SUSE openSUSE",
+              "product_id": "T027843",
+              "product_identification_helper": {
+                "cpe": "cpe:/o:suse:opensuse:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "SUSE"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2025-14813",
+      "product_status": {
+        "known_affected": [
+          "T058943",
+          "T053463",
+          "67646",
+          "T040879",
+          "T058670",
+          "T053688",
+          "T052875",
+          "T054335",
+          "T019995",
+          "T018587",
+          "T002207",
+          "T051349",
+          "T054838",
+          "T021415",
+          "T027843",
+          "T048330",
+          "T021398",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-15T22:00:00.000+00:00",
+      "title": "CVE-2025-14813"
+    },
+    {
+      "cve": "CVE-2026-0636",
+      "product_status": {
+        "known_affected": [
+          "T058943",
+          "T053463",
+          "67646",
+          "T040879",
+          "T058670",
+          "T053688",
+          "T052875",
+          "T054335",
+          "T019995",
+          "T018587",
+          "T002207",
+          "T051349",
+          "T054838",
+          "T021415",
+          "T027843",
+          "T048330",
+          "T021398",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-15T22:00:00.000+00:00",
+      "title": "CVE-2026-0636"
+    },
+    {
+      "cve": "CVE-2026-3505",
+      "product_status": {
+        "known_affected": [
+          "T058943",
+          "T053463",
+          "67646",
+          "T040879",
+          "T058670",
+          "T053688",
+          "T052875",
+          "T054335",
+          "T019995",
+          "T018587",
+          "T002207",
+          "T051349",
+          "T054838",
+          "T021415",
+          "T027843",
+          "T048330",
+          "T021398",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-15T22:00:00.000+00:00",
+      "title": "CVE-2026-3505"
+    },
+    {
+      "cve": "CVE-2026-5588",
+      "product_status": {
+        "known_affected": [
+          "T058943",
+          "T053463",
+          "67646",
+          "T040879",
+          "T058670",
+          "T053688",
+          "T052875",
+          "T054335",
+          "T019995",
+          "T018587",
+          "T002207",
+          "T051349",
+          "T054838",
+          "T021415",
+          "T027843",
+          "T048330",
+          "T021398",
+          "T048379"
+        ]
+      },
+      "release_date": "2026-04-15T22:00:00.000+00:00",
+      "title": "CVE-2026-5588"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "type": "bundle",
+  "id": "bundle--b85cd49e-a6dc-4902-8c4d-17a61cc2ebea",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--fcb670bb-998c-55dc-8138-f5bff2121693",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Keycloak: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Keycloak ausnutzen, um Sicherheitsvorkehrungen zu umgehen und um seine Privilegien zu erhöhen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+        "vulnerability--dd34477e-3d71-53fd-805d-aa32ae1b90a1",
+        "relationship--4e834d36-f738-5fcf-b455-1f97476fa691",
+        "vulnerability--00380751-2c3d-54d9-90ea-6a477d07bbd6",
+        "relationship--348b36e4-856d-57d8-9d9d-a9bceb5e3380",
+        "vulnerability--fd986ab0-17d7-589a-b2bc-7ee3157466a7",
+        "relationship--41e5a751-b718-5698-80f5-9c23020377a8",
+        "vulnerability--250eca76-f34b-5457-8faf-1b70151ee111",
+        "relationship--527fa844-7acc-5b93-8641-e4c13b586d0f"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3558",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3558"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3558",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3558.json"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-JJ9W-64W4-2WCX"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-J24V-WV3R-FJCH"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-5JW9-CC9V-8H8R"
+        },
+        {
+          "source_name": "GitHub Advisory Database vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-PGX8-HGCR-Q6RQ"
+        }
+      ],
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Keycloak ermöglicht Single Sign-On mit Identity and Access Management für moderne Anwendungen und Dienste."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+      "name": "Open Source Keycloak",
+      "vendor": "Open Source",
+      "cpe": "cpe:2.3:a:keycloak:keycloak:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--dd34477e-3d71-53fd-805d-aa32ae1b90a1",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96445",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96445"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4e834d36-f738-5fcf-b455-1f97476fa691",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+      "target_ref": "vulnerability--dd34477e-3d71-53fd-805d-aa32ae1b90a1"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--00380751-2c3d-54d9-90ea-6a477d07bbd6",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96446",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96446"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--348b36e4-856d-57d8-9d9d-a9bceb5e3380",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+      "target_ref": "vulnerability--00380751-2c3d-54d9-90ea-6a477d07bbd6"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--fd986ab0-17d7-589a-b2bc-7ee3157466a7",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-97176",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-97176"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--41e5a751-b718-5698-80f5-9c23020377a8",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+      "target_ref": "vulnerability--fd986ab0-17d7-589a-b2bc-7ee3157466a7"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--250eca76-f34b-5457-8faf-1b70151ee111",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-97177",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-97177"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--527fa844-7acc-5b93-8641-e4c13b586d0f",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--ec391249-d955-551f-8c94-d05ab3b908d5",
+      "target_ref": "vulnerability--250eca76-f34b-5457-8faf-1b70151ee111"
+    }
+  ]
+}

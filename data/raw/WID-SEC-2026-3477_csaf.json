@@ -1,0 +1,647 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Netty ist ein asynchrones, ereignisgesteuertes Netzwerk-Anwendungs-Framework für die schnelle Entwicklung von wartbaren, hochleistungsfähigen Protokollservern und -clients.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Netty ausnutzen, um Sicherheitsvorkehrungen zu umgehen, Daten zu manipulieren, vertrauliche Informationen offenzulegen oder einen Denial-of-Service-Zustand herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Sonstiges\n- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3477 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3477.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3477 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3477"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536887 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536887"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-mrqx-2r72-2c2x vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-mrqx-2r72-2c2x"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536891 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536891"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-c593-fgx2-8jj6 vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-c593-fgx2-8jj6"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536895 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536895"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-9rhx-p462-pg2j vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-9rhx-p462-pg2j"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-xvr4-c5q3-q5wm vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-xvr4-c5q3-q5wm"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-wfpc-rccm-rq4m vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-wfpc-rccm-rq4m"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536932 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536932"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-258J-9683-M467 vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-258J-9683-M467"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536949 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536949"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-7p33-hhxj-4qcr vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-7p33-hhxj-4qcr"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536951 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536951"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-MV3R-X43M-8MR7 vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-MV3R-X43M-8MR7"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536953 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536953"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-74QM-9QC5-FF4G vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-74QM-9QC5-FF4G"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536952 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536952"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-6F4P-H3XM-C8RC vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-6F4P-H3XM-C8RC"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536954 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536954"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-9mrj-55p4-qwf4 vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-9mrj-55p4-qwf4"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536955 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536955"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536961 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536961"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-ffvg-hfwh-x2pp vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-ffvg-hfwh-x2pp"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536962 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536962"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-jmx3-m859-mrgc vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-jmx3-m859-mrgc"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536964 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536964"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2536966 vom 2026-09-20",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2536966"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-c9wq-39xx-437p vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-c9wq-39xx-437p"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-fcr3-v77c-x7hx vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-fcr3-v77c-x7hx"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-4wrp-2fvc-9x8r vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-4wrp-2fvc-9x8r"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-6w3j-2wqp-7r38 vom 2026-09-20",
+        "url": "https://github.com/advisories/GHSA-6w3j-2wqp-7r38"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69440 vom 2026-09-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69440"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:69470 vom 2026-09-21",
+        "url": "https://access.redhat.com/errata/RHSA-2026:69470"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Security Advisory RHSA-2026:70257 vom 2026-09-22",
+        "url": "https://access.redhat.com/errata/RHSA-2026:70257"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "Netty: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T10:36:53.389+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3477",
+      "initial_release_date": "2026-09-20T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-20T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "3",
+          "summary": "Neue Updates von Red Hat aufgenommen"
+        }
+      ],
+      "status": "final",
+      "version": "3"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<4.1.138.Final",
+                "product": {
+                  "name": "Open Source Netty <4.1.138.Final",
+                  "product_id": "T059899"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.1.138.Final",
+                "product": {
+                  "name": "Open Source Netty 4.1.138.Final",
+                  "product_id": "T059899-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:netty:netty:4.1.138.final"
+                  }
+                }
+              },
+              {
+                "category": "product_version_range",
+                "name": "<4.2.18.Final",
+                "product": {
+                  "name": "Open Source Netty <4.2.18.Final",
+                  "product_id": "T059900"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "4.2.18.Final",
+                "product": {
+                  "name": "Open Source Netty 4.2.18.Final",
+                  "product_id": "T059900-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:netty:netty:4.2.18.final"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Netty"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_name",
+                "name": "Red Hat Enterprise Linux",
+                "product": {
+                  "name": "Red Hat Enterprise Linux",
+                  "product_id": "67646",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:-"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "Quarkus",
+                "product": {
+                  "name": "Red Hat Enterprise Linux Quarkus",
+                  "product_id": "T028364",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:quarkus"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-93488",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93488"
+    },
+    {
+      "cve": "CVE-2026-93491",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93491"
+    },
+    {
+      "cve": "CVE-2026-93492",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93492"
+    },
+    {
+      "cve": "CVE-2026-93493",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93493"
+    },
+    {
+      "cve": "CVE-2026-93494",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93494"
+    },
+    {
+      "cve": "CVE-2026-93558",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93558"
+    },
+    {
+      "cve": "CVE-2026-93560",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93560"
+    },
+    {
+      "cve": "CVE-2026-93561",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93561"
+    },
+    {
+      "cve": "CVE-2026-93562",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93562"
+    },
+    {
+      "cve": "CVE-2026-93563",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93563"
+    },
+    {
+      "cve": "CVE-2026-93564",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93564"
+    },
+    {
+      "cve": "CVE-2026-93565",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93565"
+    },
+    {
+      "cve": "CVE-2026-93566",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93566"
+    },
+    {
+      "cve": "CVE-2026-93567",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93567"
+    },
+    {
+      "cve": "CVE-2026-93568",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93568"
+    },
+    {
+      "cve": "CVE-2026-93569",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93569"
+    },
+    {
+      "cve": "CVE-2026-93572",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93572"
+    },
+    {
+      "cve": "CVE-2026-93573",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93573"
+    },
+    {
+      "cve": "CVE-2026-93574",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93574"
+    },
+    {
+      "cve": "CVE-2026-93575",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93575"
+    },
+    {
+      "cve": "CVE-2026-93576",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93576"
+    },
+    {
+      "cve": "CVE-2026-93578",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93578"
+    },
+    {
+      "cve": "CVE-2026-93579",
+      "product_status": {
+        "known_affected": [
+          "T059900",
+          "T028364",
+          "T059899",
+          "67646"
+        ]
+      },
+      "release_date": "2026-09-20T22:00:00.000+00:00",
+      "title": "CVE-2026-93579"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+MAPPING: WID-MELDUNG -> STIX 2.1
+================================
+
+Quellen
+  [RSS]   = RSS-Eintrag des Warn- und Informationsdienstes
+  [CSAF]  = CSAF-Dokument der Meldung
+  [fest]  = fest oder intern gesetzt
+  "A / B" = Wert aus A, falls vorhanden, sonst aus B
+  x_      = eigene Zusatzfelder; OpenCTI übernimmt sie beim Import NICHT
+
+
+1. IDENTITY  (1 Objekt, in jedem Bundle gleich)
+-----------------------------------------------
+  name                   = "CERT-Bund (BSI)"                       [fest]
+  identity_class         = "organization"                          [fest]
+  -> wird über created_by_ref von Report verwiesen
+
+
+2. REPORT  (1 je Meldung, in beiden Varianten)
+----------------------------------------------
+  Basisvariante (nur Feed):
+    name                 <- title                                  [RSS]
+    description          <- summary                                [RSS]
+    published            <- published (Feed-Datum, RFC 822 -> ISO) [RSS]
+    external_references  <- link (Portalseite, mit WID-Kennung)    [RSS]
+    x_wid_status         <- Statuskennzeichen aus title (NEU/UPDATE) [RSS]
+    x_wid_severity       <- Schweregrad aus title                  [RSS]
+    object_refs          -> nur die Identity                       [fest]
+    report_types         = ["vulnerability"]                       [fest]
+
+  Angereicherte Variante (Feed + CSAF):
+    name                 <- document.title / title                 [CSAF / RSS]
+    description          <- notes (summary) / summary              [CSAF / RSS]
+    published            <- tracking.initial_release_date          [CSAF]
+    external_references  <- Portal-Link, CSAF-Dokument, references [RSS + CSAF]
+    x_wid_status         <- Statuskennzeichen aus title            [RSS]
+    x_wid_severity       <- aggregate_severity / Schweregrad title [CSAF / RSS]
+    x_wid_revision       <- tracking.version                       [CSAF]
+    x_operating_systems  <- Note "Betroffene Betriebssysteme"      [CSAF]
+    x_product_description <- notes (description)                   [CSAF]
+    x_fixed_version      <- Produkte mit product_status fixed/first_fixed [CSAF]
+    object_refs          -> ALLE Objekte der Meldung               [fest]
+    report_types         = ["vulnerability"]                       [fest]
+
+  Kennungen:
+    Basis       aus "WID-SEC-JJJJ-NNNN"
+    Angereichert aus "WID-SEC-JJJJ-NNNN-enriched"
+    -> zwei getrennte Reports, damit beide Varianten vergleichbar sind
+  OpenCTI erkennt Reports an name + published wieder.
+
+
+3. VULNERABILITY  (1 je CVE-Kennung)
+------------------------------------
+  name                   <- vulnerabilities[].cve                  [CSAF]
+  external_references    <- CVE-Kennung (source_name "cve")        [CSAF]
+  Kennung aus der CVE-Kennung berechnet.
+  OpenCTI erkennt Schwachstellen am Namen wieder.
+
+
+4. SOFTWARE  (1 je betroffenem Produkt)
+---------------------------------------
+  name                   <- Produktname aus product_tree           [CSAF]
+  vendor                 <- Herstellerzweig im Produktbaum         [CSAF]
+  cpe                    <- product_identification_helper.cpe     [CSAF]
+                            (Format 2.2 wird in 2.3 umgewandelt;
+                             ggf. von der behobenen Version übertragen,
+                             dann x_cpe_derived_from_fixed_version = true)
+  Betroffen = product_status known_affected / last_affected.
+  Kennung aus dem Produktnamen berechnet -> gleichnamige Produkte
+  einer Meldung werden zu einem Objekt zusammengefasst.
+
+
+5. RELATIONSHIP  (1 je Zuordnung Produkt <-> CVE)
+-------------------------------------------------
+  relationship_type      = "has"                                   [fest]
+  source_ref             -> Software-Objekt                        [fest]
+  target_ref             -> Vulnerability-Objekt                   [fest]
+  Welche Paare entstehen  <- product_status (known/last_affected)  [CSAF]
+  Kennung aus "Software:has:Vulnerability" berechnet.
+  Bei ca. 90 % der Meldungen: jede CVE x jedes Produkt (Kreuzprodukt).
+
+
+NICHT ABGEBILDET
+----------------
+  CVSS-Werte             fehlen im CSAF-Dokument (nur im Portal)
+  Remoteangriff / Mitigation  keine eigenen Felder im CSAF
+  Behobene Versionen     nur als Text in x_fixed_version, kein eigenes Objekt
+
+
+BEISPIEL  WID-SEC-2026-3546
+---------------------------
+  Basisvariante:      1 Identity + 1 Report                         =  2 Objekte
+  Angereichert:       1 Identity + 1 Report + 5 Vulnerabilities
+                      + 10 Software + 29 Beziehungen                = 46 Objekte

@@ -1,0 +1,69 @@
+{
+  "type": "bundle",
+  "id": "bundle--fabc17e3-1e1d-48fc-89ae-30fd9fe48468",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--73fefd88-0806-5eb9-b12f-91518883e0e4",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "vllm: Mehrere Schwachstellen",
+      "description": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in vllm ausnutzen, um Dateien zu manipulieren Informationen offenzulegen oder einen Denial of Service zu verursachen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--64e5bd14-27d2-5f9e-8d90-dd9b6e4f4b4d"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3564",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3564"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3564",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3564.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-2phq-3phc-84px vom 2026-09-23",
+          "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-2phq-3phc-84px"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-85xf-c7hm-whqw vom 2026-09-23",
+          "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-85xf-c7hm-whqw"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-ph72-cqr5-qpp7 vom 2026-09-23",
+          "url": "https://github.com/vllm-project/vllm/security/advisories/GHSA-ph72-cqr5-qpp7"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX",
+      "x_product_description": "Open Source vLLM ist eine Open-Source-Bibliothek für schnelle und effiziente Inferenz von Large Language Models (LLMs)."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--64e5bd14-27d2-5f9e-8d90-dd9b6e4f4b4d",
+      "name": "Open Source vllm <0.30.0",
+      "vendor": "Open Source"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "type": "bundle",
+  "id": "bundle--b4b3afca-294f-47d2-90fa-10645da53f56",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--9d6f6d82-63a7-5482-9567-d9ffc7f6da69",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "MediaWiki: Schwachstelle ermöglicht Offenlegung von Informationen",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in MediaWiki ausnutzen, um Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--b93e5d06-572f-50a9-9179-b82d0ef95f52",
+        "vulnerability--84e22789-d1e2-5077-885d-3bc1d025eae6",
+        "relationship--3c5dba94-b4be-562c-864b-2bea2d8764c8"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3550",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3550"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3550",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3550.json"
+        },
+        {
+          "source_name": "GitHub Security Advisory GHSA-c7v9-97f3-3pxf vom 2026-09-23",
+          "url": "https://github.com/advisories/GHSA-c7v9-97f3-3pxf"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "niedrig",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Linux\n- UNIX\n- Windows",
+      "x_product_description": "MediaWiki ist ein freies Wiki, das ursprünglich für den Einsatz auf Wikipedia entwickelt wurde."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--b93e5d06-572f-50a9-9179-b82d0ef95f52",
+      "name": "Open Source MediaWiki WikiLambda Extension <1.47.0",
+      "vendor": "Open Source"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--84e22789-d1e2-5077-885d-3bc1d025eae6",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-96872",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-96872"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3c5dba94-b4be-562c-864b-2bea2d8764c8",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--b93e5d06-572f-50a9-9179-b82d0ef95f52",
+      "target_ref": "vulnerability--84e22789-d1e2-5077-885d-3bc1d025eae6"
+    }
+  ]
+}

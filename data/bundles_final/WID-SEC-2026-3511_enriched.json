@@ -1,0 +1,217 @@
+{
+  "type": "bundle",
+  "id": "bundle--e0310b60-6901-4fdd-b221-23d73d5f56fa",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--8fd06a06-7512-5d84-8eb0-3129ea992e0a",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "Ubiquiti UniFi Gateways: Mehrere Schwachstellen ermöglichen Denial of Service",
+      "description": "Ein entfernter, anonymer Angreifer kann mehrere Schwachstellen in Ubiquiti UniFi Gateways ausnutzen, um einen Denial of Service Angriff durchzuführen.",
+      "published": "2026-09-22T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+        "vulnerability--d46f59cc-e2f6-520e-a562-b582755e6a6e",
+        "relationship--7c8f431f-8ab0-547a-9e5b-2e50ebbc350a",
+        "vulnerability--ec212cb9-873e-5b53-8e51-408abb37925a",
+        "relationship--0a6cef8b-2032-5ddf-b4cd-7750faa30b07",
+        "vulnerability--ce353994-6c5a-5b53-a453-e86bfd3bebe7",
+        "relationship--4a1164ea-a111-5fa3-ae14-9e5ae0dd9b88",
+        "vulnerability--1a672f7b-9a66-5a59-b3c1-648b38f159f9",
+        "relationship--87141af3-2e57-5de2-b34b-842734793c65",
+        "vulnerability--112f4ae6-4476-5e88-8bf5-24ab4fe55f29",
+        "relationship--7c8f2052-f202-5b10-b0ae-80e653bf571f",
+        "vulnerability--239b6326-95bd-5a91-a25a-3f02403d4352",
+        "relationship--5f02665a-d68f-5528-b86e-366be054feee"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3511",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3511"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3511",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3511.json"
+        },
+        {
+          "source_name": "Ubiquity Security Advisory Bulletin vom 2026-09-22",
+          "url": "https://community.ui.com/releases/Security-Advisory-Bulletin-069-069/07e367a7-edec-4d85-a058-f97e5ce9ac9c"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges",
+      "x_product_description": "UniFi ist Ubiquiti's End-to-End-Netzwerk-Ökosystem für Unternehmen und Smart Homes."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "name": "Ubiquiti UniFi Gateways <5.1.26",
+      "vendor": "Ubiquiti"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--d46f59cc-e2f6-520e-a562-b582755e6a6e",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-77544",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-77544"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7c8f431f-8ab0-547a-9e5b-2e50ebbc350a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--d46f59cc-e2f6-520e-a562-b582755e6a6e"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--ec212cb9-873e-5b53-8e51-408abb37925a",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-77555",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-77555"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0a6cef8b-2032-5ddf-b4cd-7750faa30b07",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--ec212cb9-873e-5b53-8e51-408abb37925a"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--ce353994-6c5a-5b53-a453-e86bfd3bebe7",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-77556",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-77556"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4a1164ea-a111-5fa3-ae14-9e5ae0dd9b88",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--ce353994-6c5a-5b53-a453-e86bfd3bebe7"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--1a672f7b-9a66-5a59-b3c1-648b38f159f9",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-77558",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-77558"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--87141af3-2e57-5de2-b34b-842734793c65",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--1a672f7b-9a66-5a59-b3c1-648b38f159f9"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--112f4ae6-4476-5e88-8bf5-24ab4fe55f29",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-95861",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-95861"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7c8f2052-f202-5b10-b0ae-80e653bf571f",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--112f4ae6-4476-5e88-8bf5-24ab4fe55f29"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--239b6326-95bd-5a91-a25a-3f02403d4352",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "name": "CVE-2026-95862",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-95862"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5f02665a-d68f-5528-b86e-366be054feee",
+      "created": "2026-10-18T19:40:26.000Z",
+      "modified": "2026-10-18T19:40:26.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--12dd0c4d-9c85-5e6f-9cfc-fcdd1db0ee41",
+      "target_ref": "vulnerability--239b6326-95bd-5a91-a25a-3f02403d4352"
+    }
+  ]
+}

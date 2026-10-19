@@ -1,0 +1,117 @@
+{
+  "type": "bundle",
+  "id": "bundle--878b81e9-24d0-4141-b1c5-c806da103e57",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--d1827f3b-be0e-5251-b74b-a60ddf417284",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Paessler PRTG: Mehrere Schwachstellen",
+      "description": "Ein Angreifer kann mehrere Schwachstellen in Paessler PRTG ausnutzen, um Cross-Site-Scripting-Angriffe durchzuführen, Sicherheitsmaßnahmen zu umgehen und vertrauliche Informationen offenzulegen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--f2e48223-95d8-52da-ae4b-842396e132c8",
+        "vulnerability--e07d0506-b639-583c-a3bd-781363d8ecb2",
+        "relationship--3dd3095b-65af-5810-b8da-04e2b5219d72",
+        "vulnerability--39b61f30-b591-5080-af3a-4005ecc91eeb",
+        "relationship--6228d954-0d4a-5164-8bf1-f7b402f30cfc"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3565",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3565"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3565",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3565.json"
+        },
+        {
+          "source_name": "SecConsult Advisory vom 2026-09-23",
+          "url": "https://sec-consult.com/vulnerability-lab/advisory/multiple-vulnerabilities-in-paessler-prtg-network-monitor/"
+        },
+        {
+          "source_name": "Vulnerabilities in PRTG prior v26.2.120.1449 vom 2026-09-23",
+          "url": "https://paessler.freshdesk.com/en/support/solutions/articles/76000088640"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- Sonstiges\n- Windows",
+      "x_product_description": "PRTG Network Monitor ist eine Netzwerk Monitoring Werkzeug der Paessler AG."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--f2e48223-95d8-52da-ae4b-842396e132c8",
+      "name": "Paessler PRTG <26.2.120.1449",
+      "vendor": "Paessler"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--e07d0506-b639-583c-a3bd-781363d8ecb2",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-4637",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-4637"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3dd3095b-65af-5810-b8da-04e2b5219d72",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--f2e48223-95d8-52da-ae4b-842396e132c8",
+      "target_ref": "vulnerability--e07d0506-b639-583c-a3bd-781363d8ecb2"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--39b61f30-b591-5080-af3a-4005ecc91eeb",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-4638",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-4638"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6228d954-0d4a-5164-8bf1-f7b402f30cfc",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--f2e48223-95d8-52da-ae4b-842396e132c8",
+      "target_ref": "vulnerability--39b61f30-b591-5080-af3a-4005ecc91eeb"
+    }
+  ]
+}

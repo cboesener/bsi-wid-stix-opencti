@@ -1,0 +1,229 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "hoch"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "CUPS (Common Unix Printing System) ist ein Printspooler, der es lokalen und entfernten Benutzern ermöglicht, Druckfunktionen über das Internet Printing Protocol (IPP) zu nutzen.\r\nRed Hat Enterprise Linux (RHEL) ist eine populäre Linux-Distribution.\r\nFedora ist eine von Red Hat abstammende Linux-Distribution.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann eine Schwachstelle in CUPS, wie es z.B. in Red Hat Enterprise Linux und Fedora Linux verwendet wird, ausnutzen, um seine Privilegien zu erhöhen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- Linux",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3497 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3497.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3497 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3497"
+      },
+      {
+        "category": "external",
+        "summary": "Red Hat Bugtracker 2537749 vom 2026-09-21",
+        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2537749"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "CUPS: Schwachstelle ermöglicht Privilegieneskalation",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T10:37:14.819+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3497",
+      "initial_release_date": "2026-09-21T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-21T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        },
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "2",
+          "summary": "Referenz(en) aufgenommen: EUVD-2026-84335, GHSA-77Q5-VF69-57RJ"
+        }
+      ],
+      "status": "final",
+      "version": "2"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "43",
+                "product": {
+                  "name": "Fedora Linux 43",
+                  "product_id": "T059941",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:fedoraproject:fedora:43"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "44",
+                "product": {
+                  "name": "Fedora Linux 44",
+                  "product_id": "T059942",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:fedoraproject:fedora:44"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "45",
+                "product": {
+                  "name": "Fedora Linux 45",
+                  "product_id": "T059943",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:fedoraproject:fedora:45"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Fedora"
+      },
+      {
+        "branches": [
+          {
+            "category": "product_name",
+            "name": "Open Source CUPS",
+            "product": {
+              "name": "Open Source CUPS",
+              "product_id": "T052422",
+              "product_identification_helper": {
+                "cpe": "cpe:/a:cups:cups:-"
+              }
+            }
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      },
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version",
+                "name": "7",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 7",
+                  "product_id": "T051916",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:7"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "10",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 10",
+                  "product_id": "T059661",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:10"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "9",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 9",
+                  "product_id": "T059772",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:9"
+                  }
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "8",
+                "product": {
+                  "name": "Red Hat Enterprise Linux 8",
+                  "product_id": "T059911",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/o:redhat:enterprise_linux:8"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "Enterprise Linux"
+          }
+        ],
+        "category": "vendor",
+        "name": "Red Hat"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-95511",
+      "product_status": {
+        "known_affected": [
+          "T051916",
+          "T059911",
+          "T059943",
+          "T059661",
+          "T059772",
+          "T052422",
+          "T059942",
+          "T059941"
+        ]
+      },
+      "release_date": "2026-09-21T22:00:00.000+00:00",
+      "title": "CVE-2026-95511"
+    }
+  ]
+}

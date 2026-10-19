@@ -1,0 +1,128 @@
+{
+  "type": "bundle",
+  "id": "bundle--74fc6927-c2e9-4648-a1cf-9a7f9db33806",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--9a1e7f9f-916d-5de3-8eae-4da2a82ce1c7",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "Microsoft Outlook: Schwachstelle ermöglicht Codeausführung",
+      "description": "Ein entfernter, anonymer Angreifer kann eine Schwachstelle in Microsoft Outlook ausnutzen, um beliebigen Programmcode auszuführen.",
+      "published": "2026-09-23T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--03dba01a-2289-524e-9452-4346034ac857",
+        "software--40572f50-9798-5199-af7c-00fa43437bb9",
+        "software--62a13772-e303-5d05-aad1-98bd7ca480b8",
+        "vulnerability--79ea5e56-c83d-5081-b371-d6f663b8e080",
+        "relationship--d788d0f2-e22d-55b5-bc6d-75e115da47c3",
+        "relationship--2b3622d6-103e-50f4-92a8-ddf7b575ba03",
+        "relationship--f6b4e15a-f752-52ad-a439-97a7d5e3048c"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-3542",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3542"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-3542",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3542.json"
+        },
+        {
+          "source_name": "Microsoft Security Update Guide vom 2026-09-23",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-70125"
+        }
+      ],
+      "x_wid_status": "NEU",
+      "x_wid_severJity": "hoch",
+      "x_wid_revision": "1",
+      "x_operating_systems": "- MacOS X\n- Windows",
+      "x_product_description": "Microsoft Office LTSC ist eine Office-Suite für Unternehmen, die als Volumenlizenz mit langfristigem Support angeboten wird.\r\nMicrosoft 365 Apps ist eine Office Suite für zahlreiche Büroanwendungen."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--03dba01a-2289-524e-9452-4346034ac857",
+      "name": "Microsoft Office LTSC 2024",
+      "vendor": "Microsoft",
+      "cpe": "cpe:2.3:a:microsoft:microsoft_office_ltsc_2024:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--40572f50-9798-5199-af7c-00fa43437bb9",
+      "name": "Microsoft Office LTSC 2021",
+      "vendor": "Microsoft",
+      "cpe": "cpe:2.3:a:microsoft:microsoft_office_ltsc_2021:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--62a13772-e303-5d05-aad1-98bd7ca480b8",
+      "name": "Microsoft 365 Apps",
+      "vendor": "Microsoft",
+      "cpe": "cpe:2.3:a:microsoft:365_apps:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--79ea5e56-c83d-5081-b371-d6f663b8e080",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CVE-2026-70125",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-70125"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d788d0f2-e22d-55b5-bc6d-75e115da47c3",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--03dba01a-2289-524e-9452-4346034ac857",
+      "target_ref": "vulnerability--79ea5e56-c83d-5081-b371-d6f663b8e080"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2b3622d6-103e-50f4-92a8-ddf7b575ba03",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--40572f50-9798-5199-af7c-00fa43437bb9",
+      "target_ref": "vulnerability--79ea5e56-c83d-5081-b371-d6f663b8e080"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f6b4e15a-f752-52ad-a439-97a7d5e3048c",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--62a13772-e303-5d05-aad1-98bd7ca480b8",
+      "target_ref": "vulnerability--79ea5e56-c83d-5081-b371-d6f663b8e080"
+    }
+  ]
+}

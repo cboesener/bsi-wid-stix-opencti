@@ -1,0 +1,150 @@
+{
+  "document": {
+    "aggregate_severity": {
+      "text": "mittel"
+    },
+    "category": "csaf_base",
+    "csaf_version": "2.0",
+    "distribution": {
+      "tlp": {
+        "label": "WHITE",
+        "url": "https://www.first.org/tlp/"
+      }
+    },
+    "lang": "de-DE",
+    "notes": [
+      {
+        "category": "legal_disclaimer",
+        "text": "Das BSI ist als Anbieter für die eigenen, zur Nutzung bereitgestellten Inhalte nach den allgemeinen Gesetzen verantwortlich. Nutzerinnen und Nutzer sind jedoch dafür verantwortlich, die Verwendung und/oder die Umsetzung der mit den Inhalten bereitgestellten Informationen sorgfältig im Einzelfall zu prüfen."
+      },
+      {
+        "category": "description",
+        "text": "Die GNU libc ist die Basis C Bibliothek unter Linux sowie anderen Unix-Betriebssystemen, welche die Systemaufrufe sowie Basisfunktionalität bereitstellt.",
+        "title": "Produktbeschreibung"
+      },
+      {
+        "category": "summary",
+        "text": "Ein lokaler Angreifer kann mehrere Schwachstellen in GNU libc ausnutzen, um beliebigen Programmcode mit den Rechten des Dienstes auszuführen, vertrauliche Informationen offenzulegen, den Speicher zu beschädigen oder einen Denial-of-Service-Zustand herbeizuführen.",
+        "title": "Angriff"
+      },
+      {
+        "category": "general",
+        "text": "- UNIX",
+        "title": "Betroffene Betriebssysteme"
+      }
+    ],
+    "publisher": {
+      "category": "other",
+      "contact_details": "csaf-provider@cert-bund.de",
+      "name": "Bundesamt für Sicherheit in der Informationstechnik",
+      "namespace": "https://www.bsi.bund.de"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "WID-SEC-W-2026-3522 - CSAF Version",
+        "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-3522.json"
+      },
+      {
+        "category": "self",
+        "summary": "WID-SEC-2026-3522 - Portal Version",
+        "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-3522"
+      },
+      {
+        "category": "external",
+        "summary": "OSS Security Mailing List vom 2026-09-22",
+        "url": "https://seclists.org/oss-sec/2026/q3/875"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Security Advisory GHSA-fmf4-pr35-46c2 vom 2026-09-22",
+        "url": "https://github.com/advisories/GHSA-fmf4-pr35-46c2"
+      },
+      {
+        "category": "external",
+        "summary": "GitHub Advisory Database GHSA-H8X4-734C-9753 vom 2026-09-22",
+        "url": "https://github.com/advisories/GHSA-H8X4-734C-9753"
+      }
+    ],
+    "source_lang": "en-US",
+    "title": "GNU libc: Mehrere Schwachstellen",
+    "tracking": {
+      "current_release_date": "2026-09-22T22:00:00.000+00:00",
+      "generator": {
+        "date": "2026-09-23T11:29:54.329+00:00",
+        "engine": {
+          "name": "BSI-WID",
+          "version": "1.6.0"
+        }
+      },
+      "id": "WID-SEC-W-2026-3522",
+      "initial_release_date": "2026-09-22T22:00:00.000+00:00",
+      "revision_history": [
+        {
+          "date": "2026-09-22T22:00:00.000+00:00",
+          "number": "1",
+          "summary": "Initiale Fassung"
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "branches": [
+      {
+        "branches": [
+          {
+            "branches": [
+              {
+                "category": "product_version_range",
+                "name": "<2.45",
+                "product": {
+                  "name": "Open Source GNU libc <2.45",
+                  "product_id": "T060007"
+                }
+              },
+              {
+                "category": "product_version",
+                "name": "2.45",
+                "product": {
+                  "name": "Open Source GNU libc 2.45",
+                  "product_id": "T060007-fixed",
+                  "product_identification_helper": {
+                    "cpe": "cpe:/a:gnu:glibc:2.45"
+                  }
+                }
+              }
+            ],
+            "category": "product_name",
+            "name": "GNU libc"
+          }
+        ],
+        "category": "vendor",
+        "name": "Open Source"
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-86805",
+      "product_status": {
+        "known_affected": [
+          "T060007"
+        ]
+      },
+      "release_date": "2026-09-22T22:00:00.000+00:00",
+      "title": "CVE-2026-86805"
+    },
+    {
+      "cve": "CVE-2026-95818",
+      "product_status": {
+        "known_affected": [
+          "T060007"
+        ]
+      },
+      "release_date": "2026-09-22T22:00:00.000+00:00",
+      "title": "CVE-2026-95818"
+    }
+  ]
+}

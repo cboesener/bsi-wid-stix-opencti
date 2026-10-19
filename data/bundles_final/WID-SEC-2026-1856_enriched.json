@@ -1,0 +1,172 @@
+{
+  "type": "bundle",
+  "id": "bundle--9105932c-4aea-4dc3-b813-7b99f78bfd4c",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:24.000Z",
+      "modified": "2026-10-18T19:40:24.000Z",
+      "name": "CERT-Bund (BSI)",
+      "identity_class": "organization"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--dfd6721c-597c-5132-a7d9-3142b3cafa09",
+      "created_by_ref": "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "Red Hat Quay: Mehrere Schwachstellen",
+      "description": "Ein entfernter, authentisierter Angreifer kann mehrere Schwachstellen in Red Hat Quay ausnutzen, um beliebigen Programmcode auszuführen und serverseitige Request-Forgery-Angriffe durchzuführen.",
+      "published": "2026-06-09T22:00:00.000Z",
+      "report_types": [
+        "vulnerability"
+      ],
+      "object_refs": [
+        "identity--6a4bb6a6-f976-5a01-b3a9-e28cd5d77769",
+        "software--9672c85c-0d85-5ea0-9dc1-c4dca4a0e682",
+        "software--5e49c344-fe97-59c1-9582-62f540609a11",
+        "vulnerability--cf6f7edf-0dec-5cb8-a3be-c30fa26bc777",
+        "relationship--d0a7531c-79b7-5931-a236-3592e4208750",
+        "relationship--25e7c4d0-40c1-500d-9f70-ea4c18a947c9",
+        "vulnerability--cf414fab-dd89-5db5-89b7-6374e04aff49",
+        "relationship--2659e8f9-6435-5016-b2dc-7619d46ef804",
+        "relationship--bd03cf11-58fc-5bf6-96cb-ee860364ba24"
+      ],
+      "external_references": [
+        {
+          "source_name": "WID-Portal",
+          "external_id": "WID-SEC-2026-1856",
+          "url": "https://wid.cert-bund.de/portal/wid/securityadvisory?name=WID-SEC-2026-1856"
+        },
+        {
+          "source_name": "CSAF",
+          "external_id": "WID-SEC-W-2026-1856",
+          "url": "https://wid.cert-bund.de/.well-known/csaf/white/2026/wid-sec-w-2026-1856.json"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:24833 vom 2026-06-09",
+          "url": "https://access.redhat.com/errata/RHSA-2026:24833"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:28441 vom 2026-06-23",
+          "url": "https://access.redhat.com/errata/RHSA-2026:28441"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:40262 vom 2026-07-16",
+          "url": "https://access.redhat.com/errata/RHSA-2026:40262"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:42146 vom 2026-07-20",
+          "url": "https://access.redhat.com/errata/RHSA-2026:42146"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:43052 vom 2026-07-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:43052"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:42796 vom 2026-07-21",
+          "url": "https://access.redhat.com/errata/RHSA-2026:42796"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:48085 vom 2026-07-29",
+          "url": "https://access.redhat.com/errata/RHSA-2026:48085"
+        },
+        {
+          "source_name": "Red Hat Security Advisory RHSA-2026:70267 vom 2026-09-22",
+          "url": "https://access.redhat.com/errata/RHSA-2026:70267"
+        }
+      ],
+      "x_wid_status": "UPDATE",
+      "x_wid_severJity": "mittel",
+      "x_wid_revision": "7",
+      "x_operating_systems": "- Sonstiges\n- UNIX",
+      "x_product_description": "Red Hat Quay ist eine verteilte und hochverfügbare Container Image Registry."
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--9672c85c-0d85-5ea0-9dc1-c4dca4a0e682",
+      "name": "Red Hat Quay <3.17.3",
+      "vendor": "Red Hat"
+    },
+    {
+      "type": "software",
+      "spec_version": "2.1",
+      "id": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "name": "Red Hat Enterprise Linux",
+      "vendor": "Red Hat",
+      "cpe": "cpe:2.3:o:redhat:enterprise_linux:-:*:*:*:*:*:*:*"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--cf6f7edf-0dec-5cb8-a3be-c30fa26bc777",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-32590",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-32590"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d0a7531c-79b7-5931-a236-3592e4208750",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9672c85c-0d85-5ea0-9dc1-c4dca4a0e682",
+      "target_ref": "vulnerability--cf6f7edf-0dec-5cb8-a3be-c30fa26bc777"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--25e7c4d0-40c1-500d-9f70-ea4c18a947c9",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--cf6f7edf-0dec-5cb8-a3be-c30fa26bc777"
+    },
+    {
+      "type": "vulnerability",
+      "spec_version": "2.1",
+      "id": "vulnerability--cf414fab-dd89-5db5-89b7-6374e04aff49",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "name": "CVE-2026-32591",
+      "external_references": [
+        {
+          "source_name": "cve",
+          "external_id": "CVE-2026-32591"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2659e8f9-6435-5016-b2dc-7619d46ef804",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--9672c85c-0d85-5ea0-9dc1-c4dca4a0e682",
+      "target_ref": "vulnerability--cf414fab-dd89-5db5-89b7-6374e04aff49"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bd03cf11-58fc-5bf6-96cb-ee860364ba24",
+      "created": "2026-10-18T19:40:25.000Z",
+      "modified": "2026-10-18T19:40:25.000Z",
+      "relationship_type": "has",
+      "source_ref": "software--5e49c344-fe97-59c1-9582-62f540609a11",
+      "target_ref": "vulnerability--cf414fab-dd89-5db5-89b7-6374e04aff49"
+    }
+  ]
+}
